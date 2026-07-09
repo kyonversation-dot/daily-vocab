@@ -13,9 +13,10 @@ on:
       - "decks.json"
       - "templates/**"
       - "generate.js"
+      - "ingest.py"
 
 permissions:
-  contents: write             # seen.json / docs をコミットし返すため
+  contents: write             # seen/docs/pool/state をコミットし返すため
 
 concurrency:
   group: daily-vocab
@@ -27,6 +28,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存インストール（取り込み用）
+        run: pip install --quiet anthropic pymupdf
+
+      - name: 教材Docを読んで単元プールを更新（投入箱）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python ingest.py
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -34,11 +47,11 @@ jobs:
       - name: 今日のゲームを生成
         run: node generate.js
 
-      - name: 変更をコミット（seen.json と docs）
+      - name: 変更をコミット（pool / seen / docs / state）
         run: |
           git config user.name "daily-vocab-bot"
           git config user.email "actions@github.com"
-          git add seen*.json docs
+          git add pool*.json seen*.json ingest_state.json docs
           if git diff --staged --quiet; then
             echo "変更なし"
           else
