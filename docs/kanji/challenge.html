@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>__TITLE__</title>
+<title>小6漢字チャレンジ</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -103,15 +103,18 @@
   .btn-reset:hover { background: #3a3a7a; }
 
   .note { text-align: center; font-size: 0.62rem; color: #666; margin-top: 4px; flex-shrink: 0; }
-__EXTRACSS__
+
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="title-block">
-    <h1>📖 __TITLE__</h1>
-    <p>__SUBTITLE__ ｜ カードをタップして意味を確認！</p>
+    <h1>📖 小6漢字チャレンジ</h1>
+    <p>ひなのの漢字れんしゅう ｜ カードをタップして意味を確認！</p>
   </div>
   <div class="timer-block" onclick="toggleTimer()">
     <div class="timer-num" id="timerNum">60</div>
@@ -130,7 +133,56 @@ __EXTRACSS__
 <div class="note">緑 = 確認済み</div>
 
 <script>
-const words = __WORDS_JSON__;
+const words = [
+  {
+    "ja": "胃",
+    "reading": "イ",
+    "meaning": "食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>（胃ぶくろ）",
+    "review": false
+  },
+  {
+    "ja": "異",
+    "reading": "イ／こと(なる)",
+    "meaning": "ほかと<ruby>違<rt>ちが</rt></ruby>っていること（異なる・異国）",
+    "review": false
+  },
+  {
+    "ja": "宇",
+    "reading": "ウ",
+    "meaning": "とても大きな空間（<ruby>宇宙<rt>うちゅう</rt></ruby>）",
+    "review": false
+  },
+  {
+    "ja": "映",
+    "reading": "エイ／うつ(る)",
+    "meaning": "光や<ruby>姿<rt>すがた</rt></ruby>がうつること（映画・鏡に映る）",
+    "review": false
+  },
+  {
+    "ja": "延",
+    "reading": "エン／の(びる)",
+    "meaning": "時間や長さがのびること（延期）",
+    "review": false
+  },
+  {
+    "ja": "我",
+    "reading": "ガ／われ",
+    "meaning": "自分・わたし（自我・我が家）",
+    "review": false
+  },
+  {
+    "ja": "灰",
+    "reading": "カイ／はい",
+    "meaning": "物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>（灰色）",
+    "review": false
+  },
+  {
+    "ja": "拡",
+    "reading": "カク",
+    "meaning": "大きく<ruby>広<rt>ひろ</rt></ruby>げること（拡大）",
+    "review": false
+  }
+];
 
 const grid = document.getElementById('grid');
 words.forEach(w => {

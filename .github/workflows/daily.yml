@@ -10,6 +10,8 @@ on:
     branches: [ main ]
     paths:
       - "pool.json"           # 単元を差し替えたら即・その日ぶんを作り直す
+      - "pool_kanji.json"
+      - "decks.json"
       - "templates/**"
       - "generate.js"
 
@@ -37,7 +39,7 @@ jobs:
         run: |
           git config user.name "daily-vocab-bot"
           git config user.email "actions@github.com"
-          git add seen.json docs
+          git add seen.json seen_kanji.json docs
           if git diff --staged --quiet; then
             echo "変更なし"
           else

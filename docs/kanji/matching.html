@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>モモマッチング</title>
+<title>小6漢字マッチング</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -115,14 +115,17 @@
 
   .progress { font-size: 0.72rem; color: #888; text-align: center; margin-top: 4px; flex-shrink: 0; }
 
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="title-block">
-    <h1>🔗 モモマッチング</h1>
-    <p>今日の読書語彙 ｜ 語彙と意味を正しく結ぼう！</p>
+    <h1>🔗 小6漢字マッチング</h1>
+    <p>ひなのの漢字れんしゅう ｜ 語彙と意味を正しく結ぼう！</p>
   </div>
   <div class="score-block">
     <div class="score-num" id="scoreNum">0</div>
@@ -160,51 +163,51 @@
 <script>
 const allWords = [
   {
-    "ja": "追跡",
-    "reading": "ついせき",
-    "meaning": "後ろから<ruby>追<rt>お</rt></ruby>いかけること",
+    "ja": "胃",
+    "reading": "イ",
+    "meaning": "食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>（胃ぶくろ）",
     "review": false
   },
   {
-    "ja": "断言",
-    "reading": "だんげん",
-    "meaning": "はっきりと「そうだ」と言い切ること",
+    "ja": "異",
+    "reading": "イ／こと(なる)",
+    "meaning": "ほかと<ruby>違<rt>ちが</rt></ruby>っていること（異なる・異国）",
     "review": false
   },
   {
-    "ja": "目撃",
-    "reading": "もくげき",
-    "meaning": "<ruby>実際<rt>じっさい</rt></ruby>に自分の目で見ること",
+    "ja": "宇",
+    "reading": "ウ",
+    "meaning": "とても大きな空間（<ruby>宇宙<rt>うちゅう</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "事態",
-    "reading": "じたい",
-    "meaning": "<ruby>起<rt>お</rt></ruby>きていることの<ruby>様子<rt>ようす</rt></ruby>",
+    "ja": "映",
+    "reading": "エイ／うつ(る)",
+    "meaning": "光や<ruby>姿<rt>すがた</rt></ruby>がうつること（映画・鏡に映る）",
     "review": false
   },
   {
-    "ja": "全速",
-    "reading": "ぜんそく",
-    "meaning": "出せる一番<ruby>速<rt>はや</rt></ruby>いスピード",
+    "ja": "延",
+    "reading": "エン／の(びる)",
+    "meaning": "時間や長さがのびること（延期）",
     "review": false
   },
   {
-    "ja": "彼方",
-    "reading": "かなた",
-    "meaning": "<ruby>遠<rt>とお</rt></ruby>く<ruby>向<rt>む</rt></ruby>こうの方",
+    "ja": "我",
+    "reading": "ガ／われ",
+    "meaning": "自分・わたし（自我・我が家）",
     "review": false
   },
   {
-    "ja": "輝く",
-    "reading": "かがやく",
-    "meaning": "<ruby>明<rt>あか</rt></ruby>るくキラキラと<ruby>光<rt>ひか</rt></ruby>ること",
+    "ja": "灰",
+    "reading": "カイ／はい",
+    "meaning": "物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>（灰色）",
     "review": false
   },
   {
-    "ja": "彫像",
-    "reading": "ちょうぞう",
-    "meaning": "石や<ruby>金属<rt>きんぞく</rt></ruby>でつくった人や<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>像<rt>ぞう</rt></ruby>",
+    "ja": "拡",
+    "reading": "カク",
+    "meaning": "大きく<ruby>広<rt>ひろ</rt></ruby>げること（拡大）",
     "review": false
   }
 ];

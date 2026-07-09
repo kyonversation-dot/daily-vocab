@@ -1,97 +1,106 @@
-// generate.js — 毎日の語彙ゲームを1本作る（決定的・LLM不要）
+// generate.js — 毎日の練習ゲームを各デッキ1本ずつ作る（決定的・LLM不要）
 // 使い方: node generate.js
-//   pool.json（今の単元の語彙プール）と seen.json（既出ログ）を読み、
+//   decks.json のデッキごとに pool（語彙プール）と seen（既出ログ）を読み、
 //   今日の「新出 DAILY_NEW 語 ＋ 復習 REVIEW_COUNT 語」を選び、
-//   templates/ から challenge.html / matching.html / index.html を site/ に書き出す。
+//   templates/ から challenge.html / matching.html / index.html を各 out/ に書き出す。
 //
-// 単元を変えるとき: pool.json を新しい単元に差し替えるだけ。
-//   （pool.unit が seen.unit と変わったら seen を自動リセット）
+// デッキ = { id, pool, seen, out, big?, }  ／ pool.json 側に unit/child/titleShort/subtitle/words 等。
+// 単元を変えるとき: その pool を差し替えるだけ（unit が変わると seen は自動リセット）。
 
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
-const DAILY_NEW = 8;      // 1日の新出語
-const REVIEW_COUNT = 4;   // 1日の復習語（既出から）
+const DAILY_NEW = 8;      // 1日の新出
+const REVIEW_COUNT = 4;   // 1日の復習（既出から）
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const readTpl = (p) => fs.readFileSync(path.join(ROOT, 'templates', p), 'utf8');
-
-const pool = readJSON('pool.json');
-let seen = readJSON('seen.json');
-
-// 単元が変わったら既出ログをリセット
-if (seen.unit !== pool.unit) {
-  seen = { unit: pool.unit, seen: [] };
-}
-
-const seenSet = new Set(seen.seen);
-const byJa = Object.fromEntries(pool.words.map(w => [w.ja, w]));
-
-// 1) 新出＝プール順の未出から先頭 DAILY_NEW 語
-const unseen = pool.words.filter(w => !seenSet.has(w.ja));
-const newWords = unseen.slice(0, DAILY_NEW).map(w => ({ ...w, review: false }));
-
-// 2) 復習＝既出からランダムに REVIEW_COUNT 語
 const pickRandom = (arr, n) => [...arr].sort(() => Math.random() - 0.5).slice(0, n);
-const alreadySeen = [...seenSet].map(ja => byJa[ja]).filter(Boolean);
 
-let unitComplete = false;
-let reviewWords;
-if (newWords.length === 0) {
-  // 新出が尽きた＝単元一巡。全部復習にする
-  unitComplete = true;
-  reviewWords = pickRandom(alreadySeen, Math.min(DAILY_NEW + REVIEW_COUNT, alreadySeen.length))
-    .map(w => ({ ...w, review: true }));
-} else {
-  reviewWords = pickRandom(alreadySeen, Math.min(REVIEW_COUNT, alreadySeen.length))
-    .map(w => ({ ...w, review: true }));
-}
+// 単漢字は大きく見せる用の追加CSS
+const BIG_CSS = `
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+`;
 
-const today = [...newWords, ...reviewWords];
-
-// 3) 既出ログを更新（新出を追加）
-newWords.forEach(w => seenSet.add(w.ja));
-seen = { unit: pool.unit, seen: [...seenSet] };
-fs.writeFileSync(path.join(ROOT, 'seen.json'), JSON.stringify(seen, null, 2) + '\n');
-
-// 4) 日付（現地時間）
 const now = new Date();
 const pad = (n) => String(n).padStart(2, '0');
 const dateStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
 const dateJa = `${now.getMonth() + 1}月${now.getDate()}日`;
 
-// 5) テンプレに差し込み
-const wordsJson = JSON.stringify(today, null, 2);
-const outDir = path.join(ROOT, 'docs');   // GitHub Pages を /docs から配信
-fs.mkdirSync(outDir, { recursive: true });
-fs.writeFileSync(path.join(outDir, '.nojekyll'), '');  // Pages の Jekyll 処理を無効化
+const decks = readJSON('decks.json');
+decks.forEach(buildDeck);
 
-const fill = (tpl, title) => tpl
-  .replaceAll('__WORDS_JSON__', wordsJson)
-  .replaceAll('__TITLE__', title)
-  .replaceAll('__SUBTITLE__', pool.subtitle);
+function buildDeck(deck) {
+  const pool = readJSON(deck.pool);
+  let seen = fs.existsSync(path.join(ROOT, deck.seen))
+    ? readJSON(deck.seen) : { unit: '', seen: [] };
 
-fs.writeFileSync(path.join(outDir, 'challenge.html'),
-  fill(readTpl('challenge.html'), `${pool.titleShort}語彙チャレンジ`));
-fs.writeFileSync(path.join(outDir, 'matching.html'),
-  fill(readTpl('matching.html'), `${pool.titleShort}語彙マッチング`));
+  // 単元が変わったら既出ログをリセット
+  if (seen.unit !== pool.unit) seen = { unit: pool.unit, seen: [] };
 
-// 6) index（ブックマーク先）
-const total = pool.words.length;
-const learned = seenSet.size;
-const newCount = newWords.length;
-const reviewCount = reviewWords.length;
-const completeMsg = unitComplete
-  ? `<div class="banner">🎉 「${pool.unit}」の新しい言葉は全部やったよ！今日はぜんぶ復習。<br>次の単元にすすむ準備ができたら、おうちの人に教えてね。</div>`
-  : '';
+  const seenSet = new Set(seen.seen);
+  const byJa = Object.fromEntries(pool.words.map(w => [w.ja, w]));
 
-const index = `<!DOCTYPE html>
+  // 1) 新出＝プール順の未出から先頭 DAILY_NEW
+  const unseen = pool.words.filter(w => !seenSet.has(w.ja));
+  const newWords = unseen.slice(0, DAILY_NEW).map(w => ({ ...w, review: false }));
+
+  // 2) 復習＝既出からランダム
+  const alreadySeen = [...seenSet].map(ja => byJa[ja]).filter(Boolean);
+  let unitComplete = false, reviewWords;
+  if (newWords.length === 0) {
+    unitComplete = true;
+    reviewWords = pickRandom(alreadySeen, Math.min(DAILY_NEW + REVIEW_COUNT, alreadySeen.length))
+      .map(w => ({ ...w, review: true }));
+  } else {
+    reviewWords = pickRandom(alreadySeen, Math.min(REVIEW_COUNT, alreadySeen.length))
+      .map(w => ({ ...w, review: true }));
+  }
+
+  const today = [...newWords, ...reviewWords];
+
+  // 3) 既出ログ更新
+  newWords.forEach(w => seenSet.add(w.ja));
+  seen = { unit: pool.unit, seen: [...seenSet] };
+  fs.writeFileSync(path.join(ROOT, deck.seen), JSON.stringify(seen, null, 2) + '\n');
+
+  // 4) テンプレ差し込み
+  const wordsJson = JSON.stringify(today, null, 2);
+  const outDir = path.join(ROOT, deck.out);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
+  const extraCss = deck.big ? BIG_CSS : '';
+
+  const fill = (tpl, title) => tpl
+    .replaceAll('__WORDS_JSON__', wordsJson)
+    .replaceAll('__TITLE__', title)
+    .replaceAll('__SUBTITLE__', pool.subtitle)
+    .replaceAll('__EXTRACSS__', extraCss);
+
+  fs.writeFileSync(path.join(outDir, 'challenge.html'),
+    fill(readTpl('challenge.html'), `${pool.titleShort}チャレンジ`));
+  fs.writeFileSync(path.join(outDir, 'matching.html'),
+    fill(readTpl('matching.html'), `${pool.titleShort}マッチング`));
+
+  // 5) index（ブックマーク先）
+  const itemLabel = pool.itemLabel || '言葉';
+  const counterUnit = pool.counterUnit || '語';
+  const total = pool.words.length;
+  const learned = seenSet.size;
+  const newCount = newWords.length;
+  const reviewCount = reviewWords.length;
+  const completeMsg = unitComplete
+    ? `<div class="banner">🎉 「${pool.unit}」の新しい${itemLabel}は全部やったよ！今日はぜんぶ復習。<br>次にすすむ準備ができたら、おうちの人に教えてね。</div>`
+    : '';
+
+  const index = `<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>今日の語彙ゲーム｜${pool.subtitle}</title>
+<title>今日の${itemLabel}ゲーム｜${pool.subtitle}</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Hiragino Kaku Gothic ProN','Meiryo',sans-serif; background:#1a1a2e; color:#eee;
@@ -111,21 +120,19 @@ const index = `<!DOCTYPE html>
 </style>
 </head>
 <body>
-  <h1>📚 今日の語彙ゲーム</h1>
+  <h1>📚 今日の${itemLabel}ゲーム</h1>
   <div class="date">${dateJa}（${pool.subtitle}・「${pool.unit}」）</div>
   ${completeMsg}
-  <div class="stats">今日の言葉：新しい ${newCount} 語 ＋ 復習 ${reviewCount} 語<br>この単元：${learned} / ${total} 語やったよ</div>
+  <div class="stats">今日の${itemLabel}：新しい ${newCount} ${counterUnit} ＋ 復習 ${reviewCount} ${counterUnit}<br>この単元：${learned} / ${total} ${counterUnit}やったよ</div>
   <div class="buttons">
-    <a class="game challenge" href="challenge.html">📖 語彙チャレンジ（60秒）</a>
-    <a class="game matching" href="matching.html">🔗 語彙マッチング</a>
+    <a class="game challenge" href="challenge.html">📖 ${itemLabel}チャレンジ（60秒）</a>
+    <a class="game matching" href="matching.html">🔗 ${itemLabel}マッチング</a>
   </div>
   <div class="foot">毎日あたらしいゲームになるよ ✨</div>
 </body>
 </html>
 `;
-fs.writeFileSync(path.join(outDir, 'index.html'), index);
+  fs.writeFileSync(path.join(outDir, 'index.html'), index);
 
-console.log(`✅ ${dateStr} 生成完了`);
-console.log(`   単元: ${pool.unit} / 新出 ${newCount}語 + 復習 ${reviewCount}語 (計${today.length}語)`);
-console.log(`   進捗: ${learned}/${total} 語${unitComplete ? ' ★単元一巡・以降は全部復習' : ''}`);
-console.log(`   出力: ${path.join(outDir)}`);
+  console.log(`✅ [${deck.id}] ${dateStr} 単元:${pool.unit} / 新出${newCount}+復習${reviewCount} (計${today.length}) 進捗${learned}/${total}${unitComplete ? ' ★一巡' : ''} → ${deck.out}`);
+}

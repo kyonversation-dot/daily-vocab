@@ -1,0 +1,4 @@
+[
+  { "id": "vocab", "pool": "pool.json",       "seen": "seen.json",       "out": "docs" },
+  { "id": "kanji", "pool": "pool_kanji.json", "seen": "seen_kanji.json", "out": "docs/kanji", "big": true }
+]
