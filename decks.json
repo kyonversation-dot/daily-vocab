@@ -1,4 +1,5 @@
 [
-  { "id": "vocab", "pool": "pool.json",       "seen": "seen.json",       "out": "docs" },
-  { "id": "kanji", "pool": "pool_kanji.json", "seen": "seen_kanji.json", "out": "docs/kanji", "big": true }
+  { "id": "hinano-kanji", "child": "ひなの", "childSlug": "hinano", "label": "漢字（小6）",       "pool": "pool_hinano_kanji.json", "seen": "seen_hinano_kanji.json", "out": "docs/hinano/kanji", "big": true },
+  { "id": "hinano-vocab", "child": "ひなの", "childSlug": "hinano", "label": "言葉（表現技法）",   "pool": "pool_hinano_vocab.json", "seen": "seen_hinano_vocab.json", "out": "docs/hinano/vocab" },
+  { "id": "maya-vocab",   "child": "マヤ",   "childSlug": "maya",   "label": "言葉（読書）",       "pool": "pool.json",              "seen": "seen.json",             "out": "docs/maya/vocab" }
 ]

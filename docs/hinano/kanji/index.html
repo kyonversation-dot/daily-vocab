@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>今日の漢字ゲーム｜ひなのの漢字れんしゅう</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Hiragino Kaku Gothic ProN','Meiryo',sans-serif; background:#1a1a2e; color:#eee;
+  body { font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif; background:#1a1a2e; color:#eee;
          min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; gap:18px; }
   h1 { color:#ffb4d4; font-size:1.5rem; text-align:center; }
   .date { color:#aaa; font-size:0.9rem; }
@@ -14,12 +12,10 @@
   .banner { background:#2a1f00; border:1px solid #f5a623; color:#ffd88a; border-radius:12px;
             padding:12px 16px; font-size:0.8rem; text-align:center; max-width:420px; line-height:1.6; }
   .buttons { display:flex; flex-direction:column; gap:14px; width:100%; max-width:340px; }
-  a.game { display:block; text-align:center; text-decoration:none; color:white; font-weight:bold;
-           font-size:1.1rem; padding:18px; border-radius:16px; }
-  a.challenge { background:#c0436a; }
-  a.matching { background:#3a5ac0; }
-  a.game:hover { opacity:0.9; }
-  .foot { color:#666; font-size:0.7rem; margin-top:8px; text-align:center; }
+  a.game { display:block; text-align:center; text-decoration:none; color:white; font-weight:bold; font-size:1.1rem; padding:18px; border-radius:16px; }
+  a.challenge { background:#c0436a; } a.matching { background:#3a5ac0; } a.game:hover { opacity:0.9; }
+  a.back { color:#888; font-size:0.8rem; text-decoration:none; margin-top:4px; }
+  .foot { color:#666; font-size:0.7rem; margin-top:4px; text-align:center; }
 </style>
 </head>
 <body>
@@ -31,6 +27,6 @@
     <a class="game challenge" href="challenge.html">📖 漢字チャレンジ（60秒）</a>
     <a class="game matching" href="matching.html">🔗 漢字マッチング</a>
   </div>
-  <div class="foot">毎日あたらしいゲームになるよ ✨</div>
+  <a class="back" href="../">← ひなののトップにもどる</a>
 </body>
 </html>
