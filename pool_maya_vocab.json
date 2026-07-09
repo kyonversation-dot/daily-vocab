@@ -1,0 +1,22 @@
+{
+  "unit": "古典の世界（一）＝説明の言葉",
+  "child": "マヤ",
+  "titleShort": "説明の言葉",
+  "subtitle": "マヤの言葉れんしゅう",
+  "itemLabel": "言葉",
+  "counterUnit": "語",
+  "words": [
+    { "ja": "古典",       "reading": "こてん",           "meaning": "長い<ruby>年月<rt>ねんげつ</rt></ruby>、読みつがれてきた作品" },
+    { "ja": "諸行無常",   "reading": "しょぎょうむじょう","meaning": "すべての<ruby>物事<rt>ものごと</rt></ruby>はうつり変わる、ということ" },
+    { "ja": "盛者必衰",   "reading": "じょうしゃひっすい","meaning": "<ruby>勢<rt>いきお</rt></ruby>いのさかんな者も、いつかはおとろえる" },
+    { "ja": "道理",       "reading": "どうり",           "meaning": "物事の正しいすじみち" },
+    { "ja": "無常",       "reading": "むじょう",         "meaning": "すべてが移り変わり、同じままでないこと" },
+    { "ja": "一族",       "reading": "いちぞく",         "meaning": "同じ<ruby>血<rt>ち</rt></ruby>すじの、一まとまりの人々" },
+    { "ja": "はかない",   "reading": "はかない",         "meaning": "もろくて消えやすい・長く続かない" },
+    { "ja": "とりとめもない","reading": "とりとめもない", "meaning": "まとまりがない・つかみどころがない" },
+    { "ja": "住居",       "reading": "じゅうきょ",       "meaning": "人が住む家" },
+    { "ja": "庵",         "reading": "いおり",           "meaning": "小さくてそまつな家" },
+    { "ja": "うつり変わる","reading": "うつりかわる",     "meaning": "時とともに<ruby>変化<rt>へんか</rt></ruby>する" },
+    { "ja": "おとろえる", "reading": "おとろえる",       "meaning": "<ruby>勢<rt>いきお</rt></ruby>いが弱くなる" }
+  ]
+}

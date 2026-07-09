@@ -1,1 +1,48 @@
-{ "unit": "", "seen": [] }
+{
+  "unit": "比喩で広がる言葉の世界（表現技法）",
+  "date": "2026-07-09",
+  "seen": [
+    "比喩",
+    "直喩",
+    "隠喩",
+    "擬人法",
+    "反復",
+    "倒置",
+    "体言止め",
+    "省略"
+  ],
+  "today": [
+    {
+      "ja": "比喩",
+      "review": false
+    },
+    {
+      "ja": "直喩",
+      "review": false
+    },
+    {
+      "ja": "隠喩",
+      "review": false
+    },
+    {
+      "ja": "擬人法",
+      "review": false
+    },
+    {
+      "ja": "反復",
+      "review": false
+    },
+    {
+      "ja": "倒置",
+      "review": false
+    },
+    {
+      "ja": "体言止め",
+      "review": false
+    },
+    {
+      "ja": "省略",
+      "review": false
+    }
+  ]
+}

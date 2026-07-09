@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>説明の言葉マッチング</title>
+<title>5年の漢字マッチング</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -115,14 +115,17 @@
 
   .progress { font-size: 0.72rem; color: #888; text-align: center; margin-top: 4px; flex-shrink: 0; }
 
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="title-block">
-    <h1>🔗 説明の言葉マッチング</h1>
-    <p>マヤの言葉れんしゅう ｜ 語彙と意味を正しく結ぼう！</p>
+    <h1>🔗 5年の漢字マッチング</h1>
+    <p>マヤの漢字れんしゅう ｜ 語彙と意味を正しく結ぼう！</p>
   </div>
   <div class="score-block">
     <div class="score-num" id="scoreNum">0</div>
@@ -160,51 +163,51 @@
 <script>
 const allWords = [
   {
-    "ja": "古典",
-    "reading": "こてん",
-    "meaning": "長い<ruby>年月<rt>ねんげつ</rt></ruby>、読みつがれてきた作品",
+    "ja": "圧",
+    "reading": "アツ",
+    "meaning": "おさえつける力（<ruby>圧力<rt>あつりょく</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "諸行無常",
-    "reading": "しょぎょうむじょう",
-    "meaning": "すべての<ruby>物事<rt>ものごと</rt></ruby>はうつり変わる、ということ",
+    "ja": "移",
+    "reading": "イ／うつ(る)",
+    "meaning": "場所や時が動く（<ruby>移動<rt>いどう</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "盛者必衰",
-    "reading": "じょうしゃひっすい",
-    "meaning": "<ruby>勢<rt>いきお</rt></ruby>いのさかんな者も、いつかはおとろえる",
+    "ja": "永",
+    "reading": "エイ／なが(い)",
+    "meaning": "いつまでも長く続く（<ruby>永遠<rt>えいえん</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "道理",
-    "reading": "どうり",
-    "meaning": "物事の正しいすじみち",
+    "ja": "営",
+    "reading": "エイ／いとな(む)",
+    "meaning": "仕事などを行う（<ruby>経営<rt>けいえい</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "無常",
-    "reading": "むじょう",
-    "meaning": "すべてが移り変わり、同じままでないこと",
+    "ja": "益",
+    "reading": "エキ",
+    "meaning": "もうけ・ためになること（<ruby>利益<rt>りえき</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "一族",
-    "reading": "いちぞく",
-    "meaning": "同じ<ruby>血<rt>ち</rt></ruby>すじの、一まとまりの人々",
+    "ja": "液",
+    "reading": "エキ",
+    "meaning": "水のように流れるもの（<ruby>液体<rt>えきたい</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "はかない",
-    "reading": "はかない",
-    "meaning": "もろくて消えやすい・長く続かない",
+    "ja": "演",
+    "reading": "エン",
+    "meaning": "人前で行う（<ruby>演技<rt>えんぎ</rt></ruby>）",
     "review": false
   },
   {
-    "ja": "とりとめもない",
-    "reading": "とりとめもない",
-    "meaning": "まとまりがない・つかみどころがない",
+    "ja": "往",
+    "reading": "オウ",
+    "meaning": "行く（<ruby>往復<rt>おうふく</rt></ruby>）",
     "review": false
   }
 ];

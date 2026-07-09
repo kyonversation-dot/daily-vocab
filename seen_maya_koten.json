@@ -1,0 +1,48 @@
+{
+  "unit": "古典の世界（一）",
+  "date": "2026-07-09",
+  "seen": [
+    "翁",
+    "いと",
+    "うつくし",
+    "あやしがる",
+    "ゐる",
+    "ごとし",
+    "つれづれ",
+    "よしなし事"
+  ],
+  "today": [
+    {
+      "ja": "翁",
+      "review": false
+    },
+    {
+      "ja": "いと",
+      "review": false
+    },
+    {
+      "ja": "うつくし",
+      "review": false
+    },
+    {
+      "ja": "あやしがる",
+      "review": false
+    },
+    {
+      "ja": "ゐる",
+      "review": false
+    },
+    {
+      "ja": "ごとし",
+      "review": false
+    },
+    {
+      "ja": "つれづれ",
+      "review": false
+    },
+    {
+      "ja": "よしなし事",
+      "review": false
+    }
+  ]
+}

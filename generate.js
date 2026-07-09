@@ -93,30 +93,43 @@ fs.writeFileSync(path.join(ROOT, 'docs', '.nojekyll'), '');
 console.log(`\n✅ ${dateStr} 完了：ハブ ${Object.keys(children).map(cs => '/'+cs+'/').join(' , ')}`);
 
 // ---- デッキ1本を生成し、ハブ用メタを返す ----
+// 状態(seenファイル)= { unit, date, seen:[ja...], today:[{ja,review}] }
+// 「1日1セット」＝同じ date に何度実行しても同じ today を再生成（進めない）。
+// date が変わった時・unit が変わった時だけ新しく進める。
 function buildDeck(deck) {
   const pool = readJSON(deck.pool);
-  let seen = fs.existsSync(path.join(ROOT, deck.seen))
-    ? readJSON(deck.seen) : { unit: '', seen: [] };
-  if (seen.unit !== pool.unit) seen = { unit: pool.unit, seen: [] };
-
-  const seenSet = new Set(seen.seen);
   const byJa = Object.fromEntries(pool.words.map(w => [w.ja, w]));
-  const unseen = pool.words.filter(w => !seenSet.has(w.ja));
-  const newWords = unseen.slice(0, DAILY_NEW).map(w => ({ ...w, review: false }));
 
-  const alreadySeen = [...seenSet].map(ja => byJa[ja]).filter(Boolean);
-  let unitComplete = false, reviewWords;
-  if (newWords.length === 0) {
-    unitComplete = true;
-    reviewWords = pickRandom(alreadySeen, Math.min(DAILY_NEW + REVIEW_COUNT, alreadySeen.length)).map(w => ({ ...w, review: true }));
+  let state = fs.existsSync(path.join(ROOT, deck.seen))
+    ? readJSON(deck.seen) : { unit: '', date: '', seen: [], today: [] };
+  if (state.unit !== pool.unit) state = { unit: pool.unit, date: '', seen: [], today: [] };
+
+  let todaySel;  // [{ja, review}]
+  if (state.date === dateStr && Array.isArray(state.today) && state.today.length) {
+    // 同じ日：今日のセットをそのまま再生成（進めない）
+    todaySel = state.today.filter(t => byJa[t.ja]);
   } else {
-    reviewWords = pickRandom(alreadySeen, Math.min(REVIEW_COUNT, alreadySeen.length)).map(w => ({ ...w, review: true }));
+    // 新しい日（または単元変更）：今日ぶんを選んで進める
+    const prevSeen = new Set(state.seen || []);
+    const unseen = pool.words.filter(w => !prevSeen.has(w.ja));
+    const newJa = unseen.slice(0, DAILY_NEW).map(w => w.ja);
+    const reviewPool = [...prevSeen].filter(ja => byJa[ja]);
+    const nReview = newJa.length === 0 ? DAILY_NEW + REVIEW_COUNT : REVIEW_COUNT;
+    const reviewJa = pickRandom(reviewPool, Math.min(nReview, reviewPool.length));
+    todaySel = [
+      ...newJa.map(ja => ({ ja, review: false })),
+      ...reviewJa.map(ja => ({ ja, review: true })),
+    ];
+    const seenSet = new Set([...prevSeen, ...newJa]);
+    state = { unit: pool.unit, date: dateStr, seen: [...seenSet], today: todaySel };
   }
-  const today = [...newWords, ...reviewWords];
+  fs.writeFileSync(path.join(ROOT, deck.seen), JSON.stringify(state, null, 2) + '\n');
 
-  newWords.forEach(w => seenSet.add(w.ja));
-  seen = { unit: pool.unit, seen: [...seenSet] };
-  fs.writeFileSync(path.join(ROOT, deck.seen), JSON.stringify(seen, null, 2) + '\n');
+  const seenSet = new Set(state.seen);
+  const today = todaySel.map(t => ({ ...byJa[t.ja], review: t.review }));
+  const newWords = today.filter(w => !w.review);
+  const reviewWords = today.filter(w => w.review);
+  const unitComplete = newWords.length === 0 && seenSet.size > 0;
 
   const wordsJson = JSON.stringify(today, null, 2);
   const outDir = path.join(ROOT, deck.out);

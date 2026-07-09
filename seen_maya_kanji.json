@@ -1,47 +1,47 @@
 {
-  "unit": "小学6年生の漢字",
+  "unit": "5年生の漢字",
   "date": "2026-07-09",
   "seen": [
-    "胃",
-    "異",
-    "宇",
-    "映",
-    "延",
-    "我",
-    "灰",
-    "拡"
+    "圧",
+    "移",
+    "永",
+    "営",
+    "益",
+    "液",
+    "演",
+    "往"
   ],
   "today": [
     {
-      "ja": "胃",
+      "ja": "圧",
       "review": false
     },
     {
-      "ja": "異",
+      "ja": "移",
       "review": false
     },
     {
-      "ja": "宇",
+      "ja": "永",
       "review": false
     },
     {
-      "ja": "映",
+      "ja": "営",
       "review": false
     },
     {
-      "ja": "延",
+      "ja": "益",
       "review": false
     },
     {
-      "ja": "我",
+      "ja": "液",
       "review": false
     },
     {
-      "ja": "灰",
+      "ja": "演",
       "review": false
     },
     {
-      "ja": "拡",
+      "ja": "往",
       "review": false
     }
   ]
