@@ -1,0 +1,46 @@
+name: daily-vocab
+
+# 毎日 06:00（ハンガリー夏時間 CEST=UTC+2）に生成。
+# 冬時間（CET=UTC+1）は現地07:00になる。気になれば cron を調整。
+on:
+  schedule:
+    - cron: "0 4 * * *"      # 04:00 UTC = 06:00 CEST
+  workflow_dispatch:          # 手動でも実行できる（Actionsタブのボタン）
+  push:
+    branches: [ main ]
+    paths:
+      - "pool.json"           # 単元を差し替えたら即・その日ぶんを作り直す
+      - "templates/**"
+      - "generate.js"
+
+permissions:
+  contents: write             # seen.json / docs をコミットし返すため
+
+concurrency:
+  group: daily-vocab
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 今日のゲームを生成
+        run: node generate.js
+
+      - name: 変更をコミット（seen.json と docs）
+        run: |
+          git config user.name "daily-vocab-bot"
+          git config user.email "actions@github.com"
+          git add seen.json docs
+          if git diff --staged --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "daily: $(date -u +%Y-%m-%d)"
+            git push
+          fi
