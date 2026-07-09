@@ -1,26 +1,90 @@
 {
   "unit": "古典の世界（一）",
   "child": "マヤ",
-  "titleShort": "古語",
+  "titleShort": "古典の世界（一）",
   "subtitle": "マヤの古語れんしゅう",
   "itemLabel": "古語",
   "counterUnit": "語",
   "words": [
-    { "ja": "翁",         "reading": "おきな",       "meaning": "おじいさん（竹取の翁）" },
-    { "ja": "いと",       "reading": "いと",         "meaning": "とても・たいそう" },
-    { "ja": "うつくし",   "reading": "うつくし",     "meaning": "かわいらしい・愛らしい" },
-    { "ja": "あやしがる", "reading": "あやしがる",   "meaning": "<ruby>不思議<rt>ふしぎ</rt></ruby>に思う" },
-    { "ja": "ゐる",       "reading": "ゐる（いる）", "meaning": "すわっている・そこにいる" },
-    { "ja": "ごとし",     "reading": "ごとし",       "meaning": "〜のようだ" },
-    { "ja": "つれづれ",   "reading": "つれづれ",     "meaning": "することがなく、たいくつなこと" },
-    { "ja": "よしなし事", "reading": "よしなしごと", "meaning": "とりとめのない・つまらないこと" },
-    { "ja": "ものぐるほし","reading": "ものぐるほし", "meaning": "気が<ruby>変<rt>へん</rt></ruby>になりそうだ・落ち着かない" },
-    { "ja": "ためし",     "reading": "ためし",       "meaning": "<ruby>例<rt>れい</rt></ruby>・前にあったこと" },
-    { "ja": "すみか",     "reading": "すみか",       "meaning": "住むところ・すまい" },
-    { "ja": "おごる",     "reading": "おごる",       "meaning": "<ruby>得意<rt>とくい</rt></ruby>になる・思い上がる" },
-    { "ja": "久しからず", "reading": "ひさしからず", "meaning": "長くは続かない" },
-    { "ja": "たけし",     "reading": "たけし",       "meaning": "強い・<ruby>勢<rt>いきお</rt></ruby>いがある" },
-    { "ja": "ほろぶ",     "reading": "ほろぶ",       "meaning": "ほろびる・なくなる" },
-    { "ja": "あらはす",   "reading": "あらわす",     "meaning": "<ruby>示<rt>しめ</rt></ruby>す・表す" }
+    {
+      "ja": "翁",
+      "reading": "おきな",
+      "meaning": "おじいさん"
+    },
+    {
+      "ja": "よろづ",
+      "reading": "よろづ",
+      "meaning": "いろいろ、たくさん"
+    },
+    {
+      "ja": "あやしがる",
+      "reading": "あやしがる",
+      "meaning": "<ruby>不思議<rt>ふしぎ</rt></ruby>に思う"
+    },
+    {
+      "ja": "いと",
+      "reading": "いと",
+      "meaning": "とても"
+    },
+    {
+      "ja": "うつくし",
+      "reading": "うつくし",
+      "meaning": "かわいらしい"
+    },
+    {
+      "ja": "諸行無常",
+      "reading": "しょぎょうむじょう",
+      "meaning": "すべての<ruby>物事<rt>ものごと</rt></ruby>はうつり変わるということ"
+    },
+    {
+      "ja": "盛者必衰",
+      "reading": "じょうしゃひっすい",
+      "meaning": "<ruby>勢<rt>いきお</rt></ruby>いのさかんな者もいつかはおとろえること"
+    },
+    {
+      "ja": "理",
+      "reading": "ことわり",
+      "meaning": "<ruby>道理<rt>どうり</rt></ruby>、決まり"
+    },
+    {
+      "ja": "おごれる",
+      "reading": "おごれる",
+      "meaning": "おごり<ruby>高<rt>たか</rt></ruby>ぶっている"
+    },
+    {
+      "ja": "たけき",
+      "reading": "たけき",
+      "meaning": "強い、いさましい"
+    },
+    {
+      "ja": "ためし",
+      "reading": "ためし",
+      "meaning": "<ruby>例<rt>れい</rt></ruby>、そういうこと"
+    },
+    {
+      "ja": "すみか",
+      "reading": "すみか",
+      "meaning": "住む<ruby>所<rt>ところ</rt></ruby>、<ruby>住居<rt>じゅうきょ</rt></ruby>"
+    },
+    {
+      "ja": "つれづれなり",
+      "reading": "つれづれなり",
+      "meaning": "することがなく、たいくつだ"
+    },
+    {
+      "ja": "日暮らし",
+      "reading": "ひぐらし",
+      "meaning": "一日中"
+    },
+    {
+      "ja": "硯",
+      "reading": "すずり",
+      "meaning": "すみをする<ruby>道具<rt>どうぐ</rt></ruby>"
+    },
+    {
+      "ja": "あやし",
+      "reading": "あやし",
+      "meaning": "<ruby>不思議<rt>ふしぎ</rt></ruby>だ、みょうだ"
+    }
   ]
 }
