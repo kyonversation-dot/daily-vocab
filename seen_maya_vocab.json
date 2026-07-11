@@ -1,6 +1,6 @@
 {
   "unit": "古典の世界（一）＝説明の言葉",
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "seen": [
     "古典",
     "諸行無常",
@@ -17,55 +17,38 @@
     "不思議",
     "理",
     "おごる",
-    "滅びる"
+    "滅びる",
+    "よどみ",
+    "住居",
+    "庵"
   ],
   "today": [
     {
-      "ja": "経て",
+      "ja": "よどみ",
       "review": false
     },
     {
-      "ja": "味わう",
+      "ja": "住居",
       "review": false
     },
     {
-      "ja": "想像",
+      "ja": "庵",
       "review": false
-    },
-    {
-      "ja": "翁",
-      "review": false
-    },
-    {
-      "ja": "不思議",
-      "review": false
-    },
-    {
-      "ja": "理",
-      "review": false
-    },
-    {
-      "ja": "おごる",
-      "review": false
-    },
-    {
-      "ja": "滅びる",
-      "review": false
-    },
-    {
-      "ja": "諸行無常",
-      "review": true
     },
     {
       "ja": "古典",
       "review": true
     },
     {
-      "ja": "とりとめもない",
+      "ja": "不思議",
       "review": true
     },
     {
-      "ja": "はかない",
+      "ja": "滅びる",
+      "review": true
+    },
+    {
+      "ja": "想像",
       "review": true
     }
   ]
