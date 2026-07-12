@@ -1,6 +1,6 @@
 {
   "unit": "比喩で広がる言葉の世界（表現技法）",
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "seen": [
     "比喩",
     "直喩",
@@ -17,27 +17,7 @@
   ],
   "today": [
     {
-      "ja": "比喩",
-      "review": true
-    },
-    {
       "ja": "擬人法",
-      "review": true
-    },
-    {
-      "ja": "省略",
-      "review": true
-    },
-    {
-      "ja": "直喩",
-      "review": true
-    },
-    {
-      "ja": "韻",
-      "review": true
-    },
-    {
-      "ja": "表現技法",
       "review": true
     },
     {
@@ -45,11 +25,7 @@
       "review": true
     },
     {
-      "ja": "反復",
-      "review": true
-    },
-    {
-      "ja": "隠喩",
+      "ja": "比喩",
       "review": true
     },
     {
@@ -57,11 +33,35 @@
       "review": true
     },
     {
-      "ja": "対句",
+      "ja": "隠喩",
+      "review": true
+    },
+    {
+      "ja": "反復",
+      "review": true
+    },
+    {
+      "ja": "省略",
       "review": true
     },
     {
       "ja": "余韻",
+      "review": true
+    },
+    {
+      "ja": "韻",
+      "review": true
+    },
+    {
+      "ja": "直喩",
+      "review": true
+    },
+    {
+      "ja": "対句",
+      "review": true
+    },
+    {
+      "ja": "表現技法",
       "review": true
     }
   ]

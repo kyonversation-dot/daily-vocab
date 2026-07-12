@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "seen": [
     "圧",
     "移",
@@ -25,55 +25,63 @@
     "眼",
     "基",
     "寄",
-    "規"
+    "規",
+    "技",
+    "逆",
+    "久",
+    "居",
+    "境",
+    "均",
+    "経",
+    "質"
   ],
   "today": [
     {
-      "ja": "格",
+      "ja": "技",
       "review": false
     },
     {
-      "ja": "確",
+      "ja": "逆",
+      "review": false
+    },
+    {
+      "ja": "久",
+      "review": false
+    },
+    {
+      "ja": "居",
+      "review": false
+    },
+    {
+      "ja": "境",
+      "review": false
+    },
+    {
+      "ja": "均",
+      "review": false
+    },
+    {
+      "ja": "経",
+      "review": false
+    },
+    {
+      "ja": "質",
       "review": false
     },
     {
       "ja": "幹",
-      "review": false
+      "review": true
     },
     {
-      "ja": "慣",
-      "review": false
+      "ja": "快",
+      "review": true
     },
     {
       "ja": "眼",
-      "review": false
-    },
-    {
-      "ja": "基",
-      "review": false
-    },
-    {
-      "ja": "寄",
-      "review": false
-    },
-    {
-      "ja": "規",
-      "review": false
-    },
-    {
-      "ja": "圧",
       "review": true
     },
     {
-      "ja": "移",
-      "review": true
-    },
-    {
-      "ja": "永",
-      "review": true
-    },
-    {
-      "ja": "益",
+      "ja": "液",
       "review": true
     }
   ]
