@@ -56,7 +56,7 @@ decks.forEach(deck => {
 // 子ごとのハブ
 Object.entries(children).forEach(([cs, c]) => {
   const cards = c.decks.map(d => {
-    const cls = d.slug === 'kanji' ? 'k' : 'v';
+    const cls = d.slug.startsWith('kanji') ? 'k' : 'v';
     return `    <a class="card ${cls}" href="${d.slug}/">${d.label}<small>今日：新しい${d.newCount}＋復習${d.reviewCount}／${d.learned}・${d.total}${d.counterUnit}</small></a>`;
   }).join('\n');
   const html = `<!DOCTYPE html><html lang="ja"><head>${PAGE_HEAD}<title>${c.name}のまいにち勉強</title><style>${HUB_CSS}</style></head>
