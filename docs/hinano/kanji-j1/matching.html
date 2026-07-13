@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>比喩マッチング</title>
+<title>中1漢字マッチング</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -115,14 +115,17 @@
 
   .progress { font-size: 0.72rem; color: #888; text-align: center; margin-top: 4px; flex-shrink: 0; }
 
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="title-block">
-    <h1>🔗 比喩マッチング</h1>
-    <p>ひなののことばれんしゅう ｜ 語彙と意味を正しく結ぼう！</p>
+    <h1>🔗 中1漢字マッチング</h1>
+    <p>ひなのの漢字れんしゅう（中1） ｜ 語彙と意味を正しく結ぼう！</p>
   </div>
   <div class="score-block">
     <div class="score-num" id="scoreNum">0</div>
@@ -160,51 +163,51 @@
 <script>
 const allWords = [
   {
-    "ja": "思い浮かべる",
-    "reading": "おもいうかべる",
-    "meaning": "頭の中に、その様子を<ruby>思<rt>おも</rt></ruby>い<ruby>描<rt>えが</rt></ruby>くこと",
-    "review": false
-  },
-  {
-    "ja": "揺られる",
-    "reading": "ゆられる",
-    "meaning": "ゆらゆらと動かされること",
-    "review": false
-  },
-  {
     "ja": "帆",
-    "reading": "ほ",
-    "meaning": "船が風を受けて進むための<ruby>布<rt>ぬの</rt></ruby>",
+    "reading": "ハン／ほ",
+    "meaning": "船が風を受けて進むための<ruby>布<rt>ぬの</rt></ruby>（帆・出帆）",
     "review": false
   },
   {
-    "ja": "思い描く",
-    "reading": "おもいえがく",
-    "meaning": "頭の中で、その様子をイメージすること",
+    "ja": "尽",
+    "reading": "ジン／つ(くす)",
+    "meaning": "力を全部出しきる・なくなるまでやる（尽くす・無尽蔵）",
     "review": false
   },
   {
-    "ja": "尽くす",
-    "reading": "つくす",
-    "meaning": "もっている力を全部出す・やれることを全部する",
+    "ja": "尋",
+    "reading": "ジン／たず(ねる)",
+    "meaning": "さがし求める・質問する（尋ねる・尋問）",
     "review": false
   },
   {
-    "ja": "尋ねる",
-    "reading": "たずねる",
-    "meaning": "わからないことを聞く・さがし求める",
+    "ja": "載",
+    "reading": "サイ／の(せる)",
+    "meaning": "上にのせる・新聞や本に書きのせる（載せる・記載）",
     "review": false
   },
   {
-    "ja": "載せる",
-    "reading": "のせる",
-    "meaning": "上に置く／新聞や本に書いてのせる",
+    "ja": "激",
+    "reading": "ゲキ／はげ(しい)",
+    "meaning": "勢いがとても強い（激しい・激烈・感激）",
     "review": false
   },
   {
-    "ja": "激烈",
-    "reading": "げきれつ",
-    "meaning": "<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>激<rt>はげ</rt></ruby>しいこと（例：激烈な戦い）",
+    "ja": "烈",
+    "reading": "レツ",
+    "meaning": "勢いが強くはげしい（激烈・熱烈）",
+    "review": false
+  },
+  {
+    "ja": "雷",
+    "reading": "ライ／かみなり",
+    "meaning": "空で光と大きな音が起こる<ruby>現象<rt>げんしょう</rt></ruby>（雷・雷鳴）",
+    "review": false
+  },
+  {
+    "ja": "響",
+    "reading": "キョウ／ひび(く)",
+    "meaning": "音がつたわり広がる（響く・音響・影響）",
     "review": false
   }
 ];

@@ -1,68 +1,48 @@
 {
-  "unit": "比喩で広がる言葉の世界（表現技法）",
+  "unit": "比喩で広がる言葉の世界",
   "date": "2026-07-13",
   "seen": [
-    "比喩",
-    "直喩",
-    "隠喩",
-    "擬人法",
-    "反復",
-    "倒置",
-    "体言止め",
-    "省略",
-    "対句",
-    "韻",
-    "余韻",
-    "表現技法"
+    "思い浮かべる",
+    "揺られる",
+    "帆",
+    "思い描く",
+    "尽くす",
+    "尋ねる",
+    "載せる",
+    "激烈"
   ],
   "today": [
     {
-      "ja": "直喩",
-      "review": true
+      "ja": "思い浮かべる",
+      "review": false
     },
     {
-      "ja": "対句",
-      "review": true
+      "ja": "揺られる",
+      "review": false
     },
     {
-      "ja": "倒置",
-      "review": true
+      "ja": "帆",
+      "review": false
     },
     {
-      "ja": "体言止め",
-      "review": true
+      "ja": "思い描く",
+      "review": false
     },
     {
-      "ja": "反復",
-      "review": true
+      "ja": "尽くす",
+      "review": false
     },
     {
-      "ja": "表現技法",
-      "review": true
+      "ja": "尋ねる",
+      "review": false
     },
     {
-      "ja": "擬人法",
-      "review": true
+      "ja": "載せる",
+      "review": false
     },
     {
-      "ja": "韻",
-      "review": true
-    },
-    {
-      "ja": "比喩",
-      "review": true
-    },
-    {
-      "ja": "省略",
-      "review": true
-    },
-    {
-      "ja": "隠喩",
-      "review": true
-    },
-    {
-      "ja": "余韻",
-      "review": true
+      "ja": "激烈",
+      "review": false
     }
   ]
 }
