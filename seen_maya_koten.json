@@ -1,6 +1,6 @@
 {
   "unit": "古典の世界（一）",
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "seen": [
     "翁",
     "いと",
@@ -25,26 +25,6 @@
   ],
   "today": [
     {
-      "ja": "硯",
-      "review": true
-    },
-    {
-      "ja": "すみか",
-      "review": true
-    },
-    {
-      "ja": "盛者必衰",
-      "review": true
-    },
-    {
-      "ja": "おごれる",
-      "review": true
-    },
-    {
-      "ja": "ためし",
-      "review": true
-    },
-    {
       "ja": "諸行無常",
       "review": true
     },
@@ -53,7 +33,27 @@
       "review": true
     },
     {
-      "ja": "日暮らし",
+      "ja": "理",
+      "review": true
+    },
+    {
+      "ja": "うつくし",
+      "review": true
+    },
+    {
+      "ja": "すみか",
+      "review": true
+    },
+    {
+      "ja": "翁",
+      "review": true
+    },
+    {
+      "ja": "おごれる",
+      "review": true
+    },
+    {
+      "ja": "硯",
       "review": true
     },
     {
@@ -65,11 +65,11 @@
       "review": true
     },
     {
-      "ja": "あやし",
+      "ja": "ためし",
       "review": true
     },
     {
-      "ja": "たけき",
+      "ja": "盛者必衰",
       "review": true
     }
   ]
