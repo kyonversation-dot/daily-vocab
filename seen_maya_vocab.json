@@ -1,6 +1,6 @@
 {
   "unit": "古典の世界（一）＝説明の言葉",
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "seen": [
     "古典",
     "諸行無常",
@@ -24,11 +24,31 @@
   ],
   "today": [
     {
-      "ja": "とりとめもない",
+      "ja": "古典",
+      "review": true
+    },
+    {
+      "ja": "庵",
+      "review": true
+    },
+    {
+      "ja": "諸行無常",
       "review": true
     },
     {
       "ja": "理",
+      "review": true
+    },
+    {
+      "ja": "とりとめもない",
+      "review": true
+    },
+    {
+      "ja": "経て",
+      "review": true
+    },
+    {
+      "ja": "翁",
       "review": true
     },
     {
@@ -40,7 +60,7 @@
       "review": true
     },
     {
-      "ja": "諸行無常",
+      "ja": "想像",
       "review": true
     },
     {
@@ -48,27 +68,7 @@
       "review": true
     },
     {
-      "ja": "想像",
-      "review": true
-    },
-    {
-      "ja": "庵",
-      "review": true
-    },
-    {
-      "ja": "古典",
-      "review": true
-    },
-    {
-      "ja": "経て",
-      "review": true
-    },
-    {
-      "ja": "おごる",
-      "review": true
-    },
-    {
-      "ja": "滅びる",
+      "ja": "よどみ",
       "review": true
     }
   ]
