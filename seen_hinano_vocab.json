@@ -1,6 +1,6 @@
 {
   "unit": "比喩で広がる言葉の世界",
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "seen": [
     "思い浮かべる",
     "揺られる",
@@ -19,19 +19,7 @@
   ],
   "today": [
     {
-      "ja": "尋ねる",
-      "review": true
-    },
-    {
-      "ja": "雷",
-      "review": true
-    },
-    {
-      "ja": "載せる",
-      "review": true
-    },
-    {
-      "ja": "うかがい知れない",
+      "ja": "響きわたる",
       "review": true
     },
     {
@@ -39,7 +27,23 @@
       "review": true
     },
     {
+      "ja": "思い描く",
+      "review": true
+    },
+    {
+      "ja": "載せる",
+      "review": true
+    },
+    {
+      "ja": "雷",
+      "review": true
+    },
+    {
       "ja": "緊張",
+      "review": true
+    },
+    {
+      "ja": "尽くす",
       "review": true
     },
     {
@@ -51,19 +55,15 @@
       "review": true
     },
     {
-      "ja": "響きわたる",
+      "ja": "うかがい知れない",
+      "review": true
+    },
+    {
+      "ja": "帆",
       "review": true
     },
     {
       "ja": "揺られる",
-      "review": true
-    },
-    {
-      "ja": "思い描く",
-      "review": true
-    },
-    {
-      "ja": "尽くす",
       "review": true
     }
   ]
