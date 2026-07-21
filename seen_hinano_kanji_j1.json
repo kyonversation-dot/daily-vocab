@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（比喩で広がる言葉の世界）",
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "seen": [
     "帆",
     "尽",
@@ -18,7 +18,23 @@
   ],
   "today": [
     {
-      "ja": "尋",
+      "ja": "離",
+      "review": true
+    },
+    {
+      "ja": "烈",
+      "review": true
+    },
+    {
+      "ja": "描",
+      "review": true
+    },
+    {
+      "ja": "載",
+      "review": true
+    },
+    {
+      "ja": "緊",
       "review": true
     },
     {
@@ -26,7 +42,11 @@
       "review": true
     },
     {
-      "ja": "緊",
+      "ja": "帆",
+      "review": true
+    },
+    {
+      "ja": "尋",
       "review": true
     },
     {
@@ -42,27 +62,7 @@
       "review": true
     },
     {
-      "ja": "響",
-      "review": true
-    },
-    {
-      "ja": "烈",
-      "review": true
-    },
-    {
-      "ja": "描",
-      "review": true
-    },
-    {
-      "ja": "帆",
-      "review": true
-    },
-    {
-      "ja": "載",
-      "review": true
-    },
-    {
-      "ja": "離",
+      "ja": "激",
       "review": true
     }
   ]
