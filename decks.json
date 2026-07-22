@@ -3,6 +3,5 @@
   { "id": "hinano-kanji-j1", "child": "ひなの", "childSlug": "hinano", "label": "漢字（中1）",  "pool": "pool_hinano_kanji_j1.json", "seen": "seen_hinano_kanji_j1.json", "out": "docs/hinano/kanji-j1", "big": true },
   { "id": "hinano-vocab",    "child": "ひなの", "childSlug": "hinano", "label": "言葉（比喩）",  "pool": "pool_hinano_vocab.json",    "seen": "seen_hinano_vocab.json",    "out": "docs/hinano/vocab" },
   { "id": "maya-kanji",   "child": "マヤ",   "childSlug": "maya",   "label": "漢字（5年生）",     "pool": "pool_maya_kanji.json",   "seen": "seen_maya_kanji.json",   "out": "docs/maya/kanji", "big": true },
-  { "id": "maya-vocab",   "child": "マヤ",   "childSlug": "maya",   "label": "言葉（説明の言葉）", "pool": "pool_maya_vocab.json",   "seen": "seen_maya_vocab.json",   "out": "docs/maya/vocab" },
-  { "id": "maya-koten",   "child": "マヤ",   "childSlug": "maya",   "label": "古語（古文の言葉）", "pool": "pool_maya_koten.json",   "seen": "seen_maya_koten.json",   "out": "docs/maya/koten" }
+  { "id": "maya-vocab",   "child": "マヤ",   "childSlug": "maya",   "label": "言葉（詩の言葉）", "pool": "pool_maya_vocab.json",   "seen": "seen_maya_vocab.json",   "out": "docs/maya/vocab" }
 ]
