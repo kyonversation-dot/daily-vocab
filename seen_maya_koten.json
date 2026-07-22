@@ -1,76 +1,48 @@
 {
-  "unit": "古典の世界（一）",
+  "unit": "詩を味わおう（古語）",
   "date": "2026-07-22",
   "seen": [
-    "翁",
-    "いと",
-    "うつくし",
-    "あやしがる",
-    "ゐる",
-    "ごとし",
-    "つれづれ",
-    "よしなし事",
-    "よろづ",
-    "諸行無常",
-    "盛者必衰",
-    "理",
-    "おごれる",
-    "たけき",
-    "ためし",
-    "すみか",
-    "つれづれなり",
-    "日暮らし",
-    "硯",
-    "あやし"
+    "伸びんとす",
+    "伸びられぬ日",
+    "生きんとす",
+    "願ふなり",
+    "あきぬなり",
+    "かはらず",
+    "己",
+    "美しき"
   ],
   "today": [
     {
-      "ja": "すみか",
-      "review": true
+      "ja": "伸びんとす",
+      "review": false
     },
     {
-      "ja": "翁",
-      "review": true
+      "ja": "伸びられぬ日",
+      "review": false
     },
     {
-      "ja": "いと",
-      "review": true
+      "ja": "生きんとす",
+      "review": false
     },
     {
-      "ja": "盛者必衰",
-      "review": true
+      "ja": "願ふなり",
+      "review": false
     },
     {
-      "ja": "つれづれなり",
-      "review": true
+      "ja": "あきぬなり",
+      "review": false
     },
     {
-      "ja": "おごれる",
-      "review": true
+      "ja": "かはらず",
+      "review": false
     },
     {
-      "ja": "たけき",
-      "review": true
+      "ja": "己",
+      "review": false
     },
     {
-      "ja": "理",
-      "review": true
-    },
-    {
-      "ja": "硯",
-      "review": true
-    },
-    {
-      "ja": "うつくし",
-      "review": true
-    },
-    {
-      "ja": "諸行無常",
-      "review": true
-    },
-    {
-      "ja": "あやし",
-      "review": true
+      "ja": "美しき",
+      "review": false
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>古典の世界（一）＝説チャレンジ</title>
+<title>詩を味わおうチャレンジ</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -110,7 +110,7 @@
 
 <header>
   <div class="title-block">
-    <h1>📖 古典の世界（一）＝説チャレンジ</h1>
+    <h1>📖 詩を味わおうチャレンジ</h1>
     <p>マヤの言葉れんしゅう ｜ カードをタップして意味を確認！</p>
   </div>
   <div class="timer-block" onclick="toggleTimer()">
@@ -132,76 +132,52 @@
 <script>
 const words = [
   {
-    "ja": "不思議",
-    "reading": "ふしぎ",
-    "meaning": "どうしてなのかわからず、<ruby>変<rt>へん</rt></ruby>だなと<ruby>思<rt>おも</rt></ruby>うこと",
-    "review": true
+    "ja": "反復",
+    "reading": "はんぷく",
+    "meaning": "<ruby>同<rt>おな</rt></ruby>じ<ruby>言葉<rt>ことば</rt></ruby>や<ruby>表現<rt>ひょうげん</rt></ruby>を、くりかえすこと",
+    "review": false
   },
   {
-    "ja": "想像",
-    "reading": "そうぞう",
-    "meaning": "<ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>思<rt>おも</rt></ruby>いえがくこと",
-    "review": true
+    "ja": "擬人法",
+    "reading": "ぎじんほう",
+    "meaning": "<ruby>人<rt>ひと</rt></ruby>ではないものを、<ruby>人<rt>ひと</rt></ruby>のように<ruby>表<rt>あらわ</rt></ruby>すこと",
+    "review": false
   },
   {
-    "ja": "古典",
-    "reading": "こてん",
-    "meaning": "<ruby>昔<rt>むかし</rt></ruby>から<ruby>長<rt>なが</rt></ruby>い<ruby>年月<rt>ねんげつ</rt></ruby>のあいだ、たくさんの<ruby>人<rt>ひと</rt></ruby>に<ruby>読<rt>よ</rt></ruby>みつがれてきた<ruby>作品<rt>さくひん</rt></ruby>のこと",
-    "review": true
+    "ja": "連",
+    "reading": "れん",
+    "meaning": "<ruby>詩<rt>し</rt></ruby>のまとまり。<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>のようなもの",
+    "review": false
   },
   {
-    "ja": "住居",
-    "reading": "すまい",
-    "meaning": "<ruby>人<rt>ひと</rt></ruby>が<ruby>住<rt>す</rt></ruby>んでいる<ruby>家<rt>いえ</rt></ruby>のこと",
-    "review": true
+    "ja": "効果",
+    "reading": "こうか",
+    "meaning": "それによって<ruby>生<rt>う</rt></ruby>まれる<ruby>感<rt>かん</rt></ruby>じや、はたらき",
+    "review": false
   },
   {
-    "ja": "諸行無常",
-    "reading": "しょぎょうむじょう",
-    "meaning": "すべてのものは、<ruby>同<rt>おな</rt></ruby>じままではなく、いつもうつり<ruby>変<rt>か</rt></ruby>わっていくということ",
-    "review": true
+    "ja": "表現",
+    "reading": "ひょうげん",
+    "meaning": "<ruby>言葉<rt>ことば</rt></ruby>での<ruby>表<rt>あらわ</rt></ruby>し<ruby>方<rt>かた</rt></ruby>",
+    "review": false
   },
   {
-    "ja": "おごる",
-    "reading": "おごる",
-    "meaning": "<ruby>自分<rt>じぶん</rt></ruby>はえらいと<ruby>思<rt>おも</rt></ruby>って、いばること",
-    "review": true
+    "ja": "体言止め",
+    "reading": "たいげんどめ",
+    "meaning": "<ruby>文<rt>ぶん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりを<ruby>名詞<rt>めいし</rt></ruby>で<ruby>止<rt>と</rt></ruby>めて、<ruby>言<rt>い</rt></ruby>い<ruby>切<rt>き</rt></ruby>らない<ruby>表<rt>あらわ</rt></ruby>し<ruby>方<rt>かた</rt></ruby>",
+    "review": false
   },
   {
-    "ja": "味わう",
-    "reading": "あじわう",
-    "meaning": "よく<ruby>感<rt>かん</rt></ruby>じて<ruby>楽<rt>たの</rt></ruby>しむこと",
-    "review": true
+    "ja": "比喩",
+    "reading": "ひゆ",
+    "meaning": "あるものを、<ruby>別<rt>べつ</rt></ruby>のものにたとえること",
+    "review": false
   },
   {
-    "ja": "庵",
-    "reading": "いおり",
-    "meaning": "そまつで<ruby>小<rt>ちい</rt></ruby>さな<ruby>家<rt>いえ</rt></ruby>のこと",
-    "review": true
-  },
-  {
-    "ja": "理",
-    "reading": "ことわり",
-    "meaning": "<ruby>物事<rt>ものごと</rt></ruby>の<ruby>正<rt>ただ</rt></ruby>しいすじ<ruby>道<rt>みち</rt></ruby>、あたりまえのこと",
-    "review": true
-  },
-  {
-    "ja": "盛者必衰",
-    "reading": "じょうしゃひっすい",
-    "meaning": "<ruby>勢<rt>いきお</rt></ruby>いのさかんな<ruby>者<rt>もの</rt></ruby>も、いつかはかならずおとろえるということ",
-    "review": true
-  },
-  {
-    "ja": "経て",
-    "reading": "へて",
-    "meaning": "<ruby>時間<rt>じかん</rt></ruby>がすぎていくこと",
-    "review": true
-  },
-  {
-    "ja": "滅びる",
-    "reading": "ほろびる",
-    "meaning": "なくなってしまうこと",
-    "review": true
+    "ja": "先端",
+    "reading": "せんたん",
+    "meaning": "いちばん<ruby>先<rt>さき</rt></ruby>のところ",
+    "review": false
   }
 ];
 
