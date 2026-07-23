@@ -1,6 +1,6 @@
 {
   "unit": "詩を味わおう＝説明の言葉",
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "seen": [
     "反復",
     "擬人法",
@@ -9,40 +9,34 @@
     "表現",
     "体言止め",
     "比喩",
-    "先端"
+    "先端",
+    "赤子",
+    "いっせいに"
   ],
   "today": [
     {
-      "ja": "反復",
+      "ja": "赤子",
       "review": false
     },
     {
-      "ja": "擬人法",
-      "review": false
-    },
-    {
-      "ja": "連",
-      "review": false
-    },
-    {
-      "ja": "効果",
-      "review": false
-    },
-    {
-      "ja": "表現",
-      "review": false
-    },
-    {
-      "ja": "体言止め",
-      "review": false
-    },
-    {
-      "ja": "比喩",
+      "ja": "いっせいに",
       "review": false
     },
     {
       "ja": "先端",
-      "review": false
+      "review": true
+    },
+    {
+      "ja": "比喩",
+      "review": true
+    },
+    {
+      "ja": "体言止め",
+      "review": true
+    },
+    {
+      "ja": "表現",
+      "review": true
     }
   ]
 }
