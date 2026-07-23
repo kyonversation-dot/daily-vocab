@@ -1,70 +1,48 @@
 {
-  "unit": "比喩で広がる言葉の世界",
+  "unit": "大人になれなかった弟たちに",
   "date": "2026-07-23",
   "seen": [
-    "思い浮かべる",
-    "揺られる",
-    "帆",
-    "思い描く",
-    "尽くす",
-    "尋ねる",
-    "載せる",
-    "激烈",
-    "うかがい知れない",
-    "雷",
-    "響きわたる",
-    "緊張",
-    "距離",
-    "離れる"
+    "描写",
+    "心情",
+    "疎開",
+    "配給",
+    "防空壕",
+    "空襲",
+    "爆撃",
+    "栄養失調"
   ],
   "today": [
     {
-      "ja": "距離",
-      "review": true
+      "ja": "描写",
+      "review": false
     },
     {
-      "ja": "載せる",
-      "review": true
+      "ja": "心情",
+      "review": false
     },
     {
-      "ja": "思い浮かべる",
-      "review": true
+      "ja": "疎開",
+      "review": false
     },
     {
-      "ja": "激烈",
-      "review": true
+      "ja": "配給",
+      "review": false
     },
     {
-      "ja": "雷",
-      "review": true
+      "ja": "防空壕",
+      "review": false
     },
     {
-      "ja": "揺られる",
-      "review": true
+      "ja": "空襲",
+      "review": false
     },
     {
-      "ja": "響きわたる",
-      "review": true
+      "ja": "爆撃",
+      "review": false
     },
     {
-      "ja": "帆",
-      "review": true
-    },
-    {
-      "ja": "尽くす",
-      "review": true
-    },
-    {
-      "ja": "緊張",
-      "review": true
-    },
-    {
-      "ja": "思い描く",
-      "review": true
-    },
-    {
-      "ja": "うかがい知れない",
-      "review": true
+      "ja": "栄養失調",
+      "review": false
     }
   ]
 }
