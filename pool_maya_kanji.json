@@ -37,6 +37,8 @@
     { "ja": "境", "reading": "キョウ／さかい",   "meaning": "場所のさかい目（<ruby>国境<rt>こっきょう</rt></ruby>）" },
     { "ja": "均", "reading": "キン",           "meaning": "ならして等しくする（<ruby>平均<rt>へいきん</rt></ruby>）" },
     { "ja": "経", "reading": "ケイ／へ(る)",     "meaning": "時が過ぎる・すじ道（<ruby>経験<rt>けいけん</rt></ruby>）" },
-    { "ja": "質", "reading": "シツ",           "meaning": "中身・ものの性質（<ruby>質問<rt>しつもん</rt></ruby>）" }
+    { "ja": "質", "reading": "シツ",           "meaning": "中身・ものの性質（<ruby>質問<rt>しつもん</rt></ruby>）" },
+    { "ja": "得", "reading": "トク／え(る)",     "meaning": "手に入れる・とく（<ruby>説得<rt>せっとく</rt></ruby>・<ruby>得意<rt>とくい</rt></ruby>・<ruby>得点<rt>とくてん</rt></ruby>）" },
+    { "ja": "比", "reading": "ヒ／くら(べる)",   "meaning": "くらべる（<ruby>比<rt>くら</rt></ruby>べる・<ruby>比例<rt>ひれい</rt></ruby>・<ruby>対比<rt>たいひ</rt></ruby>）" }
   ]
 }
