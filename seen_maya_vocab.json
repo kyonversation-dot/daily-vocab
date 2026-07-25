@@ -1,58 +1,48 @@
 {
-  "unit": "詩を味わおう＝説明の言葉",
-  "date": "2026-07-24",
+  "unit": "どちらを選びますか＝話し合いの言葉",
+  "date": "2026-07-25",
   "seen": [
-    "反復",
-    "擬人法",
-    "連",
-    "効果",
-    "表現",
-    "体言止め",
-    "比喩",
-    "先端",
-    "赤子",
-    "いっせいに"
+    "説得力",
+    "司会",
+    "質疑応答",
+    "判定",
+    "立場",
+    "理由",
+    "意見",
+    "賛成"
   ],
   "today": [
     {
-      "ja": "表現",
-      "review": true
+      "ja": "説得力",
+      "review": false
     },
     {
-      "ja": "効果",
-      "review": true
+      "ja": "司会",
+      "review": false
     },
     {
-      "ja": "体言止め",
-      "review": true
+      "ja": "質疑応答",
+      "review": false
     },
     {
-      "ja": "比喩",
-      "review": true
+      "ja": "判定",
+      "review": false
     },
     {
-      "ja": "赤子",
-      "review": true
+      "ja": "立場",
+      "review": false
     },
     {
-      "ja": "連",
-      "review": true
+      "ja": "理由",
+      "review": false
     },
     {
-      "ja": "擬人法",
-      "review": true
+      "ja": "意見",
+      "review": false
     },
     {
-      "ja": "反復",
-      "review": true
-    },
-    {
-      "ja": "いっせいに",
-      "review": true
-    },
-    {
-      "ja": "先端",
-      "review": true
+      "ja": "賛成",
+      "review": false
     }
   ]
 }

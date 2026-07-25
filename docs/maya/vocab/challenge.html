@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>詩を味わおうチャレンジ</title>
+<title>どちらを選びますかチャレンジ</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -110,7 +110,7 @@
 
 <header>
   <div class="title-block">
-    <h1>📖 詩を味わおうチャレンジ</h1>
+    <h1>📖 どちらを選びますかチャレンジ</h1>
     <p>マヤの言葉れんしゅう ｜ カードをタップして意味を確認！</p>
   </div>
   <div class="timer-block" onclick="toggleTimer()">
@@ -132,64 +132,52 @@
 <script>
 const words = [
   {
-    "ja": "表現",
-    "reading": "ひょうげん",
-    "meaning": "<ruby>言葉<rt>ことば</rt></ruby>での<ruby>表<rt>あらわ</rt></ruby>し<ruby>方<rt>かた</rt></ruby>",
-    "review": true
+    "ja": "説得力",
+    "reading": "せっとくりょく",
+    "meaning": "<ruby>相手<rt>あいて</rt></ruby>が「たしかに」と<ruby>思<rt>おも</rt></ruby>うような、<ruby>話<rt>はなし</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さ",
+    "review": false
   },
   {
-    "ja": "効果",
-    "reading": "こうか",
-    "meaning": "それによって<ruby>生<rt>う</rt></ruby>まれる<ruby>感<rt>かん</rt></ruby>じや、はたらき",
-    "review": true
+    "ja": "司会",
+    "reading": "しかい",
+    "meaning": "<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いを<ruby>進<rt>すす</rt></ruby>める<ruby>役<rt>やく</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>",
+    "review": false
   },
   {
-    "ja": "体言止め",
-    "reading": "たいげんどめ",
-    "meaning": "<ruby>文<rt>ぶん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりを<ruby>名詞<rt>めいし</rt></ruby>で<ruby>止<rt>と</rt></ruby>めて、<ruby>言<rt>い</rt></ruby>い<ruby>切<rt>き</rt></ruby>らない<ruby>表<rt>あらわ</rt></ruby>し<ruby>方<rt>かた</rt></ruby>",
-    "review": true
+    "ja": "質疑応答",
+    "reading": "しつぎおうとう",
+    "meaning": "<ruby>質問<rt>しつもん</rt></ruby>をし<ruby>合<rt>あ</rt></ruby>って、<ruby>答<rt>こた</rt></ruby>え<ruby>合<rt>あ</rt></ruby>うこと",
+    "review": false
   },
   {
-    "ja": "比喩",
-    "reading": "ひゆ",
-    "meaning": "あるものを、<ruby>別<rt>べつ</rt></ruby>のものにたとえること",
-    "review": true
+    "ja": "判定",
+    "reading": "はんてい",
+    "meaning": "どちらがよいかを<ruby>決<rt>き</rt></ruby>めること",
+    "review": false
   },
   {
-    "ja": "赤子",
-    "reading": "あかご",
-    "meaning": "<ruby>赤<rt>あか</rt></ruby>ちゃん",
-    "review": true
+    "ja": "立場",
+    "reading": "たちば",
+    "meaning": "<ruby>自分<rt>じぶん</rt></ruby>がどちらの<ruby>側<rt>がわ</rt></ruby>か、ということ",
+    "review": false
   },
   {
-    "ja": "連",
-    "reading": "れん",
-    "meaning": "<ruby>詩<rt>し</rt></ruby>のまとまり。<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>のようなもの",
-    "review": true
+    "ja": "理由",
+    "reading": "りゆう",
+    "meaning": "なぜそう<ruby>思<rt>おも</rt></ruby>うのか、そのわけ",
+    "review": false
   },
   {
-    "ja": "擬人法",
-    "reading": "ぎじんほう",
-    "meaning": "<ruby>人<rt>ひと</rt></ruby>ではないものを、<ruby>人<rt>ひと</rt></ruby>のように<ruby>表<rt>あらわ</rt></ruby>すこと",
-    "review": true
+    "ja": "意見",
+    "reading": "いけん",
+    "meaning": "あることについての、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>え",
+    "review": false
   },
   {
-    "ja": "反復",
-    "reading": "はんぷく",
-    "meaning": "<ruby>同<rt>おな</rt></ruby>じ<ruby>言葉<rt>ことば</rt></ruby>や<ruby>表現<rt>ひょうげん</rt></ruby>を、くりかえすこと",
-    "review": true
-  },
-  {
-    "ja": "いっせいに",
-    "reading": "いっせいに",
-    "meaning": "<ruby>全部<rt>ぜんぶ</rt></ruby>が<ruby>同時<rt>どうじ</rt></ruby>に",
-    "review": true
-  },
-  {
-    "ja": "先端",
-    "reading": "せんたん",
-    "meaning": "いちばん<ruby>先<rt>さき</rt></ruby>のところ",
-    "review": true
+    "ja": "賛成",
+    "reading": "さんせい",
+    "meaning": "その<ruby>考<rt>かんが</rt></ruby>えに「いいと<ruby>思<rt>おも</rt></ruby>う」と<ruby>言<rt>い</rt></ruby>うこと",
+    "review": false
   }
 ];
 

@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（比喩で広がる言葉の世界）",
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "seen": [
     "帆",
     "尽",
@@ -22,48 +22,48 @@
     "掘",
     "缶",
     "菓",
-    "疎"
+    "疎",
+    "歳",
+    "戚",
+    "渓",
+    "桃",
+    "覆",
+    "渡",
+    "隣",
+    "欲"
   ],
   "today": [
     {
-      "ja": "僕",
+      "ja": "歳",
       "review": false
     },
     {
-      "ja": "襲",
+      "ja": "戚",
       "review": false
     },
     {
-      "ja": "爆",
+      "ja": "渓",
       "review": false
     },
     {
-      "ja": "弾",
+      "ja": "桃",
       "review": false
     },
     {
-      "ja": "掘",
+      "ja": "覆",
       "review": false
     },
     {
-      "ja": "缶",
+      "ja": "渡",
       "review": false
     },
     {
-      "ja": "菓",
+      "ja": "隣",
       "review": false
     },
     {
-      "ja": "疎",
+      "ja": "欲",
       "review": false
-    },
-    {
-      "ja": "揺",
-      "review": true
-    },
-    {
-      "ja": "雷",
-      "review": true
     },
     {
       "ja": "烈",
@@ -71,6 +71,14 @@
     },
     {
       "ja": "激",
+      "review": true
+    },
+    {
+      "ja": "菓",
+      "review": true
+    },
+    {
+      "ja": "載",
       "review": true
     }
   ]
