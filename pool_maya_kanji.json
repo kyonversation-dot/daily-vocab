@@ -9,957 +9,957 @@
     {
       "ja": "圧",
       "reading": "アツ",
-      "meaning": "おさえつける力（<ruby>圧力<rt>あつりょく</rt></ruby>）"
+      "meaning": "<ruby>圧力<rt>あつりょく</rt></ruby> ／ おさえつける力"
     },
     {
       "ja": "移",
       "reading": "イ／うつ(る)",
-      "meaning": "場所や時が動く（<ruby>移動<rt>いどう</rt></ruby>）"
+      "meaning": "<ruby>移動<rt>いどう</rt></ruby> ／ 場所や時が動く"
     },
     {
       "ja": "永",
       "reading": "エイ／なが(い)",
-      "meaning": "いつまでも長く続く（<ruby>永遠<rt>えいえん</rt></ruby>）"
+      "meaning": "<ruby>永遠<rt>えいえん</rt></ruby> ／ いつまでも長く続く"
     },
     {
       "ja": "営",
       "reading": "エイ／いとな(む)",
-      "meaning": "仕事などを行う（<ruby>経営<rt>けいえい</rt></ruby>）"
+      "meaning": "<ruby>経営<rt>けいえい</rt></ruby> ／ 仕事などを行う"
     },
     {
       "ja": "益",
       "reading": "エキ",
-      "meaning": "もうけ・ためになること（<ruby>利益<rt>りえき</rt></ruby>）"
+      "meaning": "<ruby>利益<rt>りえき</rt></ruby> ／ もうけ・ためになること"
     },
     {
       "ja": "液",
       "reading": "エキ",
-      "meaning": "水のように流れるもの（<ruby>液体<rt>えきたい</rt></ruby>）"
+      "meaning": "<ruby>液体<rt>えきたい</rt></ruby> ／ 水のように流れるもの"
     },
     {
       "ja": "演",
       "reading": "エン",
-      "meaning": "人前で行う（<ruby>演技<rt>えんぎ</rt></ruby>）"
+      "meaning": "<ruby>演技<rt>えんぎ</rt></ruby> ／ 人前で行う"
     },
     {
       "ja": "往",
       "reading": "オウ",
-      "meaning": "行く（<ruby>往復<rt>おうふく</rt></ruby>）"
+      "meaning": "<ruby>往復<rt>おうふく</rt></ruby> ／ 行く"
     },
     {
       "ja": "応",
       "reading": "オウ／こた(える)",
-      "meaning": "こたえる・受けてかえす（<ruby>応答<rt>おうとう</rt></ruby>）"
+      "meaning": "<ruby>応答<rt>おうとう</rt></ruby> ／ こたえる・受けてかえす"
     },
     {
       "ja": "可",
       "reading": "カ",
-      "meaning": "よい・できる（<ruby>可能<rt>かのう</rt></ruby>）"
+      "meaning": "<ruby>可能<rt>かのう</rt></ruby> ／ よい・できる"
     },
     {
       "ja": "仮",
       "reading": "カ／かり",
-      "meaning": "一時の・本当でない（<ruby>仮<rt>かり</rt></ruby>）"
+      "meaning": "<ruby>仮<rt>かり</rt></ruby> ／ 一時の・本当でない"
     },
     {
       "ja": "価",
       "reading": "カ／あたい",
-      "meaning": "ねうち・ねだん（<ruby>価格<rt>かかく</rt></ruby>）"
+      "meaning": "<ruby>価格<rt>かかく</rt></ruby> ／ ねうち・ねだん"
     },
     {
       "ja": "河",
       "reading": "カ／かわ",
-      "meaning": "大きな川（<ruby>河川<rt>かせん</rt></ruby>）"
+      "meaning": "<ruby>河川<rt>かせん</rt></ruby> ／ 大きな川"
     },
     {
       "ja": "過",
       "reading": "カ／す(ぎる)",
-      "meaning": "通りすぎる・度をこす（<ruby>通過<rt>つうか</rt></ruby>）"
+      "meaning": "<ruby>通過<rt>つうか</rt></ruby> ／ 通りすぎる・度をこす"
     },
     {
       "ja": "快",
       "reading": "カイ／こころよ(い)",
-      "meaning": "気持ちがよい（<ruby>快適<rt>かいてき</rt></ruby>）"
+      "meaning": "<ruby>快適<rt>かいてき</rt></ruby> ／ 気持ちがよい"
     },
     {
       "ja": "解",
       "reading": "カイ／と(く)",
-      "meaning": "といて分かる（<ruby>解決<rt>かいけつ</rt></ruby>）"
+      "meaning": "<ruby>解決<rt>かいけつ</rt></ruby> ／ といて分かる"
     },
     {
       "ja": "格",
       "reading": "カク",
-      "meaning": "位・きまり（<ruby>性格<rt>せいかく</rt></ruby>）"
+      "meaning": "<ruby>性格<rt>せいかく</rt></ruby> ／ 位・きまり"
     },
     {
       "ja": "確",
       "reading": "カク／たし(か)",
-      "meaning": "まちがいない（<ruby>確<rt>たし</rt></ruby>かめる）"
+      "meaning": "<ruby>確<rt>たし</rt></ruby>かめる ／ まちがいない"
     },
     {
       "ja": "幹",
       "reading": "カン／みき",
-      "meaning": "木のみき・中心（<ruby>幹<rt>みき</rt></ruby>）"
+      "meaning": "<ruby>幹<rt>みき</rt></ruby> ／ 木のみき・中心"
     },
     {
       "ja": "慣",
       "reading": "カン／な(れる)",
-      "meaning": "なれる・ならわし（<ruby>習慣<rt>しゅうかん</rt></ruby>）"
+      "meaning": "<ruby>習慣<rt>しゅうかん</rt></ruby> ／ なれる・ならわし"
     },
     {
       "ja": "眼",
       "reading": "ガン／まなこ",
-      "meaning": "目（<ruby>眼科<rt>がんか</rt></ruby>）"
+      "meaning": "<ruby>眼科<rt>がんか</rt></ruby> ／ 目"
     },
     {
       "ja": "基",
       "reading": "キ／もと",
-      "meaning": "もと・土台（<ruby>基本<rt>きほん</rt></ruby>）"
+      "meaning": "<ruby>基本<rt>きほん</rt></ruby> ／ もと・土台"
     },
     {
       "ja": "寄",
       "reading": "キ／よ(る)",
-      "meaning": "近づく・あずける（<ruby>寄<rt>よ</rt></ruby>る）"
+      "meaning": "<ruby>寄<rt>よ</rt></ruby>る ／ 近づく・あずける"
     },
     {
       "ja": "規",
       "reading": "キ",
-      "meaning": "きまり・ものさし（<ruby>規則<rt>きそく</rt></ruby>）"
+      "meaning": "<ruby>規則<rt>きそく</rt></ruby> ／ きまり・ものさし"
     },
     {
       "ja": "技",
       "reading": "ギ／わざ",
-      "meaning": "うでまえ（<ruby>技術<rt>ぎじゅつ</rt></ruby>）"
+      "meaning": "<ruby>技術<rt>ぎじゅつ</rt></ruby> ／ うでまえ"
     },
     {
       "ja": "逆",
       "reading": "ギャク／さか",
-      "meaning": "反対（<ruby>逆<rt>さか</rt></ruby>さ）"
+      "meaning": "<ruby>逆<rt>さか</rt></ruby>さ ／ 反対"
     },
     {
       "ja": "久",
       "reading": "キュウ／ひさ(しい)",
-      "meaning": "長い間（<ruby>永久<rt>えいきゅう</rt></ruby>）"
+      "meaning": "<ruby>永久<rt>えいきゅう</rt></ruby> ／ 長い間"
     },
     {
       "ja": "居",
       "reading": "キョ／い(る)",
-      "meaning": "そこにいる・住む（<ruby>住居<rt>じゅうきょ</rt></ruby>）"
+      "meaning": "<ruby>住居<rt>じゅうきょ</rt></ruby> ／ そこにいる・住む"
     },
     {
       "ja": "境",
       "reading": "キョウ／さかい",
-      "meaning": "場所のさかい目（<ruby>国境<rt>こっきょう</rt></ruby>）"
+      "meaning": "<ruby>国境<rt>こっきょう</rt></ruby> ／ 場所のさかい目"
     },
     {
       "ja": "均",
       "reading": "キン",
-      "meaning": "ならして等しくする（<ruby>平均<rt>へいきん</rt></ruby>）"
+      "meaning": "<ruby>平均<rt>へいきん</rt></ruby> ／ ならして等しくする"
     },
     {
       "ja": "経",
       "reading": "ケイ／へ(る)",
-      "meaning": "時が過ぎる・すじ道（<ruby>経験<rt>けいけん</rt></ruby>）"
+      "meaning": "<ruby>経験<rt>けいけん</rt></ruby> ／ 時が過ぎる・すじ道"
     },
     {
       "ja": "質",
       "reading": "シツ",
-      "meaning": "中身・ものの性質（<ruby>質問<rt>しつもん</rt></ruby>）"
+      "meaning": "<ruby>質問<rt>しつもん</rt></ruby> ／ 中身・ものの性質"
     },
     {
       "ja": "得",
       "reading": "トク／え(る)",
-      "meaning": "手に入れる・とく（<ruby>説得<rt>せっとく</rt></ruby>・<ruby>得意<rt>とくい</rt></ruby>・<ruby>得点<rt>とくてん</rt></ruby>）"
+      "meaning": "<ruby>説得<rt>せっとく</rt></ruby>・<ruby>得意<rt>とくい</rt></ruby>・<ruby>得点<rt>とくてん</rt></ruby> ／ 手に入れる・とく"
     },
     {
       "ja": "比",
       "reading": "ヒ／くら(べる)",
-      "meaning": "くらべる（<ruby>比<rt>くら</rt></ruby>べる・<ruby>比例<rt>ひれい</rt></ruby>・<ruby>対比<rt>たいひ</rt></ruby>）"
+      "meaning": "<ruby>比<rt>くら</rt></ruby>べる・<ruby>比例<rt>ひれい</rt></ruby>・<ruby>対比<rt>たいひ</rt></ruby> ／ くらべる"
     },
     {
       "ja": "潔",
       "reading": "ケツ／いさぎよい",
-      "meaning": "けがれがなく、きれい（<ruby>清潔<rt>せいけつ</rt></ruby>・<ruby>簡潔<rt>かんけつ</rt></ruby>）"
+      "meaning": "<ruby>清潔<rt>せいけつ</rt></ruby>・<ruby>簡潔<rt>かんけつ</rt></ruby> ／ けがれがなく、きれい"
     },
     {
       "ja": "件",
       "reading": "ケン",
-      "meaning": "ことがら・用事（<ruby>事件<rt>じけん</rt></ruby>・<ruby>用件<rt>ようけん</rt></ruby>）"
+      "meaning": "<ruby>事件<rt>じけん</rt></ruby>・<ruby>用件<rt>ようけん</rt></ruby> ／ ことがら・用事"
     },
     {
       "ja": "険",
       "reading": "ケン／けわしい",
-      "meaning": "あぶない・けわしい（<ruby>危険<rt>きけん</rt></ruby>・<ruby>保険<rt>ほけん</rt></ruby>）"
+      "meaning": "<ruby>危険<rt>きけん</rt></ruby>・<ruby>保険<rt>ほけん</rt></ruby> ／ あぶない・けわしい"
     },
     {
       "ja": "検",
       "reading": "ケン",
-      "meaning": "しらべる（<ruby>検査<rt>けんさ</rt></ruby>・<ruby>点検<rt>てんけん</rt></ruby>）"
+      "meaning": "<ruby>検査<rt>けんさ</rt></ruby>・<ruby>点検<rt>てんけん</rt></ruby> ／ しらべる"
     },
     {
       "ja": "限",
       "reading": "ゲン／かぎる",
-      "meaning": "ここまで、とくぎる（<ruby>限界<rt>げんかい</rt></ruby>・<ruby>期限<rt>きげん</rt></ruby>）"
+      "meaning": "<ruby>限界<rt>げんかい</rt></ruby>・<ruby>期限<rt>きげん</rt></ruby> ／ ここまで、とくぎる"
     },
     {
       "ja": "現",
       "reading": "ゲン／あらわれる",
-      "meaning": "今・すがたを見せる（<ruby>現在<rt>げんざい</rt></ruby>・<ruby>表現<rt>ひょうげん</rt></ruby>）"
+      "meaning": "<ruby>現在<rt>げんざい</rt></ruby>・<ruby>表現<rt>ひょうげん</rt></ruby> ／ 今・すがたを見せる"
     },
     {
       "ja": "減",
       "reading": "ゲン／へる",
-      "meaning": "少なくなる（<ruby>減少<rt>げんしょう</rt></ruby>・<ruby>加減<rt>かげん</rt></ruby>）"
+      "meaning": "<ruby>減少<rt>げんしょう</rt></ruby>・<ruby>加減<rt>かげん</rt></ruby> ／ 少なくなる"
     },
     {
       "ja": "故",
       "reading": "コ／ゆえ",
-      "meaning": "むかしのこと・わけ（<ruby>事故<rt>じこ</rt></ruby>・<ruby>故郷<rt>こきょう</rt></ruby>）"
+      "meaning": "<ruby>事故<rt>じこ</rt></ruby>・<ruby>故郷<rt>こきょう</rt></ruby> ／ むかしのこと・わけ"
     },
     {
       "ja": "個",
       "reading": "コ",
-      "meaning": "一つ一つ・数えることば（<ruby>個人<rt>こじん</rt></ruby>・<ruby>三個<rt>さんこ</rt></ruby>）"
+      "meaning": "<ruby>個人<rt>こじん</rt></ruby>・<ruby>三個<rt>さんこ</rt></ruby> ／ 一つ一つ・数えることば"
     },
     {
       "ja": "護",
       "reading": "ゴ",
-      "meaning": "まもる（<ruby>保護<rt>ほご</rt></ruby>・<ruby>看護<rt>かんご</rt></ruby>）"
+      "meaning": "<ruby>保護<rt>ほご</rt></ruby>・<ruby>看護<rt>かんご</rt></ruby> ／ まもる"
     },
     {
       "ja": "効",
       "reading": "コウ／きく",
-      "meaning": "ききめがある（<ruby>効果<rt>こうか</rt></ruby>・<ruby>有効<rt>ゆうこう</rt></ruby>）"
+      "meaning": "<ruby>効果<rt>こうか</rt></ruby>・<ruby>有効<rt>ゆうこう</rt></ruby> ／ ききめがある"
     },
     {
       "ja": "厚",
       "reading": "コウ／あつい",
-      "meaning": "あつみがある・心がこもる（<ruby>厚紙<rt>あつがみ</rt></ruby>・<ruby>厚意<rt>こうい</rt></ruby>）"
+      "meaning": "<ruby>厚紙<rt>あつがみ</rt></ruby>・<ruby>厚意<rt>こうい</rt></ruby> ／ あつみがある・心がこもる"
     },
     {
       "ja": "耕",
       "reading": "コウ／たがやす",
-      "meaning": "田や畑をたがやす（<ruby>耕作<rt>こうさく</rt></ruby>・<ruby>農耕<rt>のうこう</rt></ruby>）"
+      "meaning": "<ruby>耕作<rt>こうさく</rt></ruby>・<ruby>農耕<rt>のうこう</rt></ruby> ／ 田や畑をたがやす"
     },
     {
       "ja": "航",
       "reading": "コウ",
-      "meaning": "船や飛行機で行く（<ruby>航海<rt>こうかい</rt></ruby>・<ruby>欠航<rt>けっこう</rt></ruby>）"
+      "meaning": "<ruby>航海<rt>こうかい</rt></ruby>・<ruby>欠航<rt>けっこう</rt></ruby> ／ 船や飛行機で行く"
     },
     {
       "ja": "鉱",
       "reading": "コウ",
-      "meaning": "地中からとれる<ruby>金属<rt>きんぞく</rt></ruby>のもと（<ruby>鉱物<rt>こうぶつ</rt></ruby>・<ruby>鉱山<rt>こうざん</rt></ruby>）"
+      "meaning": "<ruby>鉱物<rt>こうぶつ</rt></ruby>・<ruby>鉱山<rt>こうざん</rt></ruby> ／ 地中からとれる<ruby>金属<rt>きんぞく</rt></ruby>のもと"
     },
     {
       "ja": "構",
       "reading": "コウ／かまえる",
-      "meaning": "組み立てる・かまえる（<ruby>構成<rt>こうせい</rt></ruby>・<ruby>結構<rt>けっこう</rt></ruby>）"
+      "meaning": "<ruby>構成<rt>こうせい</rt></ruby>・<ruby>結構<rt>けっこう</rt></ruby> ／ 組み立てる・かまえる"
     },
     {
       "ja": "興",
       "reading": "コウ／キョウ",
-      "meaning": "おこる・おもしろみ（<ruby>興味<rt>きょうみ</rt></ruby>・<ruby>復興<rt>ふっこう</rt></ruby>）"
+      "meaning": "<ruby>興味<rt>きょうみ</rt></ruby>・<ruby>復興<rt>ふっこう</rt></ruby> ／ おこる・おもしろみ"
     },
     {
       "ja": "講",
       "reading": "コウ",
-      "meaning": "話して教える（<ruby>講義<rt>こうぎ</rt></ruby>・<ruby>講演<rt>こうえん</rt></ruby>）"
+      "meaning": "<ruby>講義<rt>こうぎ</rt></ruby>・<ruby>講演<rt>こうえん</rt></ruby> ／ 話して教える"
     },
     {
       "ja": "告",
       "reading": "コク／つげる",
-      "meaning": "知らせる（<ruby>報告<rt>ほうこく</rt></ruby>・<ruby>広告<rt>こうこく</rt></ruby>）"
+      "meaning": "<ruby>報告<rt>ほうこく</rt></ruby>・<ruby>広告<rt>こうこく</rt></ruby> ／ 知らせる"
     },
     {
       "ja": "混",
       "reading": "コン／まざる",
-      "meaning": "まじり合う（<ruby>混合<rt>こんごう</rt></ruby>・<ruby>混雑<rt>こんざつ</rt></ruby>）"
+      "meaning": "<ruby>混合<rt>こんごう</rt></ruby>・<ruby>混雑<rt>こんざつ</rt></ruby> ／ まじり合う"
     },
     {
       "ja": "査",
       "reading": "サ",
-      "meaning": "しらべる（<ruby>調査<rt>ちょうさ</rt></ruby>・<ruby>検査<rt>けんさ</rt></ruby>）"
+      "meaning": "<ruby>調査<rt>ちょうさ</rt></ruby>・<ruby>検査<rt>けんさ</rt></ruby> ／ しらべる"
     },
     {
       "ja": "再",
       "reading": "サイ／ふたたび",
-      "meaning": "もう一度（<ruby>再会<rt>さいかい</rt></ruby>・<ruby>再度<rt>さいど</rt></ruby>）"
+      "meaning": "<ruby>再会<rt>さいかい</rt></ruby>・<ruby>再度<rt>さいど</rt></ruby> ／ もう一度"
     },
     {
       "ja": "災",
       "reading": "サイ／わざわい",
-      "meaning": "わざわい・自然のひがい（<ruby>災害<rt>さいがい</rt></ruby>・<ruby>火災<rt>かさい</rt></ruby>）"
+      "meaning": "<ruby>災害<rt>さいがい</rt></ruby>・<ruby>火災<rt>かさい</rt></ruby> ／ わざわい・自然のひがい"
     },
     {
       "ja": "妻",
       "reading": "サイ／つま",
-      "meaning": "けっこんしている<ruby>女<rt>おんな</rt></ruby>の人（<ruby>夫妻<rt>ふさい</rt></ruby>・妻）"
+      "meaning": "<ruby>夫妻<rt>ふさい</rt></ruby>・妻 ／ けっこんしている<ruby>女<rt>おんな</rt></ruby>の人"
     },
     {
       "ja": "採",
       "reading": "サイ／とる",
-      "meaning": "えらんでとる（<ruby>採用<rt>さいよう</rt></ruby>・<ruby>採集<rt>さいしゅう</rt></ruby>）"
+      "meaning": "<ruby>採用<rt>さいよう</rt></ruby>・<ruby>採集<rt>さいしゅう</rt></ruby> ／ えらんでとる"
     },
     {
       "ja": "際",
       "reading": "サイ／きわ",
-      "meaning": "とき・さかいめ（<ruby>国際<rt>こくさい</rt></ruby>・この際）"
+      "meaning": "<ruby>国際<rt>こくさい</rt></ruby>・この際 ／ とき・さかいめ"
     },
     {
       "ja": "在",
       "reading": "ザイ／ある",
-      "meaning": "そこにある（<ruby>現在<rt>げんざい</rt></ruby>・<ruby>存在<rt>そんざい</rt></ruby>）"
+      "meaning": "<ruby>現在<rt>げんざい</rt></ruby>・<ruby>存在<rt>そんざい</rt></ruby> ／ そこにある"
     },
     {
       "ja": "財",
       "reading": "ザイ／サイ",
-      "meaning": "お金やたからもの（<ruby>財産<rt>ざいさん</rt></ruby>・<ruby>財布<rt>さいふ</rt></ruby>）"
+      "meaning": "<ruby>財産<rt>ざいさん</rt></ruby>・<ruby>財布<rt>さいふ</rt></ruby> ／ お金やたからもの"
     },
     {
       "ja": "罪",
       "reading": "ザイ／つみ",
-      "meaning": "わるいおこない（<ruby>犯罪<rt>はんざい</rt></ruby>・<ruby>謝罪<rt>しゃざい</rt></ruby>）"
+      "meaning": "<ruby>犯罪<rt>はんざい</rt></ruby>・<ruby>謝罪<rt>しゃざい</rt></ruby> ／ わるいおこない"
     },
     {
       "ja": "殺",
       "reading": "サツ／ころす",
-      "meaning": "いのちをうばう・へらす（<ruby>殺到<rt>さっとう</rt></ruby>・<ruby>相殺<rt>そうさい</rt></ruby>）"
+      "meaning": "<ruby>殺到<rt>さっとう</rt></ruby>・<ruby>相殺<rt>そうさい</rt></ruby> ／ いのちをうばう・へらす"
     },
     {
       "ja": "雑",
       "reading": "ザツ／ゾウ",
-      "meaning": "いろいろまじる・ざつ（<ruby>雑草<rt>ざっそう</rt></ruby>・<ruby>複雑<rt>ふくざつ</rt></ruby>）"
+      "meaning": "<ruby>雑草<rt>ざっそう</rt></ruby>・<ruby>複雑<rt>ふくざつ</rt></ruby> ／ いろいろまじる・ざつ"
     },
     {
       "ja": "酸",
       "reading": "サン／すい",
-      "meaning": "すっぱい・さんそ（<ruby>酸味<rt>さんみ</rt></ruby>・<ruby>酸素<rt>さんそ</rt></ruby>）"
+      "meaning": "<ruby>酸味<rt>さんみ</rt></ruby>・<ruby>酸素<rt>さんそ</rt></ruby> ／ すっぱい・さんそ"
     },
     {
       "ja": "賛",
       "reading": "サン",
-      "meaning": "よいと<ruby>認<rt>みと</rt></ruby>める（<ruby>賛成<rt>さんせい</rt></ruby>・<ruby>賛同<rt>さんどう</rt></ruby>）"
+      "meaning": "<ruby>賛成<rt>さんせい</rt></ruby>・<ruby>賛同<rt>さんどう</rt></ruby> ／ よいと<ruby>認<rt>みと</rt></ruby>める"
     },
     {
       "ja": "士",
       "reading": "シ",
-      "meaning": "りっぱな人・その道の人（<ruby>博士<rt>はかせ</rt></ruby>・<ruby>力士<rt>りきし</rt></ruby>）"
+      "meaning": "<ruby>博士<rt>はかせ</rt></ruby>・<ruby>力士<rt>りきし</rt></ruby> ／ りっぱな人・その道の人"
     },
     {
       "ja": "支",
       "reading": "シ／ささえる",
-      "meaning": "ささえる・わかれる（<ruby>支<rt>ささ</rt></ruby>える・<ruby>支店<rt>してん</rt></ruby>）"
+      "meaning": "<ruby>支<rt>ささ</rt></ruby>える・<ruby>支店<rt>してん</rt></ruby> ／ ささえる・わかれる"
     },
     {
       "ja": "史",
       "reading": "シ",
-      "meaning": "むかしのできごとの記録（<ruby>歴史<rt>れきし</rt></ruby>・<ruby>史料<rt>しりょう</rt></ruby>）"
+      "meaning": "<ruby>歴史<rt>れきし</rt></ruby>・<ruby>史料<rt>しりょう</rt></ruby> ／ むかしのできごとの記録"
     },
     {
       "ja": "志",
       "reading": "シ／こころざす",
-      "meaning": "こうなりたいという心（<ruby>意志<rt>いし</rt></ruby>・<ruby>志望<rt>しぼう</rt></ruby>）"
+      "meaning": "<ruby>意志<rt>いし</rt></ruby>・<ruby>志望<rt>しぼう</rt></ruby> ／ こうなりたいという心"
     },
     {
       "ja": "枝",
       "reading": "シ／えだ",
-      "meaning": "木のえだ（<ruby>枝葉<rt>しよう</rt></ruby>・木の枝）"
+      "meaning": "<ruby>枝葉<rt>しよう</rt></ruby>・<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby> ／ 木のえだ"
     },
     {
       "ja": "師",
       "reading": "シ",
-      "meaning": "教える人（<ruby>教師<rt>きょうし</rt></ruby>・<ruby>医師<rt>いし</rt></ruby>）"
+      "meaning": "<ruby>教師<rt>きょうし</rt></ruby>・<ruby>医師<rt>いし</rt></ruby> ／ 教える人"
     },
     {
       "ja": "資",
       "reading": "シ",
-      "meaning": "もとになるもの・お金（<ruby>資料<rt>しりょう</rt></ruby>・<ruby>資源<rt>しげん</rt></ruby>）"
+      "meaning": "<ruby>資料<rt>しりょう</rt></ruby>・<ruby>資源<rt>しげん</rt></ruby> ／ もとになるもの・お金"
     },
     {
       "ja": "囲",
       "reading": "イ／かこむ",
-      "meaning": "まわりをかこむ（<ruby>周囲<rt>しゅうい</rt></ruby>・<ruby>囲<rt>かこ</rt></ruby>む）"
+      "meaning": "<ruby>周囲<rt>しゅうい</rt></ruby>・<ruby>囲<rt>かこ</rt></ruby>む ／ まわりをかこむ"
     },
     {
       "ja": "因",
       "reading": "イン／よる",
-      "meaning": "もとになるもの（<ruby>原因<rt>げんいん</rt></ruby>・<ruby>要因<rt>よういん</rt></ruby>）"
+      "meaning": "<ruby>原因<rt>げんいん</rt></ruby>・<ruby>要因<rt>よういん</rt></ruby> ／ もとになるもの"
     },
     {
       "ja": "衛",
       "reading": "エイ",
-      "meaning": "まもる（<ruby>衛生<rt>えいせい</rt></ruby>・<ruby>防衛<rt>ぼうえい</rt></ruby>）"
+      "meaning": "<ruby>衛生<rt>えいせい</rt></ruby>・<ruby>防衛<rt>ぼうえい</rt></ruby> ／ まもる"
     },
     {
       "ja": "易",
       "reading": "エキ／イ／やさしい",
-      "meaning": "やさしい・とりかえる（<ruby>容易<rt>ようい</rt></ruby>・<ruby>貿易<rt>ぼうえき</rt></ruby>）"
+      "meaning": "<ruby>容易<rt>ようい</rt></ruby>・<ruby>貿易<rt>ぼうえき</rt></ruby> ／ やさしい・とりかえる"
     },
     {
       "ja": "桜",
       "reading": "オウ／さくら",
-      "meaning": "さくら（<ruby>桜<rt>さくら</rt></ruby>・<ruby>桜花<rt>おうか</rt></ruby>）"
+      "meaning": "<ruby>桜<rt>さくら</rt></ruby>・<ruby>桜花<rt>おうか</rt></ruby> ／ さくら"
     },
     {
       "ja": "額",
       "reading": "ガク／ひたい",
-      "meaning": "おでこ・お金の高（<ruby>金額<rt>きんがく</rt></ruby>・<ruby>額<rt>ひたい</rt></ruby>）"
+      "meaning": "<ruby>金額<rt>きんがく</rt></ruby>・<ruby>額<rt>ひたい</rt></ruby> ／ おでこ・お金の高"
     },
     {
       "ja": "刊",
       "reading": "カン",
-      "meaning": "本を出す（<ruby>週刊誌<rt>しゅうかんし</rt></ruby>・<ruby>発刊<rt>はっかん</rt></ruby>）"
+      "meaning": "<ruby>週刊誌<rt>しゅうかんし</rt></ruby>・<ruby>発刊<rt>はっかん</rt></ruby> ／ 本を出す"
     },
     {
       "ja": "紀",
       "reading": "キ",
-      "meaning": "とし・書きしるす（<ruby>世紀<rt>せいき</rt></ruby>・<ruby>紀行<rt>きこう</rt></ruby>）"
+      "meaning": "<ruby>世紀<rt>せいき</rt></ruby>・<ruby>紀行<rt>きこう</rt></ruby> ／ とし・書きしるす"
     },
     {
       "ja": "喜",
       "reading": "キ／よろこぶ",
-      "meaning": "よろこぶ（<ruby>喜<rt>よろこ</rt></ruby>ぶ・<ruby>歓喜<rt>かんき</rt></ruby>）"
+      "meaning": "<ruby>喜<rt>よろこ</rt></ruby>ぶ・<ruby>歓喜<rt>かんき</rt></ruby> ／ よろこぶ"
     },
     {
       "ja": "義",
       "reading": "ギ",
-      "meaning": "人としての正しい道（<ruby>意義<rt>いぎ</rt></ruby>・<ruby>正義<rt>せいぎ</rt></ruby>）"
+      "meaning": "<ruby>意義<rt>いぎ</rt></ruby>・<ruby>正義<rt>せいぎ</rt></ruby> ／ 人としての正しい道"
     },
     {
       "ja": "旧",
       "reading": "キュウ",
-      "meaning": "むかしの（<ruby>旧式<rt>きゅうしき</rt></ruby>・<ruby>新旧<rt>しんきゅう</rt></ruby>）"
+      "meaning": "<ruby>旧式<rt>きゅうしき</rt></ruby>・<ruby>新旧<rt>しんきゅう</rt></ruby> ／ むかしの"
     },
     {
       "ja": "救",
       "reading": "キュウ／すくう",
-      "meaning": "すくう（<ruby>救助<rt>きゅうじょ</rt></ruby>・<ruby>救<rt>すく</rt></ruby>う）"
+      "meaning": "<ruby>救助<rt>きゅうじょ</rt></ruby>・<ruby>救<rt>すく</rt></ruby>う ／ すくう"
     },
     {
       "ja": "許",
       "reading": "キョ／ゆるす",
-      "meaning": "ゆるす（<ruby>許可<rt>きょか</rt></ruby>・<ruby>許<rt>ゆる</rt></ruby>す）"
+      "meaning": "<ruby>許可<rt>きょか</rt></ruby>・<ruby>許<rt>ゆる</rt></ruby>す ／ ゆるす"
     },
     {
       "ja": "禁",
       "reading": "キン",
-      "meaning": "してはいけない（<ruby>禁止<rt>きんし</rt></ruby>・<ruby>厳禁<rt>げんきん</rt></ruby>）"
+      "meaning": "<ruby>禁止<rt>きんし</rt></ruby>・<ruby>厳禁<rt>げんきん</rt></ruby> ／ してはいけない"
     },
     {
       "ja": "句",
       "reading": "ク",
-      "meaning": "みじかい言葉のまとまり（<ruby>俳句<rt>はいく</rt></ruby>・<ruby>語句<rt>ごく</rt></ruby>）"
+      "meaning": "<ruby>俳句<rt>はいく</rt></ruby>・<ruby>語句<rt>ごく</rt></ruby> ／ みじかい言葉のまとまり"
     },
     {
       "ja": "群",
       "reading": "グン／むれ",
-      "meaning": "むれ（<ruby>群<rt>む</rt></ruby>れ・<ruby>群集<rt>ぐんしゅう</rt></ruby>）"
+      "meaning": "<ruby>群<rt>む</rt></ruby>れ・<ruby>群集<rt>ぐんしゅう</rt></ruby> ／ むれ"
     },
     {
       "ja": "飼",
       "reading": "シ／かう",
-      "meaning": "動物をかう（<ruby>飼育<rt>しいく</rt></ruby>・<ruby>飼<rt>か</rt></ruby>う）"
+      "meaning": "<ruby>飼育<rt>しいく</rt></ruby>・<ruby>飼<rt>か</rt></ruby>う ／ 動物をかう"
     },
     {
       "ja": "示",
       "reading": "ジ／しめす",
-      "meaning": "しめす（<ruby>指示<rt>しじ</rt></ruby>・<ruby>示<rt>しめ</rt></ruby>す）"
+      "meaning": "<ruby>指示<rt>しじ</rt></ruby>・<ruby>示<rt>しめ</rt></ruby>す ／ しめす"
     },
     {
       "ja": "似",
       "reading": "ジ／にる",
-      "meaning": "にている（<ruby>似<rt>に</rt></ruby>る・<ruby>類似<rt>るいじ</rt></ruby>）"
+      "meaning": "<ruby>似<rt>に</rt></ruby>る・<ruby>類似<rt>るいじ</rt></ruby> ／ にている"
     },
     {
       "ja": "識",
       "reading": "シキ",
-      "meaning": "見わける・知る（<ruby>知識<rt>ちしき</rt></ruby>・<ruby>意識<rt>いしき</rt></ruby>）"
+      "meaning": "<ruby>知識<rt>ちしき</rt></ruby>・<ruby>意識<rt>いしき</rt></ruby> ／ 見わける・知る"
     },
     {
       "ja": "舎",
       "reading": "シャ",
-      "meaning": "たてもの（<ruby>校舎<rt>こうしゃ</rt></ruby>・<ruby>宿舎<rt>しゅくしゃ</rt></ruby>）"
+      "meaning": "<ruby>校舎<rt>こうしゃ</rt></ruby>・<ruby>宿舎<rt>しゅくしゃ</rt></ruby> ／ たてもの"
     },
     {
       "ja": "謝",
       "reading": "シャ／あやまる",
-      "meaning": "ありがとう・ごめん（<ruby>感謝<rt>かんしゃ</rt></ruby>・<ruby>謝罪<rt>しゃざい</rt></ruby>）"
+      "meaning": "<ruby>感謝<rt>かんしゃ</rt></ruby>・<ruby>謝罪<rt>しゃざい</rt></ruby> ／ ありがとう・ごめん"
     },
     {
       "ja": "授",
       "reading": "ジュ／さずける",
-      "meaning": "教えあたえる（<ruby>授業<rt>じゅぎょう</rt></ruby>・<ruby>教授<rt>きょうじゅ</rt></ruby>）"
+      "meaning": "<ruby>授業<rt>じゅぎょう</rt></ruby>・<ruby>教授<rt>きょうじゅ</rt></ruby> ／ 教えあたえる"
     },
     {
       "ja": "修",
       "reading": "シュウ／おさめる",
-      "meaning": "身につける・なおす（<ruby>修理<rt>しゅうり</rt></ruby>・<ruby>修学<rt>しゅうがく</rt></ruby>）"
+      "meaning": "<ruby>修理<rt>しゅうり</rt></ruby>・<ruby>修学<rt>しゅうがく</rt></ruby> ／ 身につける・なおす"
     },
     {
       "ja": "述",
       "reading": "ジュツ／のべる",
-      "meaning": "言葉でのべる（<ruby>述<rt>の</rt></ruby>べる・<ruby>記述<rt>きじゅつ</rt></ruby>）"
+      "meaning": "<ruby>述<rt>の</rt></ruby>べる・<ruby>記述<rt>きじゅつ</rt></ruby> ／ 言葉でのべる"
     },
     {
       "ja": "術",
       "reading": "ジュツ",
-      "meaning": "やり方・わざ（<ruby>技術<rt>ぎじゅつ</rt></ruby>・<ruby>美術<rt>びじゅつ</rt></ruby>）"
+      "meaning": "<ruby>技術<rt>ぎじゅつ</rt></ruby>・<ruby>美術<rt>びじゅつ</rt></ruby> ／ やり方・わざ"
     },
     {
       "ja": "準",
       "reading": "ジュン",
-      "meaning": "そろえる・つぎの（<ruby>準備<rt>じゅんび</rt></ruby>・<ruby>基準<rt>きじゅん</rt></ruby>）"
+      "meaning": "<ruby>準備<rt>じゅんび</rt></ruby>・<ruby>基準<rt>きじゅん</rt></ruby> ／ そろえる・つぎの"
     },
     {
       "ja": "序",
       "reading": "ジョ",
-      "meaning": "じゅんばん・はじめ（<ruby>順序<rt>じゅんじょ</rt></ruby>・<ruby>序文<rt>じょぶん</rt></ruby>）"
+      "meaning": "<ruby>順序<rt>じゅんじょ</rt></ruby>・<ruby>序文<rt>じょぶん</rt></ruby> ／ じゅんばん・はじめ"
     },
     {
       "ja": "招",
       "reading": "ショウ／まねく",
-      "meaning": "よぶ・まねく（<ruby>招待<rt>しょうたい</rt></ruby>・<ruby>招<rt>まね</rt></ruby>く）"
+      "meaning": "<ruby>招待<rt>しょうたい</rt></ruby>・<ruby>招<rt>まね</rt></ruby>く ／ よぶ・まねく"
     },
     {
       "ja": "証",
       "reading": "ショウ",
-      "meaning": "たしかだとしめす（<ruby>証明<rt>しょうめい</rt></ruby>・<ruby>証人<rt>しょうにん</rt></ruby>）"
+      "meaning": "<ruby>証明<rt>しょうめい</rt></ruby>・<ruby>証人<rt>しょうにん</rt></ruby> ／ たしかだとしめす"
     },
     {
       "ja": "象",
       "reading": "ショウ／ゾウ",
-      "meaning": "かたち・ぞう（<ruby>印象<rt>いんしょう</rt></ruby>・<ruby>対象<rt>たいしょう</rt></ruby>）"
+      "meaning": "<ruby>印象<rt>いんしょう</rt></ruby>・<ruby>対象<rt>たいしょう</rt></ruby> ／ かたち・ぞう"
     },
     {
       "ja": "賞",
       "reading": "ショウ",
-      "meaning": "ほうび（<ruby>賞状<rt>しょうじょう</rt></ruby>・<ruby>入賞<rt>にゅうしょう</rt></ruby>）"
+      "meaning": "<ruby>賞状<rt>しょうじょう</rt></ruby>・<ruby>入賞<rt>にゅうしょう</rt></ruby> ／ ほうび"
     },
     {
       "ja": "条",
       "reading": "ジョウ",
-      "meaning": "すじ・きまりの項目（<ruby>条件<rt>じょうけん</rt></ruby>・<ruby>条約<rt>じょうやく</rt></ruby>）"
+      "meaning": "<ruby>条件<rt>じょうけん</rt></ruby>・<ruby>条約<rt>じょうやく</rt></ruby> ／ すじ・きまりの項目"
     },
     {
       "ja": "状",
       "reading": "ジョウ",
-      "meaning": "ようす・手紙（<ruby>状態<rt>じょうたい</rt></ruby>・<ruby>年賀状<rt>ねんがじょう</rt></ruby>）"
+      "meaning": "<ruby>状態<rt>じょうたい</rt></ruby>・<ruby>年賀状<rt>ねんがじょう</rt></ruby> ／ ようす・手紙"
     },
     {
       "ja": "常",
       "reading": "ジョウ／つね",
-      "meaning": "いつも（<ruby>日常<rt>にちじょう</rt></ruby>・<ruby>非常<rt>ひじょう</rt></ruby>）"
+      "meaning": "<ruby>日常<rt>にちじょう</rt></ruby>・<ruby>非常<rt>ひじょう</rt></ruby> ／ いつも"
     },
     {
       "ja": "情",
       "reading": "ジョウ／なさけ",
-      "meaning": "気持ち（<ruby>感情<rt>かんじょう</rt></ruby>・<ruby>情報<rt>じょうほう</rt></ruby>）"
+      "meaning": "<ruby>感情<rt>かんじょう</rt></ruby>・<ruby>情報<rt>じょうほう</rt></ruby> ／ 気持ち"
     },
     {
       "ja": "織",
       "reading": "ショク／おる",
-      "meaning": "布をおる・くみたてる（<ruby>組織<rt>そしき</rt></ruby>・<ruby>織<rt>お</rt></ruby>る）"
+      "meaning": "<ruby>組織<rt>そしき</rt></ruby>・<ruby>織<rt>お</rt></ruby>る ／ 布をおる・くみたてる"
     },
     {
       "ja": "職",
       "reading": "ショク",
-      "meaning": "しごと（<ruby>職業<rt>しょくぎょう</rt></ruby>・<ruby>就職<rt>しゅうしょく</rt></ruby>）"
+      "meaning": "<ruby>職業<rt>しょくぎょう</rt></ruby>・<ruby>就職<rt>しゅうしょく</rt></ruby> ／ しごと"
     },
     {
       "ja": "制",
       "reading": "セイ",
-      "meaning": "きまりでおさえる（<ruby>制度<rt>せいど</rt></ruby>・<ruby>制服<rt>せいふく</rt></ruby>）"
+      "meaning": "<ruby>制度<rt>せいど</rt></ruby>・<ruby>制服<rt>せいふく</rt></ruby> ／ きまりでおさえる"
     },
     {
       "ja": "性",
       "reading": "セイ／ショウ",
-      "meaning": "そのものの<ruby>質<rt>しつ</rt></ruby>（<ruby>性格<rt>せいかく</rt></ruby>・<ruby>男性<rt>だんせい</rt></ruby>）"
+      "meaning": "<ruby>性格<rt>せいかく</rt></ruby>・<ruby>男性<rt>だんせい</rt></ruby> ／ そのものの<ruby>質<rt>しつ</rt></ruby>"
     },
     {
       "ja": "政",
       "reading": "セイ／まつりごと",
-      "meaning": "国をおさめること（<ruby>政治<rt>せいじ</rt></ruby>・<ruby>行政<rt>ぎょうせい</rt></ruby>）"
+      "meaning": "<ruby>政治<rt>せいじ</rt></ruby>・<ruby>行政<rt>ぎょうせい</rt></ruby> ／ 国をおさめること"
     },
     {
       "ja": "勢",
       "reading": "セイ／いきおい",
-      "meaning": "いきおい（<ruby>勢<rt>いきお</rt></ruby>い・<ruby>大勢<rt>おおぜい</rt></ruby>）"
+      "meaning": "<ruby>勢<rt>いきお</rt></ruby>い・<ruby>大勢<rt>おおぜい</rt></ruby> ／ いきおい"
     },
     {
       "ja": "精",
       "reading": "セイ／ショウ",
-      "meaning": "細かくてすぐれている（<ruby>精神<rt>せいしん</rt></ruby>・<ruby>精密<rt>せいみつ</rt></ruby>）"
+      "meaning": "<ruby>精神<rt>せいしん</rt></ruby>・<ruby>精密<rt>せいみつ</rt></ruby> ／ 細かくてすぐれている"
     },
     {
       "ja": "製",
       "reading": "セイ",
-      "meaning": "つくる（<ruby>製品<rt>せいひん</rt></ruby>・<ruby>製造<rt>せいぞう</rt></ruby>）"
+      "meaning": "<ruby>製品<rt>せいひん</rt></ruby>・<ruby>製造<rt>せいぞう</rt></ruby> ／ つくる"
     },
     {
       "ja": "税",
       "reading": "ゼイ",
-      "meaning": "国におさめるお金（<ruby>税金<rt>ぜいきん</rt></ruby>・<ruby>消費税<rt>しょうひぜい</rt></ruby>）"
+      "meaning": "<ruby>税金<rt>ぜいきん</rt></ruby>・<ruby>消費税<rt>しょうひぜい</rt></ruby> ／ 国におさめるお金"
     },
     {
       "ja": "責",
       "reading": "セキ／せめる",
-      "meaning": "つとめ・とがめる（<ruby>責任<rt>せきにん</rt></ruby>・<ruby>責<rt>せ</rt></ruby>める）"
+      "meaning": "<ruby>責任<rt>せきにん</rt></ruby>・<ruby>責<rt>せ</rt></ruby>める ／ つとめ・とがめる"
     },
     {
       "ja": "績",
       "reading": "セキ",
-      "meaning": "やりとげた成果（<ruby>成績<rt>せいせき</rt></ruby>・<ruby>業績<rt>ぎょうせき</rt></ruby>）"
+      "meaning": "<ruby>成績<rt>せいせき</rt></ruby>・<ruby>業績<rt>ぎょうせき</rt></ruby> ／ やりとげた成果"
     },
     {
       "ja": "接",
       "reading": "セツ／つぐ",
-      "meaning": "くっつく・むかえる（<ruby>接続<rt>せつぞく</rt></ruby>・<ruby>直接<rt>ちょくせつ</rt></ruby>）"
+      "meaning": "<ruby>接続<rt>せつぞく</rt></ruby>・<ruby>直接<rt>ちょくせつ</rt></ruby> ／ くっつく・むかえる"
     },
     {
       "ja": "設",
       "reading": "セツ／もうける",
-      "meaning": "つくって用意する（<ruby>設備<rt>せつび</rt></ruby>・<ruby>建設<rt>けんせつ</rt></ruby>）"
+      "meaning": "<ruby>設備<rt>せつび</rt></ruby>・<ruby>建設<rt>けんせつ</rt></ruby> ／ つくって用意する"
     },
     {
       "ja": "絶",
       "reading": "ゼツ／たえる",
-      "meaning": "たちきれる・とても（<ruby>絶対<rt>ぜったい</rt></ruby>・<ruby>絶<rt>た</rt></ruby>える）"
+      "meaning": "<ruby>絶対<rt>ぜったい</rt></ruby>・<ruby>絶<rt>た</rt></ruby>える ／ たちきれる・とても"
     },
     {
       "ja": "祖",
       "reading": "ソ",
-      "meaning": "先の代の人（<ruby>祖父<rt>そふ</rt></ruby>・<ruby>祖先<rt>そせん</rt></ruby>）"
+      "meaning": "<ruby>祖父<rt>そふ</rt></ruby>・<ruby>祖先<rt>そせん</rt></ruby> ／ 先の代の人"
     },
     {
       "ja": "素",
       "reading": "ソ／ス",
-      "meaning": "もとになるもの・かざらない（<ruby>素材<rt>そざい</rt></ruby>・<ruby>素直<rt>すなお</rt></ruby>）"
+      "meaning": "<ruby>素材<rt>そざい</rt></ruby>・<ruby>素直<rt>すなお</rt></ruby> ／ もとになるもの・かざらない"
     },
     {
       "ja": "総",
       "reading": "ソウ",
-      "meaning": "すべてまとめて（<ruby>総合<rt>そうごう</rt></ruby>・<ruby>総理<rt>そうり</rt></ruby>）"
+      "meaning": "<ruby>総合<rt>そうごう</rt></ruby>・<ruby>総理<rt>そうり</rt></ruby> ／ すべてまとめて"
     },
     {
       "ja": "造",
       "reading": "ゾウ／つくる",
-      "meaning": "つくる（<ruby>製造<rt>せいぞう</rt></ruby>・<ruby>木造<rt>もくぞう</rt></ruby>）"
+      "meaning": "<ruby>製造<rt>せいぞう</rt></ruby>・<ruby>木造<rt>もくぞう</rt></ruby> ／ つくる"
     },
     {
       "ja": "像",
       "reading": "ゾウ",
-      "meaning": "すがた・かたち（<ruby>想像<rt>そうぞう</rt></ruby>・<ruby>銅像<rt>どうぞう</rt></ruby>）"
+      "meaning": "<ruby>想像<rt>そうぞう</rt></ruby>・<ruby>銅像<rt>どうぞう</rt></ruby> ／ すがた・かたち"
     },
     {
       "ja": "増",
       "reading": "ゾウ／ふえる",
-      "meaning": "ふえる（⇔<ruby>減<rt>げん</rt></ruby>）（<ruby>増加<rt>ぞうか</rt></ruby>・<ruby>増<rt>ふ</rt></ruby>える）"
+      "meaning": "<ruby>増加<rt>ぞうか</rt></ruby>・<ruby>増<rt>ふ</rt></ruby>える ／ ふえる（⇔<ruby>減<rt>げん</rt></ruby>）"
     },
     {
       "ja": "則",
       "reading": "ソク",
-      "meaning": "きまり（<ruby>規則<rt>きそく</rt></ruby>・<ruby>原則<rt>げんそく</rt></ruby>）"
+      "meaning": "<ruby>規則<rt>きそく</rt></ruby>・<ruby>原則<rt>げんそく</rt></ruby> ／ きまり"
     },
     {
       "ja": "測",
       "reading": "ソク／はかる",
-      "meaning": "はかる（<ruby>測定<rt>そくてい</rt></ruby>・<ruby>予測<rt>よそく</rt></ruby>）"
+      "meaning": "<ruby>測定<rt>そくてい</rt></ruby>・<ruby>予測<rt>よそく</rt></ruby> ／ はかる"
     },
     {
       "ja": "属",
       "reading": "ゾク",
-      "meaning": "そのなかまに入る（<ruby>所属<rt>しょぞく</rt></ruby>・<ruby>金属<rt>きんぞく</rt></ruby>）"
+      "meaning": "<ruby>所属<rt>しょぞく</rt></ruby>・<ruby>金属<rt>きんぞく</rt></ruby> ／ そのなかまに入る"
     },
     {
       "ja": "率",
       "reading": "リツ／ソツ／ひきいる",
-      "meaning": "わりあい・ひきいる（<ruby>効率<rt>こうりつ</rt></ruby>・<ruby>引率<rt>いんそつ</rt></ruby>）"
+      "meaning": "<ruby>効率<rt>こうりつ</rt></ruby>・<ruby>引率<rt>いんそつ</rt></ruby> ／ わりあい・ひきいる"
     },
     {
       "ja": "損",
       "reading": "ソン／そこなう",
-      "meaning": "そんをする（<ruby>損害<rt>そんがい</rt></ruby>・<ruby>損得<rt>そんとく</rt></ruby>）"
+      "meaning": "<ruby>損害<rt>そんがい</rt></ruby>・<ruby>損得<rt>そんとく</rt></ruby> ／ そんをする"
     },
     {
       "ja": "貸",
       "reading": "タイ／かす",
-      "meaning": "かす（⇔<ruby>借<rt>か</rt></ruby>りる）（<ruby>貸<rt>か</rt></ruby>す・<ruby>貸出<rt>かしだし</rt></ruby>）"
+      "meaning": "<ruby>貸<rt>か</rt></ruby>す・<ruby>貸出<rt>かしだし</rt></ruby> ／ かす（⇔<ruby>借<rt>か</rt></ruby>りる）"
     },
     {
       "ja": "態",
       "reading": "タイ",
-      "meaning": "ようす・すがた（<ruby>状態<rt>じょうたい</rt></ruby>・<ruby>態度<rt>たいど</rt></ruby>）"
+      "meaning": "<ruby>状態<rt>じょうたい</rt></ruby>・<ruby>態度<rt>たいど</rt></ruby> ／ ようす・すがた"
     },
     {
       "ja": "団",
       "reading": "ダン／トン",
-      "meaning": "まとまり・グループ（<ruby>集団<rt>しゅうだん</rt></ruby>・<ruby>団体<rt>だんたい</rt></ruby>）"
+      "meaning": "<ruby>集団<rt>しゅうだん</rt></ruby>・<ruby>団体<rt>だんたい</rt></ruby> ／ まとまり・グループ"
     },
     {
       "ja": "断",
       "reading": "ダン／たつ・ことわる",
-      "meaning": "たちきる・ことわる（<ruby>判断<rt>はんだん</rt></ruby>・<ruby>断<rt>ことわ</rt></ruby>る）"
+      "meaning": "<ruby>判断<rt>はんだん</rt></ruby>・<ruby>断<rt>ことわ</rt></ruby>る ／ たちきる・ことわる"
     },
     {
       "ja": "築",
       "reading": "チク／きずく",
-      "meaning": "きずく・たてる（<ruby>建築<rt>けんちく</rt></ruby>・<ruby>築<rt>きず</rt></ruby>く）"
+      "meaning": "<ruby>建築<rt>けんちく</rt></ruby>・<ruby>築<rt>きず</rt></ruby>く ／ きずく・たてる"
     },
     {
       "ja": "張",
       "reading": "チョウ／はる",
-      "meaning": "ひっぱる・のばす（<ruby>主張<rt>しゅちょう</rt></ruby>・<ruby>出張<rt>しゅっちょう</rt></ruby>）"
+      "meaning": "<ruby>主張<rt>しゅちょう</rt></ruby>・<ruby>出張<rt>しゅっちょう</rt></ruby> ／ ひっぱる・のばす"
     },
     {
       "ja": "提",
       "reading": "テイ／さげる",
-      "meaning": "さし出す（<ruby>提案<rt>ていあん</rt></ruby>・<ruby>提出<rt>ていしゅつ</rt></ruby>）"
+      "meaning": "<ruby>提案<rt>ていあん</rt></ruby>・<ruby>提出<rt>ていしゅつ</rt></ruby> ／ さし出す"
     },
     {
       "ja": "程",
       "reading": "テイ／ほど",
-      "meaning": "ぐあい・どのくらい（<ruby>程度<rt>ていど</rt></ruby>・<ruby>日程<rt>にってい</rt></ruby>）"
+      "meaning": "<ruby>程度<rt>ていど</rt></ruby>・<ruby>日程<rt>にってい</rt></ruby> ／ ぐあい・どのくらい"
     },
     {
       "ja": "適",
       "reading": "テキ",
-      "meaning": "ちょうどよい（<ruby>適当<rt>てきとう</rt></ruby>・<ruby>快適<rt>かいてき</rt></ruby>）"
+      "meaning": "<ruby>適当<rt>てきとう</rt></ruby>・<ruby>快適<rt>かいてき</rt></ruby> ／ ちょうどよい"
     },
     {
       "ja": "敵",
       "reading": "テキ／かたき",
-      "meaning": "たたかう<ruby>相手<rt>あいて</rt></ruby>（<ruby>敵<rt>てき</rt></ruby>・<ruby>強敵<rt>きょうてき</rt></ruby>）"
+      "meaning": "<ruby>敵<rt>てき</rt></ruby>・<ruby>強敵<rt>きょうてき</rt></ruby> ／ たたかう<ruby>相手<rt>あいて</rt></ruby>"
     },
     {
       "ja": "統",
       "reading": "トウ／すべる",
-      "meaning": "ひとつにまとめる（<ruby>伝統<rt>でんとう</rt></ruby>・<ruby>統一<rt>とういつ</rt></ruby>）"
+      "meaning": "<ruby>伝統<rt>でんとう</rt></ruby>・<ruby>統一<rt>とういつ</rt></ruby> ／ ひとつにまとめる"
     },
     {
       "ja": "銅",
       "reading": "ドウ",
-      "meaning": "きんぞくの<ruby>一種<rt>いっしゅ</rt></ruby>（<ruby>銅像<rt>どうぞう</rt></ruby>・<ruby>銅<rt>どう</rt></ruby>メダル）"
+      "meaning": "<ruby>銅像<rt>どうぞう</rt></ruby>・<ruby>銅<rt>どう</rt></ruby>メダル ／ きんぞくの<ruby>一種<rt>いっしゅ</rt></ruby>"
     },
     {
       "ja": "導",
       "reading": "ドウ／みちびく",
-      "meaning": "みちびく（<ruby>指導<rt>しどう</rt></ruby>・<ruby>導入<rt>どうにゅう</rt></ruby>）"
+      "meaning": "<ruby>指導<rt>しどう</rt></ruby>・<ruby>導入<rt>どうにゅう</rt></ruby> ／ みちびく"
     },
     {
       "ja": "徳",
       "reading": "トク",
-      "meaning": "りっぱな心・おこない（<ruby>道徳<rt>どうとく</rt></ruby>・<ruby>美徳<rt>びとく</rt></ruby>）"
+      "meaning": "<ruby>道徳<rt>どうとく</rt></ruby>・<ruby>美徳<rt>びとく</rt></ruby> ／ りっぱな心・おこない"
     },
     {
       "ja": "独",
       "reading": "ドク／ひとり",
-      "meaning": "ひとり（<ruby>独立<rt>どくりつ</rt></ruby>・<ruby>独<rt>ひと</rt></ruby>り）"
+      "meaning": "<ruby>独立<rt>どくりつ</rt></ruby>・<ruby>独<rt>ひと</rt></ruby>り ／ ひとり"
     },
     {
       "ja": "任",
       "reading": "ニン／まかせる",
-      "meaning": "まかせる・つとめ（<ruby>責任<rt>せきにん</rt></ruby>・<ruby>任<rt>まか</rt></ruby>せる）"
+      "meaning": "<ruby>責任<rt>せきにん</rt></ruby>・<ruby>任<rt>まか</rt></ruby>せる ／ まかせる・つとめ"
     },
     {
       "ja": "燃",
       "reading": "ネン／もえる",
-      "meaning": "もえる（<ruby>燃料<rt>ねんりょう</rt></ruby>・<ruby>燃<rt>も</rt></ruby>える）"
+      "meaning": "<ruby>燃料<rt>ねんりょう</rt></ruby>・<ruby>燃<rt>も</rt></ruby>える ／ もえる"
     },
     {
       "ja": "能",
       "reading": "ノウ",
-      "meaning": "できる力（<ruby>能力<rt>のうりょく</rt></ruby>・<ruby>可能<rt>かのう</rt></ruby>）"
+      "meaning": "<ruby>能力<rt>のうりょく</rt></ruby>・<ruby>可能<rt>かのう</rt></ruby> ／ できる力"
     },
     {
       "ja": "破",
       "reading": "ハ／やぶる",
-      "meaning": "やぶる・こわす（<ruby>破<rt>やぶ</rt></ruby>る・<ruby>破損<rt>はそん</rt></ruby>）"
+      "meaning": "<ruby>破<rt>やぶ</rt></ruby>る・<ruby>破損<rt>はそん</rt></ruby> ／ やぶる・こわす"
     },
     {
       "ja": "犯",
       "reading": "ハン／おかす",
-      "meaning": "きまりをやぶる（<ruby>犯罪<rt>はんざい</rt></ruby>・<ruby>防犯<rt>ぼうはん</rt></ruby>）"
+      "meaning": "<ruby>犯罪<rt>はんざい</rt></ruby>・<ruby>防犯<rt>ぼうはん</rt></ruby> ／ きまりをやぶる"
     },
     {
       "ja": "判",
       "reading": "ハン／バン",
-      "meaning": "見わけて決める（<ruby>判定<rt>はんてい</rt></ruby>・<ruby>判断<rt>はんだん</rt></ruby>）"
+      "meaning": "<ruby>判定<rt>はんてい</rt></ruby>・<ruby>判断<rt>はんだん</rt></ruby> ／ 見わけて決める"
     },
     {
       "ja": "版",
       "reading": "ハン",
-      "meaning": "印刷のもと（<ruby>出版<rt>しゅっぱん</rt></ruby>・<ruby>版画<rt>はんが</rt></ruby>）"
+      "meaning": "<ruby>出版<rt>しゅっぱん</rt></ruby>・<ruby>版画<rt>はんが</rt></ruby> ／ 印刷のもと"
     },
     {
       "ja": "肥",
       "reading": "ヒ／こえる",
-      "meaning": "こやし・ふとる（<ruby>肥料<rt>ひりょう</rt></ruby>・<ruby>肥<rt>こ</rt></ruby>える）"
+      "meaning": "<ruby>肥料<rt>ひりょう</rt></ruby>・<ruby>肥<rt>こ</rt></ruby>える ／ こやし・ふとる"
     },
     {
       "ja": "非",
       "reading": "ヒ",
-      "meaning": "そうでない・よくない（<ruby>非常<rt>ひじょう</rt></ruby>・<ruby>非公開<rt>ひこうかい</rt></ruby>）"
+      "meaning": "<ruby>非常<rt>ひじょう</rt></ruby>・<ruby>非公開<rt>ひこうかい</rt></ruby> ／ そうでない・よくない"
     },
     {
       "ja": "費",
       "reading": "ヒ／ついやす",
-      "meaning": "お金をつかう（<ruby>費用<rt>ひよう</rt></ruby>・<ruby>消費<rt>しょうひ</rt></ruby>）"
+      "meaning": "<ruby>費用<rt>ひよう</rt></ruby>・<ruby>消費<rt>しょうひ</rt></ruby> ／ お金をつかう"
     },
     {
       "ja": "備",
       "reading": "ビ／そなえる",
-      "meaning": "用意しておく（<ruby>準備<rt>じゅんび</rt></ruby>・<ruby>設備<rt>せつび</rt></ruby>）"
+      "meaning": "<ruby>準備<rt>じゅんび</rt></ruby>・<ruby>設備<rt>せつび</rt></ruby> ／ 用意しておく"
     },
     {
       "ja": "評",
       "reading": "ヒョウ",
-      "meaning": "よい悪いを<ruby>言<rt>い</rt></ruby>う（<ruby>評判<rt>ひょうばん</rt></ruby>・<ruby>批評<rt>ひひょう</rt></ruby>）"
+      "meaning": "<ruby>評判<rt>ひょうばん</rt></ruby>・<ruby>批評<rt>ひひょう</rt></ruby> ／ よい悪いを<ruby>言<rt>い</rt></ruby>う"
     },
     {
       "ja": "貧",
       "reading": "ヒン／ビン／まずしい",
-      "meaning": "まずしい（<ruby>貧<rt>まず</rt></ruby>しい・<ruby>貧富<rt>ひんぷ</rt></ruby>）"
+      "meaning": "<ruby>貧<rt>まず</rt></ruby>しい・<ruby>貧富<rt>ひんぷ</rt></ruby> ／ まずしい"
     },
     {
       "ja": "布",
       "reading": "フ／ぬの",
-      "meaning": "ぬの・広くゆきわたる（<ruby>布<rt>ぬの</rt></ruby>・<ruby>分布<rt>ぶんぷ</rt></ruby>）"
+      "meaning": "<ruby>布<rt>ぬの</rt></ruby>・<ruby>分布<rt>ぶんぷ</rt></ruby> ／ ぬの・広くゆきわたる"
     },
     {
       "ja": "婦",
       "reading": "フ",
-      "meaning": "おんなの人・つま（<ruby>夫婦<rt>ふうふ</rt></ruby>・<ruby>婦人<rt>ふじん</rt></ruby>）"
+      "meaning": "<ruby>夫婦<rt>ふうふ</rt></ruby>・<ruby>婦人<rt>ふじん</rt></ruby> ／ おんなの人・つま"
     },
     {
       "ja": "武",
       "reading": "ブ／ム",
-      "meaning": "いくさ・つよさ（<ruby>武士<rt>ぶし</rt></ruby>・<ruby>武器<rt>ぶき</rt></ruby>）"
+      "meaning": "<ruby>武士<rt>ぶし</rt></ruby>・<ruby>武器<rt>ぶき</rt></ruby> ／ いくさ・つよさ"
     },
     {
       "ja": "復",
       "reading": "フク",
-      "meaning": "もとにもどる・くりかえす（<ruby>復習<rt>ふくしゅう</rt></ruby>・<ruby>往復<rt>おうふく</rt></ruby>）"
+      "meaning": "<ruby>復習<rt>ふくしゅう</rt></ruby>・<ruby>往復<rt>おうふく</rt></ruby> ／ もとにもどる・くりかえす"
     },
     {
       "ja": "複",
       "reading": "フク",
-      "meaning": "かさなる（<ruby>複数<rt>ふくすう</rt></ruby>・<ruby>複雑<rt>ふくざつ</rt></ruby>）"
+      "meaning": "<ruby>複数<rt>ふくすう</rt></ruby>・<ruby>複雑<rt>ふくざつ</rt></ruby> ／ かさなる"
     },
     {
       "ja": "仏",
       "reading": "ブツ／ほとけ",
-      "meaning": "ほとけ（<ruby>仏教<rt>ぶっきょう</rt></ruby>・<ruby>大仏<rt>だいぶつ</rt></ruby>）"
+      "meaning": "<ruby>仏教<rt>ぶっきょう</rt></ruby>・<ruby>大仏<rt>だいぶつ</rt></ruby> ／ ほとけ"
     },
     {
       "ja": "編",
       "reading": "ヘン／あむ",
-      "meaning": "あむ・くみたてる（<ruby>編集<rt>へんしゅう</rt></ruby>・<ruby>編<rt>あ</rt></ruby>む）"
+      "meaning": "<ruby>編集<rt>へんしゅう</rt></ruby>・<ruby>編<rt>あ</rt></ruby>む ／ あむ・くみたてる"
     },
     {
       "ja": "弁",
       "reading": "ベン",
-      "meaning": "話す・見分ける（<ruby>弁当<rt>べんとう</rt></ruby>・<ruby>弁明<rt>べんめい</rt></ruby>）"
+      "meaning": "<ruby>弁当<rt>べんとう</rt></ruby>・<ruby>弁明<rt>べんめい</rt></ruby> ／ 話す・見分ける"
     },
     {
       "ja": "保",
       "reading": "ホ／たもつ",
-      "meaning": "もちつづける（<ruby>保存<rt>ほぞん</rt></ruby>・<ruby>保<rt>たも</rt></ruby>つ）"
+      "meaning": "<ruby>保存<rt>ほぞん</rt></ruby>・<ruby>保<rt>たも</rt></ruby>つ ／ もちつづける"
     },
     {
       "ja": "墓",
       "reading": "ボ／はか",
-      "meaning": "はか（<ruby>墓地<rt>ぼち</rt></ruby>・<ruby>墓<rt>はか</rt></ruby>）"
+      "meaning": "<ruby>墓地<rt>ぼち</rt></ruby>・<ruby>墓<rt>はか</rt></ruby> ／ はか"
     },
     {
       "ja": "報",
       "reading": "ホウ／むくいる",
-      "meaning": "知らせる（<ruby>情報<rt>じょうほう</rt></ruby>・<ruby>報告<rt>ほうこく</rt></ruby>）"
+      "meaning": "<ruby>情報<rt>じょうほう</rt></ruby>・<ruby>報告<rt>ほうこく</rt></ruby> ／ 知らせる"
     },
     {
       "ja": "豊",
       "reading": "ホウ／ゆたか",
-      "meaning": "ゆたか（<ruby>豊<rt>ゆた</rt></ruby>か・<ruby>豊作<rt>ほうさく</rt></ruby>）"
+      "meaning": "<ruby>豊<rt>ゆた</rt></ruby>か・<ruby>豊作<rt>ほうさく</rt></ruby> ／ ゆたか"
     },
     {
       "ja": "防",
       "reading": "ボウ／ふせぐ",
-      "meaning": "ふせぐ（<ruby>防止<rt>ぼうし</rt></ruby>・<ruby>予防<rt>よぼう</rt></ruby>）"
+      "meaning": "<ruby>防止<rt>ぼうし</rt></ruby>・<ruby>予防<rt>よぼう</rt></ruby> ／ ふせぐ"
     },
     {
       "ja": "貿",
       "reading": "ボウ",
-      "meaning": "外国と品物を売り買いする（<ruby>貿易<rt>ぼうえき</rt></ruby>）"
+      "meaning": "<ruby>貿易<rt>ぼうえき</rt></ruby> ／ 外国と品物を売り買いする"
     },
     {
       "ja": "暴",
       "reading": "ボウ／あばれる",
-      "meaning": "あらあらしい（<ruby>暴風<rt>ぼうふう</rt></ruby>・<ruby>乱暴<rt>らんぼう</rt></ruby>）"
+      "meaning": "<ruby>暴風<rt>ぼうふう</rt></ruby>・<ruby>乱暴<rt>らんぼう</rt></ruby> ／ あらあらしい"
     },
     {
       "ja": "脈",
       "reading": "ミャク",
-      "meaning": "つながり・血のみち（<ruby>山脈<rt>さんみゃく</rt></ruby>・<ruby>脈<rt>みゃく</rt></ruby>）"
+      "meaning": "<ruby>山脈<rt>さんみゃく</rt></ruby>・<ruby>脈<rt>みゃく</rt></ruby> ／ つながり・血のみち"
     },
     {
       "ja": "務",
       "reading": "ム／つとめる",
-      "meaning": "つとめ・しごと（<ruby>事務<rt>じむ</rt></ruby>・<ruby>義務<rt>ぎむ</rt></ruby>）"
+      "meaning": "<ruby>事務<rt>じむ</rt></ruby>・<ruby>義務<rt>ぎむ</rt></ruby> ／ つとめ・しごと"
     },
     {
       "ja": "夢",
       "reading": "ム／ゆめ",
-      "meaning": "ゆめ（<ruby>夢<rt>ゆめ</rt></ruby>・<ruby>夢中<rt>むちゅう</rt></ruby>）"
+      "meaning": "<ruby>夢<rt>ゆめ</rt></ruby>・<ruby>夢中<rt>むちゅう</rt></ruby> ／ ゆめ"
     },
     {
       "ja": "迷",
       "reading": "メイ／まよう",
-      "meaning": "まよう（<ruby>迷<rt>まよ</rt></ruby>う・<ruby>迷路<rt>めいろ</rt></ruby>）"
+      "meaning": "<ruby>迷<rt>まよ</rt></ruby>う・<ruby>迷路<rt>めいろ</rt></ruby> ／ まよう"
     },
     {
       "ja": "綿",
       "reading": "メン／わた",
-      "meaning": "わた（<ruby>綿<rt>わた</rt></ruby>・<ruby>綿花<rt>めんか</rt></ruby>）"
+      "meaning": "<ruby>綿<rt>わた</rt></ruby>・<ruby>綿花<rt>めんか</rt></ruby> ／ わた"
     },
     {
       "ja": "輸",
       "reading": "ユ",
-      "meaning": "はこぶ（<ruby>輸出<rt>ゆしゅつ</rt></ruby>・<ruby>輸入<rt>ゆにゅう</rt></ruby>）"
+      "meaning": "<ruby>輸出<rt>ゆしゅつ</rt></ruby>・<ruby>輸入<rt>ゆにゅう</rt></ruby> ／ はこぶ"
     },
     {
       "ja": "余",
       "reading": "ヨ／あまる",
-      "meaning": "あまる（<ruby>余<rt>あま</rt></ruby>る・<ruby>余分<rt>よぶん</rt></ruby>）"
+      "meaning": "<ruby>余<rt>あま</rt></ruby>る・<ruby>余分<rt>よぶん</rt></ruby> ／ あまる"
     },
     {
       "ja": "預",
       "reading": "ヨ／あずける",
-      "meaning": "あずける（<ruby>預<rt>あず</rt></ruby>ける・<ruby>預金<rt>よきん</rt></ruby>）"
+      "meaning": "<ruby>預<rt>あず</rt></ruby>ける・<ruby>預金<rt>よきん</rt></ruby> ／ あずける"
     },
     {
       "ja": "容",
       "reading": "ヨウ",
-      "meaning": "中身・いれる（<ruby>内容<rt>ないよう</rt></ruby>・<ruby>容器<rt>ようき</rt></ruby>）"
+      "meaning": "<ruby>内容<rt>ないよう</rt></ruby>・<ruby>容器<rt>ようき</rt></ruby> ／ 中身・いれる"
     },
     {
       "ja": "略",
       "reading": "リャク",
-      "meaning": "みじかくする・はぶく（<ruby>省略<rt>しょうりゃく</rt></ruby>・<ruby>略図<rt>りゃくず</rt></ruby>）"
+      "meaning": "<ruby>省略<rt>しょうりゃく</rt></ruby>・<ruby>略図<rt>りゃくず</rt></ruby> ／ みじかくする・はぶく"
     },
     {
       "ja": "留",
       "reading": "リュウ／とめる",
-      "meaning": "とどまる（<ruby>留学<rt>りゅうがく</rt></ruby>・<ruby>留守<rt>るす</rt></ruby>）"
+      "meaning": "<ruby>留学<rt>りゅうがく</rt></ruby>・<ruby>留守<rt>るす</rt></ruby> ／ とどまる"
     },
     {
       "ja": "領",
       "reading": "リョウ",
-      "meaning": "おさめる・受けとる（<ruby>領土<rt>りょうど</rt></ruby>・<ruby>要領<rt>ようりょう</rt></ruby>）"
+      "meaning": "<ruby>領土<rt>りょうど</rt></ruby>・<ruby>要領<rt>ようりょう</rt></ruby> ／ おさめる・受けとる"
     },
     {
       "ja": "歴",
       "reading": "レキ",
-      "meaning": "これまでのすじみち（<ruby>歴史<rt>れきし</rt></ruby>・<ruby>経歴<rt>けいれき</rt></ruby>）"
+      "meaning": "<ruby>歴史<rt>れきし</rt></ruby>・<ruby>経歴<rt>けいれき</rt></ruby> ／ これまでのすじみち"
     }
   ]
 }

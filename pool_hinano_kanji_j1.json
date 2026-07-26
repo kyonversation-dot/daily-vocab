@@ -6,41 +6,185 @@
   "itemLabel": "漢字",
   "counterUnit": "字",
   "words": [
-    { "ja": "帆",   "reading": "ハン／ほ",            "meaning": "船が風を受けて進むための<ruby>布<rt>ぬの</rt></ruby>（帆・出帆）" },
-    { "ja": "尽",   "reading": "ジン／つ(くす)",       "meaning": "力を全部出しきる・なくなるまでやる（尽くす・無尽蔵）" },
-    { "ja": "尋",   "reading": "ジン／たず(ねる)",     "meaning": "さがし求める・質問する（尋ねる・尋問）" },
-    { "ja": "載",   "reading": "サイ／の(せる)",       "meaning": "上にのせる・新聞や本に書きのせる（載せる・記載）" },
-    { "ja": "激",   "reading": "ゲキ／はげ(しい)",     "meaning": "勢いがとても強い（激しい・激烈・感激）" },
-    { "ja": "烈",   "reading": "レツ",               "meaning": "勢いが強くはげしい（激烈・熱烈）" },
-    { "ja": "雷",   "reading": "ライ／かみなり",       "meaning": "空で光と大きな音が起こる<ruby>現象<rt>げんしょう</rt></ruby>（雷・雷鳴）" },
-    { "ja": "響",   "reading": "キョウ／ひび(く)",     "meaning": "音がつたわり広がる（響く・音響・影響）" },
-    { "ja": "緊",   "reading": "キン",               "meaning": "ぴんとはりつめる・さしせまる（緊張・緊急）" },
-    { "ja": "距",   "reading": "キョ",               "meaning": "へだたり・間の長さ（距離）" },
-    { "ja": "離",   "reading": "リ／はな(れる)",       "meaning": "くっついていたものが分かれる（離れる・分離）" },
-    { "ja": "揺",   "reading": "ヨウ／ゆ(れる)",       "meaning": "ゆらゆらと動く（揺れる・動揺）" },
-    { "ja": "描",   "reading": "ビョウ／えが(く)",     "meaning": "絵や様子をかき表す（描く・描写）" },
-    { "ja": "僕",   "reading": "ボク",                "meaning": "男の人が自分をさす言葉（僕）" },
-    { "ja": "襲",   "reading": "シュウ／おそ(う)",     "meaning": "急にせめかかる（空襲・襲う）" },
-    { "ja": "爆",   "reading": "バク",                "meaning": "はげしくはじける（爆弾・爆発）" },
-    { "ja": "弾",   "reading": "ダン／たま・はず(む)・ひ(く)", "meaning": "たま／はねかえる／楽器をひく（爆弾・弾む・ピアノを弾く）" },
-    { "ja": "掘",   "reading": "クツ／ほ(る)",         "meaning": "地面に穴をあける（掘る・発掘）" },
-    { "ja": "缶",   "reading": "カン",                "meaning": "金属の入れ物（一缶・缶詰）" },
-    { "ja": "菓",   "reading": "カ",                  "meaning": "おかし（お菓子・和菓子）" },
-    { "ja": "疎",   "reading": "ソ",                  "meaning": "はなれる・うとい（疎開）" },
-    { "ja": "歳",   "reading": "サイ",                "meaning": "年れい・とし（四歳・二十歳）" },
-    { "ja": "戚",   "reading": "セキ",                "meaning": "みうち（親戚）" },
-    { "ja": "渓",   "reading": "ケイ",                "meaning": "谷・谷川（渓流・渓谷）" },
-    { "ja": "桃",   "reading": "トウ／もも",           "meaning": "くだものの桃（桃・桃源郷）" },
-    { "ja": "覆",   "reading": "フク／おお(う)",       "meaning": "上からかぶせてかくす（覆う・覆いかぶさる）" },
-    { "ja": "渡",   "reading": "ト／わた(る)",         "meaning": "こちらから向こうへ行く（渡る・渡す）" },
-    { "ja": "隣",   "reading": "リン／となり",         "meaning": "すぐよこ（隣・隣村）" },
-    { "ja": "欲",   "reading": "ヨク／ほ(しい)",       "meaning": "ほしいと思う気持ち（欲しい・食欲）" },
-    { "ja": "含",   "reading": "ガン／ふく(む)",       "meaning": "中に入れてもつ（含む・含ませる）" },
-    { "ja": "乾",   "reading": "カン／かわ(く)",       "meaning": "水分がなくなる（乾く・乾燥）" },
-    { "ja": "慮",   "reading": "リョ",                "meaning": "深く考える（遠慮・配慮）" },
-    { "ja": "澄",   "reading": "す(む)",              "meaning": "にごりがなく、きれいにすきとおる（澄む・澄みきる）" },
-    { "ja": "撃",   "reading": "ゲキ／う(つ)",         "meaning": "attack・うつ（爆撃・攻撃）" },
-    { "ja": "杉",   "reading": "すぎ",                "meaning": "木の名前（杉・杉板）" },
-    { "ja": "棺",   "reading": "カン／ひつぎ",         "meaning": "なくなった人を納める箱（棺）" }
+    {
+      "ja": "帆",
+      "reading": "ハン／ほ",
+      "meaning": "<ruby>帆<rt>ほ</rt></ruby>・<ruby>出帆<rt>しゅっぱん</rt></ruby> ／ 船が風を受けて進むための<ruby>布<rt>ぬの</rt></ruby>"
+    },
+    {
+      "ja": "尽",
+      "reading": "ジン／つ(くす)",
+      "meaning": "<ruby>尽<rt>つ</rt></ruby>くす・<ruby>無尽蔵<rt>むじんぞう</rt></ruby> ／ 力を全部出しきる・なくなるまでやる"
+    },
+    {
+      "ja": "尋",
+      "reading": "ジン／たず(ねる)",
+      "meaning": "<ruby>尋<rt>たず</rt></ruby>ねる・<ruby>尋問<rt>じんもん</rt></ruby> ／ さがし求める・質問する"
+    },
+    {
+      "ja": "載",
+      "reading": "サイ／の(せる)",
+      "meaning": "<ruby>載<rt>の</rt></ruby>せる・<ruby>記載<rt>きさい</rt></ruby> ／ 上にのせる・新聞や本に書きのせる"
+    },
+    {
+      "ja": "激",
+      "reading": "ゲキ／はげ(しい)",
+      "meaning": "<ruby>激<rt>はげ</rt></ruby>しい・<ruby>感激<rt>かんげき</rt></ruby> ／ 勢いがとても強い"
+    },
+    {
+      "ja": "烈",
+      "reading": "レツ",
+      "meaning": "<ruby>激烈<rt>げきれつ</rt></ruby>・<ruby>熱烈<rt>ねつれつ</rt></ruby> ／ 勢いが強くはげしい"
+    },
+    {
+      "ja": "雷",
+      "reading": "ライ／かみなり",
+      "meaning": "<ruby>雷<rt>かみなり</rt></ruby>・<ruby>雷鳴<rt>らいめい</rt></ruby> ／ 空で光と大きな音が起こる<ruby>現象<rt>げんしょう</rt></ruby>"
+    },
+    {
+      "ja": "響",
+      "reading": "キョウ／ひび(く)",
+      "meaning": "<ruby>響<rt>ひび</rt></ruby>く・<ruby>影響<rt>えいきょう</rt></ruby> ／ 音がつたわり広がる"
+    },
+    {
+      "ja": "緊",
+      "reading": "キン",
+      "meaning": "<ruby>緊張<rt>きんちょう</rt></ruby>・<ruby>緊急<rt>きんきゅう</rt></ruby> ／ ぴんとはりつめる・さしせまる"
+    },
+    {
+      "ja": "距",
+      "reading": "キョ",
+      "meaning": "<ruby>距離<rt>きょり</rt></ruby> ／ へだたり・間の長さ"
+    },
+    {
+      "ja": "離",
+      "reading": "リ／はな(れる)",
+      "meaning": "<ruby>離<rt>はな</rt></ruby>れる・<ruby>分離<rt>ぶんり</rt></ruby> ／ くっついていたものが分かれる"
+    },
+    {
+      "ja": "揺",
+      "reading": "ヨウ／ゆ(れる)",
+      "meaning": "<ruby>揺<rt>ゆ</rt></ruby>れる・<ruby>動揺<rt>どうよう</rt></ruby> ／ ゆらゆらと動く"
+    },
+    {
+      "ja": "描",
+      "reading": "ビョウ／えが(く)",
+      "meaning": "<ruby>描<rt>えが</rt></ruby>く・<ruby>描写<rt>びょうしゃ</rt></ruby> ／ 絵や様子をかき表す"
+    },
+    {
+      "ja": "僕",
+      "reading": "ボク",
+      "meaning": "<ruby>僕<rt>ぼく</rt></ruby> ／ 男の人が自分をさす言葉"
+    },
+    {
+      "ja": "襲",
+      "reading": "シュウ／おそ(う)",
+      "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急にせめかかる"
+    },
+    {
+      "ja": "爆",
+      "reading": "バク",
+      "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしくはじける"
+    },
+    {
+      "ja": "弾",
+      "reading": "ダン／たま・はず(む)・ひ(く)",
+      "meaning": "たま／はねかえる／楽器をひく（爆弾・弾む・ピアノを弾く）"
+    },
+    {
+      "ja": "掘",
+      "reading": "クツ／ほ(る)",
+      "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 地面に穴をあける"
+    },
+    {
+      "ja": "缶",
+      "reading": "カン",
+      "meaning": "<ruby>一缶<rt>ひとかん</rt></ruby>・<ruby>缶詰<rt>かんづめ</rt></ruby> ／ 金属の入れ物"
+    },
+    {
+      "ja": "菓",
+      "reading": "カ",
+      "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>和菓子<rt>わがし</rt></ruby> ／ おかし"
+    },
+    {
+      "ja": "疎",
+      "reading": "ソ",
+      "meaning": "<ruby>疎開<rt>そかい</rt></ruby> ／ はなれる・うとい"
+    },
+    {
+      "ja": "歳",
+      "reading": "サイ",
+      "meaning": "<ruby>四歳<rt>よんさい</rt></ruby>・<ruby>二十歳<rt>はたち</rt></ruby> ／ 年れい・とし"
+    },
+    {
+      "ja": "戚",
+      "reading": "セキ",
+      "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ みうち"
+    },
+    {
+      "ja": "渓",
+      "reading": "ケイ",
+      "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 谷・谷川"
+    },
+    {
+      "ja": "桃",
+      "reading": "トウ／もも",
+      "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ くだものの桃"
+    },
+    {
+      "ja": "覆",
+      "reading": "フク／おお(う)",
+      "meaning": "覆う・覆いかぶさる ／ 上からかぶせてかくす"
+    },
+    {
+      "ja": "渡",
+      "reading": "ト／わた(る)",
+      "meaning": "渡る・渡す ／ こちらから向こうへ行く"
+    },
+    {
+      "ja": "隣",
+      "reading": "リン／となり",
+      "meaning": "<ruby>隣<rt>となり</rt></ruby>・<ruby>隣村<rt>となりむら</rt></ruby> ／ すぐよこ"
+    },
+    {
+      "ja": "欲",
+      "reading": "ヨク／ほ(しい)",
+      "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ ほしいと思う気持ち"
+    },
+    {
+      "ja": "含",
+      "reading": "ガン／ふく(む)",
+      "meaning": "含む・含ませる ／ 中に入れてもつ"
+    },
+    {
+      "ja": "乾",
+      "reading": "カン／かわ(く)",
+      "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水分がなくなる"
+    },
+    {
+      "ja": "慮",
+      "reading": "リョ",
+      "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby>・<ruby>配慮<rt>はいりょ</rt></ruby> ／ 深く考える"
+    },
+    {
+      "ja": "澄",
+      "reading": "す(む)",
+      "meaning": "澄む・澄みきる ／ にごりがなく、きれいにすきとおる"
+    },
+    {
+      "ja": "撃",
+      "reading": "ゲキ／う(つ)",
+      "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>攻撃<rt>こうげき</rt></ruby> ／ うつ・せめる"
+    },
+    {
+      "ja": "杉",
+      "reading": "すぎ",
+      "meaning": "<ruby>杉<rt>すぎ</rt></ruby>・<ruby>杉板<rt>すぎいた</rt></ruby> ／ 木の名前"
+    },
+    {
+      "ja": "棺",
+      "reading": "カン／ひつぎ",
+      "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>"
+    }
   ]
 }
