@@ -1,6 +1,6 @@
 {
   "unit": "大人になれなかった弟たちに",
-  "date": "2026-07-25",
+  "date": "2026-07-26",
   "seen": [
     "描写",
     "心情",
@@ -21,26 +21,6 @@
   ],
   "today": [
     {
-      "ja": "空襲",
-      "review": true
-    },
-    {
-      "ja": "ひもじい",
-      "review": true
-    },
-    {
-      "ja": "親戚",
-      "review": true
-    },
-    {
-      "ja": "栄養失調",
-      "review": true
-    },
-    {
-      "ja": "桃源郷",
-      "review": true
-    },
-    {
       "ja": "はるばる",
       "review": true
     },
@@ -49,7 +29,19 @@
       "review": true
     },
     {
-      "ja": "とうてい",
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "空襲",
+      "review": true
+    },
+    {
+      "ja": "配給",
+      "review": true
+    },
+    {
+      "ja": "防空壕",
       "review": true
     },
     {
@@ -61,11 +53,19 @@
       "review": true
     },
     {
-      "ja": "疎開",
+      "ja": "栄養失調",
       "review": true
     },
     {
-      "ja": "配給",
+      "ja": "みとる",
+      "review": true
+    },
+    {
+      "ja": "とうてい",
+      "review": true
+    },
+    {
+      "ja": "桃源郷",
       "review": true
     }
   ]
