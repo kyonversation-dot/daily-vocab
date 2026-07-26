@@ -6,45 +6,405 @@
   "itemLabel": "漢字",
   "counterUnit": "字",
   "words": [
-    { "ja": "胃",   "reading": "イ",                 "meaning": "食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>（胃ぶくろ）" },
-    { "ja": "異",   "reading": "イ／こと(なる)",      "meaning": "ほかと<ruby>違<rt>ちが</rt></ruby>っていること（異なる・異国）" },
-    { "ja": "宇",   "reading": "ウ",                 "meaning": "とても大きな空間（<ruby>宇宙<rt>うちゅう</rt></ruby>）" },
-    { "ja": "映",   "reading": "エイ／うつ(る)",      "meaning": "光や<ruby>姿<rt>すがた</rt></ruby>がうつること（映画・鏡に映る）" },
-    { "ja": "延",   "reading": "エン／の(びる)",      "meaning": "時間や長さがのびること（延期）" },
-    { "ja": "我",   "reading": "ガ／われ",           "meaning": "自分・わたし（自我・我が家）" },
-    { "ja": "灰",   "reading": "カイ／はい",         "meaning": "物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>（灰色）" },
-    { "ja": "拡",   "reading": "カク",               "meaning": "大きく<ruby>広<rt>ひろ</rt></ruby>げること（拡大）" },
-    { "ja": "革",   "reading": "カク／かわ",         "meaning": "動物の<ruby>皮<rt>かわ</rt></ruby>／大きく<ruby>変<rt>か</rt></ruby>えること（革命）" },
-    { "ja": "割",   "reading": "カツ／わ(る)",        "meaning": "物を<ruby>分<rt>わ</rt></ruby>ける・こわす（分割・皿を割る）" },
-    { "ja": "干",   "reading": "カン／ほ(す)",        "meaning": "水分をなくす・かわかす（干す・干潮）" },
-    { "ja": "巻",   "reading": "カン／ま(く)",        "meaning": "くるくると<ruby>丸<rt>まる</rt></ruby>めること（巻く・第一巻）" },
-    { "ja": "危",   "reading": "キ／あぶ(ない)",      "meaning": "あぶないこと（危険）" },
-    { "ja": "机",   "reading": "キ／つくえ",         "meaning": "べんきょうや仕事をする台（机）" },
-    { "ja": "貴",   "reading": "キ／たっと(い)",      "meaning": "とても大切で<ruby>値打<rt>ねう</rt></ruby>ちがある（貴重）" },
-    { "ja": "疑",   "reading": "ギ／うたが(う)",      "meaning": "本当かな？とあやしく思うこと（疑問）" },
-    { "ja": "吸",   "reading": "キュウ／す(う)",      "meaning": "空気などをすいこむこと（呼吸）" },
-    { "ja": "胸",   "reading": "キョウ／むね",       "meaning": "体の前の、心のあるあたり（胸）" },
-    { "ja": "郷",   "reading": "キョウ・ゴウ",       "meaning": "<ruby>生<rt>う</rt></ruby>まれた土地・ふるさと（郷土）" },
-    { "ja": "勤",   "reading": "キン／つと(める)",    "meaning": "仕事にはげむこと（勤める・勤務）" },
-    { "ja": "筋",   "reading": "キン／すじ",         "meaning": "体を動かす<ruby>筋肉<rt>きんにく</rt></ruby>／物事のすじみち" },
-    { "ja": "系",   "reading": "ケイ",               "meaning": "つながり・グループ（家系・太陽系）" },
-    { "ja": "敬",   "reading": "ケイ／うやま(う)",    "meaning": "相手を大切に思ってうやまうこと（尊敬・敬語）" },
-    { "ja": "警",   "reading": "ケイ",               "meaning": "気をつけて<ruby>守<rt>まも</rt></ruby>ること（警察・警告）" },
-    { "ja": "劇",   "reading": "ゲキ",               "meaning": "人が<ruby>演<rt>えん</rt></ruby>じるお<ruby>芝居<rt>しばい</rt></ruby>（劇・演劇）" },
-    { "ja": "穴",   "reading": "ケツ／あな",         "meaning": "くぼんだ所・あな（穴）" },
-    { "ja": "絹",   "reading": "ケン／きぬ",         "meaning": "<ruby>蚕<rt>かいこ</rt></ruby>から作るなめらかな<ruby>布<rt>ぬの</rt></ruby>（絹）" },
-    { "ja": "権",   "reading": "ケン",               "meaning": "物事を<ruby>行<rt>おこな</rt></ruby>える力（権利）" },
-    { "ja": "憲",   "reading": "ケン",               "meaning": "国の一番大事な<ruby>決<rt>き</rt></ruby>まり（憲法）" },
-    { "ja": "源",   "reading": "ゲン／みなもと",      "meaning": "物事の<ruby>始<rt>はじ</rt></ruby>まり・もと（源・資源）" },
-    { "ja": "呼",   "reading": "コ／よ(ぶ)",          "meaning": "声をかけてよぶこと（呼ぶ・呼吸）" },
-    { "ja": "誤",   "reading": "ゴ／あやま(る)",      "meaning": "まちがえること（誤り・誤解）" },
-    { "ja": "后",   "reading": "コウ",               "meaning": "王や天皇の<ruby>妻<rt>つま</rt></ruby>・きさき（皇后）" },
-    { "ja": "孝",   "reading": "コウ",               "meaning": "<ruby>親<rt>おや</rt></ruby>を大切にすること（親孝行）" },
-    { "ja": "皇",   "reading": "コウ・オウ",         "meaning": "<ruby>天皇<rt>てんのう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>すること（皇室）" },
-    { "ja": "紅",   "reading": "コウ／べに",          "meaning": "あざやかな<ruby>赤色<rt>あかいろ</rt></ruby>（紅・紅茶）" },
-    { "ja": "降",   "reading": "コウ／ふ(る)・お(りる)", "meaning": "雨などがふる／下におりる（降る・下降）" },
-    { "ja": "鋼",   "reading": "コウ／はがね",        "meaning": "とてもかたい<ruby>鉄<rt>てつ</rt></ruby>（鋼鉄）" },
-    { "ja": "骨",   "reading": "コツ／ほね",         "meaning": "体をささえるほね（骨・骨折）" },
-    { "ja": "困",   "reading": "コン／こま(る)",      "meaning": "どうしたらいいか分からずこまること（困難）" }
+    {
+      "ja": "胃",
+      "reading": "イ",
+      "meaning": "食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>（胃ぶくろ）"
+    },
+    {
+      "ja": "異",
+      "reading": "イ／こと(なる)",
+      "meaning": "ほかと<ruby>違<rt>ちが</rt></ruby>っていること（異なる・異国）"
+    },
+    {
+      "ja": "宇",
+      "reading": "ウ",
+      "meaning": "とても大きな空間（<ruby>宇宙<rt>うちゅう</rt></ruby>）"
+    },
+    {
+      "ja": "映",
+      "reading": "エイ／うつ(る)",
+      "meaning": "光や<ruby>姿<rt>すがた</rt></ruby>がうつること（映画・鏡に映る）"
+    },
+    {
+      "ja": "延",
+      "reading": "エン／の(びる)",
+      "meaning": "時間や長さがのびること（延期）"
+    },
+    {
+      "ja": "我",
+      "reading": "ガ／われ",
+      "meaning": "自分・わたし（自我・我が家）"
+    },
+    {
+      "ja": "灰",
+      "reading": "カイ／はい",
+      "meaning": "物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>（灰色）"
+    },
+    {
+      "ja": "拡",
+      "reading": "カク",
+      "meaning": "大きく<ruby>広<rt>ひろ</rt></ruby>げること（拡大）"
+    },
+    {
+      "ja": "革",
+      "reading": "カク／かわ",
+      "meaning": "動物の<ruby>皮<rt>かわ</rt></ruby>／大きく<ruby>変<rt>か</rt></ruby>えること（革命）"
+    },
+    {
+      "ja": "割",
+      "reading": "カツ／わ(る)",
+      "meaning": "物を<ruby>分<rt>わ</rt></ruby>ける・こわす（分割・皿を割る）"
+    },
+    {
+      "ja": "干",
+      "reading": "カン／ほ(す)",
+      "meaning": "水分をなくす・かわかす（干す・干潮）"
+    },
+    {
+      "ja": "巻",
+      "reading": "カン／ま(く)",
+      "meaning": "くるくると<ruby>丸<rt>まる</rt></ruby>めること（巻く・第一巻）"
+    },
+    {
+      "ja": "危",
+      "reading": "キ／あぶ(ない)",
+      "meaning": "あぶないこと（危険）"
+    },
+    {
+      "ja": "机",
+      "reading": "キ／つくえ",
+      "meaning": "べんきょうや仕事をする台（机）"
+    },
+    {
+      "ja": "貴",
+      "reading": "キ／たっと(い)",
+      "meaning": "とても大切で<ruby>値打<rt>ねう</rt></ruby>ちがある（貴重）"
+    },
+    {
+      "ja": "疑",
+      "reading": "ギ／うたが(う)",
+      "meaning": "本当かな？とあやしく思うこと（疑問）"
+    },
+    {
+      "ja": "吸",
+      "reading": "キュウ／す(う)",
+      "meaning": "空気などをすいこむこと（呼吸）"
+    },
+    {
+      "ja": "胸",
+      "reading": "キョウ／むね",
+      "meaning": "体の前の、心のあるあたり（胸）"
+    },
+    {
+      "ja": "郷",
+      "reading": "キョウ・ゴウ",
+      "meaning": "<ruby>生<rt>う</rt></ruby>まれた土地・ふるさと（郷土）"
+    },
+    {
+      "ja": "勤",
+      "reading": "キン／つと(める)",
+      "meaning": "仕事にはげむこと（勤める・勤務）"
+    },
+    {
+      "ja": "筋",
+      "reading": "キン／すじ",
+      "meaning": "体を動かす<ruby>筋肉<rt>きんにく</rt></ruby>／物事のすじみち"
+    },
+    {
+      "ja": "系",
+      "reading": "ケイ",
+      "meaning": "つながり・グループ（家系・太陽系）"
+    },
+    {
+      "ja": "敬",
+      "reading": "ケイ／うやま(う)",
+      "meaning": "相手を大切に思ってうやまうこと（尊敬・敬語）"
+    },
+    {
+      "ja": "警",
+      "reading": "ケイ",
+      "meaning": "気をつけて<ruby>守<rt>まも</rt></ruby>ること（警察・警告）"
+    },
+    {
+      "ja": "劇",
+      "reading": "ゲキ",
+      "meaning": "人が<ruby>演<rt>えん</rt></ruby>じるお<ruby>芝居<rt>しばい</rt></ruby>（劇・演劇）"
+    },
+    {
+      "ja": "穴",
+      "reading": "ケツ／あな",
+      "meaning": "くぼんだ所・あな（穴）"
+    },
+    {
+      "ja": "絹",
+      "reading": "ケン／きぬ",
+      "meaning": "<ruby>蚕<rt>かいこ</rt></ruby>から作るなめらかな<ruby>布<rt>ぬの</rt></ruby>（絹）"
+    },
+    {
+      "ja": "権",
+      "reading": "ケン",
+      "meaning": "物事を<ruby>行<rt>おこな</rt></ruby>える力（権利）"
+    },
+    {
+      "ja": "憲",
+      "reading": "ケン",
+      "meaning": "国の一番大事な<ruby>決<rt>き</rt></ruby>まり（憲法）"
+    },
+    {
+      "ja": "源",
+      "reading": "ゲン／みなもと",
+      "meaning": "物事の<ruby>始<rt>はじ</rt></ruby>まり・もと（源・資源）"
+    },
+    {
+      "ja": "呼",
+      "reading": "コ／よ(ぶ)",
+      "meaning": "声をかけてよぶこと（呼ぶ・呼吸）"
+    },
+    {
+      "ja": "誤",
+      "reading": "ゴ／あやま(る)",
+      "meaning": "まちがえること（誤り・誤解）"
+    },
+    {
+      "ja": "后",
+      "reading": "コウ",
+      "meaning": "王や天皇の<ruby>妻<rt>つま</rt></ruby>・きさき（皇后）"
+    },
+    {
+      "ja": "孝",
+      "reading": "コウ",
+      "meaning": "<ruby>親<rt>おや</rt></ruby>を大切にすること（親孝行）"
+    },
+    {
+      "ja": "皇",
+      "reading": "コウ・オウ",
+      "meaning": "<ruby>天皇<rt>てんのう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>すること（皇室）"
+    },
+    {
+      "ja": "紅",
+      "reading": "コウ／べに",
+      "meaning": "あざやかな<ruby>赤色<rt>あかいろ</rt></ruby>（紅・紅茶）"
+    },
+    {
+      "ja": "降",
+      "reading": "コウ／ふ(る)・お(りる)",
+      "meaning": "雨などがふる／下におりる（降る・下降）"
+    },
+    {
+      "ja": "鋼",
+      "reading": "コウ／はがね",
+      "meaning": "とてもかたい<ruby>鉄<rt>てつ</rt></ruby>（鋼鉄）"
+    },
+    {
+      "ja": "骨",
+      "reading": "コツ／ほね",
+      "meaning": "体をささえるほね（骨・骨折）"
+    },
+    {
+      "ja": "困",
+      "reading": "コン／こま(る)",
+      "meaning": "どうしたらいいか分からずこまること（困難）"
+    },
+    {
+      "ja": "砂",
+      "reading": "サ／すな",
+      "meaning": "こまかい石のつぶ（<ruby>砂糖<rt>さとう</rt></ruby>・<ruby>砂浜<rt>すなはま</rt></ruby>）"
+    },
+    {
+      "ja": "座",
+      "reading": "ザ／すわる",
+      "meaning": "すわる・すわる場所（<ruby>座席<rt>ざせき</rt></ruby>・<ruby>正座<rt>せいざ</rt></ruby>）"
+    },
+    {
+      "ja": "済",
+      "reading": "サイ／すむ",
+      "meaning": "おわる・すませる（<ruby>返済<rt>へんさい</rt></ruby>・<ruby>経済<rt>けいざい</rt></ruby>）"
+    },
+    {
+      "ja": "裁",
+      "reading": "サイ／たつ・さばく",
+      "meaning": "布をたつ・よい悪いをさばく（<ruby>裁判<rt>さいばん</rt></ruby>・<ruby>洋裁<rt>ようさい</rt></ruby>）"
+    },
+    {
+      "ja": "策",
+      "reading": "サク",
+      "meaning": "うまくやるための考え・やり方（<ruby>対策<rt>たいさく</rt></ruby>・<ruby>政策<rt>せいさく</rt></ruby>）"
+    },
+    {
+      "ja": "冊",
+      "reading": "サツ／サク",
+      "meaning": "本を数えることば（<ruby>一冊<rt>いっさつ</rt></ruby>・<ruby>別冊<rt>べっさつ</rt></ruby>）"
+    },
+    {
+      "ja": "蚕",
+      "reading": "サン／かいこ",
+      "meaning": "きぬ糸をつくる虫（<ruby>養蚕<rt>ようさん</rt></ruby>・かいこ）"
+    },
+    {
+      "ja": "至",
+      "reading": "シ／いたる",
+      "meaning": "行きつく・とても（<ruby>至急<rt>しきゅう</rt></ruby>・<ruby>夏至<rt>げし</rt></ruby>）"
+    },
+    {
+      "ja": "私",
+      "reading": "シ／わたくし",
+      "meaning": "自分のこと・おおやけでない（<ruby>私語<rt>しご</rt></ruby>・<ruby>私立<rt>しりつ</rt></ruby>）"
+    },
+    {
+      "ja": "姿",
+      "reading": "シ／すがた",
+      "meaning": "見た目のかたち（<ruby>姿勢<rt>しせい</rt></ruby>・<ruby>後<rt>うし</rt></ruby>ろ姿）"
+    },
+    {
+      "ja": "視",
+      "reading": "シ",
+      "meaning": "見る（<ruby>視力<rt>しりょく</rt></ruby>・<ruby>無視<rt>むし</rt></ruby>）"
+    },
+    {
+      "ja": "詞",
+      "reading": "シ",
+      "meaning": "ことば（<ruby>歌詞<rt>かし</rt></ruby>・<ruby>名詞<rt>めいし</rt></ruby>）"
+    },
+    {
+      "ja": "誌",
+      "reading": "シ",
+      "meaning": "書きとめたもの・ざっし（<ruby>雑誌<rt>ざっし</rt></ruby>・<ruby>日誌<rt>にっし</rt></ruby>）"
+    },
+    {
+      "ja": "磁",
+      "reading": "ジ",
+      "meaning": "鉄をひきつける力（<ruby>磁石<rt>じしゃく</rt></ruby>・<ruby>磁力<rt>じりょく</rt></ruby>）"
+    },
+    {
+      "ja": "射",
+      "reading": "シャ／いる",
+      "meaning": "矢や光をとばす（<ruby>反射<rt>はんしゃ</rt></ruby>・<ruby>注射<rt>ちゅうしゃ</rt></ruby>）"
+    },
+    {
+      "ja": "捨",
+      "reading": "シャ／すてる",
+      "meaning": "すてる（<ruby>四捨五入<rt>ししゃごにゅう</rt></ruby>・<ruby>取捨<rt>しゅしゃ</rt></ruby>）"
+    },
+    {
+      "ja": "尺",
+      "reading": "シャク",
+      "meaning": "むかしの長さの<ruby>単位<rt>たんい</rt></ruby>（<ruby>尺度<rt>しゃくど</rt></ruby>・<ruby>縮尺<rt>しゅくしゃく</rt></ruby>）"
+    },
+    {
+      "ja": "若",
+      "reading": "ジャク／わかい・もしくは",
+      "meaning": "年がわかい（<ruby>若者<rt>わかもの</rt></ruby>・<ruby>老若<rt>ろうにゃく</rt></ruby>）"
+    },
+    {
+      "ja": "樹",
+      "reading": "ジュ",
+      "meaning": "木・立っている木（<ruby>樹木<rt>じゅもく</rt></ruby>・<ruby>街路樹<rt>がいろじゅ</rt></ruby>）"
+    },
+    {
+      "ja": "収",
+      "reading": "シュウ／おさめる",
+      "meaning": "とり入れる・しまう（<ruby>収入<rt>しゅうにゅう</rt></ruby>・<ruby>回収<rt>かいしゅう</rt></ruby>）"
+    },
+    {
+      "ja": "宗",
+      "reading": "シュウ／ソウ",
+      "meaning": "おおもと・しんこう（<ruby>宗教<rt>しゅうきょう</rt></ruby>・<ruby>宗派<rt>しゅうは</rt></ruby>）"
+    },
+    {
+      "ja": "就",
+      "reading": "シュウ／つく",
+      "meaning": "その<ruby>役目<rt>やくめ</rt></ruby>につく（<ruby>就職<rt>しゅうしょく</rt></ruby>・<ruby>就任<rt>しゅうにん</rt></ruby>）"
+    },
+    {
+      "ja": "衆",
+      "reading": "シュウ／シュ",
+      "meaning": "おおぜいの人（<ruby>観衆<rt>かんしゅう</rt></ruby>・<ruby>大衆<rt>たいしゅう</rt></ruby>）"
+    },
+    {
+      "ja": "従",
+      "reading": "ジュウ／したがう",
+      "meaning": "後についていく・言うとおりにする（<ruby>従来<rt>じゅうらい</rt></ruby>・<ruby>服従<rt>ふくじゅう</rt></ruby>）"
+    },
+    {
+      "ja": "縦",
+      "reading": "ジュウ／たて",
+      "meaning": "上下の<ruby>向<rt>む</rt></ruby>き（<ruby>縦横<rt>じゅうおう</rt></ruby>・縦書き）"
+    },
+    {
+      "ja": "縮",
+      "reading": "シュク／ちぢむ",
+      "meaning": "小さくなる・ちぢめる（<ruby>短縮<rt>たんしゅく</rt></ruby>・<ruby>縮小<rt>しゅくしょう</rt></ruby>）"
+    },
+    {
+      "ja": "熟",
+      "reading": "ジュク／うれる",
+      "meaning": "じゅうぶんに<ruby>実<rt>みの</rt></ruby>る・なれる（<ruby>熟語<rt>じゅくご</rt></ruby>・<ruby>成熟<rt>せいじゅく</rt></ruby>）"
+    },
+    {
+      "ja": "純",
+      "reading": "ジュン",
+      "meaning": "まじりけがない（<ruby>純白<rt>じゅんぱく</rt></ruby>・<ruby>単純<rt>たんじゅん</rt></ruby>）"
+    },
+    {
+      "ja": "処",
+      "reading": "ショ",
+      "meaning": "とりあつかう・ところ（<ruby>処理<rt>しょり</rt></ruby>・<ruby>対処<rt>たいしょ</rt></ruby>）"
+    },
+    {
+      "ja": "署",
+      "reading": "ショ",
+      "meaning": "役所・名前を書く（<ruby>警察署<rt>けいさつしょ</rt></ruby>・<ruby>署名<rt>しょめい</rt></ruby>）"
+    },
+    {
+      "ja": "諸",
+      "reading": "ショ",
+      "meaning": "いろいろな・多くの（<ruby>諸国<rt>しょこく</rt></ruby>・<ruby>諸君<rt>しょくん</rt></ruby>）"
+    },
+    {
+      "ja": "除",
+      "reading": "ジョ／のぞく",
+      "meaning": "とりのぞく（<ruby>除去<rt>じょきょ</rt></ruby>・<ruby>掃除<rt>そうじ</rt></ruby>）"
+    },
+    {
+      "ja": "承",
+      "reading": "ショウ／うけたまわる",
+      "meaning": "うけつぐ・引きうける（<ruby>承知<rt>しょうち</rt></ruby>・<ruby>了承<rt>りょうしょう</rt></ruby>）"
+    },
+    {
+      "ja": "将",
+      "reading": "ショウ",
+      "meaning": "<ruby>軍<rt>ぐん</rt></ruby>をひきいる人・これから先（<ruby>将来<rt>しょうらい</rt></ruby>・<ruby>大将<rt>たいしょう</rt></ruby>）"
+    },
+    {
+      "ja": "傷",
+      "reading": "ショウ／きず・いたむ",
+      "meaning": "けが・きずつく（<ruby>負傷<rt>ふしょう</rt></ruby>・<ruby>傷口<rt>きずぐち</rt></ruby>）"
+    },
+    {
+      "ja": "障",
+      "reading": "ショウ／さわる",
+      "meaning": "じゃまになる（<ruby>故障<rt>こしょう</rt></ruby>・<ruby>障子<rt>しょうじ</rt></ruby>）"
+    },
+    {
+      "ja": "蒸",
+      "reading": "ジョウ／むす",
+      "meaning": "ゆげでむす・立ちのぼる（<ruby>蒸気<rt>じょうき</rt></ruby>・<ruby>蒸発<rt>じょうはつ</rt></ruby>）"
+    },
+    {
+      "ja": "針",
+      "reading": "シン／はり",
+      "meaning": "細くとがったもの（<ruby>方針<rt>ほうしん</rt></ruby>・<ruby>秒針<rt>びょうしん</rt></ruby>）"
+    },
+    {
+      "ja": "仁",
+      "reading": "ジン／ニ",
+      "meaning": "人を思いやる心（<ruby>仁愛<rt>じんあい</rt></ruby>・<ruby>仁義<rt>じんぎ</rt></ruby>）"
+    },
+    {
+      "ja": "垂",
+      "reading": "スイ／たれる",
+      "meaning": "下にたれさがる（<ruby>垂直<rt>すいちょく</rt></ruby>・<ruby>垂<rt>た</rt></ruby>れ<ruby>幕<rt>まく</rt></ruby>）"
+    }
   ]
 }

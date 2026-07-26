@@ -17,35 +17,51 @@
     "ひもじい",
     "とうてい",
     "はるばる",
-    "親戚"
+    "親戚",
+    "国民学校",
+    "おちおち",
+    "遠慮",
+    "一里",
+    "三里",
+    "六畳間",
+    "山すそ",
+    "対岸"
   ],
   "today": [
     {
-      "ja": "はるばる",
-      "review": true
+      "ja": "国民学校",
+      "review": false
     },
     {
-      "ja": "描写",
-      "review": true
+      "ja": "おちおち",
+      "review": false
     },
     {
-      "ja": "心情",
-      "review": true
+      "ja": "遠慮",
+      "review": false
     },
     {
-      "ja": "空襲",
-      "review": true
+      "ja": "一里",
+      "review": false
     },
     {
-      "ja": "配給",
-      "review": true
+      "ja": "三里",
+      "review": false
     },
     {
-      "ja": "防空壕",
-      "review": true
+      "ja": "六畳間",
+      "review": false
     },
     {
-      "ja": "棺",
+      "ja": "山すそ",
+      "review": false
+    },
+    {
+      "ja": "対岸",
+      "review": false
+    },
+    {
+      "ja": "疎開",
       "review": true
     },
     {
@@ -53,19 +69,11 @@
       "review": true
     },
     {
-      "ja": "栄養失調",
+      "ja": "配給",
       "review": true
     },
     {
-      "ja": "みとる",
-      "review": true
-    },
-    {
-      "ja": "とうてい",
-      "review": true
-    },
-    {
-      "ja": "桃源郷",
+      "ja": "棺",
       "review": true
     }
   ]

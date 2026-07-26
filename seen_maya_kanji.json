@@ -39,31 +39,23 @@
   ],
   "today": [
     {
-      "ja": "圧",
+      "ja": "益",
       "review": true
     },
     {
-      "ja": "質",
+      "ja": "過",
       "review": true
     },
     {
-      "ja": "移",
+      "ja": "逆",
       "review": true
     },
     {
-      "ja": "永",
+      "ja": "往",
       "review": true
     },
     {
-      "ja": "営",
-      "review": true
-    },
-    {
-      "ja": "解",
-      "review": true
-    },
-    {
-      "ja": "寄",
+      "ja": "格",
       "review": true
     },
     {
@@ -71,7 +63,19 @@
       "review": true
     },
     {
-      "ja": "居",
+      "ja": "営",
+      "review": true
+    },
+    {
+      "ja": "液",
+      "review": true
+    },
+    {
+      "ja": "可",
+      "review": true
+    },
+    {
+      "ja": "寄",
       "review": true
     },
     {
@@ -79,11 +83,7 @@
       "review": true
     },
     {
-      "ja": "確",
-      "review": true
-    },
-    {
-      "ja": "過",
+      "ja": "居",
       "review": true
     }
   ]

@@ -6,21 +6,235 @@
   "itemLabel": "言葉",
   "counterUnit": "語",
   "words": [
-    { "ja": "描写",     "reading": "びょうしゃ",     "meaning": "様子や<ruby>心情<rt>しんじょう</rt></ruby>を、<ruby>読<rt>よ</rt></ruby>み<ruby>手<rt>て</rt></ruby>が<ruby>想像<rt>そうぞう</rt></ruby>できるように<ruby>描<rt>えが</rt></ruby>くこと（この単元のキーワード）" },
-    { "ja": "心情",     "reading": "しんじょう",     "meaning": "心の中の<ruby>気持<rt>きも</rt></ruby>ち・<ruby>思<rt>おも</rt></ruby>い" },
-    { "ja": "疎開",     "reading": "そかい",         "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>からのがれるため、<ruby>都会<rt>とかい</rt></ruby>から<ruby>地方<rt>ちほう</rt></ruby>へ引っこすこと" },
-    { "ja": "配給",     "reading": "はいきゅう",     "meaning": "<ruby>不足<rt>ふそく</rt></ruby>した物を、政府が<ruby>決<rt>き</rt></ruby>まった量ずつ配ること（戦争中のしくみ）" },
-    { "ja": "防空壕",   "reading": "ぼうくうごう",   "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>から身を守るために<ruby>掘<rt>ほ</rt></ruby>った<ruby>穴<rt>あな</rt></ruby>・地下室" },
-    { "ja": "空襲",     "reading": "くうしゅう",     "meaning": "飛行機が空から<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること" },
-    { "ja": "爆撃",     "reading": "ばくげき",       "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること" },
-    { "ja": "栄養失調", "reading": "えいようしっちょう", "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>" },
-    { "ja": "桃源郷",   "reading": "とうげんきょう", "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園" },
-    { "ja": "渓流",     "reading": "けいりゅう",     "meaning": "山の中を流れる、きれいな川" },
-    { "ja": "棺",       "reading": "ひつぎ",         "meaning": "なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>" },
-    { "ja": "みとる",   "reading": "みとる",         "meaning": "死にゆく人のそばにいて、<ruby>最期<rt>さいご</rt></ruby>まで<ruby>世話<rt>せわ</rt></ruby>をする" },
-    { "ja": "ひもじい", "reading": "ひもじい",       "meaning": "おなかがすいて、つらい" },
-    { "ja": "とうてい", "reading": "とうてい",       "meaning": "どうやっても（〜ない）。とても（〜できない）" },
-    { "ja": "はるばる", "reading": "はるばる",       "meaning": "遠くから、長い道のりを来る様子" },
-    { "ja": "親戚",     "reading": "しんせき",       "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち" }
+    {
+      "ja": "描写",
+      "reading": "びょうしゃ",
+      "meaning": "様子や<ruby>心情<rt>しんじょう</rt></ruby>を、<ruby>読<rt>よ</rt></ruby>み<ruby>手<rt>て</rt></ruby>が<ruby>想像<rt>そうぞう</rt></ruby>できるように<ruby>描<rt>えが</rt></ruby>くこと（この単元のキーワード）"
+    },
+    {
+      "ja": "心情",
+      "reading": "しんじょう",
+      "meaning": "心の中の<ruby>気持<rt>きも</rt></ruby>ち・<ruby>思<rt>おも</rt></ruby>い"
+    },
+    {
+      "ja": "疎開",
+      "reading": "そかい",
+      "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>からのがれるため、<ruby>都会<rt>とかい</rt></ruby>から<ruby>地方<rt>ちほう</rt></ruby>へ引っこすこと"
+    },
+    {
+      "ja": "配給",
+      "reading": "はいきゅう",
+      "meaning": "<ruby>不足<rt>ふそく</rt></ruby>した物を、政府が<ruby>決<rt>き</rt></ruby>まった量ずつ配ること（戦争中のしくみ）"
+    },
+    {
+      "ja": "防空壕",
+      "reading": "ぼうくうごう",
+      "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>から身を守るために<ruby>掘<rt>ほ</rt></ruby>った<ruby>穴<rt>あな</rt></ruby>・地下室"
+    },
+    {
+      "ja": "空襲",
+      "reading": "くうしゅう",
+      "meaning": "飛行機が空から<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること"
+    },
+    {
+      "ja": "爆撃",
+      "reading": "ばくげき",
+      "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること"
+    },
+    {
+      "ja": "栄養失調",
+      "reading": "えいようしっちょう",
+      "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>"
+    },
+    {
+      "ja": "桃源郷",
+      "reading": "とうげんきょう",
+      "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園"
+    },
+    {
+      "ja": "渓流",
+      "reading": "けいりゅう",
+      "meaning": "山の中を流れる、きれいな川"
+    },
+    {
+      "ja": "棺",
+      "reading": "ひつぎ",
+      "meaning": "なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>"
+    },
+    {
+      "ja": "みとる",
+      "reading": "みとる",
+      "meaning": "死にゆく人のそばにいて、<ruby>最期<rt>さいご</rt></ruby>まで<ruby>世話<rt>せわ</rt></ruby>をする"
+    },
+    {
+      "ja": "ひもじい",
+      "reading": "ひもじい",
+      "meaning": "おなかがすいて、つらい"
+    },
+    {
+      "ja": "とうてい",
+      "reading": "とうてい",
+      "meaning": "どうやっても（〜ない）。とても（〜できない）"
+    },
+    {
+      "ja": "はるばる",
+      "reading": "はるばる",
+      "meaning": "遠くから、長い道のりを来る様子"
+    },
+    {
+      "ja": "親戚",
+      "reading": "しんせき",
+      "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち"
+    },
+    {
+      "ja": "国民学校",
+      "reading": "こくみんがっこう",
+      "meaning": "<ruby>戦争中<rt>せんそうちゅう</rt></ruby>の小学校のよび名（1941〜1947年）"
+    },
+    {
+      "ja": "おちおち",
+      "reading": "おちおち",
+      "meaning": "<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて。「おちおちねていられない」＝安心してねられない"
+    },
+    {
+      "ja": "遠慮",
+      "reading": "えんりょ",
+      "meaning": "<ruby>相手<rt>あいて</rt></ruby>のことを考えて、ひかえめにすること"
+    },
+    {
+      "ja": "一里",
+      "reading": "いちり",
+      "meaning": "<ruby>昔<rt>むかし</rt></ruby>のきょりの<ruby>単位<rt>たんい</rt></ruby>。<ruby>約<rt>やく</rt></ruby>3.9キロメートル"
+    },
+    {
+      "ja": "三里",
+      "reading": "さんり",
+      "meaning": "一里の3ばい。<ruby>約<rt>やく</rt></ruby>12キロメートル（歩くと3時間くらい）"
+    },
+    {
+      "ja": "六畳間",
+      "reading": "ろくじょうま",
+      "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>"
+    },
+    {
+      "ja": "山すそ",
+      "reading": "やますそ",
+      "meaning": "山の下のほう・ふもと"
+    },
+    {
+      "ja": "対岸",
+      "reading": "たいがん",
+      "meaning": "川や海の<ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>の<ruby>岸<rt>きし</rt></ruby>"
+    },
+    {
+      "ja": "飛び石",
+      "reading": "とびいし",
+      "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石"
+    },
+    {
+      "ja": "おもゆ",
+      "reading": "おもゆ",
+      "meaning": "おかゆのもっとうすいもの。<ruby>赤<rt>あか</rt></ruby>ちゃんや<ruby>病人<rt>びょうにん</rt></ruby>が食べる"
+    },
+    {
+      "ja": "留守番",
+      "reading": "るすばん",
+      "meaning": "家に<ruby>残<rt>のこ</rt></ruby>って家を<ruby>守<rt>まも</rt></ruby>ること"
+    },
+    {
+      "ja": "看護婦",
+      "reading": "かんごふ",
+      "meaning": "<ruby>昔<rt>むかし</rt></ruby>の言い方。今は「<ruby>看護師<rt>かんごし</rt></ruby>」という"
+    },
+    {
+      "ja": "胸を弾ませる",
+      "reading": "むねをはずませる",
+      "meaning": "うれしくて、わくわくする"
+    },
+    {
+      "ja": "覆いかぶさる",
+      "reading": "おおいかぶさる",
+      "meaning": "上からかぶさるように<ruby>迫<rt>せま</rt></ruby>ってくる"
+    },
+    {
+      "ja": "独特",
+      "reading": "どくとく",
+      "meaning": "そのものだけがもっている、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>感<rt>かん</rt></ruby>じ"
+    },
+    {
+      "ja": "真っ最中",
+      "reading": "まっさいちゅう",
+      "meaning": "ちょうど今、その<ruby>途中<rt>とちゅう</rt></ruby>であること"
+    },
+    {
+      "ja": "盗み飲み",
+      "reading": "ぬすみのみ",
+      "meaning": "かくれて<ruby>勝手<rt>かって</rt></ruby>に飲んでしまうこと"
+    },
+    {
+      "ja": "息をひきとる",
+      "reading": "いきをひきとる",
+      "meaning": "<ruby>死<rt>し</rt></ruby>ぬ、のしずかな言い方"
+    },
+    {
+      "ja": "原子爆弾",
+      "reading": "げんしばくだん",
+      "meaning": "<ruby>一発<rt>いっぱつ</rt></ruby>で町ぜんたいをこわしてしまう<ruby>爆弾<rt>ばくだん</rt></ruby>"
+    },
+    {
+      "ja": "終戦",
+      "reading": "しゅうせん",
+      "meaning": "<ruby>戦争<rt>せんそう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わること（1945年8月15日）"
+    },
+    {
+      "ja": "交換",
+      "reading": "こうかん",
+      "meaning": "とりかえること。「<ruby>着物<rt>きもの</rt></ruby>を米と交換する」"
+    },
+    {
+      "ja": "田植え",
+      "reading": "たうえ",
+      "meaning": "<ruby>稲<rt>いね</rt></ruby>のなえを田んぼに<ruby>植<rt>う</rt></ruby>える<ruby>仕事<rt>しごと</rt></ruby>"
+    },
+    {
+      "ja": "山あい",
+      "reading": "やまあい",
+      "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ"
+    },
+    {
+      "ja": "澄む",
+      "reading": "すむ",
+      "meaning": "にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる。「空が青く澄む」"
+    },
+    {
+      "ja": "たくす",
+      "reading": "たくす",
+      "meaning": "<ruby>直接<rt>ちょくせつ</rt></ruby>言わずに、べつのものに気持ちをこめる。「<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>描写<rt>びょうしゃ</rt></ruby>にたくす」"
+    },
+    {
+      "ja": "着目",
+      "reading": "ちゃくもく",
+      "meaning": "そこに<ruby>目<rt>め</rt></ruby>をつけて、よく<ruby>見<rt>み</rt></ruby>ること。「<ruby>描写<rt>びょうしゃ</rt></ruby>に着目する」"
+    },
+    {
+      "ja": "情景",
+      "reading": "じょうけい",
+      "meaning": "<ruby>目<rt>め</rt></ruby>にうかんでくる<ruby>場面<rt>ばめん</rt></ruby>のようす"
+    },
+    {
+      "ja": "朗読",
+      "reading": "ろうどく",
+      "meaning": "気持ちが<ruby>伝<rt>つた</rt></ruby>わるように、声に出して読むこと"
+    },
+    {
+      "ja": "対比",
+      "reading": "たいひ",
+      "meaning": "二つをならべて、ちがいをきわだたせること"
+    },
+    {
+      "ja": "場面",
+      "reading": "ばめん",
+      "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中の、一つ一つの<ruby>場所<rt>ばしょ</rt></ruby>や時"
+    }
   ]
 }

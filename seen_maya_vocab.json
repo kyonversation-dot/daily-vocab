@@ -23,19 +23,19 @@
       "review": false
     },
     {
-      "ja": "司会",
-      "review": true
-    },
-    {
       "ja": "説得力",
       "review": true
     },
     {
-      "ja": "賛成",
+      "ja": "司会",
       "review": true
     },
     {
-      "ja": "意見",
+      "ja": "理由",
+      "review": true
+    },
+    {
+      "ja": "立場",
       "review": true
     }
   ]

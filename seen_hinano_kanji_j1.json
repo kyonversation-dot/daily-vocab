@@ -69,7 +69,11 @@
       "review": false
     },
     {
-      "ja": "雷",
+      "ja": "烈",
+      "review": true
+    },
+    {
+      "ja": "尋",
       "review": true
     },
     {
@@ -77,11 +81,7 @@
       "review": true
     },
     {
-      "ja": "弾",
-      "review": true
-    },
-    {
-      "ja": "尋",
+      "ja": "尽",
       "review": true
     }
   ]

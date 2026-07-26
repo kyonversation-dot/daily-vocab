@@ -41,27 +41,55 @@
     "降",
     "鋼",
     "骨",
-    "困"
+    "困",
+    "砂",
+    "座",
+    "済",
+    "裁",
+    "策",
+    "冊",
+    "蚕",
+    "至"
   ],
   "today": [
     {
-      "ja": "危",
+      "ja": "砂",
+      "review": false
+    },
+    {
+      "ja": "座",
+      "review": false
+    },
+    {
+      "ja": "済",
+      "review": false
+    },
+    {
+      "ja": "裁",
+      "review": false
+    },
+    {
+      "ja": "策",
+      "review": false
+    },
+    {
+      "ja": "冊",
+      "review": false
+    },
+    {
+      "ja": "蚕",
+      "review": false
+    },
+    {
+      "ja": "至",
+      "review": false
+    },
+    {
+      "ja": "映",
       "review": true
     },
     {
-      "ja": "胃",
-      "review": true
-    },
-    {
-      "ja": "勤",
-      "review": true
-    },
-    {
-      "ja": "灰",
-      "review": true
-    },
-    {
-      "ja": "源",
+      "ja": "郷",
       "review": true
     },
     {
@@ -69,27 +97,7 @@
       "review": true
     },
     {
-      "ja": "敬",
-      "review": true
-    },
-    {
-      "ja": "疑",
-      "review": true
-    },
-    {
-      "ja": "降",
-      "review": true
-    },
-    {
-      "ja": "胸",
-      "review": true
-    },
-    {
-      "ja": "誤",
-      "review": true
-    },
-    {
-      "ja": "穴",
+      "ja": "胃",
       "review": true
     }
   ]
