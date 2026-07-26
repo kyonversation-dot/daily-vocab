@@ -5,12 +5,10 @@
     "圧",
     "移",
     "永",
-    "営",
     "益",
     "液",
     "演",
     "往",
-    "応",
     "可",
     "仮",
     "価",
@@ -24,7 +22,6 @@
     "慣",
     "眼",
     "基",
-    "寄",
     "規",
     "技",
     "逆",
@@ -33,17 +30,55 @@
     "境",
     "均",
     "経",
-    "質",
     "得",
-    "比"
+    "営",
+    "応",
+    "寄",
+    "質",
+    "比",
+    "潔",
+    "件",
+    "険"
   ],
   "today": [
     {
-      "ja": "益",
+      "ja": "営",
+      "review": false
+    },
+    {
+      "ja": "応",
+      "review": false
+    },
+    {
+      "ja": "寄",
+      "review": false
+    },
+    {
+      "ja": "質",
+      "review": false
+    },
+    {
+      "ja": "比",
+      "review": false
+    },
+    {
+      "ja": "潔",
+      "review": false
+    },
+    {
+      "ja": "件",
+      "review": false
+    },
+    {
+      "ja": "険",
+      "review": false
+    },
+    {
+      "ja": "確",
       "review": true
     },
     {
-      "ja": "過",
+      "ja": "河",
       "review": true
     },
     {
@@ -51,39 +86,7 @@
       "review": true
     },
     {
-      "ja": "往",
-      "review": true
-    },
-    {
-      "ja": "格",
-      "review": true
-    },
-    {
-      "ja": "比",
-      "review": true
-    },
-    {
-      "ja": "営",
-      "review": true
-    },
-    {
-      "ja": "液",
-      "review": true
-    },
-    {
-      "ja": "可",
-      "review": true
-    },
-    {
-      "ja": "寄",
-      "review": true
-    },
-    {
-      "ja": "応",
-      "review": true
-    },
-    {
-      "ja": "居",
+      "ja": "眼",
       "review": true
     }
   ]
