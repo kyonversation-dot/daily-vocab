@@ -2,7 +2,6 @@
   "unit": "どちらを選びますか＝話し合いの言葉",
   "date": "2026-07-26",
   "seen": [
-    "説得力",
     "司会",
     "質疑応答",
     "判定",
@@ -11,19 +10,51 @@
     "意見",
     "賛成",
     "反対",
-    "説得"
+    "説得",
+    "説得力",
+    "根拠",
+    "具体的",
+    "主張",
+    "提案",
+    "目的",
+    "明確",
+    "比べる"
   ],
   "today": [
     {
-      "ja": "反対",
-      "review": false
-    },
-    {
-      "ja": "説得",
-      "review": false
-    },
-    {
       "ja": "説得力",
+      "review": false
+    },
+    {
+      "ja": "根拠",
+      "review": false
+    },
+    {
+      "ja": "具体的",
+      "review": false
+    },
+    {
+      "ja": "主張",
+      "review": false
+    },
+    {
+      "ja": "提案",
+      "review": false
+    },
+    {
+      "ja": "目的",
+      "review": false
+    },
+    {
+      "ja": "明確",
+      "review": false
+    },
+    {
+      "ja": "比べる",
+      "review": false
+    },
+    {
+      "ja": "質疑応答",
       "review": true
     },
     {
@@ -31,11 +62,11 @@
       "review": true
     },
     {
-      "ja": "理由",
+      "ja": "立場",
       "review": true
     },
     {
-      "ja": "立場",
+      "ja": "反対",
       "review": true
     }
   ]
