@@ -55,6 +55,126 @@
       "ja": "説得",
       "reading": "せっとく",
       "meaning": "よく<ruby>話<rt>はな</rt></ruby>して、<ruby>相手<rt>あいて</rt></ruby>に「なるほど」と<ruby>思<rt>おも</rt></ruby>ってもらうこと"
+    },
+    {
+      "ja": "根拠",
+      "reading": "こんきょ",
+      "meaning": "その考えのもとになる<ruby>事実<rt>じじつ</rt></ruby>。「根拠は？」＝どうしてそう言えるの？"
+    },
+    {
+      "ja": "具体的",
+      "reading": "ぐたいてき",
+      "meaning": "はっきり<ruby>目<rt>め</rt></ruby>にうかぶように、くわしく言うこと（⇔ぼんやり）"
+    },
+    {
+      "ja": "主張",
+      "reading": "しゅちょう",
+      "meaning": "自分の考えを<ruby>強<rt>つよ</rt></ruby>く<ruby>言<rt>い</rt></ruby>うこと・その考え"
+    },
+    {
+      "ja": "提案",
+      "reading": "ていあん",
+      "meaning": "「〜しませんか」と考えを<ruby>出<rt>だ</rt></ruby>すこと"
+    },
+    {
+      "ja": "目的",
+      "reading": "もくてき",
+      "meaning": "なんのためにやるのか、というねらい"
+    },
+    {
+      "ja": "明確",
+      "reading": "めいかく",
+      "meaning": "はっきりしていること。「立場を明確にする」"
+    },
+    {
+      "ja": "比べる",
+      "reading": "くらべる",
+      "meaning": "二つをならべて、ちがいを<ruby>見<rt>み</rt></ruby>ること（この単元の漢字「比」）"
+    },
+    {
+      "ja": "共通",
+      "reading": "きょうつう",
+      "meaning": "どちらにも<ruby>同<rt>おな</rt></ruby>じようにあること"
+    },
+    {
+      "ja": "納得",
+      "reading": "なっとく",
+      "meaning": "「なるほど、たしかに」と<ruby>思<rt>おも</rt></ruby>うこと"
+    },
+    {
+      "ja": "事実",
+      "reading": "じじつ",
+      "meaning": "本当にあったこと（⇔<ruby>感想<rt>かんそう</rt></ruby>・思ったこと）"
+    },
+    {
+      "ja": "感想",
+      "reading": "かんそう",
+      "meaning": "自分が<ruby>思<rt>おも</rt></ruby>ったこと・感じたこと"
+    },
+    {
+      "ja": "結論",
+      "reading": "けつろん",
+      "meaning": "話し合いの<ruby>最後<rt>さいご</rt></ruby>に出る、まとまった<ruby>考<rt>かんが</rt></ruby>え"
+    },
+    {
+      "ja": "質問",
+      "reading": "しつもん",
+      "meaning": "分からないことを<ruby>相手<rt>あいて</rt></ruby>に<ruby>聞<rt>き</rt></ruby>くこと"
+    },
+    {
+      "ja": "意図",
+      "reading": "いと",
+      "meaning": "そうしようと思っている考え・ねらい"
+    },
+    {
+      "ja": "発表",
+      "reading": "はっぴょう",
+      "meaning": "みんなの前で<ruby>考<rt>かんが</rt></ruby>えを<ruby>言<rt>い</rt></ruby>うこと"
+    },
+    {
+      "ja": "整理",
+      "reading": "せいり",
+      "meaning": "ばらばらのものを<ruby>順番<rt>じゅんばん</rt></ruby>よくまとめること。「考えを整理する」"
+    },
+    {
+      "ja": "改めて",
+      "reading": "あらためて",
+      "meaning": "もう<ruby>一度<rt>いちど</rt></ruby>きちんと。「改めて意見をのべます」"
+    },
+    {
+      "ja": "選択",
+      "reading": "せんたく",
+      "meaning": "いくつかの中から<ruby>選<rt>えら</rt></ruby>ぶこと"
+    },
+    {
+      "ja": "判断",
+      "reading": "はんだん",
+      "meaning": "自分で<ruby>考<rt>かんが</rt></ruby>えて<ruby>決<rt>き</rt></ruby>めること"
+    },
+    {
+      "ja": "述べる",
+      "reading": "のべる",
+      "meaning": "考えを<ruby>言葉<rt>ことば</rt></ruby>で<ruby>言<rt>い</rt></ruby>うこと。「意見を述べる」"
+    },
+    {
+      "ja": "問題点",
+      "reading": "もんだいてん",
+      "meaning": "よくないところ・こまるところ（教科書「たいせつ」の言葉）"
+    },
+    {
+      "ja": "長所",
+      "reading": "ちょうしょ",
+      "meaning": "よいところ"
+    },
+    {
+      "ja": "短所",
+      "reading": "たんしょ",
+      "meaning": "よくないところ（⇔<ruby>長所<rt>ちょうしょ</rt></ruby>）"
+    },
+    {
+      "ja": "説明",
+      "reading": "せつめい",
+      "meaning": "分かるように、くわしく<ruby>話<rt>はな</rt></ruby>すこと"
     }
   ]
 }
