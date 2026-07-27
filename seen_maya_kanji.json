@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-07-26",
+  "date": "2026-07-27",
   "seen": [
     "圧",
     "移",
@@ -38,55 +38,63 @@
     "比",
     "潔",
     "件",
-    "険"
+    "険",
+    "検",
+    "限",
+    "現",
+    "減",
+    "故",
+    "個",
+    "護",
+    "効"
   ],
   "today": [
     {
-      "ja": "営",
+      "ja": "検",
       "review": false
     },
     {
-      "ja": "応",
+      "ja": "限",
       "review": false
     },
     {
-      "ja": "寄",
+      "ja": "現",
       "review": false
     },
     {
-      "ja": "質",
+      "ja": "減",
       "review": false
     },
     {
-      "ja": "比",
+      "ja": "故",
       "review": false
     },
     {
-      "ja": "潔",
+      "ja": "個",
       "review": false
     },
     {
-      "ja": "件",
+      "ja": "護",
       "review": false
     },
     {
-      "ja": "険",
+      "ja": "効",
       "review": false
     },
     {
-      "ja": "確",
+      "ja": "経",
       "review": true
     },
     {
-      "ja": "河",
+      "ja": "久",
       "review": true
     },
     {
-      "ja": "逆",
+      "ja": "永",
       "review": true
     },
     {
-      "ja": "眼",
+      "ja": "境",
       "review": true
     }
   ]

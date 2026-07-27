@@ -1,6 +1,6 @@
 {
   "unit": "大人になれなかった弟たちに",
-  "date": "2026-07-26",
+  "date": "2026-07-27",
   "seen": [
     "描写",
     "心情",
@@ -25,55 +25,63 @@
     "三里",
     "六畳間",
     "山すそ",
-    "対岸"
+    "対岸",
+    "飛び石",
+    "おもゆ",
+    "留守番",
+    "看護婦",
+    "胸を弾ませる",
+    "覆いかぶさる",
+    "独特",
+    "真っ最中"
   ],
   "today": [
     {
-      "ja": "国民学校",
+      "ja": "飛び石",
       "review": false
     },
     {
-      "ja": "おちおち",
+      "ja": "おもゆ",
       "review": false
     },
     {
-      "ja": "遠慮",
+      "ja": "留守番",
       "review": false
     },
     {
-      "ja": "一里",
+      "ja": "看護婦",
       "review": false
     },
     {
-      "ja": "三里",
+      "ja": "胸を弾ませる",
       "review": false
+    },
+    {
+      "ja": "覆いかぶさる",
+      "review": false
+    },
+    {
+      "ja": "独特",
+      "review": false
+    },
+    {
+      "ja": "真っ最中",
+      "review": false
+    },
+    {
+      "ja": "栄養失調",
+      "review": true
+    },
+    {
+      "ja": "親戚",
+      "review": true
     },
     {
       "ja": "六畳間",
-      "review": false
-    },
-    {
-      "ja": "山すそ",
-      "review": false
-    },
-    {
-      "ja": "対岸",
-      "review": false
-    },
-    {
-      "ja": "疎開",
       "review": true
     },
     {
-      "ja": "爆撃",
-      "review": true
-    },
-    {
-      "ja": "配給",
-      "review": true
-    },
-    {
-      "ja": "棺",
+      "ja": "描写",
       "review": true
     }
   ]
