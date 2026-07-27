@@ -1,6 +1,48 @@
 {
   "unit": "中1漢字（大人になれなかった弟たちに）",
-  "date": "",
-  "seen": [],
-  "today": []
+  "date": "2026-07-27",
+  "seen": [
+    "乾",
+    "棺",
+    "撃",
+    "爆",
+    "弾",
+    "襲",
+    "歳",
+    "渡"
+  ],
+  "today": [
+    {
+      "ja": "乾",
+      "review": false
+    },
+    {
+      "ja": "棺",
+      "review": false
+    },
+    {
+      "ja": "撃",
+      "review": false
+    },
+    {
+      "ja": "爆",
+      "review": false
+    },
+    {
+      "ja": "弾",
+      "review": false
+    },
+    {
+      "ja": "襲",
+      "review": false
+    },
+    {
+      "ja": "歳",
+      "review": false
+    },
+    {
+      "ja": "渡",
+      "review": false
+    }
+  ]
 }
