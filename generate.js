@@ -146,6 +146,12 @@ function buildDeck(deck) {
   fs.writeFileSync(path.join(outDir, 'challenge.html'), fill(readTpl('challenge.html'), `${pool.titleShort}チャレンジ`));
   fs.writeFileSync(path.join(outDir, 'matching.html'), fill(readTpl('matching.html'), `${pool.titleShort}マッチング`));
 
+  // 例文チャレンジ＝プールに example がある語だけ。無いデッキではページもリンクも作らない。
+  const hasExample = today.some(w => w.example);
+  if (hasExample) {
+    fs.writeFileSync(path.join(outDir, 'example.html'), fill(readTpl('example.html'), `${pool.titleShort}の例文`));
+  }
+
   const itemLabel = pool.itemLabel || '言葉';
   const counterUnit = pool.counterUnit || '語';
   const total = pool.words.length;
@@ -170,7 +176,7 @@ function buildDeck(deck) {
             padding:12px 16px; font-size:0.8rem; text-align:center; max-width:420px; line-height:1.6; }
   .buttons { display:flex; flex-direction:column; gap:14px; width:100%; max-width:340px; }
   a.game { display:block; text-align:center; text-decoration:none; color:white; font-weight:bold; font-size:1.1rem; padding:18px; border-radius:16px; }
-  a.challenge { background:#c0436a; } a.matching { background:#3a5ac0; } a.game:hover { opacity:0.9; }
+  a.challenge { background:#c0436a; } a.matching { background:#3a5ac0; } a.example { background:#2f7d5a; } a.game:hover { opacity:0.9; }
   a.back { color:#888; font-size:0.8rem; text-decoration:none; margin-top:4px; }
   .foot { color:#666; font-size:0.7rem; margin-top:4px; text-align:center; }
 </style>
@@ -183,6 +189,7 @@ function buildDeck(deck) {
   <div class="buttons">
     <a class="game challenge" href="challenge.html">📖 ${itemLabel}チャレンジ（60秒）</a>
     <a class="game matching" href="matching.html">🔗 ${itemLabel}マッチング</a>
+    ${hasExample ? `<a class="game example" href="example.html">✏️ ${itemLabel}を文の中で使う</a>` : ''}
   </div>
   <a class="back" href="../">← ${deck.child}のトップにもどる</a>
 </body>
