@@ -7,6 +7,46 @@
   "counterUnit": "語",
   "words": [
     {
+      "ja": "山すそ",
+      "reading": "やますそ",
+      "meaning": "山の下のほう・ふもと"
+    },
+    {
+      "ja": "渓流",
+      "reading": "けいりゅう",
+      "meaning": "山の中を流れる、きれいな川"
+    },
+    {
+      "ja": "飛び石",
+      "reading": "とびいし",
+      "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石"
+    },
+    {
+      "ja": "隣村",
+      "reading": "となりむら",
+      "meaning": "となりの村。「隣村にやぎを<ruby>飼<rt>か</rt></ruby>っている農家があると聞いては」"
+    },
+    {
+      "ja": "疎開者",
+      "reading": "そかいしゃ",
+      "meaning": "空襲をさけて都会から引っこしてきた人。「僕たち疎開者には<ruby>配給<rt>はいきゅう</rt></ruby>もありませんので」"
+    },
+    {
+      "ja": "一文",
+      "reading": "いちぶん",
+      "meaning": "「。」で終わる、ひとつの文。「この一文だけで<ruby>段落<rt>だんらく</rt></ruby>になっている」"
+    },
+    {
+      "ja": "引用",
+      "reading": "いんよう",
+      "meaning": "人の言葉や文章を、そのまま<ruby>借<rt>か</rt></ruby>りてきて<ruby>示<rt>しめ</rt></ruby>すこと。「本文から引用して答える」"
+    },
+    {
+      "ja": "根拠",
+      "reading": "こんきょ",
+      "meaning": "そう考えたもとになる<ruby>事実<rt>じじつ</rt></ruby>。「本文のどこが根拠ですか」"
+    },
+    {
       "ja": "交換",
       "reading": "こうかん",
       "meaning": "とりかえること。「<ruby>着物<rt>きもの</rt></ruby>を米と交換する」"
@@ -252,11 +292,6 @@
       "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園"
     },
     {
-      "ja": "渓流",
-      "reading": "けいりゅう",
-      "meaning": "山の中を流れる、きれいな川"
-    },
-    {
       "ja": "棺",
       "reading": "ひつぎ",
       "meaning": "なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>"
@@ -317,19 +352,9 @@
       "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>"
     },
     {
-      "ja": "山すそ",
-      "reading": "やますそ",
-      "meaning": "山の下のほう・ふもと"
-    },
-    {
       "ja": "対岸",
       "reading": "たいがん",
       "meaning": "川や海の<ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>の<ruby>岸<rt>きし</rt></ruby>"
-    },
-    {
-      "ja": "飛び石",
-      "reading": "とびいし",
-      "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石"
     },
     {
       "ja": "おもゆ",
