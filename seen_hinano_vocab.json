@@ -1,6 +1,6 @@
 {
   "unit": "大人になれなかった弟たちに",
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "seen": [
     "描写",
     "心情",
@@ -33,55 +33,63 @@
     "胸を弾ませる",
     "覆いかぶさる",
     "独特",
-    "真っ最中"
+    "真っ最中",
+    "交換",
+    "田植え",
+    "山あい",
+    "盗み飲み",
+    "澄む",
+    "情景",
+    "場面",
+    "具体的"
   ],
   "today": [
     {
-      "ja": "飛び石",
+      "ja": "交換",
+      "review": false
+    },
+    {
+      "ja": "田植え",
+      "review": false
+    },
+    {
+      "ja": "山あい",
+      "review": false
+    },
+    {
+      "ja": "盗み飲み",
+      "review": false
+    },
+    {
+      "ja": "澄む",
+      "review": false
+    },
+    {
+      "ja": "情景",
+      "review": false
+    },
+    {
+      "ja": "場面",
+      "review": false
+    },
+    {
+      "ja": "具体的",
       "review": false
     },
     {
       "ja": "おもゆ",
-      "review": false
-    },
-    {
-      "ja": "留守番",
-      "review": false
-    },
-    {
-      "ja": "看護婦",
-      "review": false
-    },
-    {
-      "ja": "胸を弾ませる",
-      "review": false
-    },
-    {
-      "ja": "覆いかぶさる",
-      "review": false
-    },
-    {
-      "ja": "独特",
-      "review": false
-    },
-    {
-      "ja": "真っ最中",
-      "review": false
-    },
-    {
-      "ja": "栄養失調",
       "review": true
     },
     {
-      "ja": "親戚",
+      "ja": "はるばる",
+      "review": true
+    },
+    {
+      "ja": "防空壕",
       "review": true
     },
     {
       "ja": "六畳間",
-      "review": true
-    },
-    {
-      "ja": "描写",
       "review": true
     }
   ]

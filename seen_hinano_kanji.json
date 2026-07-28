@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "seen": [
     "胃",
     "異",
@@ -57,55 +57,63 @@
     "誌",
     "磁",
     "射",
-    "捨"
+    "捨",
+    "尺",
+    "若",
+    "樹",
+    "収",
+    "宗",
+    "就",
+    "衆",
+    "従"
   ],
   "today": [
     {
-      "ja": "私",
+      "ja": "尺",
       "review": false
     },
     {
-      "ja": "姿",
+      "ja": "若",
       "review": false
     },
     {
-      "ja": "視",
+      "ja": "樹",
       "review": false
+    },
+    {
+      "ja": "収",
+      "review": false
+    },
+    {
+      "ja": "宗",
+      "review": false
+    },
+    {
+      "ja": "就",
+      "review": false
+    },
+    {
+      "ja": "衆",
+      "review": false
+    },
+    {
+      "ja": "従",
+      "review": false
+    },
+    {
+      "ja": "源",
+      "review": true
     },
     {
       "ja": "詞",
-      "review": false
-    },
-    {
-      "ja": "誌",
-      "review": false
-    },
-    {
-      "ja": "磁",
-      "review": false
-    },
-    {
-      "ja": "射",
-      "review": false
-    },
-    {
-      "ja": "捨",
-      "review": false
+      "review": true
     },
     {
       "ja": "胃",
       "review": true
     },
     {
-      "ja": "郷",
-      "review": true
-    },
-    {
-      "ja": "巻",
-      "review": true
-    },
-    {
-      "ja": "干",
+      "ja": "疑",
       "review": true
     }
   ]
