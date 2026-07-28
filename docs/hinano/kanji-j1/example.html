@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中1漢字の例文</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 16px;
+  }
+
+  header { flex-shrink: 0; margin-bottom: 10px; }
+  .title-block h1 { font-size: 1.2rem; color: #ffb4d4; }
+  .title-block p { font-size: 0.72rem; color: #aaa; margin-top: 2px; }
+
+  .instruction { font-size: 0.72rem; color: #999; margin-bottom: 10px; flex-shrink: 0; }
+
+  .stage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sentence {
+    background: #16213e;
+    border: 2px solid #2a2a5a;
+    border-radius: 12px;
+    padding: 20px 18px;
+    font-size: 1.05rem;
+    line-height: 2.0;
+  }
+  .blank {
+    display: inline-block;
+    min-width: 5em;
+    border-bottom: 3px solid #f5a623;
+    color: #f5a623;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 4px;
+  }
+  .blank.filled { border-bottom-color: #4caf7d; color: #7fe3ac; }
+
+  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .choice {
+    background: #16213e;
+    border: 2px solid #2a2a5a;
+    border-radius: 10px;
+    padding: 14px 10px;
+    font-size: 1.0rem;
+    font-family: inherit;
+    color: #eee;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+    text-align: center;
+    font-weight: bold;
+  }
+  .choice:hover:not(:disabled) { border-color: #ffb4d4; }
+  .choice.correct { border-color: #4caf7d; background: #1a4731; color: #7fe3ac; }
+  .choice.wrong { border-color: #ff6b6b; background: #3a1a1a; opacity: 0.55; }
+  .choice:disabled { cursor: default; }
+
+  .answerbox {
+    display: none;
+    background: #1a2f24;
+    border: 1px solid #2f6b4c;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+  .answerbox.show { display: block; }
+  .answerbox .ja { font-size: 1.0rem; font-weight: bold; color: #7fe3ac; }
+  .answerbox .reading { font-size: 0.72rem; color: #aaa; margin-top: 2px; }
+  .answerbox .meaning { color: #cfe9db; margin-top: 6px; }
+
+  .hint { color: #f5a623; font-size: 0.78rem; text-align: center; min-height: 1.2em; }
+
+  footer { display: flex; justify-content: center; gap: 12px; margin-top: 14px; flex-shrink: 0; }
+
+  button.nav {
+    padding: 10px 26px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn-primary { background: #c0436a; color: white; }
+  .btn-primary:hover { background: #e05580; }
+  .btn-secondary { background: #2a2a5a; color: #ccc; border: 1px solid #444; }
+  .btn-secondary:hover { background: #3a3a7a; }
+
+  .progress { font-size: 0.72rem; color: #888; text-align: center; margin-top: 10px; flex-shrink: 0; }
+
+  .complete-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 10;
+    padding: 24px;
+    text-align: center;
+  }
+  .complete-overlay.show { display: flex; }
+  .complete-overlay h2 { font-size: 1.6rem; color: #ffb4d4; }
+  .complete-overlay p { color: #aaa; font-size: 0.85rem; line-height: 1.7; }
+  .complete-overlay a { color: #888; font-size: 0.8rem; text-decoration: none; }
+
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="title-block">
+    <h1>✏️ 中1漢字の例文</h1>
+    <p>ひなのの漢字れんしゅう（中1） ｜ 文の中で使ってみよう</p>
+  </div>
+</header>
+
+<div class="instruction">💡 ＿＿＿ に入る言葉をえらんでね。まちがえても大丈夫。答えを見て、意味をたしかめよう。</div>
+
+<div class="stage">
+  <div class="sentence" id="sentence"></div>
+  <div class="choices" id="choices"></div>
+  <div class="hint" id="hint"></div>
+  <div class="answerbox" id="answerbox"></div>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<footer>
+  <button class="nav btn-primary" id="nextBtn" onclick="next()" style="display:none">つぎへ →</button>
+</footer>
+
+<div class="complete-overlay" id="overlay">
+  <h2>🎉 今日のぶん、ぜんぶ見たよ！</h2>
+  <p id="doneMsg"></p>
+  <button class="nav btn-primary" onclick="restart()">もう一度やる</button>
+  <a href="./">← 今日のゲームにもどる</a>
+</div>
+
+<script>
+const allWords = ([
+  {
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "review": false
+  },
+  {
+    "ja": "掘",
+    "reading": "クツ／ほ(る)",
+    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
+    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
+    "review": false
+  },
+  {
+    "ja": "缶",
+    "reading": "カン",
+    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
+    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "review": false
+  },
+  {
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
+    "review": false
+  },
+  {
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "review": false
+  },
+  {
+    "ja": "戚",
+    "reading": "セキ",
+    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
+    "example": "親＿の人は、うちに食べ物はないと言いました。",
+    "review": false
+  },
+  {
+    "ja": "渓",
+    "reading": "ケイ",
+    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>",
+    "example": "きれいな＿流に沿って山路へかかりました。",
+    "review": false
+  },
+  {
+    "ja": "桃",
+    "reading": "トウ／もも",
+    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
+    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
+    "review": false
+  },
+  {
+    "ja": "襲",
+    "reading": "シュウ／おそ(う)",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
+    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "乾",
+    "reading": "カン／かわ(く)",
+    "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水気（みずけ）がなくなる",
+    "example": "白い＿いた一本道を、三人で山の村に向かって歩き続けました。",
+    "review": true
+  },
+  {
+    "ja": "渡",
+    "reading": "ト／わた(る)",
+    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
+    "example": "下流の橋を＿って学校に行きました。",
+    "review": true
+  },
+  {
+    "ja": "棺",
+    "reading": "カン／ひつぎ",
+    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
+    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
+    "review": true
+  }
+]).filter(w => w.example);
+const BLANK = '＿＿＿';
+
+let queue = [], idx = 0, answered = false, tries = 0;
+
+function shuffleArr(arr) { return [...arr].sort(() => Math.random() - 0.5); }
+
+function esc(t) {
+  return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// 例文の空欄マーカー。熟語は ＿＿＿、漢字1字は ＿ を使っている。
+function blankMark(ex) { return ex.includes(BLANK) ? BLANK : '＿'; }
+
+function start() {
+  queue = shuffleArr(allWords);
+  idx = 0;
+  render();
+}
+
+function render() {
+  answered = false; tries = 0;
+  const w = queue[idx];
+  const mark = blankMark(w.example);
+  const parts = esc(w.example).split(mark);
+  document.getElementById('sentence').innerHTML =
+    parts[0] + '<span class="blank" id="blank">?</span>' + parts.slice(1).join(mark);
+
+  // まちがいの選択肢は、今日の言葉の中から取る（似た言葉の区別の練習になる）
+  const others = shuffleArr(allWords.filter(x => x.ja !== w.ja)).slice(0, 3);
+  const opts = shuffleArr([w, ...others]);
+
+  const box = document.getElementById('choices');
+  box.innerHTML = '';
+  opts.forEach(o => {
+    const b = document.createElement('button');
+    b.className = 'choice';
+    b.textContent = o.ja;
+    b.onclick = () => pick(b, o.ja, w);
+    box.appendChild(b);
+  });
+
+  document.getElementById('hint').textContent = '';
+  document.getElementById('answerbox').className = 'answerbox';
+  document.getElementById('answerbox').innerHTML = '';
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('progress').textContent = `${idx + 1} / ${queue.length}`;
+}
+
+function pick(btn, chosen, w) {
+  if (answered) return;
+  if (chosen === w.ja) {
+    btn.classList.add('correct');
+    reveal(w);
+  } else {
+    btn.classList.add('wrong');
+    btn.disabled = true;
+    tries++;
+    if (tries >= 2) {
+      document.getElementById('hint').textContent = 'こっちだよ 👇';
+      const right = [...document.querySelectorAll('.choice')].find(b => b.textContent === w.ja);
+      if (right) right.classList.add('correct');
+      reveal(w);
+    } else {
+      document.getElementById('hint').textContent = 'うーん、もう一回さがしてみよう';
+    }
+  }
+}
+
+function reveal(w) {
+  answered = true;
+  document.querySelectorAll('.choice').forEach(b => b.disabled = true);
+  const blank = document.getElementById('blank');
+  blank.textContent = w.ja;
+  blank.classList.add('filled');
+  const box = document.getElementById('answerbox');
+  box.innerHTML =
+    `<div class="ja">${esc(w.ja)}</div>` +
+    (w.reading ? `<div class="reading">${esc(w.reading)}</div>` : '') +
+    `<div class="meaning">${w.meaning}</div>`;
+  box.classList.add('show');
+  document.getElementById('nextBtn').style.display = 'inline-block';
+}
+
+function next() {
+  idx++;
+  if (idx >= queue.length) {
+    document.getElementById('doneMsg').textContent =
+      `${queue.length} この言葉を、文の中で使ってみたよ。`;
+    document.getElementById('overlay').classList.add('show');
+    return;
+  }
+  render();
+}
+
+function restart() {
+  document.getElementById('overlay').classList.remove('show');
+  start();
+}
+
+if (allWords.length === 0) {
+  document.getElementById('sentence').textContent = '今日は例文のある言葉がありません。';
+  document.getElementById('progress').textContent = '';
+} else {
+  start();
+}
+</script>
+</body>
+</html>
