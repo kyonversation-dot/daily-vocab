@@ -135,45 +135,59 @@
 <script>
 const words = [
   {
-    "ja": "僕",
-    "reading": "ボク",
-    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
-    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "ja": "覆",
+    "reading": "フク／おお(う)",
+    "meaning": "<ruby>覆<rt>おお</rt></ruby>う・<ruby>覆面<rt>ふくめん</rt></ruby> ／ 上からかぶせる・おおいかぶさる",
+    "example": "すぐ裏の山が頭の上に＿いかぶさるような山すそにありました。",
     "review": false
   },
   {
-    "ja": "掘",
-    "reading": "クツ／ほ(る)",
-    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
-    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
+    "ja": "隣",
+    "reading": "リン／となり",
+    "meaning": "<ruby>隣<rt>となり</rt></ruby>・<ruby>隣人<rt>りんじん</rt></ruby> ／ すぐそば・となり",
+    "example": "＿村にやぎを飼っている農家があると聞いては、母が出かけました。",
     "review": false
   },
   {
-    "ja": "缶",
-    "reading": "カン",
-    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
-    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "ja": "欲",
+    "reading": "ヨク／ほ(しい)",
+    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
+    "example": "僕は弟が＿しかったので、よくかわいがりました。",
     "review": false
   },
   {
-    "ja": "菓",
-    "reading": "カ",
-    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
-    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
+    "ja": "含",
+    "reading": "ガン／ふく(む)",
+    "meaning": "<ruby>含<rt>ふく</rt></ruby>む・<ruby>含有<rt>がんゆう</rt></ruby> ／ 中に入っている",
+    "example": "小さな小さな口に、綿に＿ませた水を飲ませた夜を、僕は忘れられません。",
     "review": false
   },
   {
-    "ja": "疎",
-    "reading": "ソ／うと(い)",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
-    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "ja": "慮",
+    "reading": "リョ",
+    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby>・<ruby>配慮<rt>はいりょ</rt></ruby> ／ よく考える・気をつかう",
+    "example": "母は弟が死んでいるので、ほかの人に遠＿したのでしょう。",
     "review": false
   },
   {
-    "ja": "戚",
-    "reading": "セキ",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
-    "example": "親＿の人は、うちに食べ物はないと言いました。",
+    "ja": "澄",
+    "reading": "チョウ／す(む)",
+    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
+    "example": "空は高く高く青く＿んでいました。",
+    "review": false
+  },
+  {
+    "ja": "杉",
+    "reading": "すぎ",
+    "meaning": "<ruby>杉<rt>すぎ</rt></ruby>・<ruby>杉並木<rt>すぎなみき</rt></ruby> ／ まっすぐ高くのびる木",
+    "example": "農家のおじいさんが、＿板を削って小さな小さな棺を作ってくださいました。",
+    "review": false
+  },
+  {
+    "ja": "国民学校",
+    "reading": "こくみんがっこう",
+    "meaning": "<ruby>国民学校<rt>こくみんがっこう</rt></ruby> ／ 戦争中の小学校の呼び名。「小学校といわずに、国民学校といっていました」",
+    "example": "そのころは小学校といわずに、＿＿＿といっていました。",
     "review": false
   },
   {
@@ -181,20 +195,13 @@ const words = [
     "reading": "ケイ",
     "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>",
     "example": "きれいな＿流に沿って山路へかかりました。",
-    "review": false
+    "review": true
   },
   {
-    "ja": "桃",
-    "reading": "トウ／もも",
-    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
-    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
-    "review": false
-  },
-  {
-    "ja": "襲",
-    "reading": "シュウ／おそ(う)",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
-    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "ja": "弾",
+    "reading": "ダン／たま・はず(む)",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
+    "example": "これからの生活に胸を＿ませました。",
     "review": true
   },
   {
@@ -205,17 +212,10 @@ const words = [
     "review": true
   },
   {
-    "ja": "渡",
-    "reading": "ト／わた(る)",
-    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
-    "example": "下流の橋を＿って学校に行きました。",
-    "review": true
-  },
-  {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
     "review": true
   }
 ];
