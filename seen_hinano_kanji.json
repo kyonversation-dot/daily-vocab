@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "seen": [
     "胃",
     "異",
@@ -73,55 +73,63 @@
     "処",
     "署",
     "諸",
-    "除"
+    "除",
+    "承",
+    "将",
+    "傷",
+    "障",
+    "蒸",
+    "針",
+    "仁",
+    "垂"
   ],
   "today": [
     {
-      "ja": "縦",
+      "ja": "承",
       "review": false
     },
     {
-      "ja": "縮",
+      "ja": "将",
       "review": false
     },
     {
-      "ja": "熟",
+      "ja": "傷",
       "review": false
     },
     {
-      "ja": "純",
+      "ja": "障",
       "review": false
     },
     {
-      "ja": "処",
+      "ja": "蒸",
       "review": false
     },
     {
-      "ja": "署",
+      "ja": "針",
       "review": false
     },
     {
-      "ja": "諸",
+      "ja": "仁",
       "review": false
     },
     {
-      "ja": "除",
+      "ja": "垂",
       "review": false
     },
     {
-      "ja": "蚕",
+      "ja": "干",
       "review": true
     },
     {
-      "ja": "困",
+      "ja": "降",
       "review": true
     },
     {
-      "ja": "従",
+      "ja": "絹",
       "review": true
     },
     {
-      "ja": "宗",
+      "ja": "座",
       "review": true
     }
   ]

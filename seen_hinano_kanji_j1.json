@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（大人になれなかった弟たちに）",
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "seen": [
     "乾",
     "棺",
@@ -25,55 +25,63 @@
     "慮",
     "澄",
     "杉",
-    "国民学校"
+    "国民学校",
+    "太平洋戦争",
+    "真っ最中",
+    "飛行機",
+    "爆弾",
+    "地下室",
+    "防空壕",
+    "祖母",
+    "配給"
   ],
   "today": [
     {
-      "ja": "覆",
+      "ja": "太平洋戦争",
       "review": false
     },
     {
-      "ja": "隣",
+      "ja": "真っ最中",
       "review": false
     },
     {
-      "ja": "欲",
+      "ja": "飛行機",
       "review": false
     },
     {
-      "ja": "含",
+      "ja": "爆弾",
       "review": false
     },
     {
-      "ja": "慮",
+      "ja": "地下室",
       "review": false
+    },
+    {
+      "ja": "防空壕",
+      "review": false
+    },
+    {
+      "ja": "祖母",
+      "review": false
+    },
+    {
+      "ja": "配給",
+      "review": false
+    },
+    {
+      "ja": "襲",
+      "review": true
     },
     {
       "ja": "澄",
-      "review": false
+      "review": true
     },
     {
-      "ja": "杉",
-      "review": false
+      "ja": "歳",
+      "review": true
     },
     {
       "ja": "国民学校",
-      "review": false
-    },
-    {
-      "ja": "渓",
-      "review": true
-    },
-    {
-      "ja": "弾",
-      "review": true
-    },
-    {
-      "ja": "乾",
-      "review": true
-    },
-    {
-      "ja": "菓",
       "review": true
     }
   ]
