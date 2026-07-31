@@ -51,79 +51,55 @@
     "耕",
     "航",
     "鉱",
-    "構",
-    "興",
-    "講",
-    "告",
-    "混",
-    "査",
-    "再",
-    "災",
-    "妻",
-    "採",
-    "際",
-    "在",
-    "財",
-    "罪",
-    "殺",
-    "雑",
-    "酸",
-    "賛",
-    "士",
-    "支",
-    "史",
-    "志",
-    "枝",
-    "師",
-    "資"
+    "構"
   ],
   "today": [
     {
-      "ja": "賛",
-      "review": false
-    },
-    {
-      "ja": "士",
-      "review": false
-    },
-    {
-      "ja": "支",
-      "review": false
-    },
-    {
-      "ja": "史",
-      "review": false
-    },
-    {
-      "ja": "志",
-      "review": false
-    },
-    {
-      "ja": "枝",
-      "review": false
-    },
-    {
-      "ja": "師",
-      "review": false
-    },
-    {
-      "ja": "資",
-      "review": false
-    },
-    {
-      "ja": "演",
-      "review": true
-    },
-    {
-      "ja": "液",
-      "review": true
-    },
-    {
-      "ja": "財",
-      "review": true
-    },
-    {
       "ja": "限",
+      "review": false
+    },
+    {
+      "ja": "護",
+      "review": false
+    },
+    {
+      "ja": "効",
+      "review": false
+    },
+    {
+      "ja": "厚",
+      "review": false
+    },
+    {
+      "ja": "耕",
+      "review": false
+    },
+    {
+      "ja": "航",
+      "review": false
+    },
+    {
+      "ja": "鉱",
+      "review": false
+    },
+    {
+      "ja": "構",
+      "review": false
+    },
+    {
+      "ja": "営",
+      "review": true
+    },
+    {
+      "ja": "益",
+      "review": true
+    },
+    {
+      "ja": "格",
+      "review": true
+    },
+    {
+      "ja": "均",
       "review": true
     }
   ]
