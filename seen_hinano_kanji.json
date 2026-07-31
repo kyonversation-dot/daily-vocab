@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-07-30",
+  "date": "2026-07-31",
   "seen": [
     "胃",
     "異",
@@ -81,55 +81,63 @@
     "蒸",
     "針",
     "仁",
-    "垂"
+    "垂",
+    "遺",
+    "域",
+    "沿",
+    "恩",
+    "閣",
+    "株",
+    "看",
+    "簡"
   ],
   "today": [
     {
-      "ja": "承",
+      "ja": "遺",
       "review": false
     },
     {
-      "ja": "将",
+      "ja": "域",
       "review": false
     },
     {
-      "ja": "傷",
+      "ja": "沿",
       "review": false
     },
     {
-      "ja": "障",
+      "ja": "恩",
       "review": false
     },
     {
-      "ja": "蒸",
+      "ja": "閣",
       "review": false
     },
     {
-      "ja": "針",
+      "ja": "株",
+      "review": false
+    },
+    {
+      "ja": "看",
+      "review": false
+    },
+    {
+      "ja": "簡",
       "review": false
     },
     {
       "ja": "仁",
-      "review": false
-    },
-    {
-      "ja": "垂",
-      "review": false
-    },
-    {
-      "ja": "干",
       "review": true
     },
     {
-      "ja": "降",
+      "ja": "純",
       "review": true
     },
     {
-      "ja": "絹",
+      "ja": "処",
       "review": true
     },
     {
-      "ja": "座",
+      "ja": "姿",
       "review": true
     }
   ]

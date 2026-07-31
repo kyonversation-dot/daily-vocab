@@ -1,6 +1,6 @@
 {
   "unit": "大人になれなかった弟たちに",
-  "date": "2026-07-30",
+  "date": "2026-07-31",
   "seen": [
     "描写",
     "心情",
@@ -54,55 +54,63 @@
     "直接",
     "想像",
     "変化",
-    "〜なり"
+    "〜なり",
+    "原子爆弾",
+    "終戦",
+    "余韻",
+    "象徴",
+    "時代背景",
+    "段落",
+    "展開",
+    "主人公"
   ],
   "today": [
     {
-      "ja": "息をひきとる",
+      "ja": "原子爆弾",
       "review": false
     },
     {
-      "ja": "たくす",
+      "ja": "終戦",
       "review": false
     },
     {
-      "ja": "着目",
+      "ja": "余韻",
       "review": false
     },
     {
-      "ja": "対比",
+      "ja": "象徴",
       "review": false
     },
     {
-      "ja": "直接",
+      "ja": "時代背景",
       "review": false
     },
     {
-      "ja": "想像",
+      "ja": "段落",
       "review": false
+    },
+    {
+      "ja": "展開",
+      "review": false
+    },
+    {
+      "ja": "主人公",
+      "review": false
+    },
+    {
+      "ja": "空襲",
+      "review": true
+    },
+    {
+      "ja": "具体的",
+      "review": true
     },
     {
       "ja": "変化",
-      "review": false
-    },
-    {
-      "ja": "〜なり",
-      "review": false
-    },
-    {
-      "ja": "おもゆ",
       "review": true
     },
     {
-      "ja": "栄養失調",
-      "review": true
-    },
-    {
-      "ja": "留守番",
-      "review": true
-    },
-    {
-      "ja": "独特",
+      "ja": "息をひきとる",
       "review": true
     }
   ]
