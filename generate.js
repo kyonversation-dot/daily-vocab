@@ -23,7 +23,10 @@ const BIG_CSS = `
   .word-card .text { font-size: 2rem; }
 `;
 
-const PAGE_HEAD = `<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">`;
+// noindex＝検索エンジンに載せない。リポジトリが public なので、
+// 子どもの名前入りのURLが検索結果に出ないようにする（2026-08-01・三号機）。
+// ※ robots.txt はドメイン直下にしか効かないので使えない（ここはプロジェクトページ）。
+const PAGE_HEAD = `<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex, nofollow">`;
 const HUB_CSS = `
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif; background:#1a1a2e; color:#eee;
