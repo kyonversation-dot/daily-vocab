@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "seen": [
     "圧",
     "移",
@@ -46,27 +46,23 @@
     "個",
     "限",
     "厚",
-    "耕"
+    "耕",
+    "護",
+    "効",
+    "航",
+    "鉱",
+    "構",
+    "興",
+    "講",
+    "告"
   ],
   "today": [
-    {
-      "ja": "限",
-      "review": false
-    },
     {
       "ja": "護",
       "review": false
     },
     {
       "ja": "効",
-      "review": false
-    },
-    {
-      "ja": "厚",
-      "review": false
-    },
-    {
-      "ja": "耕",
       "review": false
     },
     {
@@ -82,19 +78,31 @@
       "review": false
     },
     {
-      "ja": "営",
+      "ja": "興",
+      "review": false
+    },
+    {
+      "ja": "講",
+      "review": false
+    },
+    {
+      "ja": "告",
+      "review": false
+    },
+    {
+      "ja": "境",
       "review": true
     },
     {
-      "ja": "益",
+      "ja": "液",
       "review": true
     },
     {
-      "ja": "格",
+      "ja": "故",
       "review": true
     },
     {
-      "ja": "均",
+      "ja": "基",
       "review": true
     }
   ]

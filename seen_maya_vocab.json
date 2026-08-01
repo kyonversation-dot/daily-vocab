@@ -1,6 +1,6 @@
 {
   "unit": "どちらを選びますか＝話し合いの言葉",
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "seen": [
     "司会",
     "質疑応答",
@@ -28,7 +28,15 @@
     "意見文",
     "体験",
     "支える",
-    "予想"
+    "予想",
+    "結論",
+    "意図",
+    "反論",
+    "構成",
+    "整理",
+    "改めて",
+    "選択",
+    "判断"
   ],
   "today": [
     {
@@ -40,23 +48,7 @@
       "review": false
     },
     {
-      "ja": "意見文",
-      "review": false
-    },
-    {
-      "ja": "体験",
-      "review": false
-    },
-    {
-      "ja": "支える",
-      "review": false
-    },
-    {
       "ja": "反論",
-      "review": false
-    },
-    {
-      "ja": "予想",
       "review": false
     },
     {
@@ -64,19 +56,35 @@
       "review": false
     },
     {
-      "ja": "質問",
+      "ja": "整理",
+      "review": false
+    },
+    {
+      "ja": "改めて",
+      "review": false
+    },
+    {
+      "ja": "選択",
+      "review": false
+    },
+    {
+      "ja": "判断",
+      "review": false
+    },
+    {
+      "ja": "支える",
       "review": true
     },
     {
-      "ja": "意見",
+      "ja": "判定",
       "review": true
     },
     {
-      "ja": "司会",
+      "ja": "賛成",
       "review": true
     },
     {
-      "ja": "事実",
+      "ja": "納得",
       "review": true
     }
   ]

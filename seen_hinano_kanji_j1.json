@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（大人になれなかった弟たちに）",
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "seen": [
     "乾",
     "棺",
@@ -41,55 +41,63 @@
     "親戚",
     "田舎",
     "相談",
-    "荷物"
+    "荷物",
+    "杉板",
+    "看護婦",
+    "爆撃",
+    "遠慮",
+    "機体",
+    "人影",
+    "原子爆弾",
+    "栄養失調"
   ],
   "today": [
     {
-      "ja": "空襲",
+      "ja": "杉板",
       "review": false
     },
     {
-      "ja": "疎開",
+      "ja": "看護婦",
       "review": false
     },
     {
-      "ja": "四歳",
+      "ja": "爆撃",
       "review": false
     },
     {
-      "ja": "留守番",
+      "ja": "遠慮",
       "review": false
     },
     {
-      "ja": "親戚",
+      "ja": "機体",
       "review": false
     },
     {
-      "ja": "田舎",
+      "ja": "人影",
       "review": false
     },
     {
-      "ja": "相談",
+      "ja": "原子爆弾",
       "review": false
+    },
+    {
+      "ja": "栄養失調",
+      "review": false
+    },
+    {
+      "ja": "乾",
+      "review": true
+    },
+    {
+      "ja": "歳",
+      "review": true
     },
     {
       "ja": "荷物",
-      "review": false
-    },
-    {
-      "ja": "戚",
       "review": true
     },
     {
-      "ja": "慮",
-      "review": true
-    },
-    {
-      "ja": "隣",
-      "review": true
-    },
-    {
-      "ja": "掘",
+      "ja": "田舎",
       "review": true
     }
   ]
