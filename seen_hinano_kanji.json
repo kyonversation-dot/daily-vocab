@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "seen": [
     "胃",
     "異",
@@ -97,55 +97,63 @@
     "己",
     "刻",
     "穀",
-    "推"
+    "推",
+    "寸",
+    "盛",
+    "聖",
+    "誠",
+    "舌",
+    "宣",
+    "専",
+    "泉"
   ],
   "today": [
     {
-      "ja": "揮",
+      "ja": "寸",
       "review": false
     },
     {
-      "ja": "供",
+      "ja": "盛",
       "review": false
     },
     {
-      "ja": "券",
+      "ja": "聖",
       "review": false
     },
     {
-      "ja": "激",
+      "ja": "誠",
       "review": false
     },
     {
-      "ja": "己",
+      "ja": "舌",
       "review": false
     },
     {
-      "ja": "刻",
+      "ja": "宣",
       "review": false
     },
     {
-      "ja": "穀",
+      "ja": "専",
       "review": false
     },
     {
-      "ja": "推",
+      "ja": "泉",
       "review": false
     },
     {
-      "ja": "巻",
+      "ja": "処",
       "review": true
     },
     {
-      "ja": "憲",
+      "ja": "権",
       "review": true
     },
     {
-      "ja": "映",
+      "ja": "縮",
       "review": true
     },
     {
-      "ja": "異",
+      "ja": "遺",
       "review": true
     }
   ]

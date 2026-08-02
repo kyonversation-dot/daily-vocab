@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "seen": [
     "圧",
     "移",
@@ -54,55 +54,63 @@
     "構",
     "興",
     "講",
-    "告"
+    "告",
+    "混",
+    "査",
+    "再",
+    "災",
+    "妻",
+    "採",
+    "際",
+    "在"
   ],
   "today": [
     {
-      "ja": "護",
+      "ja": "混",
       "review": false
     },
     {
-      "ja": "効",
+      "ja": "査",
       "review": false
     },
     {
-      "ja": "航",
+      "ja": "再",
       "review": false
     },
     {
-      "ja": "鉱",
+      "ja": "災",
       "review": false
     },
     {
-      "ja": "構",
+      "ja": "妻",
       "review": false
     },
     {
-      "ja": "興",
+      "ja": "採",
       "review": false
     },
     {
-      "ja": "講",
+      "ja": "際",
       "review": false
     },
     {
-      "ja": "告",
+      "ja": "在",
       "review": false
     },
     {
-      "ja": "境",
+      "ja": "幹",
       "review": true
     },
     {
-      "ja": "液",
+      "ja": "確",
       "review": true
     },
     {
-      "ja": "故",
+      "ja": "久",
       "review": true
     },
     {
-      "ja": "基",
+      "ja": "質",
       "review": true
     }
   ]
