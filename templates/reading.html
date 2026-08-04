@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>__TITLE__</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px 10px;
+  }
+
+  header { flex-shrink: 0; margin-bottom: 10px; }
+  header h1 { font-size: 1.15rem; color: #ffb4d4; }
+  header p { font-size: 0.72rem; color: #aaa; margin-top: 3px; }
+
+  .progress {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 0.78rem; color: #a8e6c1; margin-bottom: 10px; flex-shrink: 0;
+  }
+  .progress .score { color: #ffb4d4; font-weight: bold; }
+
+  .stage {
+    flex: 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px;
+  }
+
+  .qcard {
+    background: #16213e; border: 2px solid #2a2a5a; border-radius: 16px;
+    padding: 26px 20px; width: 100%; max-width: 420px; text-align: center;
+  }
+  .qword { font-size: 3rem; font-weight: bold; color: #fff; line-height: 1.25; word-break: break-all; }
+  .qhint { font-size: 0.7rem; color: #888; margin-top: 8px; }
+
+  .choices { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
+  button.choice {
+    padding: 16px 14px; border-radius: 14px; border: 2px solid #3a3a7a;
+    background: #24244a; color: #eee; font-size: 1.25rem; font-family: inherit;
+    cursor: pointer; font-weight: bold; transition: background 0.15s, border-color 0.15s;
+  }
+  button.choice:hover:not(:disabled) { border-color: #ffb4d4; }
+  button.choice.correct { background: #1a4731; border-color: #4caf7d; color: #b6f0cf; }
+  button.choice.wrong { background: #4a1a26; border-color: #e05580; color: #ffc0d0; }
+  button.choice:disabled { cursor: default; opacity: 0.85; }
+
+  .feedback { font-size: 0.9rem; min-height: 1.4em; text-align: center; line-height: 1.5; }
+  .feedback .ok { color: #a8e6c1; }
+  .feedback .ng { color: #ffb4b4; }
+  .feedback .mean { display: block; color: #aaa; font-size: 0.75rem; margin-top: 4px; }
+
+  .result { text-align: center; }
+  .result h2 { color: #ffb4d4; font-size: 1.5rem; margin-bottom: 10px; }
+  .result .big { font-size: 2.6rem; font-weight: bold; color: #a8e6c1; }
+  .missed {
+    margin-top: 16px; text-align: left; background: #16213e; border: 1px solid #2a2a5a;
+    border-radius: 12px; padding: 14px 16px; max-width: 420px; font-size: 0.85rem; line-height: 1.9;
+  }
+  .missed h3 { font-size: 0.8rem; color: #f5a623; margin-bottom: 6px; }
+  .missed b { color: #fff; font-size: 1.05rem; }
+  .missed span { color: #a8e6c1; }
+
+  footer { display: flex; justify-content: center; gap: 12px; margin-top: 14px; flex-shrink: 0; }
+  button.act {
+    padding: 10px 22px; border-radius: 20px; border: none;
+    font-size: 0.85rem; font-family: inherit; cursor: pointer; font-weight: bold;
+  }
+  .btn-again { background: #c0436a; color: white; }
+  .btn-again:hover { background: #e05580; }
+  a.back { color: #888; font-size: 0.8rem; text-decoration: none; align-self: center; padding: 8px; }
+  .note { text-align: center; font-size: 0.62rem; color: #666; margin-top: 6px; flex-shrink: 0; }
+__EXTRACSS__
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔤 __TITLE__</h1>
+  <p>__SUBTITLE__ ｜ ただしい読みをえらんでね</p>
+</header>
+
+<div class="progress">
+  <span id="count">1 / 12</span>
+  <span class="score" id="score">⭕ 0</span>
+</div>
+
+<div class="stage" id="stage"></div>
+
+<footer id="footer"></footer>
+<div class="note">これまでに出てきた言葉ぜんぶから出るよ</div>
+
+<script>
+// 出題の母集団＝このデッキで「これまでに出会った語」ぜんぶ（今日の新出も入っている）。
+// 今日の12語だけにすると、前の単元の漢字が回ってこないため（2026-08-04キヨ依頼）。
+const POOL = __READING_POOL_JSON__;
+const N_Q = Math.min(12, POOL.length);
+
+const shuffle = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+
+// 気をつける点：同じ読みの字がある（小6の 士・支・史・志＝ぜんぶ「シ」）。
+// 読みが答えと同じものは選択肢に入れない＝「まちがい」にならないようにする。
+function makeChoices(w) {
+  const others = POOL.filter(x => x.reading !== w.reading);
+  const near = shuffle(others.filter(x => Math.abs(x.reading.length - w.reading.length) <= 1));
+  const rest = shuffle(others);
+  const picked = [];
+  for (const cand of [...near, ...rest]) {
+    if (picked.length >= 2) break;
+    if (picked.some(p => p.reading === cand.reading)) continue;
+    picked.push(cand);
+  }
+  return shuffle([w.reading, ...picked.map(p => p.reading)]);
+}
+
+let quiz = [], idx = 0, score = 0, missed = [];
+
+function start() {
+  quiz = shuffle(POOL).slice(0, N_Q);
+  idx = 0; score = 0; missed = [];
+  document.getElementById('footer').innerHTML = '';
+  render();
+}
+
+function render() {
+  const w = quiz[idx];
+  document.getElementById('count').textContent = `${idx + 1} / ${quiz.length}`;
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  const choices = makeChoices(w);
+  document.getElementById('stage').innerHTML = `
+    <div class="qcard">
+      <div class="qword">${w.ja}</div>
+      <div class="qhint">読みかたは？</div>
+    </div>
+    <div class="choices" id="choices"></div>
+    <div class="feedback" id="feedback"></div>
+  `;
+  const box = document.getElementById('choices');
+  choices.forEach(r => {
+    const b = document.createElement('button');
+    b.className = 'choice';
+    b.textContent = r;
+    b.onclick = () => answer(b, r, w);
+    box.appendChild(b);
+  });
+}
+
+function answer(btn, chosen, w) {
+  const buttons = [...document.querySelectorAll('button.choice')];
+  buttons.forEach(b => { b.disabled = true; if (b.textContent === w.reading) b.classList.add('correct'); });
+  const fb = document.getElementById('feedback');
+  if (chosen === w.reading) {
+    score++;
+    fb.innerHTML = `<span class="ok">⭕ せいかい！</span><span class="mean">${w.meaning || ''}</span>`;
+  } else {
+    btn.classList.add('wrong');
+    missed.push(w);
+    fb.innerHTML = `<span class="ng">✕ 「${w.ja}」＝<b>${w.reading}</b></span><span class="mean">${w.meaning || ''}</span>`;
+  }
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  setTimeout(next, chosen === w.reading ? 900 : 2200);
+}
+
+function next() {
+  idx++;
+  if (idx >= quiz.length) { finish(); return; }
+  render();
+}
+
+function finish() {
+  const missedHtml = missed.length
+    ? `<div class="missed"><h3>もう一回みておく字</h3>${missed.map(w => `<div><b>${w.ja}</b> … <span>${w.reading}</span></div>`).join('')}</div>`
+    : `<div class="missed"><h3>ぜんぶ読めた！</h3><div>すごい ✨</div></div>`;
+  document.getElementById('stage').innerHTML = `
+    <div class="result">
+      <h2>おつかれさま！</h2>
+      <div class="big">${score} / ${quiz.length}</div>
+      ${missedHtml}
+    </div>
+  `;
+  document.getElementById('count').textContent = `${quiz.length} / ${quiz.length}`;
+  document.getElementById('footer').innerHTML = `
+    <button class="act btn-again" onclick="start()">もう1回（ちがう問題）</button>
+    <a class="back" href="./">← もどる</a>
+  `;
+}
+
+start();
+</script>
+</body>
+</html>

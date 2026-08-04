@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>小6漢字のよみ三択</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px 10px;
+  }
+
+  header { flex-shrink: 0; margin-bottom: 10px; }
+  header h1 { font-size: 1.15rem; color: #ffb4d4; }
+  header p { font-size: 0.72rem; color: #aaa; margin-top: 3px; }
+
+  .progress {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 0.78rem; color: #a8e6c1; margin-bottom: 10px; flex-shrink: 0;
+  }
+  .progress .score { color: #ffb4d4; font-weight: bold; }
+
+  .stage {
+    flex: 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px;
+  }
+
+  .qcard {
+    background: #16213e; border: 2px solid #2a2a5a; border-radius: 16px;
+    padding: 26px 20px; width: 100%; max-width: 420px; text-align: center;
+  }
+  .qword { font-size: 3rem; font-weight: bold; color: #fff; line-height: 1.25; word-break: break-all; }
+  .qhint { font-size: 0.7rem; color: #888; margin-top: 8px; }
+
+  .choices { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
+  button.choice {
+    padding: 16px 14px; border-radius: 14px; border: 2px solid #3a3a7a;
+    background: #24244a; color: #eee; font-size: 1.25rem; font-family: inherit;
+    cursor: pointer; font-weight: bold; transition: background 0.15s, border-color 0.15s;
+  }
+  button.choice:hover:not(:disabled) { border-color: #ffb4d4; }
+  button.choice.correct { background: #1a4731; border-color: #4caf7d; color: #b6f0cf; }
+  button.choice.wrong { background: #4a1a26; border-color: #e05580; color: #ffc0d0; }
+  button.choice:disabled { cursor: default; opacity: 0.85; }
+
+  .feedback { font-size: 0.9rem; min-height: 1.4em; text-align: center; line-height: 1.5; }
+  .feedback .ok { color: #a8e6c1; }
+  .feedback .ng { color: #ffb4b4; }
+  .feedback .mean { display: block; color: #aaa; font-size: 0.75rem; margin-top: 4px; }
+
+  .result { text-align: center; }
+  .result h2 { color: #ffb4d4; font-size: 1.5rem; margin-bottom: 10px; }
+  .result .big { font-size: 2.6rem; font-weight: bold; color: #a8e6c1; }
+  .missed {
+    margin-top: 16px; text-align: left; background: #16213e; border: 1px solid #2a2a5a;
+    border-radius: 12px; padding: 14px 16px; max-width: 420px; font-size: 0.85rem; line-height: 1.9;
+  }
+  .missed h3 { font-size: 0.8rem; color: #f5a623; margin-bottom: 6px; }
+  .missed b { color: #fff; font-size: 1.05rem; }
+  .missed span { color: #a8e6c1; }
+
+  footer { display: flex; justify-content: center; gap: 12px; margin-top: 14px; flex-shrink: 0; }
+  button.act {
+    padding: 10px 22px; border-radius: 20px; border: none;
+    font-size: 0.85rem; font-family: inherit; cursor: pointer; font-weight: bold;
+  }
+  .btn-again { background: #c0436a; color: white; }
+  .btn-again:hover { background: #e05580; }
+  a.back { color: #888; font-size: 0.8rem; text-decoration: none; align-self: center; padding: 8px; }
+  .note { text-align: center; font-size: 0.62rem; color: #666; margin-top: 6px; flex-shrink: 0; }
+
+  .word-ja { font-size: 2.4rem; }
+  .word-card .text { font-size: 2rem; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔤 小6漢字のよみ三択</h1>
+  <p>ひなのの漢字れんしゅう ｜ ただしい読みをえらんでね</p>
+</header>
+
+<div class="progress">
+  <span id="count">1 / 12</span>
+  <span class="score" id="score">⭕ 0</span>
+</div>
+
+<div class="stage" id="stage"></div>
+
+<footer id="footer"></footer>
+<div class="note">これまでに出てきた言葉ぜんぶから出るよ</div>
+
+<script>
+// 出題の母集団＝このデッキで「これまでに出会った語」ぜんぶ（今日の新出も入っている）。
+// 今日の12語だけにすると、前の単元の漢字が回ってこないため（2026-08-04キヨ依頼）。
+const POOL = [
+  {
+    "ja": "胃",
+    "reading": "イ",
+    "meaning": "胃ぶくろ ／ 食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>"
+  },
+  {
+    "ja": "異",
+    "reading": "イ／こと(なる)",
+    "meaning": "<ruby>異国<rt>いこく</rt></ruby>・<ruby>異<rt>こと</rt></ruby>なる ／ ほかと<ruby>違<rt>ちが</rt></ruby>っていること"
+  },
+  {
+    "ja": "宇",
+    "reading": "ウ",
+    "meaning": "<ruby>宇宙<rt>うちゅう</rt></ruby> ／ とても大きな空間"
+  },
+  {
+    "ja": "映",
+    "reading": "エイ／うつ(る)",
+    "meaning": "<ruby>映画<rt>えいが</rt></ruby>・<ruby>鏡<rt>かがみ</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る ／ 光や<ruby>姿<rt>すがた</rt></ruby>がうつること"
+  },
+  {
+    "ja": "延",
+    "reading": "エン／の(びる)",
+    "meaning": "<ruby>延期<rt>えんき</rt></ruby>・<ruby>延<rt>の</rt></ruby>ばす ／ 時間や長さがのびること"
+  },
+  {
+    "ja": "我",
+    "reading": "ガ／われ",
+    "meaning": "<ruby>自我<rt>じが</rt></ruby>・<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby> ／ 自分・わたし"
+  },
+  {
+    "ja": "灰",
+    "reading": "カイ／はい",
+    "meaning": "<ruby>灰色<rt>はいいろ</rt></ruby>・<ruby>灰<rt>はい</rt></ruby> ／ 物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>"
+  },
+  {
+    "ja": "拡",
+    "reading": "カク",
+    "meaning": "<ruby>拡大<rt>かくだい</rt></ruby>・<ruby>拡張<rt>かくちょう</rt></ruby> ／ 大きく<ruby>広<rt>ひろ</rt></ruby>げること"
+  },
+  {
+    "ja": "革",
+    "reading": "カク／かわ",
+    "meaning": "<ruby>革命<rt>かくめい</rt></ruby>・<ruby>革<rt>かわ</rt></ruby>ぐつ ／ 大きく<ruby>変<rt>か</rt></ruby>えること（革命）"
+  },
+  {
+    "ja": "割",
+    "reading": "カツ／わ(る)",
+    "meaning": "<ruby>分割<rt>ぶんかつ</rt></ruby>・<ruby>皿<rt>さら</rt></ruby>を<ruby>割<rt>わ</rt></ruby>る ／ 物を<ruby>分<rt>わ</rt></ruby>ける・こわす"
+  },
+  {
+    "ja": "干",
+    "reading": "カン／ほ(す)",
+    "meaning": "<ruby>干潮<rt>かんちょう</rt></ruby>・<ruby>干<rt>ほ</rt></ruby>す ／ 水分をなくす・かわかす"
+  },
+  {
+    "ja": "巻",
+    "reading": "カン／ま(く)",
+    "meaning": "<ruby>第一巻<rt>だいいっかん</rt></ruby>・<ruby>巻<rt>ま</rt></ruby>く ／ くるくると<ruby>丸<rt>まる</rt></ruby>めること"
+  },
+  {
+    "ja": "危",
+    "reading": "キ／あぶ(ない)",
+    "meaning": "<ruby>危険<rt>きけん</rt></ruby>・<ruby>危<rt>あぶ</rt></ruby>ない ／ あぶないこと"
+  },
+  {
+    "ja": "机",
+    "reading": "キ／つくえ",
+    "meaning": "<ruby>机<rt>つくえ</rt></ruby>・<ruby>学習机<rt>がくしゅうづくえ</rt></ruby> ／ べんきょうや<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>台<rt>だい</rt></ruby>"
+  },
+  {
+    "ja": "貴",
+    "reading": "キ／たっと(い)",
+    "meaning": "<ruby>貴重<rt>きちょう</rt></ruby>・<ruby>貴族<rt>きぞく</rt></ruby> ／ とても大切で<ruby>値打<rt>ねう</rt></ruby>ちがある"
+  },
+  {
+    "ja": "疑",
+    "reading": "ギ／うたが(う)",
+    "meaning": "<ruby>疑問<rt>ぎもん</rt></ruby>・<ruby>疑<rt>うたが</rt></ruby>う ／ 本当かな？とあやしく思うこと"
+  },
+  {
+    "ja": "吸",
+    "reading": "キュウ／す(う)",
+    "meaning": "<ruby>呼吸<rt>こきゅう</rt></ruby>・<ruby>吸<rt>す</rt></ruby>う ／ 空気などをすいこむこと"
+  },
+  {
+    "ja": "胸",
+    "reading": "キョウ／むね",
+    "meaning": "<ruby>胸<rt>むね</rt></ruby>・<ruby>度胸<rt>どきょう</rt></ruby> ／ <ruby>体<rt>からだ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の、<ruby>心<rt>こころ</rt></ruby>のあるあたり"
+  },
+  {
+    "ja": "郷",
+    "reading": "キョウ・ゴウ",
+    "meaning": "<ruby>郷土<rt>きょうど</rt></ruby>・<ruby>故郷<rt>こきょう</rt></ruby> ／ <ruby>生<rt>う</rt></ruby>まれた土地・ふるさと"
+  },
+  {
+    "ja": "勤",
+    "reading": "キン／つと(める)",
+    "meaning": "<ruby>勤務<rt>きんむ</rt></ruby>・<ruby>勤<rt>つと</rt></ruby>める ／ 仕事にはげむこと"
+  },
+  {
+    "ja": "筋",
+    "reading": "キン／すじ",
+    "meaning": "<ruby>筋肉<rt>きんにく</rt></ruby>・<ruby>筋道<rt>すじみち</rt></ruby> ／ 物事のすじみち"
+  },
+  {
+    "ja": "系",
+    "reading": "ケイ",
+    "meaning": "<ruby>家系<rt>かけい</rt></ruby>・<ruby>太陽系<rt>たいようけい</rt></ruby> ／ つながり・グループ"
+  },
+  {
+    "ja": "敬",
+    "reading": "ケイ／うやま(う)",
+    "meaning": "<ruby>尊敬<rt>そんけい</rt></ruby>・<ruby>敬語<rt>けいご</rt></ruby> ／ 相手を大切に思ってうやまうこと"
+  },
+  {
+    "ja": "警",
+    "reading": "ケイ",
+    "meaning": "<ruby>警察<rt>けいさつ</rt></ruby>・<ruby>警告<rt>けいこく</rt></ruby> ／ 気をつけて<ruby>守<rt>まも</rt></ruby>ること"
+  },
+  {
+    "ja": "劇",
+    "reading": "ゲキ",
+    "meaning": "<ruby>演劇<rt>えんげき</rt></ruby>・<ruby>劇場<rt>げきじょう</rt></ruby> ／ 人が<ruby>演<rt>えん</rt></ruby>じるお<ruby>芝居<rt>しばい</rt></ruby>"
+  },
+  {
+    "ja": "穴",
+    "reading": "ケツ／あな",
+    "meaning": "<ruby>穴<rt>あな</rt></ruby>・<ruby>穴場<rt>あなば</rt></ruby> ／ くぼんだ<ruby>所<rt>ところ</rt></ruby>・あな"
+  },
+  {
+    "ja": "絹",
+    "reading": "ケン／きぬ",
+    "meaning": "<ruby>絹<rt>きぬ</rt></ruby>・<ruby>絹糸<rt>きぬいと</rt></ruby>"
+  },
+  {
+    "ja": "権",
+    "reading": "ケン",
+    "meaning": "<ruby>権利<rt>けんり</rt></ruby>・<ruby>権力<rt>けんりょく</rt></ruby> ／ 物事を<ruby>行<rt>おこな</rt></ruby>える力"
+  },
+  {
+    "ja": "憲",
+    "reading": "ケン",
+    "meaning": "<ruby>憲法<rt>けんぽう</rt></ruby> ／ 国の一番大事な<ruby>決<rt>き</rt></ruby>まり"
+  },
+  {
+    "ja": "源",
+    "reading": "ゲン／みなもと",
+    "meaning": "<ruby>資源<rt>しげん</rt></ruby>・<ruby>源<rt>みなもと</rt></ruby> ／ 物事の<ruby>始<rt>はじ</rt></ruby>まり・もと"
+  },
+  {
+    "ja": "呼",
+    "reading": "コ／よ(ぶ)",
+    "meaning": "<ruby>呼吸<rt>こきゅう</rt></ruby>・<ruby>呼<rt>よ</rt></ruby>ぶ ／ 声をかけてよぶこと"
+  },
+  {
+    "ja": "誤",
+    "reading": "ゴ／あやま(る)",
+    "meaning": "<ruby>誤解<rt>ごかい</rt></ruby>・<ruby>誤<rt>あやま</rt></ruby>り ／ まちがえること"
+  },
+  {
+    "ja": "后",
+    "reading": "コウ",
+    "meaning": "<ruby>皇后<rt>こうごう</rt></ruby> ／ 王や天皇の<ruby>妻<rt>つま</rt></ruby>・きさき"
+  },
+  {
+    "ja": "孝",
+    "reading": "コウ",
+    "meaning": "<ruby>親孝行<rt>おやこうこう</rt></ruby>・<ruby>孝行<rt>こうこう</rt></ruby> ／ <ruby>親<rt>おや</rt></ruby>を大切にすること"
+  },
+  {
+    "ja": "皇",
+    "reading": "コウ・オウ",
+    "meaning": "<ruby>皇室<rt>こうしつ</rt></ruby>・<ruby>天皇<rt>てんのう</rt></ruby> ／ <ruby>天皇<rt>てんのう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>すること"
+  },
+  {
+    "ja": "紅",
+    "reading": "コウ／べに",
+    "meaning": "<ruby>紅茶<rt>こうちゃ</rt></ruby>・<ruby>紅葉<rt>こうよう</rt></ruby> ／ あざやかな<ruby>赤色<rt>あかいろ</rt></ruby>"
+  },
+  {
+    "ja": "降",
+    "reading": "コウ／ふ(る)・お(りる)",
+    "meaning": "<ruby>降水<rt>こうすい</rt></ruby>・<ruby>降<rt>お</rt></ruby>りる ／ 下におりる（降る・下降）"
+  },
+  {
+    "ja": "鋼",
+    "reading": "コウ／はがね",
+    "meaning": "<ruby>鋼鉄<rt>こうてつ</rt></ruby>・<ruby>鉄鋼<rt>てっこう</rt></ruby> ／ とてもかたい<ruby>鉄<rt>てつ</rt></ruby>"
+  },
+  {
+    "ja": "骨",
+    "reading": "コツ／ほね",
+    "meaning": "<ruby>骨折<rt>こっせつ</rt></ruby>・<ruby>骨<rt>ほね</rt></ruby> ／ 体をささえるほね"
+  },
+  {
+    "ja": "困",
+    "reading": "コン／こま(る)",
+    "meaning": "<ruby>困難<rt>こんなん</rt></ruby>・<ruby>困<rt>こま</rt></ruby>る ／ どうしたらいいか分からずこまること"
+  },
+  {
+    "ja": "砂",
+    "reading": "サ／すな",
+    "meaning": "<ruby>砂糖<rt>さとう</rt></ruby>・<ruby>砂浜<rt>すなはま</rt></ruby> ／ こまかい石のつぶ"
+  },
+  {
+    "ja": "座",
+    "reading": "ザ／すわる",
+    "meaning": "<ruby>座席<rt>ざせき</rt></ruby>・<ruby>正座<rt>せいざ</rt></ruby> ／ すわる・すわる場所"
+  },
+  {
+    "ja": "済",
+    "reading": "サイ／すむ",
+    "meaning": "<ruby>返済<rt>へんさい</rt></ruby>・<ruby>経済<rt>けいざい</rt></ruby> ／ おわる・すませる"
+  },
+  {
+    "ja": "裁",
+    "reading": "サイ／たつ・さばく",
+    "meaning": "<ruby>裁判<rt>さいばん</rt></ruby>・<ruby>洋裁<rt>ようさい</rt></ruby> ／ 布をたつ・よい悪いをさばく"
+  },
+  {
+    "ja": "策",
+    "reading": "サク",
+    "meaning": "<ruby>対策<rt>たいさく</rt></ruby>・<ruby>政策<rt>せいさく</rt></ruby> ／ うまくやるための考え・やり方"
+  },
+  {
+    "ja": "冊",
+    "reading": "サツ／サク",
+    "meaning": "<ruby>一冊<rt>いっさつ</rt></ruby>・<ruby>別冊<rt>べっさつ</rt></ruby> ／ 本を数えることば"
+  },
+  {
+    "ja": "蚕",
+    "reading": "サン／かいこ",
+    "meaning": "<ruby>養蚕<rt>ようさん</rt></ruby>・かいこ ／ きぬ糸をつくる虫"
+  },
+  {
+    "ja": "至",
+    "reading": "シ／いたる",
+    "meaning": "<ruby>至急<rt>しきゅう</rt></ruby>・<ruby>夏至<rt>げし</rt></ruby> ／ 行きつく・とても"
+  },
+  {
+    "ja": "私",
+    "reading": "シ／わたくし",
+    "meaning": "<ruby>私語<rt>しご</rt></ruby>・<ruby>私立<rt>しりつ</rt></ruby> ／ 自分のこと・おおやけでない"
+  },
+  {
+    "ja": "姿",
+    "reading": "シ／すがた",
+    "meaning": "<ruby>姿勢<rt>しせい</rt></ruby>・<ruby>後<rt>うし</rt></ruby>ろ<ruby>姿<rt>すがた</rt></ruby> ／ 見た目のかたち"
+  },
+  {
+    "ja": "視",
+    "reading": "シ",
+    "meaning": "<ruby>視力<rt>しりょく</rt></ruby>・<ruby>無視<rt>むし</rt></ruby> ／ 見る"
+  },
+  {
+    "ja": "詞",
+    "reading": "シ",
+    "meaning": "<ruby>歌詞<rt>かし</rt></ruby>・<ruby>名詞<rt>めいし</rt></ruby> ／ ことば"
+  },
+  {
+    "ja": "誌",
+    "reading": "シ",
+    "meaning": "<ruby>雑誌<rt>ざっし</rt></ruby>・<ruby>日誌<rt>にっし</rt></ruby> ／ 書きとめたもの・ざっし"
+  },
+  {
+    "ja": "磁",
+    "reading": "ジ",
+    "meaning": "<ruby>磁石<rt>じしゃく</rt></ruby>・<ruby>磁力<rt>じりょく</rt></ruby> ／ 鉄をひきつける力"
+  },
+  {
+    "ja": "射",
+    "reading": "シャ／いる",
+    "meaning": "<ruby>反射<rt>はんしゃ</rt></ruby>・<ruby>注射<rt>ちゅうしゃ</rt></ruby> ／ 矢や光をとばす"
+  },
+  {
+    "ja": "捨",
+    "reading": "シャ／すてる",
+    "meaning": "<ruby>四捨五入<rt>ししゃごにゅう</rt></ruby>・<ruby>取捨<rt>しゅしゃ</rt></ruby> ／ すてる"
+  },
+  {
+    "ja": "尺",
+    "reading": "シャク",
+    "meaning": "<ruby>尺度<rt>しゃくど</rt></ruby>・<ruby>縮尺<rt>しゅくしゃく</rt></ruby> ／ むかしの長さの<ruby>単位<rt>たんい</rt></ruby>"
+  },
+  {
+    "ja": "若",
+    "reading": "ジャク／わかい・もしくは",
+    "meaning": "<ruby>若者<rt>わかもの</rt></ruby>・<ruby>老若<rt>ろうにゃく</rt></ruby> ／ 年がわかい"
+  },
+  {
+    "ja": "樹",
+    "reading": "ジュ",
+    "meaning": "<ruby>樹木<rt>じゅもく</rt></ruby>・<ruby>街路樹<rt>がいろじゅ</rt></ruby> ／ 木・立っている木"
+  },
+  {
+    "ja": "収",
+    "reading": "シュウ／おさめる",
+    "meaning": "<ruby>収入<rt>しゅうにゅう</rt></ruby>・<ruby>回収<rt>かいしゅう</rt></ruby> ／ とり入れる・しまう"
+  },
+  {
+    "ja": "宗",
+    "reading": "シュウ／ソウ",
+    "meaning": "<ruby>宗教<rt>しゅうきょう</rt></ruby>・<ruby>宗派<rt>しゅうは</rt></ruby> ／ おおもと・しんこう"
+  },
+  {
+    "ja": "就",
+    "reading": "シュウ／つく",
+    "meaning": "<ruby>就職<rt>しゅうしょく</rt></ruby>・<ruby>就任<rt>しゅうにん</rt></ruby> ／ その<ruby>役目<rt>やくめ</rt></ruby>につく"
+  },
+  {
+    "ja": "衆",
+    "reading": "シュウ／シュ",
+    "meaning": "<ruby>観衆<rt>かんしゅう</rt></ruby>・<ruby>大衆<rt>たいしゅう</rt></ruby> ／ おおぜいの人"
+  },
+  {
+    "ja": "従",
+    "reading": "ジュウ／したがう",
+    "meaning": "<ruby>従来<rt>じゅうらい</rt></ruby>・<ruby>服従<rt>ふくじゅう</rt></ruby> ／ 後についていく・言うとおりにする"
+  },
+  {
+    "ja": "縦",
+    "reading": "ジュウ／たて",
+    "meaning": "<ruby>縦横<rt>じゅうおう</rt></ruby>・<ruby>縦書<rt>たてが</rt></ruby>き ／ 上下の<ruby>向<rt>む</rt></ruby>き"
+  },
+  {
+    "ja": "縮",
+    "reading": "シュク／ちぢむ",
+    "meaning": "<ruby>短縮<rt>たんしゅく</rt></ruby>・<ruby>縮小<rt>しゅくしょう</rt></ruby> ／ 小さくなる・ちぢめる"
+  },
+  {
+    "ja": "熟",
+    "reading": "ジュク／うれる",
+    "meaning": "<ruby>熟語<rt>じゅくご</rt></ruby>・<ruby>成熟<rt>せいじゅく</rt></ruby> ／ じゅうぶんに<ruby>実<rt>みの</rt></ruby>る・なれる"
+  },
+  {
+    "ja": "純",
+    "reading": "ジュン",
+    "meaning": "<ruby>純白<rt>じゅんぱく</rt></ruby>・<ruby>単純<rt>たんじゅん</rt></ruby> ／ まじりけがない"
+  },
+  {
+    "ja": "処",
+    "reading": "ショ",
+    "meaning": "<ruby>処理<rt>しょり</rt></ruby>・<ruby>対処<rt>たいしょ</rt></ruby> ／ とりあつかう・ところ"
+  },
+  {
+    "ja": "署",
+    "reading": "ショ",
+    "meaning": "<ruby>警察署<rt>けいさつしょ</rt></ruby>・<ruby>署名<rt>しょめい</rt></ruby> ／ 役所・名前を書く"
+  },
+  {
+    "ja": "諸",
+    "reading": "ショ",
+    "meaning": "<ruby>諸国<rt>しょこく</rt></ruby>・<ruby>諸君<rt>しょくん</rt></ruby> ／ いろいろな・多くの"
+  },
+  {
+    "ja": "除",
+    "reading": "ジョ／のぞく",
+    "meaning": "<ruby>除去<rt>じょきょ</rt></ruby>・<ruby>掃除<rt>そうじ</rt></ruby> ／ とりのぞく"
+  },
+  {
+    "ja": "承",
+    "reading": "ショウ／うけたまわる",
+    "meaning": "<ruby>承知<rt>しょうち</rt></ruby>・<ruby>了承<rt>りょうしょう</rt></ruby> ／ うけつぐ・引きうける"
+  },
+  {
+    "ja": "将",
+    "reading": "ショウ",
+    "meaning": "<ruby>将来<rt>しょうらい</rt></ruby>・<ruby>大将<rt>たいしょう</rt></ruby> ／ <ruby>軍<rt>ぐん</rt></ruby>をひきいる人・これから先"
+  },
+  {
+    "ja": "傷",
+    "reading": "ショウ／きず・いたむ",
+    "meaning": "<ruby>負傷<rt>ふしょう</rt></ruby>・<ruby>傷口<rt>きずぐち</rt></ruby> ／ けが・きずつく"
+  },
+  {
+    "ja": "障",
+    "reading": "ショウ／さわる",
+    "meaning": "<ruby>故障<rt>こしょう</rt></ruby>・<ruby>障子<rt>しょうじ</rt></ruby> ／ じゃまになる"
+  },
+  {
+    "ja": "蒸",
+    "reading": "ジョウ／むす",
+    "meaning": "<ruby>蒸気<rt>じょうき</rt></ruby>・<ruby>蒸発<rt>じょうはつ</rt></ruby> ／ ゆげでむす・立ちのぼる"
+  },
+  {
+    "ja": "針",
+    "reading": "シン／はり",
+    "meaning": "<ruby>方針<rt>ほうしん</rt></ruby>・<ruby>秒針<rt>びょうしん</rt></ruby> ／ 細くとがったもの"
+  },
+  {
+    "ja": "仁",
+    "reading": "ジン／ニ",
+    "meaning": "<ruby>仁愛<rt>じんあい</rt></ruby>・<ruby>仁義<rt>じんぎ</rt></ruby> ／ 人を思いやる心"
+  },
+  {
+    "ja": "垂",
+    "reading": "スイ／たれる",
+    "meaning": "<ruby>垂直<rt>すいちょく</rt></ruby>・<ruby>垂<rt>た</rt></ruby>れ<ruby>幕<rt>まく</rt></ruby> ／ 下にたれさがる"
+  },
+  {
+    "ja": "遺",
+    "reading": "イ",
+    "meaning": "<ruby>遺産<rt>いさん</rt></ruby>・<ruby>遺跡<rt>いせき</rt></ruby> ／ 後に<ruby>残<rt>のこ</rt></ruby>す"
+  },
+  {
+    "ja": "域",
+    "reading": "イキ",
+    "meaning": "<ruby>地域<rt>ちいき</rt></ruby>・<ruby>区域<rt>くいき</rt></ruby> ／ くぎられた<ruby>場所<rt>ばしょ</rt></ruby>"
+  },
+  {
+    "ja": "沿",
+    "reading": "エン／そう",
+    "meaning": "<ruby>沿岸<rt>えんがん</rt></ruby>・<ruby>川沿<rt>かわぞ</rt></ruby>い ／ そばに<ruby>沿<rt>そ</rt></ruby>って行く"
+  },
+  {
+    "ja": "恩",
+    "reading": "オン",
+    "meaning": "<ruby>恩人<rt>おんじん</rt></ruby>・<ruby>恩返<rt>おんがえ</rt></ruby>し ／ 受けたありがたい<ruby>助<rt>たす</rt></ruby>け"
+  },
+  {
+    "ja": "閣",
+    "reading": "カク",
+    "meaning": "<ruby>内閣<rt>ないかく</rt></ruby>・<ruby>金閣寺<rt>きんかくじ</rt></ruby> ／ りっぱな<ruby>建物<rt>たてもの</rt></ruby>・国の中心"
+  },
+  {
+    "ja": "株",
+    "reading": "かぶ",
+    "meaning": "<ruby>株式<rt>かぶしき</rt></ruby>・<ruby>切<rt>き</rt></ruby>り<ruby>株<rt>かぶ</rt></ruby> ／ 切りかぶ・会社のもちぶん"
+  },
+  {
+    "ja": "看",
+    "reading": "カン",
+    "meaning": "<ruby>看護<rt>かんご</rt></ruby>・<ruby>看板<rt>かんばん</rt></ruby> ／ 気をつけて見る"
+  },
+  {
+    "ja": "簡",
+    "reading": "カン",
+    "meaning": "<ruby>簡単<rt>かんたん</rt></ruby>・<ruby>簡潔<rt>かんけつ</rt></ruby> ／ 手みじか"
+  },
+  {
+    "ja": "揮",
+    "reading": "キ",
+    "meaning": "<ruby>指揮<rt>しき</rt></ruby>・<ruby>発揮<rt>はっき</rt></ruby> ／ 力を出す・さしずする"
+  },
+  {
+    "ja": "供",
+    "reading": "キョウ／そなえる・とも",
+    "meaning": "<ruby>提供<rt>ていきょう</rt></ruby>・お<ruby>供<rt>とも</rt></ruby> ／ さしあげる・いっしょの人"
+  },
+  {
+    "ja": "券",
+    "reading": "ケン",
+    "meaning": "<ruby>入場券<rt>にゅうじょうけん</rt></ruby>・<ruby>食券<rt>しょっけん</rt></ruby> ／ きっぷ・ふだ"
+  },
+  {
+    "ja": "激",
+    "reading": "ゲキ／はげしい",
+    "meaning": "<ruby>激<rt>はげ</rt></ruby>しい・<ruby>感激<rt>かんげき</rt></ruby> ／ とてもはげしい"
+  },
+  {
+    "ja": "己",
+    "reading": "コ／キ／おのれ",
+    "meaning": "<ruby>自己<rt>じこ</rt></ruby>・<ruby>知己<rt>ちき</rt></ruby> ／ 自分"
+  },
+  {
+    "ja": "刻",
+    "reading": "コク／きざむ",
+    "meaning": "<ruby>時刻<rt>じこく</rt></ruby>・<ruby>深刻<rt>しんこく</rt></ruby> ／ きざむ・時"
+  },
+  {
+    "ja": "穀",
+    "reading": "コク",
+    "meaning": "<ruby>穀物<rt>こくもつ</rt></ruby>・<ruby>雑穀<rt>ざっこく</rt></ruby> ／ 米や麦などの<ruby>食<rt>た</rt></ruby>べもの"
+  },
+  {
+    "ja": "推",
+    "reading": "スイ／おす",
+    "meaning": "<ruby>推理<rt>すいり</rt></ruby>・<ruby>推薦<rt>すいせん</rt></ruby> ／ おしはかる・すすめる"
+  },
+  {
+    "ja": "寸",
+    "reading": "スン",
+    "meaning": "<ruby>寸法<rt>すんぽう</rt></ruby>・<ruby>寸前<rt>すんぜん</rt></ruby> ／ むかしの長さ"
+  },
+  {
+    "ja": "盛",
+    "reading": "セイ／もる・さかん",
+    "meaning": "<ruby>盛大<rt>せいだい</rt></ruby>・<ruby>盛<rt>も</rt></ruby>り<ruby>付<rt>つ</rt></ruby>け ／ たくさんもる・いきおいがある"
+  },
+  {
+    "ja": "聖",
+    "reading": "セイ",
+    "meaning": "<ruby>聖火<rt>せいか</rt></ruby>・<ruby>神聖<rt>しんせい</rt></ruby> ／ とうとくてきよらか"
+  },
+  {
+    "ja": "誠",
+    "reading": "セイ／まこと",
+    "meaning": "<ruby>誠実<rt>せいじつ</rt></ruby>・<ruby>誠意<rt>せいい</rt></ruby> ／ うそのない心"
+  },
+  {
+    "ja": "舌",
+    "reading": "ゼツ／した",
+    "meaning": "<ruby>舌<rt>した</rt></ruby>・<ruby>舌戦<rt>ぜっせん</rt></ruby> ／ 口の中のした"
+  },
+  {
+    "ja": "宣",
+    "reading": "セン",
+    "meaning": "<ruby>宣言<rt>せんげん</rt></ruby>・<ruby>宣伝<rt>せんでん</rt></ruby> ／ 広く言い<ruby>知<rt>し</rt></ruby>らせる"
+  },
+  {
+    "ja": "専",
+    "reading": "セン／もっぱら",
+    "meaning": "<ruby>専門<rt>せんもん</rt></ruby>・<ruby>専用<rt>せんよう</rt></ruby> ／ そればかりする"
+  },
+  {
+    "ja": "泉",
+    "reading": "セン／いずみ",
+    "meaning": "<ruby>温泉<rt>おんせん</rt></ruby>・<ruby>泉<rt>いずみ</rt></ruby> ／ 水がわき出るところ"
+  },
+  {
+    "ja": "洗",
+    "reading": "セン／あらう",
+    "meaning": "<ruby>洗<rt>あら</rt></ruby>う・<ruby>洗面<rt>せんめん</rt></ruby> ／ あらう"
+  },
+  {
+    "ja": "染",
+    "reading": "セン／そめる・しみる",
+    "meaning": "<ruby>染<rt>そ</rt></ruby>める・<ruby>感染<rt>かんせん</rt></ruby> ／ 色をつける・しみこむ"
+  },
+  {
+    "ja": "銭",
+    "reading": "セン／ぜに",
+    "meaning": "<ruby>金銭<rt>きんせん</rt></ruby>・<ruby>小銭<rt>こぜに</rt></ruby> ／ お金"
+  },
+  {
+    "ja": "善",
+    "reading": "ゼン／よい",
+    "meaning": "<ruby>善悪<rt>ぜんあく</rt></ruby>・<ruby>改善<rt>かいぜん</rt></ruby> ／ よいこと（⇔<ruby>悪<rt>あく</rt></ruby>）"
+  },
+  {
+    "ja": "奏",
+    "reading": "ソウ／かなでる",
+    "meaning": "<ruby>演奏<rt>えんそう</rt></ruby>・<ruby>合奏<rt>がっそう</rt></ruby> ／ <ruby>楽器<rt>がっき</rt></ruby>をならす"
+  },
+  {
+    "ja": "窓",
+    "reading": "ソウ／まど",
+    "meaning": "<ruby>車窓<rt>しゃそう</rt></ruby>・<ruby>窓口<rt>まどぐち</rt></ruby> ／ まど"
+  },
+  {
+    "ja": "創",
+    "reading": "ソウ",
+    "meaning": "<ruby>創作<rt>そうさく</rt></ruby>・<ruby>創立<rt>そうりつ</rt></ruby> ／ はじめてつくる"
+  },
+  {
+    "ja": "装",
+    "reading": "ソウ／ショウ／よそおう",
+    "meaning": "<ruby>服装<rt>ふくそう</rt></ruby>・<ruby>装置<rt>そうち</rt></ruby> ／ 身につける・かざる"
+  },
+  {
+    "ja": "層",
+    "reading": "ソウ",
+    "meaning": "<ruby>地層<rt>ちそう</rt></ruby>・<ruby>高層<rt>こうそう</rt></ruby> ／ かさなり"
+  },
+  {
+    "ja": "操",
+    "reading": "ソウ／あやつる",
+    "meaning": "<ruby>体操<rt>たいそう</rt></ruby>・<ruby>操作<rt>そうさ</rt></ruby> ／ あやつる・うごかす"
+  },
+  {
+    "ja": "蔵",
+    "reading": "ゾウ／くら",
+    "meaning": "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>・<ruby>地蔵<rt>じぞう</rt></ruby> ／ しまっておく・くら"
+  },
+  {
+    "ja": "臓",
+    "reading": "ゾウ",
+    "meaning": "<ruby>心臓<rt>しんぞう</rt></ruby>・<ruby>内臓<rt>ないぞう</rt></ruby> ／ からだの中の<ruby>器官<rt>きかん</rt></ruby>"
+  },
+  {
+    "ja": "存",
+    "reading": "ソン／ゾン",
+    "meaning": "<ruby>存在<rt>そんざい</rt></ruby>・<ruby>保存<rt>ほぞん</rt></ruby> ／ ある・知っている"
+  },
+  {
+    "ja": "尊",
+    "reading": "ソン／とうとい",
+    "meaning": "<ruby>尊敬<rt>そんけい</rt></ruby>・<ruby>尊重<rt>そんちょう</rt></ruby> ／ とうとぶ・大切にする"
+  },
+  {
+    "ja": "退",
+    "reading": "タイ／しりぞく",
+    "meaning": "<ruby>退場<rt>たいじょう</rt></ruby>・<ruby>引退<rt>いんたい</rt></ruby> ／ 後ろに下がる・やめる"
+  },
+  {
+    "ja": "宅",
+    "reading": "タク",
+    "meaning": "<ruby>自宅<rt>じたく</rt></ruby>・<ruby>帰宅<rt>きたく</rt></ruby> ／ すまい"
+  }
+];
+const N_Q = Math.min(12, POOL.length);
+
+const shuffle = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+
+// 気をつける点：同じ読みの字がある（小6の 士・支・史・志＝ぜんぶ「シ」）。
+// 読みが答えと同じものは選択肢に入れない＝「まちがい」にならないようにする。
+function makeChoices(w) {
+  const others = POOL.filter(x => x.reading !== w.reading);
+  const near = shuffle(others.filter(x => Math.abs(x.reading.length - w.reading.length) <= 1));
+  const rest = shuffle(others);
+  const picked = [];
+  for (const cand of [...near, ...rest]) {
+    if (picked.length >= 2) break;
+    if (picked.some(p => p.reading === cand.reading)) continue;
+    picked.push(cand);
+  }
+  return shuffle([w.reading, ...picked.map(p => p.reading)]);
+}
+
+let quiz = [], idx = 0, score = 0, missed = [];
+
+function start() {
+  quiz = shuffle(POOL).slice(0, N_Q);
+  idx = 0; score = 0; missed = [];
+  document.getElementById('footer').innerHTML = '';
+  render();
+}
+
+function render() {
+  const w = quiz[idx];
+  document.getElementById('count').textContent = `${idx + 1} / ${quiz.length}`;
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  const choices = makeChoices(w);
+  document.getElementById('stage').innerHTML = `
+    <div class="qcard">
+      <div class="qword">${w.ja}</div>
+      <div class="qhint">読みかたは？</div>
+    </div>
+    <div class="choices" id="choices"></div>
+    <div class="feedback" id="feedback"></div>
+  `;
+  const box = document.getElementById('choices');
+  choices.forEach(r => {
+    const b = document.createElement('button');
+    b.className = 'choice';
+    b.textContent = r;
+    b.onclick = () => answer(b, r, w);
+    box.appendChild(b);
+  });
+}
+
+function answer(btn, chosen, w) {
+  const buttons = [...document.querySelectorAll('button.choice')];
+  buttons.forEach(b => { b.disabled = true; if (b.textContent === w.reading) b.classList.add('correct'); });
+  const fb = document.getElementById('feedback');
+  if (chosen === w.reading) {
+    score++;
+    fb.innerHTML = `<span class="ok">⭕ せいかい！</span><span class="mean">${w.meaning || ''}</span>`;
+  } else {
+    btn.classList.add('wrong');
+    missed.push(w);
+    fb.innerHTML = `<span class="ng">✕ 「${w.ja}」＝<b>${w.reading}</b></span><span class="mean">${w.meaning || ''}</span>`;
+  }
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  setTimeout(next, chosen === w.reading ? 900 : 2200);
+}
+
+function next() {
+  idx++;
+  if (idx >= quiz.length) { finish(); return; }
+  render();
+}
+
+function finish() {
+  const missedHtml = missed.length
+    ? `<div class="missed"><h3>もう一回みておく字</h3>${missed.map(w => `<div><b>${w.ja}</b> … <span>${w.reading}</span></div>`).join('')}</div>`
+    : `<div class="missed"><h3>ぜんぶ読めた！</h3><div>すごい ✨</div></div>`;
+  document.getElementById('stage').innerHTML = `
+    <div class="result">
+      <h2>おつかれさま！</h2>
+      <div class="big">${score} / ${quiz.length}</div>
+      ${missedHtml}
+    </div>
+  `;
+  document.getElementById('count').textContent = `${quiz.length} / ${quiz.length}`;
+  document.getElementById('footer').innerHTML = `
+    <button class="act btn-again" onclick="start()">もう1回（ちがう問題）</button>
+    <a class="back" href="./">← もどる</a>
+  `;
+}
+
+start();
+</script>
+</body>
+</html>

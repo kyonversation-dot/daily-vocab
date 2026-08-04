@@ -7,7 +7,8 @@
     "pool": "pool_hinano_kanji.json",
     "seen": "seen_hinano_kanji.json",
     "out": "docs/hinano/kanji",
-    "big": true
+    "big": true,
+    "reading": true
   },
   {
     "id": "hinano-kanji-j1",
@@ -17,7 +18,8 @@
     "pool": "pool_hinano_kanji_j1.json",
     "seen": "seen_hinano_kanji_j1.json",
     "out": "docs/hinano/kanji-j1",
-    "big": true
+    "big": true,
+    "reading": true
   },
   {
     "id": "hinano-vocab",
