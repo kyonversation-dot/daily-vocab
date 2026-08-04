@@ -36,7 +36,8 @@
     "pool": "pool_maya_kanji.json",
     "seen": "seen_maya_kanji.json",
     "out": "docs/maya/kanji",
-    "big": true
+    "big": true,
+    "random": true
   },
   {
     "id": "maya-vocab",

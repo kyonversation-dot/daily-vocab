@@ -115,7 +115,12 @@ function buildDeck(deck) {
     // 新しい日（または単元変更）：今日ぶんを選んで進める
     const prevSeen = new Set(state.seen || []);
     const unseen = pool.words.filter(w => !prevSeen.has(w.ja));
-    const newJa = unseen.slice(0, DAILY_NEW).map(w => w.ja);
+    // deck.random=true のデッキは未出題からランダムに引く（既定は並び順どおり）。
+    // 5年生漢字プールは音読み五十音順なので、順番どおりだと同音の字が同じ日に固まる
+    // （実測 2026-08-04＝殺・雑・酸・賛・士・支・史・志＝「し」が4字）。
+    // ★レッスンの語を先出しするデッキ（vocab系）は並び順が命なので random にしない。
+    const newJa = (deck.random ? pickRandom(unseen, DAILY_NEW) : unseen.slice(0, DAILY_NEW))
+      .map(w => w.ja);
     const reviewPool = [...prevSeen].filter(ja => byJa[ja]);
     const nReview = newJa.length === 0 ? DAILY_NEW + REVIEW_COUNT : REVIEW_COUNT;
     const reviewJa = pickRandom(reviewPool, Math.min(nReview, reviewPool.length));

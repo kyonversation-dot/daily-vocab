@@ -7,6 +7,16 @@
   "counterUnit": "語",
   "words": [
     {
+      "ja": "兵庫県",
+      "reading": "ひょうごけん",
+      "meaning": "神戸市がある<ruby>県<rt>けん</rt></ruby>。<ruby>近畿<rt>きんき</rt></ruby>地方にある"
+    },
+    {
+      "ja": "神戸",
+      "reading": "こうべ",
+      "meaning": "兵庫県にある<ruby>港<rt>みなと</rt></ruby>の<ruby>町<rt>まち</rt></ruby>"
+    },
+    {
       "ja": "結論",
       "reading": "けつろん",
       "meaning": "話し合いの<ruby>最後<rt>さいご</rt></ruby>に出る、まとまった<ruby>考<rt>かんが</rt></ruby>え"

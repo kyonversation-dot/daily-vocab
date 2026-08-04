@@ -12,6 +12,11 @@
    だから新しい単元の語を末尾に足しただけでは、当分出てこない＝レッスンとゲームが
    つながらない。出したい語は pool の words 配列の先頭へ移す。
    ここに出た8語を、そのまま翌日のレッスンプランの【明日の朝ゲーム】欄に貼る。
+
+⚠️ 例外＝decks.json に "random": true が付いたデッキ（2026-08-04・maya-kanji）。
+   そこは未出題からランダムに引くので【明日の8語は前もって決まっていない】。
+   ここには「🎲ランダム」とだけ出る＝**プランの朝ゲーム欄に漢字を書かない**。
+   （書くと当たっていない表がプランに載る。言葉デッキは並び順のままなので従来どおり）
 """
 import json, io, os
 
@@ -37,15 +42,25 @@ for d in decks:
         need.append(d["id"])
     print("%-18s %-24s 残り%3d / 全%3d  ＝ あと約%d日  %s"
           % (d["id"], pool.get("unit", "")[:22], left, total, days, flag))
-    nxt = [w["ja"] for w in pool["words"] if w["ja"] not in seen_set][:DAILY_NEW]
+    unseen = [w["ja"] for w in pool["words"] if w["ja"] not in seen_set]
+    if d.get("random"):
+        nxt = None if unseen else []          # None = ランダム＝予測できない
+    else:
+        nxt = unseen[:DAILY_NEW]
     tomorrow.append((d["id"], nxt))
 
 print()
-print("── 明日の新出%d語（プールの並び順どおりに出ます・復習4語はランダム）──" % DAILY_NEW)
+print("── 明日の新出%d語（並び順どおりに出ます・復習4語はランダム）──" % DAILY_NEW)
 for did, nxt in tomorrow:
-    print("%-18s %s" % (did, "・".join(nxt) if nxt else "（新出なし＝復習だけ）"))
+    if nxt is None:
+        body = "🎲 ランダム＝明日の字は決まっていない（プランに書かない）"
+    elif nxt:
+        body = "・".join(nxt)
+    else:
+        body = "（新出なし＝復習だけ）"
+    print("%-18s %s" % (did, body))
 print("※ここに明日のレッスンで使う語が入っていなければ、pool の words 配列の先頭へ移すこと。")
-print("※この8語をレッスンプランの【明日の朝ゲーム】欄にそのまま貼る。")
+print("※この8語をレッスンプランの【明日の朝ゲーム】欄にそのまま貼る（🎲の行は書かない）。")
 
 print()
 if need:
