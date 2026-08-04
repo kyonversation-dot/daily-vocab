@@ -1,5 +1,5 @@
 {
-  "unit": "どちらを選びますか＝話し合いの言葉",
+  "unit": "5年生の漢字でできた言葉",
   "child": "マヤ",
   "titleShort": "どちらを選びますか",
   "subtitle": "マヤの言葉れんしゅう",
@@ -370,6 +370,806 @@
       "ja": "政治",
       "reading": "せいじ",
       "meaning": "国や町のことを、みんなのために決めて動かすこと"
+    },
+    {
+      "ja": "気圧",
+      "reading": "きあつ",
+      "meaning": "<ruby>空気<rt>くうき</rt></ruby>が<ruby>地面<rt>じめん</rt></ruby>をおす<ruby>力<rt>ちから</rt></ruby>。てんき<ruby>予報<rt>よほう</rt></ruby>で<ruby>聞<rt>き</rt></ruby>く"
+    },
+    {
+      "ja": "圧力",
+      "reading": "あつりょく",
+      "meaning": "ぎゅっとおす<ruby>力<rt>ちから</rt></ruby>"
+    },
+    {
+      "ja": "移動",
+      "reading": "いどう",
+      "meaning": "べつの<ruby>場所<rt>ばしょ</rt></ruby>へうつること"
+    },
+    {
+      "ja": "永久",
+      "reading": "えいきゅう",
+      "meaning": "いつまでも<ruby>終<rt>お</rt></ruby>わらないこと"
+    },
+    {
+      "ja": "経営",
+      "reading": "けいえい",
+      "meaning": "<ruby>店<rt>みせ</rt></ruby>や<ruby>会社<rt>かいしゃ</rt></ruby>をうごかしていくこと"
+    },
+    {
+      "ja": "利益",
+      "reading": "りえき",
+      "meaning": "しょうばいでのこった、もうけ"
+    },
+    {
+      "ja": "液体",
+      "reading": "えきたい",
+      "meaning": "<ruby>水<rt>みず</rt></ruby>のように<ruby>形<rt>かたち</rt></ruby>のかわるもの"
+    },
+    {
+      "ja": "演技",
+      "reading": "えんぎ",
+      "meaning": "げきや<ruby>映画<rt>えいが</rt></ruby>で、その<ruby>役<rt>やく</rt></ruby>になりきること"
+    },
+    {
+      "ja": "往復",
+      "reading": "おうふく",
+      "meaning": "<ruby>行<rt>い</rt></ruby>って、また<ruby>帰<rt>かえ</rt></ruby>ってくること"
+    },
+    {
+      "ja": "応用",
+      "reading": "おうよう",
+      "meaning": "ならったことを、べつのことに<ruby>使<rt>つか</rt></ruby>うこと"
+    },
+    {
+      "ja": "可能",
+      "reading": "かのう",
+      "meaning": "できること・ありうること"
+    },
+    {
+      "ja": "仮定",
+      "reading": "かてい",
+      "meaning": "「もし〜だったら」と、かりに<ruby>考<rt>かんが</rt></ruby>えること"
+    },
+    {
+      "ja": "価格",
+      "reading": "かかく",
+      "meaning": "そのしなものの、ねだん"
+    },
+    {
+      "ja": "河口",
+      "reading": "かこう",
+      "meaning": "<ruby>川<rt>かわ</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>に<ruby>出<rt>で</rt></ruby>るところ"
+    },
+    {
+      "ja": "過去",
+      "reading": "かこ",
+      "meaning": "すぎさった、むかしのこと"
+    },
+    {
+      "ja": "快晴",
+      "reading": "かいせい",
+      "meaning": "くもが<ruby>少<rt>すく</rt></ruby>なくて、とても<ruby>気持<rt>きも</rt></ruby>ちのよい<ruby>晴<rt>は</rt></ruby>れ"
+    },
+    {
+      "ja": "解決",
+      "reading": "かいけつ",
+      "meaning": "こまっていたことが、うまくかたづくこと"
+    },
+    {
+      "ja": "合格",
+      "reading": "ごうかく",
+      "meaning": "しけんにうかること"
+    },
+    {
+      "ja": "確実",
+      "reading": "かくじつ",
+      "meaning": "まちがいなく、そうだと<ruby>言<rt>い</rt></ruby>えること"
+    },
+    {
+      "ja": "幹",
+      "reading": "みき",
+      "meaning": "<ruby>木<rt>き</rt></ruby>のいちばんふとい、<ruby>中心<rt>ちゅうしん</rt></ruby>のぶぶん"
+    },
+    {
+      "ja": "習慣",
+      "reading": "しゅうかん",
+      "meaning": "まいにち、いつもやっていること"
+    },
+    {
+      "ja": "慣れる",
+      "reading": "なれる",
+      "meaning": "なんども<ruby>行<rt>おこな</rt></ruby>って、へいきになること"
+    },
+    {
+      "ja": "基本",
+      "reading": "きほん",
+      "meaning": "いちばんもとになる、たいせつなところ"
+    },
+    {
+      "ja": "寄せる",
+      "reading": "よせる",
+      "meaning": "そばへ、ちかづけること"
+    },
+    {
+      "ja": "規則",
+      "reading": "きそく",
+      "meaning": "みんなでまもると<ruby>決<rt>き</rt></ruby>めたきまり"
+    },
+    {
+      "ja": "技術",
+      "reading": "ぎじゅつ",
+      "meaning": "うまくやるための、わざと<ruby>方法<rt>ほうほう</rt></ruby>"
+    },
+    {
+      "ja": "逆",
+      "reading": "ぎゃく",
+      "meaning": "はんたいのむき・はんたいのこと"
+    },
+    {
+      "ja": "居間",
+      "reading": "いま",
+      "meaning": "<ruby>家族<rt>かぞく</rt></ruby>がくつろぐへや"
+    },
+    {
+      "ja": "国境",
+      "reading": "こっきょう",
+      "meaning": "<ruby>国<rt>くに</rt></ruby>と<ruby>国<rt>くに</rt></ruby>のさかいめ"
+    },
+    {
+      "ja": "平均",
+      "reading": "へいきん",
+      "meaning": "でこぼこをならして、まん<ruby>中<rt>なか</rt></ruby>くらいにした<ruby>数<rt>かず</rt></ruby>"
+    },
+    {
+      "ja": "経験",
+      "reading": "けいけん",
+      "meaning": "<ruby>実<rt>じっ</rt></ruby>さいにやって、<ruby>身<rt>み</rt></ruby>についたこと"
+    },
+    {
+      "ja": "性質",
+      "reading": "せいしつ",
+      "meaning": "そのものが、もともともっている<ruby>特<rt>とく</rt></ruby>ちょう"
+    },
+    {
+      "ja": "得意",
+      "reading": "とくい",
+      "meaning": "うまくできて、じしんがあること"
+    },
+    {
+      "ja": "清潔",
+      "reading": "せいけつ",
+      "meaning": "きれいで、よごれていないこと"
+    },
+    {
+      "ja": "事件",
+      "reading": "じけん",
+      "meaning": "<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でおきた、こまったできごと"
+    },
+    {
+      "ja": "険しい",
+      "reading": "けわしい",
+      "meaning": "<ruby>山道<rt>やまみち</rt></ruby>などが、きつくてのぼりにくいようす"
+    },
+    {
+      "ja": "検査",
+      "reading": "けんさ",
+      "meaning": "わるいところがないか、しらべること"
+    },
+    {
+      "ja": "期限",
+      "reading": "きげん",
+      "meaning": "「ここまで」と<ruby>決<rt>き</rt></ruby>められた、さいごの<ruby>日<rt>ひ</rt></ruby>"
+    },
+    {
+      "ja": "限る",
+      "reading": "かぎる",
+      "meaning": "そこまでと、はんいを<ruby>決<rt>き</rt></ruby>めること"
+    },
+    {
+      "ja": "現れる",
+      "reading": "あらわれる",
+      "meaning": "かくれていたものが、<ruby>見<rt>み</rt></ruby>えるようになること"
+    },
+    {
+      "ja": "減る",
+      "reading": "へる",
+      "meaning": "<ruby>数<rt>かず</rt></ruby>や<ruby>量<rt>りょう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなること"
+    },
+    {
+      "ja": "事故",
+      "reading": "じこ",
+      "meaning": "おもいがけずおきた、わるいできごと"
+    },
+    {
+      "ja": "個人",
+      "reading": "こじん",
+      "meaning": "みんなではなく、<ruby>一人<rt>ひとり</rt></ruby>ひとりのこと"
+    },
+    {
+      "ja": "保護",
+      "reading": "ほご",
+      "meaning": "よわいものを、まもってやること"
+    },
+    {
+      "ja": "厚い",
+      "reading": "あつい",
+      "meaning": "ものの<ruby>厚<rt>あつ</rt></ruby>みがあること"
+    },
+    {
+      "ja": "耕す",
+      "reading": "たがやす",
+      "meaning": "たねをまくために、<ruby>土<rt>つち</rt></ruby>をほりおこすこと"
+    },
+    {
+      "ja": "航海",
+      "reading": "こうかい",
+      "meaning": "<ruby>船<rt>ふね</rt></ruby>で<ruby>海<rt>うみ</rt></ruby>をわたること"
+    },
+    {
+      "ja": "鉱物",
+      "reading": "こうぶつ",
+      "meaning": "<ruby>地面<rt>じめん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>からとれる、<ruby>石<rt>いし</rt></ruby>や<ruby>金<rt>きん</rt></ruby>ぞく"
+    },
+    {
+      "ja": "講習",
+      "reading": "こうしゅう",
+      "meaning": "あつまって、まとめてならうこと"
+    },
+    {
+      "ja": "報告",
+      "reading": "ほうこく",
+      "meaning": "やったことや<ruby>調<rt>しら</rt></ruby>べたことを、つたえること"
+    },
+    {
+      "ja": "混ぜる",
+      "reading": "まぜる",
+      "meaning": "ふたつ<ruby>以上<rt>いじょう</rt></ruby>のものを、<ruby>一<rt>ひと</rt></ruby>つにすること"
+    },
+    {
+      "ja": "調査",
+      "reading": "ちょうさ",
+      "meaning": "しっかりしらべること"
+    },
+    {
+      "ja": "再び",
+      "reading": "ふたたび",
+      "meaning": "もういちど"
+    },
+    {
+      "ja": "災害",
+      "reading": "さいがい",
+      "meaning": "じしんや<ruby>大雨<rt>おおあめ</rt></ruby>などで、たくさんの<ruby>人<rt>ひと</rt></ruby>がこまること"
+    },
+    {
+      "ja": "妻",
+      "reading": "つま",
+      "meaning": "けっこんしている<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>のほう"
+    },
+    {
+      "ja": "採る",
+      "reading": "とる",
+      "meaning": "えらんでとりあげること"
+    },
+    {
+      "ja": "国際",
+      "reading": "こくさい",
+      "meaning": "<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>国<rt>くに</rt></ruby>にかかわること"
+    },
+    {
+      "ja": "現在",
+      "reading": "げんざい",
+      "meaning": "<ruby>今<rt>いま</rt></ruby>のこと"
+    },
+    {
+      "ja": "財産",
+      "reading": "ざいさん",
+      "meaning": "そのひとがもっている、お<ruby>金<rt>かね</rt></ruby>やもの"
+    },
+    {
+      "ja": "複雑",
+      "reading": "ふくざつ",
+      "meaning": "こみいっていて、わかりにくいこと"
+    },
+    {
+      "ja": "酸素",
+      "reading": "さんそ",
+      "meaning": "いきをするときに<ruby>体<rt>からだ</rt></ruby>がとりこむ、<ruby>空気<rt>くうき</rt></ruby>の<ruby>中<rt>なか</rt></ruby>のもの"
+    },
+    {
+      "ja": "武士",
+      "reading": "ぶし",
+      "meaning": "むかしの<ruby>日本<rt>にほん</rt></ruby>で、<ruby>刀<rt>かたな</rt></ruby>をもってたたかった<ruby>人<rt>ひと</rt></ruby>"
+    },
+    {
+      "ja": "志",
+      "reading": "こころざし",
+      "meaning": "「こうなりたい」という、つよい<ruby>思<rt>おも</rt></ruby>い"
+    },
+    {
+      "ja": "枝",
+      "reading": "えだ",
+      "meaning": "<ruby>木<rt>き</rt></ruby>の<ruby>幹<rt>みき</rt></ruby>からわかれて<ruby>出<rt>で</rt></ruby>ているぶぶん"
+    },
+    {
+      "ja": "教師",
+      "reading": "きょうし",
+      "meaning": "がっこうの<ruby>先生<rt>せんせい</rt></ruby>"
+    },
+    {
+      "ja": "資料",
+      "reading": "しりょう",
+      "meaning": "しらべるときに<ruby>使<rt>つか</rt></ruby>う、<ruby>数<rt>かず</rt></ruby>や<ruby>文章<rt>ぶんしょう</rt></ruby>"
+    },
+    {
+      "ja": "周囲",
+      "reading": "しゅうい",
+      "meaning": "まわり・そのぐるりのところ"
+    },
+    {
+      "ja": "囲む",
+      "reading": "かこむ",
+      "meaning": "まわりをぐるりととりまくこと"
+    },
+    {
+      "ja": "原因",
+      "reading": "げんいん",
+      "meaning": "そうなった、もとのわけ"
+    },
+    {
+      "ja": "衛生",
+      "reading": "えいせい",
+      "meaning": "<ruby>体<rt>からだ</rt></ruby>のためにきれいにしておくこと"
+    },
+    {
+      "ja": "貿易",
+      "reading": "ぼうえき",
+      "meaning": "<ruby>国<rt>くに</rt></ruby>と<ruby>国<rt>くに</rt></ruby>のあいだで、しなものを<ruby>売<rt>う</rt></ruby>り<ruby>買<rt>か</rt></ruby>いすること"
+    },
+    {
+      "ja": "桜",
+      "reading": "さくら",
+      "meaning": "<ruby>春<rt>はる</rt></ruby>にさく、うすいピンクの<ruby>花<rt>はな</rt></ruby>"
+    },
+    {
+      "ja": "金額",
+      "reading": "きんがく",
+      "meaning": "お<ruby>金<rt>かね</rt></ruby>が、いくらかということ"
+    },
+    {
+      "ja": "世紀",
+      "reading": "せいき",
+      "meaning": "<ruby>百年<rt>ひゃくねん</rt></ruby>をひとまとまりにした<ruby>数<rt>かぞ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>"
+    },
+    {
+      "ja": "喜ぶ",
+      "reading": "よろこぶ",
+      "meaning": "うれしいと<ruby>思<rt>おも</rt></ruby>うこと"
+    },
+    {
+      "ja": "正義",
+      "reading": "せいぎ",
+      "meaning": "ただしいと<ruby>信<rt>しん</rt></ruby>じられている、<ruby>行<rt>おこな</rt></ruby>い"
+    },
+    {
+      "ja": "救う",
+      "reading": "すくう",
+      "meaning": "あぶないところから、たすけること"
+    },
+    {
+      "ja": "許す",
+      "reading": "ゆるす",
+      "meaning": "「いいよ」とみとめること"
+    },
+    {
+      "ja": "禁止",
+      "reading": "きんし",
+      "meaning": "「やってはいけない」と<ruby>決<rt>き</rt></ruby>めること"
+    },
+    {
+      "ja": "語句",
+      "reading": "ごく",
+      "meaning": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の、ことばのひとまとまり"
+    },
+    {
+      "ja": "群れ",
+      "reading": "むれ",
+      "meaning": "<ruby>動物<rt>どうぶつ</rt></ruby>などが、たくさんあつまったかたまり"
+    },
+    {
+      "ja": "飼う",
+      "reading": "かう",
+      "meaning": "<ruby>動物<rt>どうぶつ</rt></ruby>を、めんどうをみてそだてること"
+    },
+    {
+      "ja": "似る",
+      "reading": "にる",
+      "meaning": "かたちやようすが、おなじように<ruby>見<rt>み</rt></ruby>えること"
+    },
+    {
+      "ja": "知識",
+      "reading": "ちしき",
+      "meaning": "しっていることがら"
+    },
+    {
+      "ja": "校舎",
+      "reading": "こうしゃ",
+      "meaning": "がっこうのたてもの"
+    },
+    {
+      "ja": "感謝",
+      "reading": "かんしゃ",
+      "meaning": "「ありがとう」と<ruby>思<rt>おも</rt></ruby>う<ruby>気持<rt>きも</rt></ruby>ち"
+    },
+    {
+      "ja": "授業",
+      "reading": "じゅぎょう",
+      "meaning": "<ruby>先生<rt>せんせい</rt></ruby>がおしえ、<ruby>子<rt>こ</rt></ruby>どもがならう<ruby>時間<rt>じかん</rt></ruby>"
+    },
+    {
+      "ja": "修理",
+      "reading": "しゅうり",
+      "meaning": "こわれたところを<ruby>直<rt>なお</rt></ruby>すこと"
+    },
+    {
+      "ja": "準備",
+      "reading": "じゅんび",
+      "meaning": "<ruby>前<rt>まえ</rt></ruby>もって、ようい しておくこと"
+    },
+    {
+      "ja": "順序",
+      "reading": "じゅんじょ",
+      "meaning": "ものごとをならべる、じゅんばん"
+    },
+    {
+      "ja": "招く",
+      "reading": "まねく",
+      "meaning": "「きてください」とよぶこと"
+    },
+    {
+      "ja": "証明",
+      "reading": "しょうめい",
+      "meaning": "「たしかにそうだ」と、しょうこを<ruby>出<rt>だ</rt></ruby>してしめすこと"
+    },
+    {
+      "ja": "印象",
+      "reading": "いんしょう",
+      "meaning": "<ruby>心<rt>こころ</rt></ruby>にのこった、そのときの<ruby>感<rt>かん</rt></ruby>じ"
+    },
+    {
+      "ja": "条件",
+      "reading": "じょうけん",
+      "meaning": "「これがそろえば」という、きまりごと"
+    },
+    {
+      "ja": "状態",
+      "reading": "じょうたい",
+      "meaning": "そのときの、ようす"
+    },
+    {
+      "ja": "非常",
+      "reading": "ひじょう",
+      "meaning": "ふつうではない、とくべつなこと"
+    },
+    {
+      "ja": "日常",
+      "reading": "にちじょう",
+      "meaning": "まいにちの、ふだんのくらし"
+    },
+    {
+      "ja": "情報",
+      "reading": "じょうほう",
+      "meaning": "できごとについての、しらせ"
+    },
+    {
+      "ja": "組織",
+      "reading": "そしき",
+      "meaning": "<ruby>役<rt>やく</rt></ruby>わりを<ruby>決<rt>き</rt></ruby>めてまとまった、<ruby>人<rt>ひと</rt></ruby>のあつまり"
+    },
+    {
+      "ja": "職業",
+      "reading": "しょくぎょう",
+      "meaning": "そのひとがしている、しごと"
+    },
+    {
+      "ja": "制服",
+      "reading": "せいふく",
+      "meaning": "がっこうやしごとで、きめられている<ruby>服<rt>ふく</rt></ruby>"
+    },
+    {
+      "ja": "性格",
+      "reading": "せいかく",
+      "meaning": "そのひとの、もちまえの<ruby>心<rt>こころ</rt></ruby>のようす"
+    },
+    {
+      "ja": "勢い",
+      "reading": "いきおい",
+      "meaning": "とまらずにすすんでいく、つよい<ruby>力<rt>ちから</rt></ruby>"
+    },
+    {
+      "ja": "製品",
+      "reading": "せいひん",
+      "meaning": "つくられて、<ruby>売<rt>う</rt></ruby>られているしなもの"
+    },
+    {
+      "ja": "税金",
+      "reading": "ぜいきん",
+      "meaning": "みんなのために<ruby>国<rt>くに</rt></ruby>におさめる、お<ruby>金<rt>かね</rt></ruby>"
+    },
+    {
+      "ja": "責任",
+      "reading": "せきにん",
+      "meaning": "じぶんがひきうけて、やりとげるべきつとめ"
+    },
+    {
+      "ja": "成績",
+      "reading": "せいせき",
+      "meaning": "べんきょうやしあいの、できばえ"
+    },
+    {
+      "ja": "直接",
+      "reading": "ちょくせつ",
+      "meaning": "あいだに<ruby>何<rt>なに</rt></ruby>も はさまないで"
+    },
+    {
+      "ja": "設計",
+      "reading": "せっけい",
+      "meaning": "つくる<ruby>前<rt>まえ</rt></ruby>に、かたちや<ruby>大<rt>おお</rt></ruby>きさを<ruby>決<rt>き</rt></ruby>めること"
+    },
+    {
+      "ja": "絶対",
+      "reading": "ぜったい",
+      "meaning": "かならず・ぜったいに"
+    },
+    {
+      "ja": "祖父",
+      "reading": "そふ",
+      "meaning": "おじいさん"
+    },
+    {
+      "ja": "素直",
+      "reading": "すなお",
+      "meaning": "ひねくれないで、まっすぐなようす"
+    },
+    {
+      "ja": "総合",
+      "reading": "そうごう",
+      "meaning": "ぜんぶをひとつにまとめること"
+    },
+    {
+      "ja": "想像",
+      "reading": "そうぞう",
+      "meaning": "<ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、おもいえがくこと"
+    },
+    {
+      "ja": "増える",
+      "reading": "ふえる",
+      "meaning": "<ruby>数<rt>かず</rt></ruby>や<ruby>量<rt>りょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くなること"
+    },
+    {
+      "ja": "測る",
+      "reading": "はかる",
+      "meaning": "<ruby>長<rt>なが</rt></ruby>さや<ruby>重<rt>おも</rt></ruby>さを、しらべること"
+    },
+    {
+      "ja": "金属",
+      "reading": "きんぞく",
+      "meaning": "<ruby>鉄<rt>てつ</rt></ruby>や<ruby>銅<rt>どう</rt></ruby>のような、かたくてひかるもの"
+    },
+    {
+      "ja": "損",
+      "reading": "そん",
+      "meaning": "とくをしないで、へってしまうこと"
+    },
+    {
+      "ja": "態度",
+      "reading": "たいど",
+      "meaning": "<ruby>気持<rt>きも</rt></ruby>ちが<ruby>出<rt>で</rt></ruby>ている、そぶりやようす"
+    },
+    {
+      "ja": "団体",
+      "reading": "だんたい",
+      "meaning": "おなじ<ruby>目<rt>もく</rt></ruby>てきであつまった、<ruby>人<rt>ひと</rt></ruby>のまとまり"
+    },
+    {
+      "ja": "断る",
+      "reading": "ことわる",
+      "meaning": "「できません」とつたえること"
+    },
+    {
+      "ja": "建築",
+      "reading": "けんちく",
+      "meaning": "たてものをたてること"
+    },
+    {
+      "ja": "程度",
+      "reading": "ていど",
+      "meaning": "どのくらいか、という<ruby>加<rt>げん</rt></ruby>"
+    },
+    {
+      "ja": "適当",
+      "reading": "てきとう",
+      "meaning": "ちょうどよく、あてはまること"
+    },
+    {
+      "ja": "敵",
+      "reading": "てき",
+      "meaning": "たたかう<ruby>相手<rt>あいて</rt></ruby>"
+    },
+    {
+      "ja": "伝統",
+      "reading": "でんとう",
+      "meaning": "むかしからずっとつづいている、やり<ruby>方<rt>かた</rt></ruby>"
+    },
+    {
+      "ja": "指導",
+      "reading": "しどう",
+      "meaning": "やり<ruby>方<rt>かた</rt></ruby>をおしえて、みちびくこと"
+    },
+    {
+      "ja": "道徳",
+      "reading": "どうとく",
+      "meaning": "<ruby>人<rt>ひと</rt></ruby>としてただしい、おこないの<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>"
+    },
+    {
+      "ja": "独り",
+      "reading": "ひとり",
+      "meaning": "じぶん<ruby>一人<rt>ひとり</rt></ruby>だけ"
+    },
+    {
+      "ja": "責任者",
+      "reading": "せきにんしゃ",
+      "meaning": "そのしごとを、ひきうけている<ruby>人<rt>ひと</rt></ruby>"
+    },
+    {
+      "ja": "燃える",
+      "reading": "もえる",
+      "meaning": "<ruby>火<rt>ひ</rt></ruby>がついて、ほのおが<ruby>出<rt>で</rt></ruby>ること"
+    },
+    {
+      "ja": "能力",
+      "reading": "のうりょく",
+      "meaning": "そのひとにできる<ruby>力<rt>ちから</rt></ruby>"
+    },
+    {
+      "ja": "破る",
+      "reading": "やぶる",
+      "meaning": "かみやぬのを、ひきさくこと"
+    },
+    {
+      "ja": "犯人",
+      "reading": "はんにん",
+      "meaning": "わるいことをした<ruby>人<rt>ひと</rt></ruby>"
+    },
+    {
+      "ja": "出版",
+      "reading": "しゅっぱん",
+      "meaning": "<ruby>本<rt>ほん</rt></ruby>をつくって、<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>出<rt>だ</rt></ruby>すこと"
+    },
+    {
+      "ja": "肥料",
+      "reading": "ひりょう",
+      "meaning": "さくもつがよくそだつように、<ruby>土<rt>つち</rt></ruby>に入れるもの"
+    },
+    {
+      "ja": "費用",
+      "reading": "ひよう",
+      "meaning": "そのことにかかる、お<ruby>金<rt>かね</rt></ruby>"
+    },
+    {
+      "ja": "評判",
+      "reading": "ひょうばん",
+      "meaning": "まわりの<ruby>人<rt>ひと</rt></ruby>が<ruby>言<rt>い</rt></ruby>っている、よしあし"
+    },
+    {
+      "ja": "貧しい",
+      "reading": "まずしい",
+      "meaning": "お<ruby>金<rt>かね</rt></ruby>やものが<ruby>少<rt>すく</rt></ruby>なくて、くらしがくるしいこと"
+    },
+    {
+      "ja": "布",
+      "reading": "ぬの",
+      "meaning": "<ruby>服<rt>ふく</rt></ruby>などをつくる、うすくてやわらかいもの"
+    },
+    {
+      "ja": "主婦",
+      "reading": "しゅふ",
+      "meaning": "<ruby>家<rt>いえ</rt></ruby>のしごとをしている<ruby>人<rt>ひと</rt></ruby>"
+    },
+    {
+      "ja": "復習",
+      "reading": "ふくしゅう",
+      "meaning": "ならったことを、あとでもういちどやること"
+    },
+    {
+      "ja": "編む",
+      "reading": "あむ",
+      "meaning": "<ruby>糸<rt>いと</rt></ruby>をくみあわせて、つくること"
+    },
+    {
+      "ja": "弁当",
+      "reading": "べんとう",
+      "meaning": "はこにつめて、もっていく<ruby>食<rt>た</rt></ruby>べもの"
+    },
+    {
+      "ja": "保つ",
+      "reading": "たもつ",
+      "meaning": "そのままの<ruby>形<rt>かたち</rt></ruby>を、ずっとつづけること"
+    },
+    {
+      "ja": "墓",
+      "reading": "はか",
+      "meaning": "なくなった<ruby>人<rt>ひと</rt></ruby>を、まつるところ"
+    },
+    {
+      "ja": "豊か",
+      "reading": "ゆたか",
+      "meaning": "たっぷりあって、めぐまれているようす"
+    },
+    {
+      "ja": "防ぐ",
+      "reading": "ふせぐ",
+      "meaning": "わるいことがおきないように、とめること"
+    },
+    {
+      "ja": "暴れる",
+      "reading": "あばれる",
+      "meaning": "<ruby>手<rt>て</rt></ruby>や<ruby>足<rt>あし</rt></ruby>をふりまわして、あらあらしくすること"
+    },
+    {
+      "ja": "山脈",
+      "reading": "さんみゃく",
+      "meaning": "<ruby>山<rt>やま</rt></ruby>がいくつもつらなっているところ"
+    },
+    {
+      "ja": "夢",
+      "reading": "ゆめ",
+      "meaning": "ねているときに<ruby>見<rt>み</rt></ruby>るもの。しょうらいのねがい"
+    },
+    {
+      "ja": "迷う",
+      "reading": "まよう",
+      "meaning": "どちらにするか、<ruby>決<rt>き</rt></ruby>められないこと"
+    },
+    {
+      "ja": "綿",
+      "reading": "わた",
+      "meaning": "ふわふわした、しろくてやわらかいもの"
+    },
+    {
+      "ja": "輸入",
+      "reading": "ゆにゅう",
+      "meaning": "よその<ruby>国<rt>くに</rt></ruby>から、しなものを<ruby>買<rt>か</rt></ruby>って<ruby>入<rt>い</rt></ruby>れること"
+    },
+    {
+      "ja": "余る",
+      "reading": "あまる",
+      "meaning": "<ruby>使<rt>つか</rt></ruby>ってものこること"
+    },
+    {
+      "ja": "預ける",
+      "reading": "あずける",
+      "meaning": "だれかにたのんで、もっていてもらうこと"
+    },
+    {
+      "ja": "内容",
+      "reading": "ないよう",
+      "meaning": "その<ruby>中<rt>なか</rt></ruby>みのこと"
+    },
+    {
+      "ja": "省略",
+      "reading": "しょうりゃく",
+      "meaning": "いらないところを、はぶくこと"
+    },
+    {
+      "ja": "留守",
+      "reading": "るす",
+      "meaning": "<ruby>家<rt>いえ</rt></ruby>に、だれもいないこと"
+    },
+    {
+      "ja": "領土",
+      "reading": "りょうど",
+      "meaning": "その<ruby>国<rt>くに</rt></ruby>のものと<ruby>決<rt>き</rt></ruby>まっている、<ruby>土地<rt>とち</rt></ruby>"
     }
   ]
 }
