@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "seen": [
     "描写",
     "心情",
@@ -86,55 +86,63 @@
     "あたかも",
     "眺める",
     "仲直り",
-    "とまどう"
+    "とまどう",
+    "きまりが悪い",
+    "履きかえる",
+    "真夏日",
+    "サバンナ",
+    "八つ当たり",
+    "ほころびる",
+    "手入れ",
+    "黙々と"
   ],
   "today": [
     {
+      "ja": "きまりが悪い",
+      "review": false
+    },
+    {
+      "ja": "履きかえる",
+      "review": false
+    },
+    {
+      "ja": "真夏日",
+      "review": false
+    },
+    {
+      "ja": "サバンナ",
+      "review": false
+    },
+    {
+      "ja": "八つ当たり",
+      "review": false
+    },
+    {
+      "ja": "ほころびる",
+      "review": false
+    },
+    {
+      "ja": "手入れ",
+      "review": false
+    },
+    {
+      "ja": "黙々と",
+      "review": false
+    },
+    {
+      "ja": "爆撃",
+      "review": true
+    },
+    {
       "ja": "銀木犀",
-      "review": false
-    },
-    {
-      "ja": "閉じ込める",
-      "review": false
-    },
-    {
-      "ja": "自習",
-      "review": false
-    },
-    {
-      "ja": "高じる",
-      "review": false
-    },
-    {
-      "ja": "あたかも",
-      "review": false
-    },
-    {
-      "ja": "眺める",
-      "review": false
-    },
-    {
-      "ja": "仲直り",
-      "review": false
-    },
-    {
-      "ja": "とまどう",
-      "review": false
-    },
-    {
-      "ja": "疎開",
       "review": true
     },
     {
-      "ja": "段落",
+      "ja": "遠慮",
       "review": true
     },
     {
-      "ja": "覆いかぶさる",
-      "review": true
-    },
-    {
-      "ja": "配給",
+      "ja": "盗み飲み",
       "review": true
     }
   ]
