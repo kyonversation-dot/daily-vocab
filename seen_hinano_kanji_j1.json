@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "seen": [
     "乾",
     "棺",
@@ -73,55 +73,63 @@
     "先輩",
     "暇",
     "掲示",
-    "騒々しさ"
+    "騒々しさ",
+    "戻る",
+    "唇",
+    "駆け寄る",
+    "貧血",
+    "遅くなる",
+    "魂",
+    "繊細",
+    "探る"
   ],
   "today": [
     {
-      "ja": "入院",
+      "ja": "戻る",
       "review": false
     },
     {
-      "ja": "押す",
+      "ja": "唇",
       "review": false
     },
     {
-      "ja": "俺",
+      "ja": "駆け寄る",
       "review": false
     },
     {
-      "ja": "塾",
+      "ja": "貧血",
       "review": false
     },
     {
-      "ja": "先輩",
+      "ja": "遅くなる",
       "review": false
     },
     {
-      "ja": "暇",
+      "ja": "魂",
       "review": false
     },
     {
-      "ja": "掲示",
+      "ja": "繊細",
       "review": false
     },
     {
-      "ja": "騒々しさ",
+      "ja": "探る",
       "review": false
+    },
+    {
+      "ja": "下流",
+      "review": true
     },
     {
       "ja": "荷物",
       "review": true
     },
     {
-      "ja": "着物",
+      "ja": "祖母",
       "review": true
     },
     {
-      "ja": "相談",
-      "review": true
-    },
-    {
-      "ja": "空襲",
+      "ja": "隣村",
       "review": true
     }
   ]
