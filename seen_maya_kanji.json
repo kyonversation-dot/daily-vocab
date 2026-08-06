@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-05",
+  "date": "2026-08-06",
   "seen": [
     "圧",
     "移",
@@ -80,55 +80,63 @@
     "飼",
     "総",
     "招",
-    "精"
+    "精",
+    "資",
+    "識",
+    "額",
+    "留",
+    "常",
+    "迷",
+    "評",
+    "肥"
   ],
   "today": [
     {
-      "ja": "豊",
+      "ja": "資",
       "review": false
     },
     {
-      "ja": "織",
+      "ja": "識",
+      "review": false
+    },
+    {
+      "ja": "額",
+      "review": false
+    },
+    {
+      "ja": "留",
+      "review": false
+    },
+    {
+      "ja": "常",
+      "review": false
+    },
+    {
+      "ja": "迷",
+      "review": false
+    },
+    {
+      "ja": "評",
+      "review": false
+    },
+    {
+      "ja": "肥",
       "review": false
     },
     {
       "ja": "条",
-      "review": false
-    },
-    {
-      "ja": "救",
-      "review": false
-    },
-    {
-      "ja": "飼",
-      "review": false
-    },
-    {
-      "ja": "総",
-      "review": false
-    },
-    {
-      "ja": "招",
-      "review": false
-    },
-    {
-      "ja": "精",
-      "review": false
-    },
-    {
-      "ja": "寄",
       "review": true
     },
     {
-      "ja": "解",
+      "ja": "慣",
       "review": true
     },
     {
-      "ja": "久",
+      "ja": "仮",
       "review": true
     },
     {
-      "ja": "志",
+      "ja": "検",
       "review": true
     }
   ]

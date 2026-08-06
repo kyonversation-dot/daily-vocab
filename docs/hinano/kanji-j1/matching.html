@@ -164,17 +164,59 @@
 <script>
 const allWords = [
   {
-    "ja": "戻る",
-    "reading": "もどる",
-    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
-    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "ja": "日陰",
+    "reading": "ひかげ",
+    "meaning": "<ruby>日陰<rt>ひかげ</rt></ruby> ／ かげ。日が当たらないところ",
+    "example": "＿＿＿もない校庭の隅っこで背中を丸めていた。",
     "review": false
   },
   {
-    "ja": "唇",
-    "reading": "くちびる",
-    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
-    "example": "＿＿＿がふるえているし、目のふちが熱い。",
+    "ja": "黙る",
+    "reading": "だまる",
+    "meaning": "<ruby>黙る<rt>だまる</rt></ruby> ／ だまる。何も言わない",
+    "example": "何を言われるのか少しこわくて＿＿＿ていた。",
+    "review": false
+  },
+  {
+    "ja": "輪郭",
+    "reading": "りんかく",
+    "meaning": "<ruby>輪郭<rt>りんかく</rt></ruby> ／ リンカク。もののまわりの形・かたちどり",
+    "example": "やっと顔の＿＿＿が戻ってきたような気がした。",
+    "review": false
+  },
+  {
+    "ja": "拭く",
+    "reading": "ぬぐう",
+    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る",
+    "example": "顔を＿＿＿ながら振り返ると、戸部君が言った。",
+    "review": false
+  },
+  {
+    "ja": "涙",
+    "reading": "なみだ",
+    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水",
+    "example": "＿＿＿がにじんできたのは、あんまり笑いすぎたせいだ。",
+    "review": false
+  },
+  {
+    "ja": "刈る",
+    "reading": "かる",
+    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
+    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
+    "review": false
+  },
+  {
+    "ja": "大丈夫",
+    "reading": "だいじょうぶ",
+    "meaning": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby> ／ ダイジョウブ。心配ない",
+    "example": "ここにいれば＿＿＿、どんなことからも木が守ってくれる。",
+    "review": false
+  },
+  {
+    "ja": "掃除",
+    "reading": "そうじ",
+    "meaning": "<ruby>掃除<rt>そうじ</rt></ruby> ／ ソウジ。ごみやよごれを取って、きれいにすること",
+    "example": "けど春先は、葉っぱが落ちて案外厄介なんだよ、＿＿＿がさ。",
     "review": false
   },
   {
@@ -182,69 +224,27 @@ const allWords = [
     "reading": "かけよる",
     "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく",
     "example": "窓に＿＿＿って下をのぞいた。",
-    "review": false
-  },
-  {
-    "ja": "貧血",
-    "reading": "ひんけつ",
-    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること",
-    "example": "＿＿＿を起こしたときに見える、白々とした光景によく似ている。",
-    "review": false
-  },
-  {
-    "ja": "遅くなる",
-    "reading": "おそくなる",
-    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
-    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
-    "review": false
-  },
-  {
-    "ja": "魂",
-    "reading": "たましい",
-    "meaning": "<ruby>魂<rt>たましい</rt></ruby> ／ たましい。体の中にある、その人の心そのもの",
-    "example": "＿＿＿がぬるぬるとけ出してしまいそうに暑かった。",
-    "review": false
-  },
-  {
-    "ja": "繊細",
-    "reading": "せんさい",
-    "meaning": "<ruby>繊細<rt>せんさい</rt></ruby> ／ センサイ。感じ方が細やかで、こまかい所に気がつくこと",
-    "example": "＿＿＿さのかけらもない戸部君だから、みんなの前で何を言いだすか知れたものじゃない。",
-    "review": false
-  },
-  {
-    "ja": "探る",
-    "reading": "さぐる",
-    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
-    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
-    "review": false
-  },
-  {
-    "ja": "下流",
-    "reading": "かりゅう",
-    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
-    "example": "＿＿＿の橋を渡って学校に行きました。",
     "review": true
   },
   {
-    "ja": "荷物",
-    "reading": "にもつ",
-    "meaning": "<ruby>荷物<rt>にもつ</rt></ruby> ／ もち運ぶ物。「必要な荷物だけを持って」",
-    "example": "とりあえず必要な＿＿＿だけを持って、引っ越しすることになりました。",
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
     "review": true
   },
   {
-    "ja": "祖母",
-    "reading": "そぼ",
-    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
-    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
+    "ja": "田舎",
+    "reading": "いなか",
+    "meaning": "<ruby>田舎<rt>いなか</rt></ruby> ／ 都会からはなれた土地。「親戚のいる田舎へ出かけました」",
+    "example": "母が弟をおんぶして僕と三人で、親戚のいる＿＿＿へ出かけました。",
     "review": true
   },
   {
-    "ja": "隣村",
-    "reading": "となりむら",
-    "meaning": "<ruby>隣村<rt>となりむら</rt></ruby> ／ となりの村。「隣村にやぎを飼っている農家がある」",
-    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が着物を包んで出かけました。",
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
     "review": true
   }
 ];
