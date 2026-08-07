@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "seen": [
     "胃",
     "異",
@@ -137,55 +137,63 @@
     "賃",
     "痛",
     "展",
-    "討"
+    "討",
+    "党",
+    "糖",
+    "届",
+    "難",
+    "乳",
+    "認",
+    "納",
+    "脳"
   ],
   "today": [
     {
-      "ja": "著",
+      "ja": "党",
       "review": false
     },
     {
-      "ja": "庁",
+      "ja": "糖",
       "review": false
     },
     {
-      "ja": "頂",
+      "ja": "届",
       "review": false
     },
     {
-      "ja": "潮",
+      "ja": "難",
       "review": false
     },
     {
-      "ja": "賃",
+      "ja": "乳",
       "review": false
     },
     {
-      "ja": "痛",
+      "ja": "認",
       "review": false
     },
     {
-      "ja": "展",
+      "ja": "納",
       "review": false
     },
     {
-      "ja": "討",
+      "ja": "脳",
       "review": false
     },
     {
-      "ja": "段",
+      "ja": "域",
       "review": true
     },
     {
-      "ja": "尺",
+      "ja": "至",
       "review": true
     },
     {
-      "ja": "就",
+      "ja": "恩",
       "review": true
     },
     {
-      "ja": "干",
+      "ja": "延",
       "review": true
     }
   ]
