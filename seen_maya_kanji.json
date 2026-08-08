@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "seen": [
     "圧",
     "移",
@@ -96,55 +96,63 @@
     "団",
     "紀",
     "属",
-    "政"
+    "政",
+    "枝",
+    "舎",
+    "程",
+    "素",
+    "提",
+    "弁",
+    "張",
+    "判"
   ],
   "today": [
     {
-      "ja": "旧",
+      "ja": "枝",
       "review": false
     },
     {
-      "ja": "因",
+      "ja": "舎",
       "review": false
     },
     {
-      "ja": "授",
+      "ja": "程",
       "review": false
     },
     {
-      "ja": "責",
+      "ja": "素",
       "review": false
     },
     {
-      "ja": "団",
+      "ja": "提",
+      "review": false
+    },
+    {
+      "ja": "弁",
+      "review": false
+    },
+    {
+      "ja": "張",
+      "review": false
+    },
+    {
+      "ja": "判",
       "review": false
     },
     {
       "ja": "紀",
-      "review": false
-    },
-    {
-      "ja": "属",
-      "review": false
-    },
-    {
-      "ja": "政",
-      "review": false
-    },
-    {
-      "ja": "殺",
       "review": true
     },
     {
-      "ja": "肥",
+      "ja": "航",
       "review": true
     },
     {
-      "ja": "留",
+      "ja": "仮",
       "review": true
     },
     {
-      "ja": "史",
+      "ja": "移",
       "review": true
     }
   ]

@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "seen": [
     "乾",
     "棺",
@@ -100,47 +100,51 @@
   ],
   "today": [
     {
-      "ja": "厄介",
-      "review": false
-    },
-    {
-      "ja": "帽子",
-      "review": false
-    },
-    {
-      "ja": "抱える",
-      "review": false
-    },
-    {
-      "ja": "背ける",
-      "review": false
-    },
-    {
-      "ja": "蛇口",
-      "review": false
-    },
-    {
-      "ja": "常緑樹",
-      "review": false
-    },
-    {
-      "ja": "幹",
-      "review": false
-    },
-    {
-      "ja": "機体",
+      "ja": "看護婦",
       "review": true
     },
     {
-      "ja": "乾",
+      "ja": "空襲",
       "review": true
     },
     {
-      "ja": "渡",
+      "ja": "渓",
       "review": true
     },
     {
-      "ja": "疎",
+      "ja": "地下室",
+      "review": true
+    },
+    {
+      "ja": "隣",
+      "review": true
+    },
+    {
+      "ja": "田舎",
+      "review": true
+    },
+    {
+      "ja": "四歳",
+      "review": true
+    },
+    {
+      "ja": "撃",
+      "review": true
+    },
+    {
+      "ja": "疎開",
+      "review": true
+    },
+    {
+      "ja": "爆",
+      "review": true
+    },
+    {
+      "ja": "欲",
+      "review": true
+    },
+    {
+      "ja": "杉",
       "review": true
     }
   ]

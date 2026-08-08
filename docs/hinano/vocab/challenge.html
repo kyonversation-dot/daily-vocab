@@ -133,73 +133,87 @@
 <script>
 const words = [
   {
+    "ja": "読み深める",
+    "reading": "よみふかめる",
+    "meaning": "もう一歩ふみこんで読み、<ruby>意味<rt>いみ</rt></ruby>をつかむこと",
+    "example": "題名のもつ意味について考え、作品を＿＿＿。",
+    "review": true
+  },
+  {
+    "ja": "渓流",
+    "reading": "けいりゅう",
+    "meaning": "山の中を流れる、きれいな川",
+    "example": "きれいな＿＿＿に沿って山路へかかりました。",
+    "review": true
+  },
+  {
+    "ja": "三里",
+    "reading": "さんり",
+    "meaning": "一里の3ばい。<ruby>約<rt>やく</rt></ruby>12キロメートル（歩くと3時間くらい）",
+    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
+    "review": true
+  },
+  {
+    "ja": "たくす",
+    "reading": "たくす",
+    "meaning": "<ruby>直接<rt>ちょくせつ</rt></ruby>言わずに、べつのものに気持ちをこめる。「<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>描写<rt>びょうしゃ</rt></ruby>にたくす」",
+    "example": "作者は母の気持ちを、行動の描写に＿＿＿。",
+    "review": true
+  },
+  {
+    "ja": "情景",
+    "reading": "じょうけい",
+    "meaning": "<ruby>目<rt>め</rt></ruby>にうかんでくる<ruby>場面<rt>ばめん</rt></ruby>のようす",
+    "example": "「白い乾いた一本道」は、その場の＿＿＿が目に浮かぶ言葉だ。",
+    "review": true
+  },
+  {
+    "ja": "おもゆ",
+    "reading": "おもゆ",
+    "meaning": "おかゆのもっとうすいもの。<ruby>赤<rt>あか</rt></ruby>ちゃんや<ruby>病人<rt>びょうにん</rt></ruby>が食べる",
+    "example": "おかゆのもっと薄い＿＿＿を食べさせたり、やぎのミルクを飲ませたりしました。",
+    "review": true
+  },
+  {
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>",
+    "example": "病名はありません。＿＿＿です……。",
+    "review": true
+  },
+  {
+    "ja": "情景描写",
+    "reading": "じょうけいびょうしゃ",
+    "meaning": "<ruby>情景描写<rt>じょうけいびょうしゃ</rt></ruby> ／ 人物の心情と<ruby>響<rt>ひび</rt></ruby>き合うように<ruby>描<rt>えが</rt></ruby>かれた、風景や場面の描写",
+    "example": "銀木犀の＿＿＿を、冒頭と結末で比べてみよう。",
+    "review": true
+  },
+  {
+    "ja": "覆いかぶさる",
+    "reading": "おおいかぶさる",
+    "meaning": "上からかぶさるように<ruby>迫<rt>せま</rt></ruby>ってくる",
+    "example": "すぐ裏の山が頭の上に＿＿＿ような山すそにありました。",
+    "review": true
+  },
+  {
     "ja": "比喩",
     "reading": "ひゆ",
     "meaning": "<ruby>比喩<rt>ひゆ</rt></ruby> ／ 「〜のように」などを使って、別のものにたとえる言い方",
     "example": "「雪が降るように」のような＿＿＿表現をさがそう。",
-    "review": false
-  },
-  {
-    "ja": "構成",
-    "reading": "こうせい",
-    "meaning": "<ruby>構成<rt>こうせい</rt></ruby> ／ 文章の組み立て方",
-    "example": "作品の＿＿＿に注目し、前半と後半で比べてみよう。",
-    "review": false
-  },
-  {
-    "ja": "けんか",
-    "reading": "けんか",
-    "meaning": "<ruby>けんか<rt>けんか</rt></ruby> ／ 言い合ったり、たたき合ったりして争うこと",
-    "example": "小づき合いが高じて、すぐに本気の＿＿＿になる。",
-    "review": false
-  },
-  {
-    "ja": "送り",
-    "reading": "おくり",
-    "meaning": "<ruby>送り<rt>おくり</rt></ruby> ／ （映像を）早く先へ送ること",
-    "example": "音のない＿＿＿の映像を見ているように、変に長く感じられた。",
-    "review": false
-  },
-  {
-    "ja": "光景",
-    "reading": "こうけい",
-    "meaning": "<ruby>光景<rt>こうけい</rt></ruby> ／ 目の前に広がる、ながめ・ようす",
-    "example": "貧血を起こしたときに見える、白々とした＿＿＿によく似ている。",
-    "review": false
-  },
-  {
-    "ja": "眺め",
-    "reading": "ながめ",
-    "meaning": "<ruby>眺め<rt>ながめ</rt></ruby> ／ 見わたしたときのようす",
-    "example": "ポスターや掲示を＿＿＿るふりをしながら待った。",
-    "review": false
-  },
-  {
-    "ja": "伝え合う",
-    "reading": "つたえあう",
-    "meaning": "おたがいに自分の考えを言って、<ruby>聞<rt>き</rt></ruby>き合うこと",
-    "example": "心に残った場面を朗読し、感想を＿＿＿。",
     "review": true
   },
   {
-    "ja": "疎開",
-    "reading": "そかい",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>からのがれるため、<ruby>都会<rt>とかい</rt></ruby>から<ruby>地方<rt>ちほう</rt></ruby>へ引っこすこと",
-    "example": "あまり空襲がひどくなってきたので、母は＿＿＿しようと言いだしました。",
+    "ja": "場面",
+    "reading": "ばめん",
+    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中の、一つ一つの<ruby>場所<rt>ばしょ</rt></ruby>や時",
+    "example": "心に残った＿＿＿を選んで、朗読しよう。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>一発<rt>いっぱつ</rt></ruby>で町ぜんたいをこわしてしまう<ruby>爆弾<rt>ばくだん</rt></ruby>",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
-    "review": true
-  },
-  {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
+    "ja": "交換",
+    "reading": "こうかん",
+    "meaning": "とりかえること。「<ruby>着物<rt>きもの</rt></ruby>を米と交換する」",
+    "example": "近所の農家の人たちにお願いして、米と＿＿＿してもらっていました。",
     "review": true
   }
 ];
