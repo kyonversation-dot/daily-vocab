@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-08-09",
+  "date": "2026-08-10",
   "seen": [
     "司会",
     "質疑応答",
@@ -95,55 +95,63 @@
     "合格",
     "確実",
     "幹",
-    "習慣"
+    "習慣",
+    "慣れる",
+    "基本",
+    "寄せる",
+    "規則",
+    "技術",
+    "逆",
+    "居間",
+    "国境"
   ],
   "today": [
     {
-      "ja": "河口",
+      "ja": "慣れる",
       "review": false
     },
     {
-      "ja": "過去",
+      "ja": "基本",
       "review": false
     },
     {
-      "ja": "快晴",
+      "ja": "寄せる",
       "review": false
     },
     {
-      "ja": "解決",
+      "ja": "規則",
       "review": false
     },
     {
-      "ja": "合格",
+      "ja": "技術",
       "review": false
     },
     {
-      "ja": "確実",
+      "ja": "逆",
       "review": false
+    },
+    {
+      "ja": "居間",
+      "review": false
+    },
+    {
+      "ja": "国境",
+      "review": false
+    },
+    {
+      "ja": "記事",
+      "review": true
+    },
+    {
+      "ja": "判定",
+      "review": true
+    },
+    {
+      "ja": "移動",
+      "review": true
     },
     {
       "ja": "幹",
-      "review": false
-    },
-    {
-      "ja": "習慣",
-      "review": false
-    },
-    {
-      "ja": "賛成",
-      "review": true
-    },
-    {
-      "ja": "目的",
-      "review": true
-    },
-    {
-      "ja": "リード文",
-      "review": true
-    },
-    {
-      "ja": "説得力",
       "review": true
     }
   ]

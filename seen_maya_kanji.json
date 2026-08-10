@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-09",
+  "date": "2026-08-10",
   "seen": [
     "圧",
     "移",
@@ -112,55 +112,63 @@
     "測",
     "率",
     "謝",
-    "設"
+    "設",
+    "群",
+    "非",
+    "述",
+    "祖",
+    "情",
+    "導",
+    "築",
+    "備"
   ],
   "today": [
     {
-      "ja": "銅",
+      "ja": "群",
       "review": false
     },
     {
-      "ja": "序",
+      "ja": "非",
       "review": false
+    },
+    {
+      "ja": "述",
+      "review": false
+    },
+    {
+      "ja": "祖",
+      "review": false
+    },
+    {
+      "ja": "情",
+      "review": false
+    },
+    {
+      "ja": "導",
+      "review": false
+    },
+    {
+      "ja": "築",
+      "review": false
+    },
+    {
+      "ja": "備",
+      "review": false
+    },
+    {
+      "ja": "険",
+      "review": true
     },
     {
       "ja": "易",
-      "review": false
-    },
-    {
-      "ja": "準",
-      "review": false
-    },
-    {
-      "ja": "測",
-      "review": false
-    },
-    {
-      "ja": "率",
-      "review": false
-    },
-    {
-      "ja": "謝",
-      "review": false
-    },
-    {
-      "ja": "設",
-      "review": false
-    },
-    {
-      "ja": "往",
       "review": true
     },
     {
-      "ja": "応",
+      "ja": "団",
       "review": true
     },
     {
-      "ja": "精",
-      "review": true
-    },
-    {
-      "ja": "圧",
+      "ja": "常",
       "review": true
     }
   ]

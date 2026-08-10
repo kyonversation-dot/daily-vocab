@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-09",
+  "date": "2026-08-10",
   "seen": [
     "描写",
     "心情",
@@ -120,43 +120,39 @@
   ],
   "today": [
     {
-      "ja": "光景",
+      "ja": "にじむ",
       "review": true
     },
     {
-      "ja": "表記",
+      "ja": "情景描写",
       "review": true
     },
     {
-      "ja": "印象",
+      "ja": "抑揚",
       "review": true
     },
     {
-      "ja": "冒頭",
+      "ja": "通路",
       "review": true
     },
     {
-      "ja": "主人公",
+      "ja": "段落",
       "review": true
     },
     {
-      "ja": "題名",
+      "ja": "あたかも",
       "review": true
     },
     {
-      "ja": "ほころびる",
+      "ja": "原子爆弾",
       "review": true
     },
     {
-      "ja": "日差し",
+      "ja": "結末",
       "review": true
     },
     {
-      "ja": "展開",
-      "review": true
-    },
-    {
-      "ja": "高じる",
+      "ja": "真夏日",
       "review": true
     },
     {
@@ -164,7 +160,11 @@
       "review": true
     },
     {
-      "ja": "眺める",
+      "ja": "描写",
+      "review": true
+    },
+    {
+      "ja": "感想",
       "review": true
     }
   ]

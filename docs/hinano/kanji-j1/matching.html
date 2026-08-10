@@ -164,66 +164,52 @@
 <script>
 const allWords = [
   {
-    "ja": "僕",
-    "reading": "ボク",
-    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
-    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
+    "example": "毎晩、＿＿＿という地下室の中でねました。",
     "review": true
   },
   {
-    "ja": "掲示",
-    "reading": "けいじ",
-    "meaning": "<ruby>掲示<rt>けいじ</rt></ruby> ／ ケイジ。みんなに見えるように、はり出すこと",
-    "example": "ポスターや＿＿＿を眺めるふりをしながら待った。",
+    "ja": "真っ最中",
+    "reading": "まっさいちゅう",
+    "meaning": "<ruby>真っ最中<rt>まっさいちゅう</rt></ruby> ／ いちばんさかんなとき。「太平洋戦争の真っ最中です」",
+    "example": "太平洋戦争の＿＿＿です。",
     "review": true
   },
   {
-    "ja": "病院",
-    "reading": "びょういん",
-    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
-    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
+    "ja": "掃除",
+    "reading": "そうじ",
+    "meaning": "<ruby>掃除<rt>そうじ</rt></ruby> ／ ソウジ。ごみやよごれを取って、きれいにすること",
+    "example": "けど春先は、葉っぱが落ちて案外厄介なんだよ、＿＿＿がさ。",
     "review": true
   },
   {
-    "ja": "疎",
-    "reading": "ソ／うと(い)",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
-    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "ja": "田舎",
+    "reading": "いなか",
+    "meaning": "<ruby>田舎<rt>いなか</rt></ruby> ／ 都会からはなれた土地。「親戚のいる田舎へ出かけました」",
+    "example": "母が弟をおんぶして僕と三人で、親戚のいる＿＿＿へ出かけました。",
     "review": true
   },
   {
-    "ja": "繊細",
-    "reading": "せんさい",
-    "meaning": "<ruby>繊細<rt>せんさい</rt></ruby> ／ センサイ。感じ方が細やかで、こまかい所に気がつくこと",
-    "example": "＿＿＿さのかけらもない戸部君だから、みんなの前で何を言いだすか知れたものじゃない。",
+    "ja": "病名",
+    "reading": "びょうめい",
+    "meaning": "<ruby>病名<rt>びょうめい</rt></ruby> ／ びょうきの名前。「病名はありません。栄養失調です」",
+    "example": "＿＿＿はありません。栄養失調です……。",
     "review": true
   },
   {
-    "ja": "刈る",
-    "reading": "かる",
-    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
-    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
+    "ja": "原子爆弾",
+    "reading": "げんしばくだん",
+    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
+    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
     "review": true
   },
   {
-    "ja": "祖母",
-    "reading": "そぼ",
-    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
-    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
-    "review": true
-  },
-  {
-    "ja": "暇",
-    "reading": "ひま",
-    "meaning": "<ruby>暇<rt>ひま</rt></ruby> ／ ひま。何かをするための時間・ゆとり",
-    "example": "戸部君に関わり合っている＿＿＿はない。",
-    "review": true
-  },
-  {
-    "ja": "戻る",
-    "reading": "もどる",
-    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
-    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "ja": "三里",
+    "reading": "さんり",
+    "meaning": "<ruby>三里<rt>さんり</rt></ruby> ／ むかしの長さ。一里＝約3.9km。三里＝約12km",
+    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
     "review": true
   },
   {
@@ -234,17 +220,31 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "慮",
-    "reading": "リョ",
-    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby>・<ruby>配慮<rt>はいりょ</rt></ruby> ／ よく考える・気をつかう",
-    "example": "母は弟が死んでいるので、ほかの人に遠＿したのでしょう。",
+    "ja": "入院",
+    "reading": "にゅういん",
+    "meaning": "<ruby>入院<rt>にゅういん</rt></ruby> ／ 病院に入って治りょうすること",
+    "example": "僕たちの村から三里くらい離れた町の病院に＿＿＿しました。",
     "review": true
   },
   {
-    "ja": "病名",
-    "reading": "びょうめい",
-    "meaning": "<ruby>病名<rt>びょうめい</rt></ruby> ／ びょうきの名前。「病名はありません。栄養失調です」",
-    "example": "＿＿＿はありません。栄養失調です……。",
+    "ja": "遅くなる",
+    "reading": "おそくなる",
+    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
+    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
+    "review": true
+  },
+  {
+    "ja": "探る",
+    "reading": "さぐる",
+    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
+    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
+    "review": true
+  },
+  {
+    "ja": "空襲",
+    "reading": "くうしゅう",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby> ／ 飛行機で上からおそうこと。「空襲がひどくなってきたので」",
+    "example": "あまり＿＿＿がひどくなってきたので、母は疎開しようと言いだしました。",
     "review": true
   }
 ];
