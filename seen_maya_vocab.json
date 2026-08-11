@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "seen": [
     "司会",
     "質疑応答",
@@ -103,55 +103,63 @@
     "技術",
     "逆",
     "居間",
-    "国境"
+    "国境",
+    "平均",
+    "経験",
+    "性質",
+    "得意",
+    "清潔",
+    "事件",
+    "険しい",
+    "検査"
   ],
   "today": [
     {
-      "ja": "慣れる",
+      "ja": "平均",
       "review": false
     },
     {
-      "ja": "基本",
+      "ja": "経験",
       "review": false
     },
     {
-      "ja": "寄せる",
+      "ja": "性質",
       "review": false
     },
     {
-      "ja": "規則",
+      "ja": "得意",
       "review": false
     },
     {
-      "ja": "技術",
+      "ja": "清潔",
+      "review": false
+    },
+    {
+      "ja": "事件",
+      "review": false
+    },
+    {
+      "ja": "険しい",
+      "review": false
+    },
+    {
+      "ja": "検査",
       "review": false
     },
     {
       "ja": "逆",
-      "review": false
+      "review": true
+    },
+    {
+      "ja": "目次",
+      "review": true
     },
     {
       "ja": "居間",
-      "review": false
-    },
-    {
-      "ja": "国境",
-      "review": false
-    },
-    {
-      "ja": "記事",
       "review": true
     },
     {
-      "ja": "判定",
-      "review": true
-    },
-    {
-      "ja": "移動",
-      "review": true
-    },
-    {
-      "ja": "幹",
+      "ja": "全国紙",
       "review": true
     }
   ]

@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "seen": [
     "乾",
     "棺",
@@ -100,15 +100,43 @@
   ],
   "today": [
     {
-      "ja": "防空壕",
+      "ja": "三里",
       "review": true
     },
     {
-      "ja": "真っ最中",
+      "ja": "含",
       "review": true
     },
     {
-      "ja": "掃除",
+      "ja": "覆",
+      "review": true
+    },
+    {
+      "ja": "桃",
+      "review": true
+    },
+    {
+      "ja": "掘",
+      "review": true
+    },
+    {
+      "ja": "弾",
+      "review": true
+    },
+    {
+      "ja": "四歳",
+      "review": true
+    },
+    {
+      "ja": "渡",
+      "review": true
+    },
+    {
+      "ja": "配給",
+      "review": true
+    },
+    {
+      "ja": "山あい",
       "review": true
     },
     {
@@ -116,35 +144,7 @@
       "review": true
     },
     {
-      "ja": "病名",
-      "review": true
-    },
-    {
-      "ja": "原子爆弾",
-      "review": true
-    },
-    {
-      "ja": "三里",
-      "review": true
-    },
-    {
-      "ja": "乾",
-      "review": true
-    },
-    {
-      "ja": "入院",
-      "review": true
-    },
-    {
-      "ja": "遅くなる",
-      "review": true
-    },
-    {
-      "ja": "探る",
-      "review": true
-    },
-    {
-      "ja": "空襲",
+      "ja": "六畳間",
       "review": true
     }
   ]
