@@ -18,10 +18,35 @@
    ここには「🎲ランダム」とだけ出る＝**プランの朝ゲーム欄に漢字を書かない**。
    （書くと当たっていない表がプランに載る。言葉デッキは並び順のままなので従来どおり）
 """
-import json, io, os
+import json, io, os, subprocess
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 DAILY_NEW = 8  # generate.js の DAILY_NEW と合わせる
+
+
+def warn_if_behind_remote():
+    """🔴 このリポジトリは cron（GitHub Actions）が毎朝 origin に直接コミットする。
+    手元が遅れたまま rollback / generate を回すと、**子供が実際にひらいた出題と
+    別物の履歴**を作ってしまう（2026-08-12に実際に起きた＝マヤの8/12は
+    リモート版で遊ばれていたのに、ローカルで作り直していた）。
+    SessionStart hook が pull するのは vault だけ＝ここは対象外なので、道具側で鳴らす。"""
+    try:
+        subprocess.check_call(["git", "fetch", "-q", "origin"],
+                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        behind = subprocess.check_output(
+            ["git", "rev-list", "--count", "HEAD..origin/main"],
+            stderr=subprocess.DEVNULL).decode().strip()
+    except Exception:
+        return  # gitもネットも無い環境では黙って通す（が、下の1行は必ず出す）
+    if behind and behind != "0":
+        print("=" * 62)
+        print("🔴 リモートが %s コミット先行しています＝先に `git pull` してください。" % behind)
+        print("   cronが生成した今日ぶんが手元に無いまま rollback を回すと、")
+        print("   子供が実際にひらいた出題と別の履歴を作ります（2026-08-12の事故）。")
+        print("=" * 62)
+
+
+warn_if_behind_remote()
 
 decks = json.load(io.open("decks.json", encoding="utf-8"))
 need = []

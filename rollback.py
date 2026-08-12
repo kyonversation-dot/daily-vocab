@@ -11,6 +11,10 @@
 使い方（`C:\\Users\\Kiyoko\\Desktop\\daily-vocab` で）：
   python rollback.py               # 直近1日ぶんを戻す（正確：today の新出だけ戻す）
   python rollback.py 3             # 直近3日ぶんを戻す（git の daily コミットから復元）
+  ⚠️ **N は「N日ぶん」ではなく「N-1日ぶん」戻る**（N日前の daily コミット時点の seen に
+     戻す作りなので、その日ぶんは残る）。7日ぶん戻したいなら 8 を渡す（2026-08-12に実測）。
+  ⚠️ **走らせる前に git pull**。cronがリモートに毎朝コミットするので、遅れたまま巻き戻すと
+     子供が実際にひらいた出題と別の履歴ができる（冒頭で警告を出すようにした）。
   python rollback.py 3 maya-vocab  # デッキを指定（省略＝全デッキ）
   python rollback.py --dry 3       # 何が戻るか見るだけ（変更しない）
 
@@ -61,6 +65,28 @@ def seen_at(sha, path):
     except Exception:
         return None
 
+
+def warn_if_behind_remote():
+    """🔴 2026-08-12の事故。cron（GitHub Actions）は毎朝 origin に直接コミットする。
+    手元が遅れたまま巻き戻すと、**子供が実際にひらいた出題と別物の履歴**ができる。
+    このスクリプトは「静かに消える」を防ぐ道具なので、ここで鳴らさないと意味がない。"""
+    try:
+        subprocess.check_call(["git", "fetch", "-q", "origin"],
+                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        behind = subprocess.check_output(
+            ["git", "rev-list", "--count", "HEAD..origin/main"],
+            stderr=subprocess.DEVNULL).decode().strip()
+    except Exception:
+        return
+    if behind and behind != "0":
+        print("=" * 62)
+        print("🔴 リモートが %s コミット先行しています。**巻き戻す前に `git pull`**。" % behind)
+        print("   先行分にはcronが生成した今日ぶんが入っています。取り込まずに巻き戻すと、")
+        print("   子供が今朝ひらいた出題とは別の履歴を作ってしまいます（2026-08-12の事故）。")
+        print("=" * 62)
+
+
+warn_if_behind_remote()
 
 decks = load("decks.json")
 commits = daily_commits()
