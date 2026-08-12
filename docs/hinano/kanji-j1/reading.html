@@ -105,16 +105,6 @@
 // 今日の12語だけにすると、前の単元の漢字が回ってこないため（2026-08-04キヨ依頼）。
 const POOL = [
   {
-    "ja": "乾",
-    "reading": "カン／かわ(く)",
-    "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水気（みずけ）がなくなる"
-  },
-  {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>"
-  },
-  {
     "ja": "撃",
     "reading": "ゲキ／う(つ)",
     "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする"
@@ -178,11 +168,6 @@ const POOL = [
     "ja": "渓",
     "reading": "ケイ",
     "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>"
-  },
-  {
-    "ja": "桃",
-    "reading": "トウ／もも",
-    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>"
   },
   {
     "ja": "覆",
@@ -270,11 +255,6 @@ const POOL = [
     "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby> ／ 飛行機で上からおそうこと。「空襲がひどくなってきたので」"
   },
   {
-    "ja": "疎開",
-    "reading": "そかい",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby> ／ 戦争をさけて、都会から田舎へうつること"
-  },
-  {
     "ja": "四歳",
     "reading": "よんさい",
     "meaning": "<ruby>四歳<rt>よんさい</rt></ruby> ／ 4さい。「四歳の妹に留守番をたのんで」"
@@ -320,11 +300,6 @@ const POOL = [
     "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby> ／ 飛行機から爆弾を落としてこうげきすること"
   },
   {
-    "ja": "遠慮",
-    "reading": "えんりょ",
-    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby> ／ 相手を思って、ひかえめにすること。「ほかの人に遠慮したのでしょう」"
-  },
-  {
     "ja": "機体",
     "reading": "きたい",
     "meaning": "<ruby>機体<rt>きたい</rt></ruby> ／ 飛行機の体。「青空にきらっきらっと機体が美しく輝いて」"
@@ -333,11 +308,6 @@ const POOL = [
     "ja": "人影",
     "reading": "ひとかげ",
     "meaning": "<ruby>人影<rt>ひとかげ</rt></ruby> ／ 人のすがた。「道にも畑にも、人影はありませんでした」"
-  },
-  {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた"
   },
   {
     "ja": "栄養失調",
@@ -465,6 +435,36 @@ const POOL = [
     "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること"
   },
   {
+    "ja": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby> ／ 相手を思って、ひかえめにすること。「ほかの人に遠慮したのでしょう」"
+  },
+  {
+    "ja": "原子爆弾",
+    "reading": "げんしばくだん",
+    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた"
+  },
+  {
+    "ja": "棺",
+    "reading": "カン／ひつぎ",
+    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>"
+  },
+  {
+    "ja": "乾",
+    "reading": "カン／かわ(く)",
+    "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水気（みずけ）がなくなる"
+  },
+  {
+    "ja": "桃",
+    "reading": "トウ／もも",
+    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>"
+  },
+  {
+    "ja": "疎開",
+    "reading": "そかい",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby> ／ 戦争をさけて、都会から田舎へうつること"
+  },
+  {
     "ja": "戻る",
     "reading": "もどる",
     "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る"
@@ -473,111 +473,6 @@ const POOL = [
     "ja": "唇",
     "reading": "くちびる",
     "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち"
-  },
-  {
-    "ja": "駆け寄る",
-    "reading": "かけよる",
-    "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく"
-  },
-  {
-    "ja": "貧血",
-    "reading": "ひんけつ",
-    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること"
-  },
-  {
-    "ja": "遅くなる",
-    "reading": "おそくなる",
-    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる"
-  },
-  {
-    "ja": "魂",
-    "reading": "たましい",
-    "meaning": "<ruby>魂<rt>たましい</rt></ruby> ／ たましい。体の中にある、その人の心そのもの"
-  },
-  {
-    "ja": "繊細",
-    "reading": "せんさい",
-    "meaning": "<ruby>繊細<rt>せんさい</rt></ruby> ／ センサイ。感じ方が細やかで、こまかい所に気がつくこと"
-  },
-  {
-    "ja": "探る",
-    "reading": "さぐる",
-    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう"
-  },
-  {
-    "ja": "日陰",
-    "reading": "ひかげ",
-    "meaning": "<ruby>日陰<rt>ひかげ</rt></ruby> ／ かげ。日が当たらないところ"
-  },
-  {
-    "ja": "黙る",
-    "reading": "だまる",
-    "meaning": "<ruby>黙る<rt>だまる</rt></ruby> ／ だまる。何も言わない"
-  },
-  {
-    "ja": "輪郭",
-    "reading": "りんかく",
-    "meaning": "<ruby>輪郭<rt>りんかく</rt></ruby> ／ リンカク。もののまわりの形・かたちどり"
-  },
-  {
-    "ja": "拭く",
-    "reading": "ぬぐう",
-    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る"
-  },
-  {
-    "ja": "涙",
-    "reading": "なみだ",
-    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水"
-  },
-  {
-    "ja": "刈る",
-    "reading": "かる",
-    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる"
-  },
-  {
-    "ja": "大丈夫",
-    "reading": "だいじょうぶ",
-    "meaning": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby> ／ ダイジョウブ。心配ない"
-  },
-  {
-    "ja": "掃除",
-    "reading": "そうじ",
-    "meaning": "<ruby>掃除<rt>そうじ</rt></ruby> ／ ソウジ。ごみやよごれを取って、きれいにすること"
-  },
-  {
-    "ja": "厄介",
-    "reading": "やっかい",
-    "meaning": "<ruby>厄介<rt>やっかい</rt></ruby> ／ ヤッカイ。手間がかかって、めんどうなこと"
-  },
-  {
-    "ja": "帽子",
-    "reading": "ぼうし",
-    "meaning": "<ruby>帽子<rt>ぼうし</rt></ruby> ／ ボウシ。頭にかぶるもの"
-  },
-  {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ"
-  },
-  {
-    "ja": "背ける",
-    "reading": "そむける",
-    "meaning": "<ruby>背ける<rt>そむける</rt></ruby> ／ そむける。顔や目をよそへ向ける"
-  },
-  {
-    "ja": "蛇口",
-    "reading": "じゃぐち",
-    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口"
-  },
-  {
-    "ja": "常緑樹",
-    "reading": "じょうりょくじゅ",
-    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木"
-  },
-  {
-    "ja": "幹",
-    "reading": "みき",
-    "meaning": "<ruby>幹<rt>みき</rt></ruby> ／ みき。木の、太い中心の部分"
   }
 ];
 const N_Q = Math.min(12, POOL.length);

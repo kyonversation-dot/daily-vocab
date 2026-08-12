@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "",
+  "date": "2026-08-12",
   "seen": [
     "司会",
     "質疑応答",
@@ -75,7 +75,64 @@
     "現れる",
     "減る",
     "事故",
-    "厚い"
+    "厚い",
+    "原爆",
+    "原子爆弾",
+    "戦争",
+    "広島",
+    "長崎",
+    "構内",
+    "心当たり",
+    "遺族"
   ],
-  "today": []
+  "today": [
+    {
+      "ja": "原爆",
+      "review": false
+    },
+    {
+      "ja": "原子爆弾",
+      "review": false
+    },
+    {
+      "ja": "戦争",
+      "review": false
+    },
+    {
+      "ja": "広島",
+      "review": false
+    },
+    {
+      "ja": "長崎",
+      "review": false
+    },
+    {
+      "ja": "構内",
+      "review": false
+    },
+    {
+      "ja": "心当たり",
+      "review": false
+    },
+    {
+      "ja": "遺族",
+      "review": false
+    },
+    {
+      "ja": "立場",
+      "review": true
+    },
+    {
+      "ja": "危険",
+      "review": true
+    },
+    {
+      "ja": "明確",
+      "review": true
+    },
+    {
+      "ja": "事件",
+      "review": true
+    }
+  ]
 }

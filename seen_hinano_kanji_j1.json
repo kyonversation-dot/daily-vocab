@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "",
+  "date": "2026-08-12",
   "seen": [
     "撃",
     "爆",
@@ -67,7 +67,64 @@
     "先輩",
     "暇",
     "掲示",
-    "騒々しさ"
+    "騒々しさ",
+    "遠慮",
+    "原子爆弾",
+    "棺",
+    "乾",
+    "桃",
+    "疎開",
+    "戻る",
+    "唇"
   ],
-  "today": []
+  "today": [
+    {
+      "ja": "遠慮",
+      "review": false
+    },
+    {
+      "ja": "原子爆弾",
+      "review": false
+    },
+    {
+      "ja": "棺",
+      "review": false
+    },
+    {
+      "ja": "乾",
+      "review": false
+    },
+    {
+      "ja": "桃",
+      "review": false
+    },
+    {
+      "ja": "疎開",
+      "review": false
+    },
+    {
+      "ja": "戻る",
+      "review": false
+    },
+    {
+      "ja": "唇",
+      "review": false
+    },
+    {
+      "ja": "襲",
+      "review": true
+    },
+    {
+      "ja": "弾",
+      "review": true
+    },
+    {
+      "ja": "掘",
+      "review": true
+    },
+    {
+      "ja": "馬車",
+      "review": true
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "",
+  "date": "2026-08-12",
   "seen": [
     "圧",
     "移",
@@ -93,7 +93,64 @@
     "夢",
     "破",
     "桜",
-    "敵"
+    "敵",
+    "因",
+    "属",
+    "任",
+    "断",
+    "賞",
+    "態",
+    "独",
+    "容"
   ],
-  "today": []
+  "today": [
+    {
+      "ja": "因",
+      "review": false
+    },
+    {
+      "ja": "属",
+      "review": false
+    },
+    {
+      "ja": "任",
+      "review": false
+    },
+    {
+      "ja": "断",
+      "review": false
+    },
+    {
+      "ja": "賞",
+      "review": false
+    },
+    {
+      "ja": "態",
+      "review": false
+    },
+    {
+      "ja": "独",
+      "review": false
+    },
+    {
+      "ja": "容",
+      "review": false
+    },
+    {
+      "ja": "永",
+      "review": true
+    },
+    {
+      "ja": "在",
+      "review": true
+    },
+    {
+      "ja": "慣",
+      "review": true
+    },
+    {
+      "ja": "益",
+      "review": true
+    }
+  ]
 }
