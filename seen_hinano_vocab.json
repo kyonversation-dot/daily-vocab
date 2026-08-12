@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "seen": [
     "描写",
     "心情",
@@ -102,69 +102,55 @@
     "刈り込む",
     "秘密基地",
     "木陰",
-    "春先",
-    "まばたく",
-    "縮む",
-    "通路",
-    "日差し",
-    "情景描写",
-    "解釈",
-    "冒頭",
-    "結末",
-    "比喩",
-    "構成",
-    "けんか",
-    "送り",
-    "光景",
-    "眺め"
+    "春先"
   ],
   "today": [
     {
-      "ja": "片仮名",
-      "review": true
-    },
-    {
-      "ja": "とまどう",
-      "review": true
-    },
-    {
-      "ja": "きまりが悪い",
-      "review": true
-    },
-    {
-      "ja": "捉える",
-      "review": true
-    },
-    {
-      "ja": "首をかしげる",
-      "review": true
+      "ja": "磨く",
+      "review": false
     },
     {
       "ja": "意外",
-      "review": true
+      "review": false
     },
     {
-      "ja": "まばたく",
-      "review": true
+      "ja": "にじむ",
+      "review": false
     },
     {
-      "ja": "作者",
-      "review": true
+      "ja": "首をかしげる",
+      "review": false
     },
     {
-      "ja": "題名",
-      "review": true
+      "ja": "刈り込む",
+      "review": false
+    },
+    {
+      "ja": "秘密基地",
+      "review": false
+    },
+    {
+      "ja": "木陰",
+      "review": false
     },
     {
       "ja": "春先",
+      "review": false
+    },
+    {
+      "ja": "盗み飲み",
       "review": true
     },
     {
-      "ja": "サバンナ",
+      "ja": "ほころびる",
       "review": true
     },
     {
-      "ja": "印象",
+      "ja": "表現",
+      "review": true
+    },
+    {
+      "ja": "手入れ",
       "review": true
     }
   ]

@@ -136,73 +136,66 @@
 <script>
 const words = [
   {
-    "ja": "三里",
-    "reading": "さんり",
-    "meaning": "<ruby>三里<rt>さんり</rt></ruby> ／ むかしの長さ。一里＝約3.9km。三里＝約12km",
-    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
-    "review": true
+    "ja": "戻る",
+    "reading": "もどる",
+    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
+    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "review": false
   },
   {
-    "ja": "含",
-    "reading": "ガン／ふく(む)",
-    "meaning": "<ruby>含<rt>ふく</rt></ruby>む・<ruby>含有<rt>がんゆう</rt></ruby> ／ 中に入っている",
-    "example": "小さな小さな口に、綿に＿ませた水を飲ませた夜を、僕は忘れられません。",
-    "review": true
+    "ja": "唇",
+    "reading": "くちびる",
+    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
+    "example": "＿＿＿がふるえているし、目のふちが熱い。",
+    "review": false
   },
   {
-    "ja": "覆",
-    "reading": "フク／おお(う)",
-    "meaning": "<ruby>覆<rt>おお</rt></ruby>う・<ruby>覆面<rt>ふくめん</rt></ruby> ／ 上からかぶせる・おおいかぶさる",
-    "example": "すぐ裏の山が頭の上に＿いかぶさるような山すそにありました。",
-    "review": true
+    "ja": "駆け寄る",
+    "reading": "かけよる",
+    "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく",
+    "example": "窓に＿＿＿って下をのぞいた。",
+    "review": false
   },
   {
-    "ja": "桃",
-    "reading": "トウ／もも",
-    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
-    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
-    "review": true
+    "ja": "貧血",
+    "reading": "ひんけつ",
+    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること",
+    "example": "＿＿＿を起こしたときに見える、白々とした光景によく似ている。",
+    "review": false
+  },
+  {
+    "ja": "遅くなる",
+    "reading": "おそくなる",
+    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
+    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
+    "review": false
+  },
+  {
+    "ja": "魂",
+    "reading": "たましい",
+    "meaning": "<ruby>魂<rt>たましい</rt></ruby> ／ たましい。体の中にある、その人の心そのもの",
+    "example": "＿＿＿がぬるぬるとけ出してしまいそうに暑かった。",
+    "review": false
+  },
+  {
+    "ja": "繊細",
+    "reading": "せんさい",
+    "meaning": "<ruby>繊細<rt>せんさい</rt></ruby> ／ センサイ。感じ方が細やかで、こまかい所に気がつくこと",
+    "example": "＿＿＿さのかけらもない戸部君だから、みんなの前で何を言いだすか知れたものじゃない。",
+    "review": false
+  },
+  {
+    "ja": "探る",
+    "reading": "さぐる",
+    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
+    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
+    "review": false
   },
   {
     "ja": "掘",
     "reading": "クツ／ほ(る)",
     "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
     "example": "たたみを上げて、ゆかの下に穴を＿りました。",
-    "review": true
-  },
-  {
-    "ja": "弾",
-    "reading": "ダン／たま・はず(む)",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
-    "example": "これからの生活に胸を＿ませました。",
-    "review": true
-  },
-  {
-    "ja": "四歳",
-    "reading": "よんさい",
-    "meaning": "<ruby>四歳<rt>よんさい</rt></ruby> ／ 4さい。「四歳の妹に留守番をたのんで」",
-    "example": "祖母と＿＿＿の妹に留守番をたのんで、田舎へ出かけました。",
-    "review": true
-  },
-  {
-    "ja": "渡",
-    "reading": "ト／わた(る)",
-    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
-    "example": "下流の橋を＿って学校に行きました。",
-    "review": true
-  },
-  {
-    "ja": "配給",
-    "reading": "はいきゅう",
-    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
-    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
-    "review": true
-  },
-  {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "<ruby>山あい<rt>やまあい</rt></ruby> ／ 山と山のあいだ。「石釜という山あいの村」",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
     "review": true
   },
   {
@@ -213,10 +206,17 @@ const words = [
     "review": true
   },
   {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "<ruby>六畳間<rt>ろくじょうま</rt></ruby> ／ たたみ6まいの部屋。「庭に面した六畳間の一部屋」",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
+    "ja": "下流",
+    "reading": "かりゅう",
+    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
+    "example": "＿＿＿の橋を渡って学校に行きました。",
+    "review": true
+  },
+  {
+    "ja": "農家",
+    "reading": "のうか",
+    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
+    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
     "review": true
   }
 ];
