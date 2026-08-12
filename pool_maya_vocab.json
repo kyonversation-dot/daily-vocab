@@ -7,6 +7,126 @@
   "counterUnit": "語",
   "words": [
     {
+      "ja": "構内",
+      "reading": "こうない",
+      "meaning": "駅や学校などの、<ruby>建物<rt>たてもの</rt></ruby>や<ruby>敷地<rt>しきち</rt></ruby>の中"
+    },
+    {
+      "ja": "心当たり",
+      "reading": "こころあたり",
+      "meaning": "「もしかしてあれかな」と思い当たること"
+    },
+    {
+      "ja": "遺族",
+      "reading": "いぞく",
+      "meaning": "なくなった人の、あとに<ruby>残<rt>のこ</rt></ruby>された家族"
+    },
+    {
+      "ja": "名簿",
+      "reading": "めいぼ",
+      "meaning": "名前をならべて書いた<ruby>表<rt>ひょう</rt></ruby>やリスト"
+    },
+    {
+      "ja": "寸前",
+      "reading": "すんぜん",
+      "meaning": "あと少しでそうなる、というところ"
+    },
+    {
+      "ja": "感触",
+      "reading": "かんしょく",
+      "meaning": "さわったときの感じ"
+    },
+    {
+      "ja": "翌日",
+      "reading": "よくじつ",
+      "meaning": "その次の日"
+    },
+    {
+      "ja": "所在地",
+      "reading": "しょざいち",
+      "meaning": "それがある場所"
+    },
+    {
+      "ja": "在来線",
+      "reading": "ざいらいせん",
+      "meaning": "新幹線ではない、前からある<ruby>鉄道<rt>てつどう</rt></ruby>"
+    },
+    {
+      "ja": "爆心地",
+      "reading": "ばくしんち",
+      "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>した、まん中の場所"
+    },
+    {
+      "ja": "慰霊碑",
+      "reading": "いれいひ",
+      "meaning": "なくなった人をとむらうために建てた石のひ"
+    },
+    {
+      "ja": "資料館",
+      "reading": "しりょうかん",
+      "meaning": "しりょうを集めて見せる<ruby>建物<rt>たてもの</rt></ruby>"
+    },
+    {
+      "ja": "陳列",
+      "reading": "ちんれつ",
+      "meaning": "人に見せるためにならべておくこと"
+    },
+    {
+      "ja": "展示",
+      "reading": "てんじ",
+      "meaning": "たくさんの人に見せるためにならべること"
+    },
+    {
+      "ja": "被爆",
+      "reading": "ひばく",
+      "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby>の<ruby>害<rt>がい</rt></ruby>を受けること"
+    },
+    {
+      "ja": "炭化",
+      "reading": "たんか",
+      "meaning": "<ruby>焼<rt>や</rt></ruby>けて<ruby>炭<rt>すみ</rt></ruby>のようになること"
+    },
+    {
+      "ja": "検索",
+      "reading": "けんさく",
+      "meaning": "調べたいことをさがし出すこと"
+    },
+    {
+      "ja": "提供",
+      "reading": "ていきょう",
+      "meaning": "自分の持っているものを<ruby>差<rt>さ</rt></ruby>し出すこと"
+    },
+    {
+      "ja": "追悼",
+      "reading": "ついとう",
+      "meaning": "なくなった人を思い、かなしむこと"
+    },
+    {
+      "ja": "供養",
+      "reading": "くよう",
+      "meaning": "なくなった人のために<ruby>祈<rt>いの</rt></ruby>ること"
+    },
+    {
+      "ja": "身元",
+      "reading": "みもと",
+      "meaning": "その人がだれなのか、ということ"
+    },
+    {
+      "ja": "余り",
+      "reading": "あまり",
+      "meaning": "のこり。「八百人余り」＝八百人より少し多い"
+    },
+    {
+      "ja": "情景",
+      "reading": "じょうけい",
+      "meaning": "目に<ruby>浮<rt>う</rt></ruby>かぶ、そのときの<ruby>景色<rt>けしき</rt></ruby>や<ruby>様子<rt>ようす</rt></ruby>"
+    },
+    {
+      "ja": "展開",
+      "reading": "てんかい",
+      "meaning": "話がどう<ruby>進<rt>すす</rt></ruby>んでいくか、ということ"
+    },
+    {
       "ja": "兵庫県",
       "reading": "ひょうごけん",
       "meaning": "神戸市がある<ruby>県<rt>けん</rt></ruby>。<ruby>近畿<rt>きんき</rt></ruby>地方にある"
