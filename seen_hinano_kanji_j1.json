@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-12",
+  "date": "",
   "seen": [
     "乾",
     "棺",
@@ -73,64 +73,7 @@
     "先輩",
     "暇",
     "掲示",
-    "騒々しさ",
-    "戻る",
-    "唇",
-    "駆け寄る",
-    "貧血",
-    "遅くなる",
-    "魂",
-    "繊細",
-    "探る"
+    "騒々しさ"
   ],
-  "today": [
-    {
-      "ja": "戻る",
-      "review": false
-    },
-    {
-      "ja": "唇",
-      "review": false
-    },
-    {
-      "ja": "駆け寄る",
-      "review": false
-    },
-    {
-      "ja": "貧血",
-      "review": false
-    },
-    {
-      "ja": "遅くなる",
-      "review": false
-    },
-    {
-      "ja": "魂",
-      "review": false
-    },
-    {
-      "ja": "繊細",
-      "review": false
-    },
-    {
-      "ja": "探る",
-      "review": false
-    },
-    {
-      "ja": "掘",
-      "review": true
-    },
-    {
-      "ja": "田舎",
-      "review": true
-    },
-    {
-      "ja": "下流",
-      "review": true
-    },
-    {
-      "ja": "農家",
-      "review": true
-    }
-  ]
+  "today": []
 }
