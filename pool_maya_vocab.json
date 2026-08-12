@@ -7,6 +7,31 @@
   "counterUnit": "語",
   "words": [
     {
+      "ja": "原爆",
+      "reading": "げんばく",
+      "meaning": "<ruby>原子<rt>げんし</rt></ruby><ruby>爆弾<rt>ばくだん</rt></ruby>のこと"
+    },
+    {
+      "ja": "原子爆弾",
+      "reading": "げんしばくだん",
+      "meaning": "<ruby>戦争<rt>せんそう</rt></ruby>のときに<ruby>使<rt>つか</rt></ruby>われた、とても<ruby>大<rt>おお</rt></ruby>きな<ruby>爆弾<rt>ばくだん</rt></ruby>"
+    },
+    {
+      "ja": "戦争",
+      "reading": "せんそう",
+      "meaning": "<ruby>国<rt>くに</rt></ruby>と<ruby>国<rt>くに</rt></ruby>が<ruby>兵器<rt>へいき</rt></ruby>で<ruby>戦<rt>たたか</rt></ruby>うこと"
+    },
+    {
+      "ja": "広島",
+      "reading": "ひろしま",
+      "meaning": "<ruby>中国<rt>ちゅうごく</rt></ruby><ruby>地方<rt>ちほう</rt></ruby>にある<ruby>県<rt>けん</rt></ruby>と<ruby>市<rt>し</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めて<ruby>原子爆弾<rt>げんしばくだん</rt></ruby>が<ruby>落<rt>お</rt></ruby>とされた"
+    },
+    {
+      "ja": "長崎",
+      "reading": "ながさき",
+      "meaning": "<ruby>九州<rt>きゅうしゅう</rt></ruby>にある<ruby>県<rt>けん</rt></ruby>と<ruby>市<rt>し</rt></ruby>。<ruby>広島<rt>ひろしま</rt></ruby>のあとに<ruby>原子爆弾<rt>げんしばくだん</rt></ruby>が<ruby>落<rt>お</rt></ruby>とされた"
+    },
+    {
       "ja": "構内",
       "reading": "こうない",
       "meaning": "駅や学校などの、<ruby>建物<rt>たてもの</rt></ruby>や<ruby>敷地<rt>しきち</rt></ruby>の中"
