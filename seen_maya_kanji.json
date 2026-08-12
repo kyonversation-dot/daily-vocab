@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "seen": [
     "圧",
     "移",
@@ -128,55 +128,63 @@
     "勢",
     "許",
     "職",
-    "象"
+    "象",
+    "貧",
+    "夢",
+    "破",
+    "綿",
+    "句",
+    "桜",
+    "敵",
+    "輸"
   ],
   "today": [
     {
-      "ja": "師",
+      "ja": "貧",
       "review": false
     },
     {
-      "ja": "損",
+      "ja": "夢",
       "review": false
     },
     {
-      "ja": "囲",
+      "ja": "破",
       "review": false
     },
     {
-      "ja": "似",
+      "ja": "綿",
       "review": false
     },
     {
-      "ja": "勢",
+      "ja": "句",
       "review": false
     },
     {
-      "ja": "許",
+      "ja": "桜",
       "review": false
     },
     {
-      "ja": "職",
+      "ja": "敵",
       "review": false
     },
     {
-      "ja": "象",
+      "ja": "輸",
       "review": false
     },
     {
-      "ja": "張",
+      "ja": "耕",
       "review": true
     },
     {
-      "ja": "規",
+      "ja": "殺",
       "review": true
     },
     {
-      "ja": "応",
+      "ja": "解",
       "review": true
     },
     {
-      "ja": "演",
+      "ja": "益",
       "review": true
     }
   ]

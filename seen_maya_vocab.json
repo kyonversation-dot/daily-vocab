@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "seen": [
     "司会",
     "質疑応答",
@@ -111,55 +111,63 @@
     "清潔",
     "事件",
     "険しい",
-    "検査"
+    "検査",
+    "期限",
+    "限る",
+    "現れる",
+    "減る",
+    "事故",
+    "個人",
+    "保護",
+    "厚い"
   ],
   "today": [
     {
-      "ja": "平均",
+      "ja": "期限",
       "review": false
     },
     {
-      "ja": "経験",
+      "ja": "限る",
       "review": false
     },
     {
-      "ja": "性質",
+      "ja": "現れる",
       "review": false
     },
     {
-      "ja": "得意",
+      "ja": "減る",
       "review": false
+    },
+    {
+      "ja": "事故",
+      "review": false
+    },
+    {
+      "ja": "個人",
+      "review": false
+    },
+    {
+      "ja": "保護",
+      "review": false
+    },
+    {
+      "ja": "厚い",
+      "review": false
+    },
+    {
+      "ja": "意見文",
+      "review": true
     },
     {
       "ja": "清潔",
-      "review": false
-    },
-    {
-      "ja": "事件",
-      "review": false
-    },
-    {
-      "ja": "険しい",
-      "review": false
-    },
-    {
-      "ja": "検査",
-      "review": false
-    },
-    {
-      "ja": "逆",
       "review": true
     },
     {
-      "ja": "目次",
+      "ja": "永久",
       "review": true
     },
     {
-      "ja": "居間",
-      "review": true
-    },
-    {
-      "ja": "全国紙",
+      "ja": "利益",
       "review": true
     }
   ]
