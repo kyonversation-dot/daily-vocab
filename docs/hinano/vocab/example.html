@@ -162,85 +162,87 @@
 <script>
 const allWords = ([
   {
-    "ja": "説明",
-    "reading": "せつめい",
-    "meaning": "よく分かるように、順を追って言うこと",
+    "ja": "磨く",
+    "reading": "みがく",
+    "meaning": "<ruby>磨く<rt>みがく</rt></ruby> ／ こすって、きれいにする・光らせる",
+    "example": "サッカー部のみんなと離れた所で、一人ボールを＿＿＿ていた。",
     "review": false
   },
   {
-    "ja": "熱心",
-    "reading": "ねっしん",
-    "meaning": "一つのことに深く打ち込むようす",
+    "ja": "意外",
+    "reading": "いがい",
+    "meaning": "<ruby>意外<rt>いがい</rt></ruby> ／ 思っていたのとちがうこと",
+    "example": "おまえは俺を＿＿＿とハンサムだと思ったことが——。",
     "review": false
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>一発<rt>いっぱつ</rt></ruby>で町ぜんたいをこわしてしまう<ruby>爆弾<rt>ばくだん</rt></ruby>",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "にじむ",
+    "reading": "にじむ",
+    "meaning": "<ruby>にじむ<rt>にじむ</rt></ruby> ／ じわっとしみ出てくる",
+    "example": "涙が＿＿＿できたのは、あんまり笑いすぎたせいだ。",
     "review": false
   },
   {
-    "ja": "表記",
-    "reading": "ひょうき",
-    "meaning": "文字での<ruby>書<rt>か</rt></ruby>き<ruby>表<rt>あらわ</rt></ruby>し方。「片仮名表記」",
-    "example": "人の名前や地名を片仮名で書く——この＿＿＿にはどんな効果があるだろう。",
+    "ja": "首をかしげる",
+    "reading": "くびをかしげる",
+    "meaning": "<ruby>首をかしげる<rt>くびをかしげる</rt></ruby> ／ <ruby>不思議<rt>ふしぎ</rt></ruby>に思って、首をかたむける",
+    "example": "私は＿＿＿た。常緑樹は一年中葉っぱがしげっているはずなのに。",
     "review": false
   },
   {
-    "ja": "語り手",
-    "reading": "かたりて",
-    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>を<ruby>語<rt>かた</rt></ruby>っている人。この作品では「僕」",
-    "example": "この物語の＿＿＿は、大人になった「僕」である。",
+    "ja": "刈り込む",
+    "reading": "かりこむ",
+    "meaning": "<ruby>刈り込む<rt>かりこむ</rt></ruby> ／ 枝や葉を切って、形をととのえる",
+    "example": "それをきれいに丸く＿＿＿ので、木の下に入れば丸屋根の部屋のようだ。",
     "review": false
   },
   {
-    "ja": "疎開",
-    "reading": "そかい",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>からのがれるため、<ruby>都会<rt>とかい</rt></ruby>から<ruby>地方<rt>ちほう</rt></ruby>へ引っこすこと",
-    "example": "あまり空襲がひどくなってきたので、母は＿＿＿しようと言いだしました。",
+    "ja": "秘密基地",
+    "reading": "ひみつきち",
+    "meaning": "<ruby>秘密基地<rt>ひみつきち</rt></ruby> ／ 自分たちだけの、かくれ場所",
+    "example": "夏実と私はここが大好きで、二人だけの＿＿＿と決めていた。",
     "review": false
   },
   {
-    "ja": "棺",
-    "reading": "ひつぎ",
-    "meaning": "なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "農家のおじいさんが、杉板を削って小さな小さな＿＿＿を作ってくださいました。",
+    "ja": "木陰",
+    "reading": "こかげ",
+    "meaning": "<ruby>木陰<rt>こかげ</rt></ruby> ／ 木の下の、日の当たらないところ",
+    "example": "こんな時期は＿＿＿になってくれて、ありがたいよ。",
     "review": false
   },
   {
-    "ja": "遠慮",
-    "reading": "えんりょ",
-    "meaning": "<ruby>相手<rt>あいて</rt></ruby>のことを考えて、ひかえめにすること",
-    "example": "母は弟が死んでいるので、ほかの人に＿＿＿したのでしょう。",
+    "ja": "春先",
+    "reading": "はるさき",
+    "meaning": "<ruby>春先<rt>はるさき</rt></ruby> ／ 春のはじめのころ",
+    "example": "けど＿＿＿は、葉っぱが落ちて案外厄介なんだよ、掃除がさ。",
     "review": false
   },
   {
-    "ja": "主人公",
-    "reading": "しゅじんこう",
-    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中心になる人",
-    "example": "この物語の＿＿＿は、弟のミルクを盗み飲みしてしまった「僕」だ。",
+    "ja": "視点",
+    "reading": "してん",
+    "meaning": "どこから<ruby>見<rt>み</rt></ruby>て書かれているか、という<ruby>立場<rt>たちば</rt></ruby>",
+    "example": "だれの目から見て書かれているか＝＿＿＿を考えながら読む。",
     "review": true
   },
   {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "ja": "ひもじい",
+    "reading": "ひもじい",
+    "meaning": "おなかがすいて、つらい",
+    "example": "何日もろくに食べていなくて、＿＿＿。",
     "review": true
   },
   {
-    "ja": "おちおち",
-    "reading": "おちおち",
-    "meaning": "<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて。「おちおちねていられない」＝安心してねられない",
-    "example": "夜も＿＿＿ねていられません。",
+    "ja": "想像",
+    "reading": "そうぞう",
+    "meaning": "<ruby>実際<rt>じっさい</rt></ruby>に見ていないことを、<ruby>頭<rt>あたま</rt></ruby>の中に思いうかべること",
+    "example": "読み手が＿＿＿できるように描いたものを、描写という。",
     "review": true
   },
   {
-    "ja": "田植え",
-    "reading": "たうえ",
-    "meaning": "<ruby>稲<rt>いね</rt></ruby>のなえを田んぼに<ruby>植<rt>う</rt></ruby>える<ruby>仕事<rt>しごと</rt></ruby>",
-    "example": "母は生まれて初めて＿＿＿を手伝い、昼のご飯を僕たちに残して持って帰ってきました。",
+    "ja": "きまりが悪い",
+    "reading": "きまりがわるい",
+    "meaning": "<ruby>きまりが悪い<rt>きまりがわるい</rt></ruby> ／ はずかしくて、その場にいづらい",
+    "example": "＿＿＿くて、はじかれたようにその場を離れた。",
     "review": true
   }
 ]).filter(w => w.example);

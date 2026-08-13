@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "seen": [
     "胃",
     "異",
@@ -137,55 +137,63 @@
     "暖",
     "値",
     "宙",
-    "忠"
+    "忠",
+    "著",
+    "庁",
+    "頂",
+    "潮",
+    "賃",
+    "痛",
+    "展",
+    "討"
   ],
   "today": [
     {
-      "ja": "担",
+      "ja": "著",
       "review": false
     },
     {
-      "ja": "探",
+      "ja": "庁",
       "review": false
     },
     {
-      "ja": "誕",
+      "ja": "頂",
       "review": false
     },
     {
-      "ja": "段",
+      "ja": "潮",
       "review": false
     },
     {
-      "ja": "暖",
+      "ja": "賃",
       "review": false
     },
     {
-      "ja": "値",
+      "ja": "痛",
       "review": false
     },
     {
-      "ja": "宙",
+      "ja": "展",
       "review": false
     },
     {
-      "ja": "忠",
+      "ja": "討",
       "review": false
     },
     {
-      "ja": "看",
+      "ja": "割",
       "review": true
     },
     {
-      "ja": "幼",
+      "ja": "宇",
       "review": true
     },
     {
-      "ja": "推",
+      "ja": "座",
       "review": true
     },
     {
-      "ja": "私",
+      "ja": "宣",
       "review": true
     }
   ]
