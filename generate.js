@@ -156,9 +156,20 @@ function buildDeck(deck) {
   const distinctReadings = new Set(readingPool.map(w => w.reading)).size;
   const hasReading = !!deck.reading && distinctReadings >= 3;
 
+  // いみ三択の母集団＝これまでに出会った語ぜんぶ（よみ三択と同じ考え方）。
+  // 2026-08-13キヨ依頼＝「今やっている単元を何回もまわしてよい。チェックするだけでなくクイズ形に」。
+  // ★これが効くのは単元の語を出し切ったあと＝新出0の日でも、同じ語が別の問題として回る。
+  const meaningPool = [...seenSet]
+    .map(ja => byJa[ja])
+    .filter(w => w && w.meaning)
+    .map(w => ({ ja: w.ja, reading: w.reading || '', meaning: w.meaning }));
+  // 選択肢は「意味がちがう語」から2つ引く＝意味が3種類以上ないと三択が作れない。
+  const hasMeaning = new Set(meaningPool.map(w => w.meaning)).size >= 3;
+
   const fill = (tpl, title) => tpl
     .replaceAll('__WORDS_JSON__', wordsJson)
     .replaceAll('__READING_POOL_JSON__', JSON.stringify(readingPool, null, 2))
+    .replaceAll('__MEANING_POOL_JSON__', JSON.stringify(meaningPool, null, 2))
     .replaceAll('__TITLE__', title)
     .replaceAll('__SUBTITLE__', pool.subtitle)
     .replaceAll('__EXTRACSS__', extraCss);
@@ -175,6 +186,11 @@ function buildDeck(deck) {
   // よみ三択＝decks.json で reading:true のデッキだけ。
   if (hasReading) {
     fs.writeFileSync(path.join(outDir, 'reading.html'), fill(readTpl('reading.html'), `${pool.titleShort}のよみ三択`));
+  }
+
+  // いみ三択＝意味が3種類以上あるデッキ全部（今は5デッキとも該当）。
+  if (hasMeaning) {
+    fs.writeFileSync(path.join(outDir, 'meaning.html'), fill(readTpl('meaning.html'), `${pool.titleShort}のいみ三択`));
   }
 
   const itemLabel = pool.itemLabel || '言葉';
@@ -201,7 +217,7 @@ function buildDeck(deck) {
             padding:12px 16px; font-size:0.8rem; text-align:center; max-width:420px; line-height:1.6; }
   .buttons { display:flex; flex-direction:column; gap:14px; width:100%; max-width:340px; }
   a.game { display:block; text-align:center; text-decoration:none; color:white; font-weight:bold; font-size:1.1rem; padding:18px; border-radius:16px; }
-  a.challenge { background:#c0436a; } a.matching { background:#3a5ac0; } a.example { background:#2f7d5a; } a.reading { background:#7a4bbf; } a.game:hover { opacity:0.9; }
+  a.challenge { background:#c0436a; } a.matching { background:#3a5ac0; } a.example { background:#2f7d5a; } a.reading { background:#7a4bbf; } a.meaning { background:#b06a1f; } a.game:hover { opacity:0.9; }
   a.back { color:#888; font-size:0.8rem; text-decoration:none; margin-top:4px; }
   .foot { color:#666; font-size:0.7rem; margin-top:4px; text-align:center; }
 </style>
@@ -216,6 +232,7 @@ function buildDeck(deck) {
     <a class="game matching" href="matching.html">🔗 ${itemLabel}マッチング</a>
     ${hasExample ? `<a class="game example" href="example.html">✏️ ${itemLabel}を文の中で使う</a>` : ''}
     ${hasReading ? `<a class="game reading" href="reading.html">🔤 よみ三択（これまでの${readingPool.length}${counterUnit}から）</a>` : ''}
+    ${hasMeaning ? `<a class="game meaning" href="meaning.html">🧠 いみ三択（これまでの${meaningPool.length}${counterUnit}から）</a>` : ''}
   </div>
   <a class="back" href="../">← ${deck.child}のトップにもどる</a>
 </body>

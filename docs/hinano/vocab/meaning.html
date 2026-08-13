@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>星の花のいみ三択</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px 10px;
+  }
+
+  header { flex-shrink: 0; margin-bottom: 10px; }
+  header h1 { font-size: 1.15rem; color: #ffb4d4; }
+  header p { font-size: 0.72rem; color: #aaa; margin-top: 3px; }
+
+  .progress {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 0.78rem; color: #a8e6c1; margin-bottom: 10px; flex-shrink: 0;
+  }
+  .progress .score { color: #ffb4d4; font-weight: bold; }
+
+  .stage {
+    flex: 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px;
+  }
+
+  .qcard {
+    background: #16213e; border: 2px solid #2a2a5a; border-radius: 16px;
+    padding: 22px 20px; width: 100%; max-width: 460px; text-align: center;
+  }
+  .qword { font-size: 2.6rem; font-weight: bold; color: #fff; line-height: 1.25; word-break: break-all; }
+  .qreading { font-size: 0.95rem; color: #a8e6c1; margin-top: 6px; }
+  .qhint { font-size: 0.7rem; color: #888; margin-top: 8px; }
+
+  .choices { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 460px; }
+  button.choice {
+    padding: 14px 16px; border-radius: 14px; border: 2px solid #3a3a7a;
+    background: #24244a; color: #eee; font-size: 1.02rem; font-family: inherit;
+    cursor: pointer; font-weight: normal; text-align: left; line-height: 1.6;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button.choice rt { font-size: 0.55em; color: #a8c0e6; }
+  button.choice:hover:not(:disabled) { border-color: #ffb4d4; }
+  button.choice.correct { background: #1a4731; border-color: #4caf7d; color: #b6f0cf; }
+  button.choice.wrong { background: #4a1a26; border-color: #e05580; color: #ffc0d0; }
+  button.choice:disabled { cursor: default; opacity: 0.85; }
+
+  .feedback { font-size: 0.9rem; min-height: 1.4em; text-align: center; line-height: 1.6; }
+  .feedback .ok { color: #a8e6c1; }
+  .feedback .ng { color: #ffb4b4; }
+  .feedback .mean { display: block; color: #aaa; font-size: 0.78rem; margin-top: 4px; }
+
+  .result { text-align: center; }
+  .result h2 { color: #ffb4d4; font-size: 1.5rem; margin-bottom: 10px; }
+  .result .big { font-size: 2.6rem; font-weight: bold; color: #a8e6c1; }
+  .missed {
+    margin-top: 16px; text-align: left; background: #16213e; border: 1px solid #2a2a5a;
+    border-radius: 12px; padding: 14px 16px; max-width: 460px; font-size: 0.85rem; line-height: 1.9;
+  }
+  .missed h3 { font-size: 0.8rem; color: #f5a623; margin-bottom: 6px; }
+  .missed b { color: #fff; font-size: 1.05rem; }
+  .missed span { color: #a8e6c1; }
+
+  footer { display: flex; justify-content: center; gap: 12px; margin-top: 14px; flex-shrink: 0; }
+  button.act {
+    padding: 10px 22px; border-radius: 20px; border: none;
+    font-size: 0.85rem; font-family: inherit; cursor: pointer; font-weight: bold;
+  }
+  .btn-again { background: #c0436a; color: white; }
+  .btn-again:hover { background: #e05580; }
+  a.back { color: #888; font-size: 0.8rem; text-decoration: none; align-self: center; padding: 8px; }
+  .note { text-align: center; font-size: 0.62rem; color: #666; margin-top: 6px; flex-shrink: 0; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧠 星の花のいみ三択</h1>
+  <p>ひなののことばれんしゅう ｜ ただしい いみ をえらんでね</p>
+</header>
+
+<div class="progress">
+  <span id="count">1 / 12</span>
+  <span class="score" id="score">⭕ 0</span>
+</div>
+
+<div class="stage" id="stage"></div>
+
+<footer id="footer"></footer>
+<div class="note">これまでに出てきた言葉ぜんぶから出るよ（何回でもまわるよ）</div>
+
+<script>
+// 出題の母集団＝このデッキで「これまでに出会った語」ぜんぶ。
+// 今日の12語だけにすると、単元の語が一巡したあとに回らなくなるため
+// （2026-08-13キヨ依頼＝「今やっている単元を何回もまわしてよい。チェックするだけでなくクイズ形に」）。
+const POOL = [
+  {
+    "ja": "描写",
+    "reading": "びょうしゃ",
+    "meaning": "様子や<ruby>心情<rt>しんじょう</rt></ruby>を、<ruby>読<rt>よ</rt></ruby>み<ruby>手<rt>て</rt></ruby>が<ruby>想像<rt>そうぞう</rt></ruby>できるように<ruby>描<rt>えが</rt></ruby>くこと（この単元のキーワード）"
+  },
+  {
+    "ja": "心情",
+    "reading": "しんじょう",
+    "meaning": "心の中の<ruby>気持<rt>きも</rt></ruby>ち・<ruby>思<rt>おも</rt></ruby>い"
+  },
+  {
+    "ja": "配給",
+    "reading": "はいきゅう",
+    "meaning": "<ruby>不足<rt>ふそく</rt></ruby>した物を、政府が<ruby>決<rt>き</rt></ruby>まった量ずつ配ること（戦争中のしくみ）"
+  },
+  {
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>から身を守るために<ruby>掘<rt>ほ</rt></ruby>った<ruby>穴<rt>あな</rt></ruby>・地下室"
+  },
+  {
+    "ja": "空襲",
+    "reading": "くうしゅう",
+    "meaning": "飛行機が空から<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること"
+  },
+  {
+    "ja": "爆撃",
+    "reading": "ばくげき",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること"
+  },
+  {
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>"
+  },
+  {
+    "ja": "桃源郷",
+    "reading": "とうげんきょう",
+    "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園"
+  },
+  {
+    "ja": "みとる",
+    "reading": "みとる",
+    "meaning": "死にゆく人のそばにいて、<ruby>最期<rt>さいご</rt></ruby>まで<ruby>世話<rt>せわ</rt></ruby>をする"
+  },
+  {
+    "ja": "ひもじい",
+    "reading": "ひもじい",
+    "meaning": "おなかがすいて、つらい"
+  },
+  {
+    "ja": "とうてい",
+    "reading": "とうてい",
+    "meaning": "どうやっても（〜ない）。とても（〜できない）"
+  },
+  {
+    "ja": "はるばる",
+    "reading": "はるばる",
+    "meaning": "遠くから、長い道のりを来る様子"
+  },
+  {
+    "ja": "親戚",
+    "reading": "しんせき",
+    "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち"
+  },
+  {
+    "ja": "国民学校",
+    "reading": "こくみんがっこう",
+    "meaning": "<ruby>戦争中<rt>せんそうちゅう</rt></ruby>の小学校のよび名（1941〜1947年）"
+  },
+  {
+    "ja": "おちおち",
+    "reading": "おちおち",
+    "meaning": "<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて。「おちおちねていられない」＝安心してねられない"
+  },
+  {
+    "ja": "一里",
+    "reading": "いちり",
+    "meaning": "<ruby>昔<rt>むかし</rt></ruby>のきょりの<ruby>単位<rt>たんい</rt></ruby>。<ruby>約<rt>やく</rt></ruby>3.9キロメートル"
+  },
+  {
+    "ja": "三里",
+    "reading": "さんり",
+    "meaning": "一里の3ばい。<ruby>約<rt>やく</rt></ruby>12キロメートル（歩くと3時間くらい）"
+  },
+  {
+    "ja": "六畳間",
+    "reading": "ろくじょうま",
+    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>"
+  },
+  {
+    "ja": "対岸",
+    "reading": "たいがん",
+    "meaning": "川や海の<ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>の<ruby>岸<rt>きし</rt></ruby>"
+  },
+  {
+    "ja": "おもゆ",
+    "reading": "おもゆ",
+    "meaning": "おかゆのもっとうすいもの。<ruby>赤<rt>あか</rt></ruby>ちゃんや<ruby>病人<rt>びょうにん</rt></ruby>が食べる"
+  },
+  {
+    "ja": "留守番",
+    "reading": "るすばん",
+    "meaning": "家に<ruby>残<rt>のこ</rt></ruby>って家を<ruby>守<rt>まも</rt></ruby>ること"
+  },
+  {
+    "ja": "看護婦",
+    "reading": "かんごふ",
+    "meaning": "<ruby>昔<rt>むかし</rt></ruby>の言い方。今は「<ruby>看護師<rt>かんごし</rt></ruby>」という"
+  },
+  {
+    "ja": "胸を弾ませる",
+    "reading": "むねをはずませる",
+    "meaning": "うれしくて、わくわくする"
+  },
+  {
+    "ja": "覆いかぶさる",
+    "reading": "おおいかぶさる",
+    "meaning": "上からかぶさるように<ruby>迫<rt>せま</rt></ruby>ってくる"
+  },
+  {
+    "ja": "独特",
+    "reading": "どくとく",
+    "meaning": "そのものだけがもっている、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>感<rt>かん</rt></ruby>じ"
+  },
+  {
+    "ja": "真っ最中",
+    "reading": "まっさいちゅう",
+    "meaning": "ちょうど今、その<ruby>途中<rt>とちゅう</rt></ruby>であること"
+  },
+  {
+    "ja": "交換",
+    "reading": "こうかん",
+    "meaning": "とりかえること。「<ruby>着物<rt>きもの</rt></ruby>を米と交換する」"
+  },
+  {
+    "ja": "田植え",
+    "reading": "たうえ",
+    "meaning": "<ruby>稲<rt>いね</rt></ruby>のなえを田んぼに<ruby>植<rt>う</rt></ruby>える<ruby>仕事<rt>しごと</rt></ruby>"
+  },
+  {
+    "ja": "山あい",
+    "reading": "やまあい",
+    "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ"
+  },
+  {
+    "ja": "盗み飲み",
+    "reading": "ぬすみのみ",
+    "meaning": "かくれて<ruby>勝手<rt>かって</rt></ruby>に飲んでしまうこと"
+  },
+  {
+    "ja": "澄む",
+    "reading": "すむ",
+    "meaning": "にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる。「空が青く澄む」"
+  },
+  {
+    "ja": "情景",
+    "reading": "じょうけい",
+    "meaning": "<ruby>目<rt>め</rt></ruby>にうかんでくる<ruby>場面<rt>ばめん</rt></ruby>のようす"
+  },
+  {
+    "ja": "場面",
+    "reading": "ばめん",
+    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中の、一つ一つの<ruby>場所<rt>ばしょ</rt></ruby>や時"
+  },
+  {
+    "ja": "具体的",
+    "reading": "ぐたいてき",
+    "meaning": "はっきりと<ruby>目<rt>め</rt></ruby>にうかぶ形で。実際のようすが分かるように"
+  },
+  {
+    "ja": "山すそ",
+    "reading": "やますそ",
+    "meaning": "山の下のほう・ふもと"
+  },
+  {
+    "ja": "渓流",
+    "reading": "けいりゅう",
+    "meaning": "山の中を流れる、きれいな川"
+  },
+  {
+    "ja": "飛び石",
+    "reading": "とびいし",
+    "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石"
+  },
+  {
+    "ja": "隣村",
+    "reading": "となりむら",
+    "meaning": "となりの村。「隣村にやぎを<ruby>飼<rt>か</rt></ruby>っている農家があると聞いては」"
+  },
+  {
+    "ja": "疎開者",
+    "reading": "そかいしゃ",
+    "meaning": "空襲をさけて都会から引っこしてきた人。「僕たち疎開者には<ruby>配給<rt>はいきゅう</rt></ruby>もありませんので」"
+  },
+  {
+    "ja": "一文",
+    "reading": "いちぶん",
+    "meaning": "「。」で終わる、ひとつの文。「この一文だけで<ruby>段落<rt>だんらく</rt></ruby>になっている」"
+  },
+  {
+    "ja": "引用",
+    "reading": "いんよう",
+    "meaning": "人の言葉や文章を、そのまま<ruby>借<rt>か</rt></ruby>りてきて<ruby>示<rt>しめ</rt></ruby>すこと。「本文から引用して答える」"
+  },
+  {
+    "ja": "根拠",
+    "reading": "こんきょ",
+    "meaning": "そう考えたもとになる<ruby>事実<rt>じじつ</rt></ruby>。「本文のどこが根拠ですか」"
+  },
+  {
+    "ja": "息をひきとる",
+    "reading": "いきをひきとる",
+    "meaning": "<ruby>死<rt>し</rt></ruby>ぬ、のしずかな言い方"
+  },
+  {
+    "ja": "たくす",
+    "reading": "たくす",
+    "meaning": "<ruby>直接<rt>ちょくせつ</rt></ruby>言わずに、べつのものに気持ちをこめる。「<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>描写<rt>びょうしゃ</rt></ruby>にたくす」"
+  },
+  {
+    "ja": "着目",
+    "reading": "ちゃくもく",
+    "meaning": "そこに<ruby>目<rt>め</rt></ruby>をつけて、よく<ruby>見<rt>み</rt></ruby>ること。「<ruby>描写<rt>びょうしゃ</rt></ruby>に着目する」"
+  },
+  {
+    "ja": "対比",
+    "reading": "たいひ",
+    "meaning": "二つをならべて、ちがいをきわだたせること"
+  },
+  {
+    "ja": "直接",
+    "reading": "ちょくせつ",
+    "meaning": "あいだに何もはさまないで。「気持ちを直接<ruby>説明<rt>せつめい</rt></ruby>しない」"
+  },
+  {
+    "ja": "想像",
+    "reading": "そうぞう",
+    "meaning": "<ruby>実際<rt>じっさい</rt></ruby>に見ていないことを、<ruby>頭<rt>あたま</rt></ruby>の中に思いうかべること"
+  },
+  {
+    "ja": "変化",
+    "reading": "へんか",
+    "meaning": "前とちがうようすに<ruby>変<rt>か</rt></ruby>わること。「<ruby>心情<rt>しんじょう</rt></ruby>の変化」"
+  },
+  {
+    "ja": "〜なり",
+    "reading": "〜なり",
+    "meaning": "〜するとすぐに。「<ruby>着<rt>つ</rt></ruby>くなり」＝着くとすぐに（<ruby>教科書<rt>きょうかしょ</rt></ruby>の<ruby>語注<rt>ごちゅう</rt></ruby>）"
+  },
+  {
+    "ja": "終戦",
+    "reading": "しゅうせん",
+    "meaning": "<ruby>戦争<rt>せんそう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わること（1945年8月15日）"
+  },
+  {
+    "ja": "余韻",
+    "reading": "よいん",
+    "meaning": "<ruby>読<rt>よ</rt></ruby>み終わったあとに、心に<ruby>残<rt>のこ</rt></ruby>るひびき・感じ"
+  },
+  {
+    "ja": "象徴",
+    "reading": "しょうちょう",
+    "meaning": "あるものが、目に見えない考えや気持ちを<ruby>表<rt>あらわ</rt></ruby>すこと"
+  },
+  {
+    "ja": "時代背景",
+    "reading": "じだいはいけい",
+    "meaning": "その<ruby>話<rt>はなし</rt></ruby>がおこった時代のようす・世の中のじょうたい"
+  },
+  {
+    "ja": "段落",
+    "reading": "だんらく",
+    "meaning": "文章のまとまり。<ruby>一字下<rt>いちじさ</rt></ruby>げて<ruby>始<rt>はじ</rt></ruby>まる"
+  },
+  {
+    "ja": "展開",
+    "reading": "てんかい",
+    "meaning": "<ruby>話<rt>はなし</rt></ruby>が先へ進んで、場面が<ruby>変<rt>か</rt></ruby>わっていくこと"
+  },
+  {
+    "ja": "主人公",
+    "reading": "しゅじんこう",
+    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中心になる人"
+  },
+  {
+    "ja": "題名",
+    "reading": "だいめい",
+    "meaning": "<ruby>作品<rt>さくひん</rt></ruby>につけられた名前"
+  },
+  {
+    "ja": "片仮名",
+    "reading": "かたかな",
+    "meaning": "カタカナ。「ヒロユキ」「ヒロシマ」のような書き方"
+  },
+  {
+    "ja": "効果",
+    "reading": "こうか",
+    "meaning": "そう書いたことで生まれる、読む人への<ruby>働<rt>はたら</rt></ruby>き"
+  },
+  {
+    "ja": "印象",
+    "reading": "いんしょう",
+    "meaning": "読んだり見たりして、心に<ruby>残<rt>のこ</rt></ruby>る感じ"
+  },
+  {
+    "ja": "視点",
+    "reading": "してん",
+    "meaning": "どこから<ruby>見<rt>み</rt></ruby>て書かれているか、という<ruby>立場<rt>たちば</rt></ruby>"
+  },
+  {
+    "ja": "作者",
+    "reading": "さくしゃ",
+    "meaning": "その<ruby>作品<rt>さくひん</rt></ruby>を書いた人"
+  },
+  {
+    "ja": "朗読",
+    "reading": "ろうどく",
+    "meaning": "気持ちが<ruby>伝<rt>つた</rt></ruby>わるように、声に出して読むこと"
+  },
+  {
+    "ja": "抑揚",
+    "reading": "よくよう",
+    "meaning": "<ruby>声<rt>こえ</rt></ruby>の高さや強さの上げ下げ"
+  },
+  {
+    "ja": "間",
+    "reading": "ま",
+    "meaning": "<ruby>話<rt>はな</rt></ruby>したり読んだりするときに、あける<ruby>時間<rt>じかん</rt></ruby>。「間をあけて読む」"
+  },
+  {
+    "ja": "感想",
+    "reading": "かんそう",
+    "meaning": "読んで<ruby>思<rt>おも</rt></ruby>ったこと・<ruby>感<rt>かん</rt></ruby>じたこと"
+  },
+  {
+    "ja": "伝え合う",
+    "reading": "つたえあう",
+    "meaning": "おたがいに自分の考えを言って、<ruby>聞<rt>き</rt></ruby>き合うこと"
+  },
+  {
+    "ja": "読み深める",
+    "reading": "よみふかめる",
+    "meaning": "もう一歩ふみこんで読み、<ruby>意味<rt>いみ</rt></ruby>をつかむこと"
+  },
+  {
+    "ja": "捉える",
+    "reading": "とらえる",
+    "meaning": "しっかりつかむ・つかまえる。「<ruby>心情<rt>しんじょう</rt></ruby>を捉える」"
+  },
+  {
+    "ja": "表現",
+    "reading": "ひょうげん",
+    "meaning": "気持ちや考えを、言葉や形にして<ruby>表<rt>あらわ</rt></ruby>すこと"
+  },
+  {
+    "ja": "銀木犀",
+    "reading": "ぎんもくせい",
+    "meaning": "<ruby>銀木犀<rt>ぎんもくせい</rt></ruby> ／ モクセイ科の常緑小高木。秋に白く小さな花をたくさん咲かせ、強い香りを放つ"
+  },
+  {
+    "ja": "閉じ込める",
+    "reading": "とじこめる",
+    "meaning": "<ruby>閉じ込める<rt>とじこめる</rt></ruby> ／ 中に入れて、出られないようにする"
+  },
+  {
+    "ja": "自習",
+    "reading": "じしゅう",
+    "meaning": "<ruby>自習<rt>じしゅう</rt></ruby> ／ 先生に教わらず、自分で勉強すること"
+  },
+  {
+    "ja": "高じる",
+    "reading": "こうじる",
+    "meaning": "<ruby>高じる<rt>こうじる</rt></ruby> ／ 程度がだんだんひどくなる"
+  },
+  {
+    "ja": "あたかも",
+    "reading": "あたかも",
+    "meaning": "<ruby>あたかも<rt>あたかも</rt></ruby> ／ まるで〜のように。ちょうど〜のように"
+  },
+  {
+    "ja": "眺める",
+    "reading": "ながめる",
+    "meaning": "<ruby>眺める<rt>ながめる</rt></ruby> ／ じっと見る。遠くを広く見る"
+  },
+  {
+    "ja": "仲直り",
+    "reading": "なかなおり",
+    "meaning": "<ruby>仲直り<rt>なかなおり</rt></ruby> ／ けんかしていた人と、もとどおりになること"
+  },
+  {
+    "ja": "とまどう",
+    "reading": "とまどう",
+    "meaning": "<ruby>とまどう<rt>とまどう</rt></ruby> ／ どうしていいか分からなくなる"
+  },
+  {
+    "ja": "きまりが悪い",
+    "reading": "きまりがわるい",
+    "meaning": "<ruby>きまりが悪い<rt>きまりがわるい</rt></ruby> ／ はずかしくて、その場にいづらい"
+  },
+  {
+    "ja": "履きかえる",
+    "reading": "はきかえる",
+    "meaning": "<ruby>履きかえる<rt>はきかえる</rt></ruby> ／ 別のくつにはきかえる"
+  },
+  {
+    "ja": "真夏日",
+    "reading": "まなつび",
+    "meaning": "<ruby>真夏日<rt>まなつび</rt></ruby> ／ 一日の最高気温が三十度以上になる日"
+  },
+  {
+    "ja": "サバンナ",
+    "reading": "さばんな",
+    "meaning": "<ruby>サバンナ<rt>さばんな</rt></ruby> ／ 熱帯・亜熱帯地方の草原。雨季と乾季がはっきり分かれている"
+  },
+  {
+    "ja": "八つ当たり",
+    "reading": "やつあたり",
+    "meaning": "<ruby>八つ当たり<rt>やつあたり</rt></ruby> ／ 関係のない人にまで、いらだちをぶつけること"
+  },
+  {
+    "ja": "ほころびる",
+    "reading": "ほころびる",
+    "meaning": "<ruby>ほころびる<rt>ほころびる</rt></ruby> ／ ぬい目が開く。ほどける"
+  },
+  {
+    "ja": "手入れ",
+    "reading": "ていれ",
+    "meaning": "<ruby>手入れ<rt>ていれ</rt></ruby> ／ きれいにしたり直したりして、よい<ruby>状態<rt>じょうたい</rt></ruby>をたもつこと"
+  },
+  {
+    "ja": "黙々と",
+    "reading": "もくもくと",
+    "meaning": "<ruby>黙々と<rt>もくもくと</rt></ruby> ／ 何も言わずに、じっと続けるようす"
+  },
+  {
+    "ja": "磨く",
+    "reading": "みがく",
+    "meaning": "<ruby>磨く<rt>みがく</rt></ruby> ／ こすって、きれいにする・光らせる"
+  },
+  {
+    "ja": "意外",
+    "reading": "いがい",
+    "meaning": "<ruby>意外<rt>いがい</rt></ruby> ／ 思っていたのとちがうこと"
+  },
+  {
+    "ja": "にじむ",
+    "reading": "にじむ",
+    "meaning": "<ruby>にじむ<rt>にじむ</rt></ruby> ／ じわっとしみ出てくる"
+  },
+  {
+    "ja": "首をかしげる",
+    "reading": "くびをかしげる",
+    "meaning": "<ruby>首をかしげる<rt>くびをかしげる</rt></ruby> ／ <ruby>不思議<rt>ふしぎ</rt></ruby>に思って、首をかたむける"
+  },
+  {
+    "ja": "刈り込む",
+    "reading": "かりこむ",
+    "meaning": "<ruby>刈り込む<rt>かりこむ</rt></ruby> ／ 枝や葉を切って、形をととのえる"
+  },
+  {
+    "ja": "秘密基地",
+    "reading": "ひみつきち",
+    "meaning": "<ruby>秘密基地<rt>ひみつきち</rt></ruby> ／ 自分たちだけの、かくれ場所"
+  },
+  {
+    "ja": "木陰",
+    "reading": "こかげ",
+    "meaning": "<ruby>木陰<rt>こかげ</rt></ruby> ／ 木の下の、日の当たらないところ"
+  },
+  {
+    "ja": "春先",
+    "reading": "はるさき",
+    "meaning": "<ruby>春先<rt>はるさき</rt></ruby> ／ 春のはじめのころ"
+  }
+];
+const N_Q = Math.min(12, POOL.length);
+
+const shuffle = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// ルビを外した素の文字（答えが混じっていないか調べるため）
+const plain = (s) => s.replace(/<rt>.*?<\/rt>/g, '').replace(/<[^>]+>/g, '');
+
+// 答えの語そのものは伏せる。
+//  例）「杉板 ／ すぎの木の板。「杉板を削って…」」→「すぎの木の板。「◯◯を削って…」」
+//  これをしないと、意味の中に答えが書いてあって、読まなくても当たってしまう。
+function maskWord(html, ja) {
+  let out = html.replace(new RegExp('<ruby>' + escRe(ja) + '<rt>.*?</rt></ruby>', 'g'), '◯◯');
+  // タグの外に素で残っている分も伏せる（タグの中は壊さない）
+  return out.split(/(<[^>]+>)/).map(seg => seg.startsWith('<') ? seg : seg.split(ja).join('◯◯')).join('');
+}
+
+// 選択肢に出す「いみ」。見出し（語そのもの）＋「／」の形は、後ろ半分だけ使う。
+function defHtml(w) {
+  let m = w.meaning || '';
+  const parts = m.split('／');
+  if (parts.length > 1 && plain(parts[0]).includes(w.ja)) m = parts.slice(1).join('／');
+  m = maskWord(m, w.ja).trim();
+  return m || maskWord(w.meaning || '', w.ja);
+}
+
+const ITEMS = POOL.map(w => ({ ...w, def: defHtml(w) })).filter(w => plain(w.def).trim().length > 0);
+
+// 選択肢は「意味がちがう語」から2つ。同じ意味文が並ぶと正解が2つになるので除く。
+function makeChoices(w) {
+  const others = ITEMS.filter(x => plain(x.def) !== plain(w.def));
+  const near = shuffle(others.filter(x => Math.abs(plain(x.def).length - plain(w.def).length) <= 12));
+  const rest = shuffle(others);
+  const picked = [];
+  for (const cand of [...near, ...rest]) {
+    if (picked.length >= 2) break;
+    if (picked.some(p => plain(p.def) === plain(cand.def))) continue;
+    picked.push(cand);
+  }
+  return shuffle([w, ...picked]);
+}
+
+let quiz = [], idx = 0, score = 0, missed = [];
+
+function start() {
+  quiz = shuffle(ITEMS).slice(0, Math.min(N_Q, ITEMS.length));
+  idx = 0; score = 0; missed = [];
+  document.getElementById('footer').innerHTML = '';
+  render();
+}
+
+function render() {
+  const w = quiz[idx];
+  document.getElementById('count').textContent = `${idx + 1} / ${quiz.length}`;
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  const choices = makeChoices(w);
+  document.getElementById('stage').innerHTML = `
+    <div class="qcard">
+      <div class="qword">${w.ja}</div>
+      ${w.reading ? `<div class="qreading">${w.reading}</div>` : ''}
+      <div class="qhint">どんな いみ？</div>
+    </div>
+    <div class="choices" id="choices"></div>
+    <div class="feedback" id="feedback"></div>
+  `;
+  const box = document.getElementById('choices');
+  choices.forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'choice';
+    b.innerHTML = c.def;
+    b.onclick = () => answer(b, c, w);
+    box.appendChild(b);
+  });
+}
+
+function answer(btn, chosen, w) {
+  const buttons = [...document.querySelectorAll('button.choice')];
+  buttons.forEach(b => { b.disabled = true; if (plain(b.innerHTML) === plain(w.def)) b.classList.add('correct'); });
+  const fb = document.getElementById('feedback');
+  if (plain(chosen.def) === plain(w.def)) {
+    score++;
+    fb.innerHTML = `<span class="ok">⭕ せいかい！</span>`;
+  } else {
+    btn.classList.add('wrong');
+    missed.push(w);
+    fb.innerHTML = `<span class="ng">✕ 「${w.ja}」は こっち</span><span class="mean">${w.def}</span>`;
+  }
+  document.getElementById('score').textContent = `⭕ ${score}`;
+  setTimeout(next, plain(chosen.def) === plain(w.def) ? 900 : 2400);
+}
+
+function next() {
+  idx++;
+  if (idx >= quiz.length) { finish(); return; }
+  render();
+}
+
+function finish() {
+  const missedHtml = missed.length
+    ? `<div class="missed"><h3>もう一回みておく言葉</h3>${missed.map(w => `<div><b>${w.ja}</b> … <span>${w.def}</span></div>`).join('')}</div>`
+    : `<div class="missed"><h3>ぜんぶ わかった！</h3><div>すごい ✨</div></div>`;
+  document.getElementById('stage').innerHTML = `
+    <div class="result">
+      <h2>おつかれさま！</h2>
+      <div class="big">${score} / ${quiz.length}</div>
+      ${missedHtml}
+    </div>
+  `;
+  document.getElementById('count').textContent = `${quiz.length} / ${quiz.length}`;
+  document.getElementById('footer').innerHTML = `
+    <button class="act btn-again" onclick="start()">もう1回（ちがう問題）</button>
+    <a class="back" href="./">← もどる</a>
+  `;
+}
+
+start();
+</script>
+</body>
+</html>

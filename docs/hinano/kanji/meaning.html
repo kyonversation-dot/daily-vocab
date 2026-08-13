@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>小6漢字のよみ三択</title>
+<title>小6漢字のいみ三択</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -31,38 +31,41 @@
   .stage {
     flex: 1;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    gap: 18px;
+    gap: 16px;
   }
 
   .qcard {
     background: #16213e; border: 2px solid #2a2a5a; border-radius: 16px;
-    padding: 26px 20px; width: 100%; max-width: 420px; text-align: center;
+    padding: 22px 20px; width: 100%; max-width: 460px; text-align: center;
   }
-  .qword { font-size: 3rem; font-weight: bold; color: #fff; line-height: 1.25; word-break: break-all; }
+  .qword { font-size: 2.6rem; font-weight: bold; color: #fff; line-height: 1.25; word-break: break-all; }
+  .qreading { font-size: 0.95rem; color: #a8e6c1; margin-top: 6px; }
   .qhint { font-size: 0.7rem; color: #888; margin-top: 8px; }
 
-  .choices { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
+  .choices { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 460px; }
   button.choice {
-    padding: 16px 14px; border-radius: 14px; border: 2px solid #3a3a7a;
-    background: #24244a; color: #eee; font-size: 1.25rem; font-family: inherit;
-    cursor: pointer; font-weight: bold; transition: background 0.15s, border-color 0.15s;
+    padding: 14px 16px; border-radius: 14px; border: 2px solid #3a3a7a;
+    background: #24244a; color: #eee; font-size: 1.02rem; font-family: inherit;
+    cursor: pointer; font-weight: normal; text-align: left; line-height: 1.6;
+    transition: background 0.15s, border-color 0.15s;
   }
+  button.choice rt { font-size: 0.55em; color: #a8c0e6; }
   button.choice:hover:not(:disabled) { border-color: #ffb4d4; }
   button.choice.correct { background: #1a4731; border-color: #4caf7d; color: #b6f0cf; }
   button.choice.wrong { background: #4a1a26; border-color: #e05580; color: #ffc0d0; }
   button.choice:disabled { cursor: default; opacity: 0.85; }
 
-  .feedback { font-size: 0.9rem; min-height: 1.4em; text-align: center; line-height: 1.5; }
+  .feedback { font-size: 0.9rem; min-height: 1.4em; text-align: center; line-height: 1.6; }
   .feedback .ok { color: #a8e6c1; }
   .feedback .ng { color: #ffb4b4; }
-  .feedback .mean { display: block; color: #aaa; font-size: 0.75rem; margin-top: 4px; }
+  .feedback .mean { display: block; color: #aaa; font-size: 0.78rem; margin-top: 4px; }
 
   .result { text-align: center; }
   .result h2 { color: #ffb4d4; font-size: 1.5rem; margin-bottom: 10px; }
   .result .big { font-size: 2.6rem; font-weight: bold; color: #a8e6c1; }
   .missed {
     margin-top: 16px; text-align: left; background: #16213e; border: 1px solid #2a2a5a;
-    border-radius: 12px; padding: 14px 16px; max-width: 420px; font-size: 0.85rem; line-height: 1.9;
+    border-radius: 12px; padding: 14px 16px; max-width: 460px; font-size: 0.85rem; line-height: 1.9;
   }
   .missed h3 { font-size: 0.8rem; color: #f5a623; margin-bottom: 6px; }
   .missed b { color: #fff; font-size: 1.05rem; }
@@ -86,8 +89,8 @@
 <body>
 
 <header>
-  <h1>🔤 小6漢字のよみ三択</h1>
-  <p>ひなのの漢字れんしゅう ｜ ただしい読みをえらんでね</p>
+  <h1>🧠 小6漢字のいみ三択</h1>
+  <p>ひなのの漢字れんしゅう ｜ ただしい いみ をえらんでね</p>
 </header>
 
 <div class="progress">
@@ -98,11 +101,12 @@
 <div class="stage" id="stage"></div>
 
 <footer id="footer"></footer>
-<div class="note">これまでに出てきた言葉ぜんぶから出るよ</div>
+<div class="note">これまでに出てきた言葉ぜんぶから出るよ（何回でもまわるよ）</div>
 
 <script>
-// 出題の母集団＝このデッキで「これまでに出会った語」ぜんぶ（今日の新出も入っている）。
-// 今日の12語だけにすると、前の単元の漢字が回ってこないため（2026-08-04キヨ依頼）。
+// 出題の母集団＝このデッキで「これまでに出会った語」ぜんぶ。
+// 今日の12語だけにすると、単元の語が一巡したあとに回らなくなるため
+// （2026-08-13キヨ依頼＝「今やっている単元を何回もまわしてよい。チェックするだけでなくクイズ形に」）。
 const POOL = [
   {
     "ja": "胃",
@@ -789,25 +793,48 @@ const N_Q = Math.min(12, POOL.length);
 
 const shuffle = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
 
-// 気をつける点：同じ読みの字がある（小6の 士・支・史・志＝ぜんぶ「シ」）。
-// 読みが答えと同じものは選択肢に入れない＝「まちがい」にならないようにする。
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// ルビを外した素の文字（答えが混じっていないか調べるため）
+const plain = (s) => s.replace(/<rt>.*?<\/rt>/g, '').replace(/<[^>]+>/g, '');
+
+// 答えの語そのものは伏せる。
+//  例）「杉板 ／ すぎの木の板。「杉板を削って…」」→「すぎの木の板。「◯◯を削って…」」
+//  これをしないと、意味の中に答えが書いてあって、読まなくても当たってしまう。
+function maskWord(html, ja) {
+  let out = html.replace(new RegExp('<ruby>' + escRe(ja) + '<rt>.*?</rt></ruby>', 'g'), '◯◯');
+  // タグの外に素で残っている分も伏せる（タグの中は壊さない）
+  return out.split(/(<[^>]+>)/).map(seg => seg.startsWith('<') ? seg : seg.split(ja).join('◯◯')).join('');
+}
+
+// 選択肢に出す「いみ」。見出し（語そのもの）＋「／」の形は、後ろ半分だけ使う。
+function defHtml(w) {
+  let m = w.meaning || '';
+  const parts = m.split('／');
+  if (parts.length > 1 && plain(parts[0]).includes(w.ja)) m = parts.slice(1).join('／');
+  m = maskWord(m, w.ja).trim();
+  return m || maskWord(w.meaning || '', w.ja);
+}
+
+const ITEMS = POOL.map(w => ({ ...w, def: defHtml(w) })).filter(w => plain(w.def).trim().length > 0);
+
+// 選択肢は「意味がちがう語」から2つ。同じ意味文が並ぶと正解が2つになるので除く。
 function makeChoices(w) {
-  const others = POOL.filter(x => x.reading !== w.reading);
-  const near = shuffle(others.filter(x => Math.abs(x.reading.length - w.reading.length) <= 1));
+  const others = ITEMS.filter(x => plain(x.def) !== plain(w.def));
+  const near = shuffle(others.filter(x => Math.abs(plain(x.def).length - plain(w.def).length) <= 12));
   const rest = shuffle(others);
   const picked = [];
   for (const cand of [...near, ...rest]) {
     if (picked.length >= 2) break;
-    if (picked.some(p => p.reading === cand.reading)) continue;
+    if (picked.some(p => plain(p.def) === plain(cand.def))) continue;
     picked.push(cand);
   }
-  return shuffle([w.reading, ...picked.map(p => p.reading)]);
+  return shuffle([w, ...picked]);
 }
 
 let quiz = [], idx = 0, score = 0, missed = [];
 
 function start() {
-  quiz = shuffle(POOL).slice(0, N_Q);
+  quiz = shuffle(ITEMS).slice(0, Math.min(N_Q, ITEMS.length));
   idx = 0; score = 0; missed = [];
   document.getElementById('footer').innerHTML = '';
   render();
@@ -821,35 +848,36 @@ function render() {
   document.getElementById('stage').innerHTML = `
     <div class="qcard">
       <div class="qword">${w.ja}</div>
-      <div class="qhint">読みかたは？</div>
+      ${w.reading ? `<div class="qreading">${w.reading}</div>` : ''}
+      <div class="qhint">どんな いみ？</div>
     </div>
     <div class="choices" id="choices"></div>
     <div class="feedback" id="feedback"></div>
   `;
   const box = document.getElementById('choices');
-  choices.forEach(r => {
+  choices.forEach(c => {
     const b = document.createElement('button');
     b.className = 'choice';
-    b.textContent = r;
-    b.onclick = () => answer(b, r, w);
+    b.innerHTML = c.def;
+    b.onclick = () => answer(b, c, w);
     box.appendChild(b);
   });
 }
 
 function answer(btn, chosen, w) {
   const buttons = [...document.querySelectorAll('button.choice')];
-  buttons.forEach(b => { b.disabled = true; if (b.textContent === w.reading) b.classList.add('correct'); });
+  buttons.forEach(b => { b.disabled = true; if (plain(b.innerHTML) === plain(w.def)) b.classList.add('correct'); });
   const fb = document.getElementById('feedback');
-  if (chosen === w.reading) {
+  if (plain(chosen.def) === plain(w.def)) {
     score++;
-    fb.innerHTML = `<span class="ok">⭕ せいかい！</span><span class="mean">${w.meaning || ''}</span>`;
+    fb.innerHTML = `<span class="ok">⭕ せいかい！</span>`;
   } else {
     btn.classList.add('wrong');
     missed.push(w);
-    fb.innerHTML = `<span class="ng">✕ 「${w.ja}」＝<b>${w.reading}</b></span><span class="mean">${w.meaning || ''}</span>`;
+    fb.innerHTML = `<span class="ng">✕ 「${w.ja}」は こっち</span><span class="mean">${w.def}</span>`;
   }
   document.getElementById('score').textContent = `⭕ ${score}`;
-  setTimeout(next, chosen === w.reading ? 900 : 2200);
+  setTimeout(next, plain(chosen.def) === plain(w.def) ? 900 : 2400);
 }
 
 function next() {
@@ -860,8 +888,8 @@ function next() {
 
 function finish() {
   const missedHtml = missed.length
-    ? `<div class="missed"><h3>もう一回みておく字</h3>${missed.map(w => `<div><b>${w.ja}</b> … <span>${w.reading}</span></div>`).join('')}</div>`
-    : `<div class="missed"><h3>ぜんぶ読めた！</h3><div>すごい ✨</div></div>`;
+    ? `<div class="missed"><h3>もう一回みておく言葉</h3>${missed.map(w => `<div><b>${w.ja}</b> … <span>${w.def}</span></div>`).join('')}</div>`
+    : `<div class="missed"><h3>ぜんぶ わかった！</h3><div>すごい ✨</div></div>`;
   document.getElementById('stage').innerHTML = `
     <div class="result">
       <h2>おつかれさま！</h2>
