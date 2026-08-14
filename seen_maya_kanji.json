@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "seen": [
     "圧",
     "移",
@@ -101,55 +101,63 @@
     "禁",
     "証",
     "術",
-    "喜"
+    "喜",
+    "迷",
+    "製",
+    "率",
+    "旧",
+    "増",
+    "示",
+    "設",
+    "能"
   ],
   "today": [
     {
-      "ja": "豊",
+      "ja": "迷",
       "review": false
     },
     {
-      "ja": "責",
+      "ja": "製",
       "review": false
     },
     {
-      "ja": "制",
+      "ja": "率",
       "review": false
     },
     {
-      "ja": "則",
+      "ja": "旧",
       "review": false
     },
     {
-      "ja": "禁",
+      "ja": "増",
       "review": false
     },
     {
-      "ja": "証",
+      "ja": "示",
       "review": false
     },
     {
-      "ja": "術",
+      "ja": "設",
       "review": false
     },
     {
-      "ja": "喜",
+      "ja": "能",
       "review": false
     },
     {
-      "ja": "過",
+      "ja": "益",
       "review": true
     },
     {
-      "ja": "圧",
+      "ja": "師",
       "review": true
     },
     {
-      "ja": "基",
+      "ja": "幹",
       "review": true
     },
     {
-      "ja": "移",
+      "ja": "故",
       "review": true
     }
   ]
