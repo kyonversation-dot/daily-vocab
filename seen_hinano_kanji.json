@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-14",
+  "date": "2026-08-15",
   "seen": [
     "胃",
     "異",
@@ -145,55 +145,63 @@
     "暖",
     "値",
     "宙",
-    "忠"
+    "忠",
+    "党",
+    "糖",
+    "届",
+    "難",
+    "乳",
+    "認",
+    "納",
+    "脳"
   ],
   "today": [
     {
-      "ja": "担",
+      "ja": "党",
       "review": false
     },
     {
-      "ja": "探",
+      "ja": "糖",
       "review": false
     },
     {
-      "ja": "誕",
+      "ja": "届",
       "review": false
     },
     {
-      "ja": "段",
+      "ja": "難",
       "review": false
     },
     {
-      "ja": "暖",
+      "ja": "乳",
       "review": false
     },
     {
-      "ja": "値",
+      "ja": "認",
       "review": false
     },
     {
-      "ja": "宙",
+      "ja": "納",
       "review": false
     },
     {
-      "ja": "忠",
+      "ja": "脳",
       "review": false
     },
     {
-      "ja": "射",
+      "ja": "盛",
       "review": true
     },
     {
-      "ja": "装",
+      "ja": "砂",
       "review": true
     },
     {
-      "ja": "簡",
+      "ja": "系",
       "review": true
     },
     {
-      "ja": "承",
+      "ja": "潮",
       "review": true
     }
   ]

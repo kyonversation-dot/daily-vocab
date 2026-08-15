@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-14",
+  "date": "2026-08-15",
   "seen": [
     "撃",
     "爆",
@@ -83,55 +83,63 @@
     "桃",
     "疎開",
     "戻る",
-    "唇"
+    "唇",
+    "輪郭",
+    "拭く",
+    "涙",
+    "刈る",
+    "大丈夫",
+    "掃除",
+    "厄介",
+    "帽子"
   ],
   "today": [
     {
+      "ja": "輪郭",
+      "review": false
+    },
+    {
+      "ja": "拭く",
+      "review": false
+    },
+    {
+      "ja": "涙",
+      "review": false
+    },
+    {
+      "ja": "刈る",
+      "review": false
+    },
+    {
+      "ja": "大丈夫",
+      "review": false
+    },
+    {
+      "ja": "掃除",
+      "review": false
+    },
+    {
+      "ja": "厄介",
+      "review": false
+    },
+    {
+      "ja": "帽子",
+      "review": false
+    },
+    {
+      "ja": "着物",
+      "review": true
+    },
+    {
+      "ja": "地下室",
+      "review": true
+    },
+    {
+      "ja": "配給",
+      "review": true
+    },
+    {
       "ja": "遠慮",
-      "review": false
-    },
-    {
-      "ja": "原子爆弾",
-      "review": false
-    },
-    {
-      "ja": "棺",
-      "review": false
-    },
-    {
-      "ja": "乾",
-      "review": false
-    },
-    {
-      "ja": "桃",
-      "review": false
-    },
-    {
-      "ja": "疎開",
-      "review": false
-    },
-    {
-      "ja": "戻る",
-      "review": false
-    },
-    {
-      "ja": "唇",
-      "review": false
-    },
-    {
-      "ja": "渓流",
-      "review": true
-    },
-    {
-      "ja": "押す",
-      "review": true
-    },
-    {
-      "ja": "暇",
-      "review": true
-    },
-    {
-      "ja": "桃源郷",
       "review": true
     }
   ]

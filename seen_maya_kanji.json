@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-14",
+  "date": "2026-08-15",
   "seen": [
     "圧",
     "移",
@@ -109,55 +109,63 @@
     "増",
     "示",
     "設",
-    "能"
+    "能",
+    "因",
+    "救",
+    "弁",
+    "条",
+    "織",
+    "脈",
+    "刊",
+    "領"
   ],
   "today": [
     {
-      "ja": "迷",
+      "ja": "因",
       "review": false
     },
     {
-      "ja": "製",
+      "ja": "救",
       "review": false
     },
     {
-      "ja": "率",
+      "ja": "弁",
       "review": false
     },
     {
-      "ja": "旧",
+      "ja": "条",
       "review": false
     },
     {
-      "ja": "増",
+      "ja": "織",
       "review": false
     },
     {
-      "ja": "示",
+      "ja": "脈",
       "review": false
+    },
+    {
+      "ja": "刊",
+      "review": false
+    },
+    {
+      "ja": "領",
+      "review": false
+    },
+    {
+      "ja": "得",
+      "review": true
+    },
+    {
+      "ja": "術",
+      "review": true
     },
     {
       "ja": "設",
-      "review": false
-    },
-    {
-      "ja": "能",
-      "review": false
-    },
-    {
-      "ja": "益",
       "review": true
     },
     {
-      "ja": "師",
-      "review": true
-    },
-    {
-      "ja": "幹",
-      "review": true
-    },
-    {
-      "ja": "故",
+      "ja": "許",
       "review": true
     }
   ]
