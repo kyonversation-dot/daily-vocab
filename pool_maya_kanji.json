@@ -162,9 +162,19 @@
       "meaning": "<ruby>経験<rt>けいけん</rt></ruby> ／ 時が過ぎる・すじ道"
     },
     {
+      "ja": "験",
+      "reading": "ケン／ゲン",
+      "meaning": "<ruby>経験<rt>けいけん</rt></ruby>・<ruby>実験<rt>じっけん</rt></ruby> ／ ためす・しるし"
+    },
+    {
       "ja": "質",
       "reading": "シツ",
       "meaning": "<ruby>質問<rt>しつもん</rt></ruby> ／ 中身・ものの性質"
+    },
+    {
+      "ja": "停",
+      "reading": "テイ",
+      "meaning": "バス<ruby>停<rt>てい</rt></ruby>・<ruby>停車<rt>ていしゃ</rt></ruby> ／ とまる・とめる"
     },
     {
       "ja": "得",
@@ -670,6 +680,11 @@
       "ja": "属",
       "reading": "ゾク",
       "meaning": "<ruby>所属<rt>しょぞく</rt></ruby>・<ruby>金属<rt>きんぞく</rt></ruby> ／ そのなかまに入る"
+    },
+    {
+      "ja": "味",
+      "reading": "ミ／あじ・あじ(わう)",
+      "meaning": "<ruby>味<rt>あじ</rt></ruby>・<ruby>味<rt>あじ</rt></ruby>わう ／ たべもののあじ・あじわう"
     },
     {
       "ja": "率",
