@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-15",
+  "date": "2026-08-16",
   "seen": [
     "圧",
     "移",
@@ -117,55 +117,63 @@
     "織",
     "脈",
     "刊",
-    "領"
+    "領",
+    "徳",
+    "賞",
+    "程",
+    "状",
+    "暴",
+    "貿",
+    "資",
+    "税"
   ],
   "today": [
     {
-      "ja": "因",
+      "ja": "徳",
       "review": false
     },
     {
-      "ja": "救",
+      "ja": "賞",
       "review": false
     },
     {
-      "ja": "弁",
+      "ja": "程",
       "review": false
     },
     {
-      "ja": "条",
+      "ja": "状",
       "review": false
     },
     {
-      "ja": "織",
+      "ja": "暴",
       "review": false
     },
     {
-      "ja": "脈",
+      "ja": "貿",
       "review": false
     },
     {
-      "ja": "刊",
+      "ja": "資",
       "review": false
     },
     {
-      "ja": "領",
+      "ja": "税",
       "review": false
     },
     {
-      "ja": "得",
+      "ja": "興",
       "review": true
     },
     {
-      "ja": "術",
+      "ja": "永",
       "review": true
     },
     {
-      "ja": "設",
+      "ja": "経",
       "review": true
     },
     {
-      "ja": "許",
+      "ja": "居",
       "review": true
     }
   ]

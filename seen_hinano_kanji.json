@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-15",
+  "date": "2026-08-16",
   "seen": [
     "胃",
     "異",
@@ -153,55 +153,63 @@
     "乳",
     "認",
     "納",
-    "脳"
+    "脳",
+    "派",
+    "拝",
+    "背",
+    "肺",
+    "俳",
+    "班",
+    "晩",
+    "否"
   ],
   "today": [
     {
-      "ja": "党",
+      "ja": "派",
       "review": false
     },
     {
-      "ja": "糖",
+      "ja": "拝",
       "review": false
     },
     {
-      "ja": "届",
+      "ja": "背",
       "review": false
     },
     {
-      "ja": "難",
+      "ja": "肺",
       "review": false
     },
     {
-      "ja": "乳",
+      "ja": "俳",
       "review": false
     },
     {
-      "ja": "認",
+      "ja": "班",
       "review": false
     },
     {
-      "ja": "納",
+      "ja": "晩",
       "review": false
     },
     {
-      "ja": "脳",
+      "ja": "否",
       "review": false
     },
     {
-      "ja": "盛",
+      "ja": "宗",
       "review": true
     },
     {
-      "ja": "砂",
+      "ja": "域",
       "review": true
     },
     {
-      "ja": "系",
+      "ja": "蒸",
       "review": true
     },
     {
-      "ja": "潮",
+      "ja": "券",
       "review": true
     }
   ]
