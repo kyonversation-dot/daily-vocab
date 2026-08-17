@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-16",
+  "date": "2026-08-17",
   "seen": [
     "胃",
     "異",
@@ -161,55 +161,63 @@
     "俳",
     "班",
     "晩",
-    "否"
+    "否",
+    "批",
+    "秘",
+    "俵",
+    "腹",
+    "奮",
+    "並",
+    "陛",
+    "閉"
   ],
   "today": [
     {
-      "ja": "派",
+      "ja": "批",
       "review": false
     },
     {
-      "ja": "拝",
+      "ja": "秘",
       "review": false
     },
     {
-      "ja": "背",
+      "ja": "俵",
       "review": false
     },
     {
-      "ja": "肺",
+      "ja": "腹",
       "review": false
     },
     {
-      "ja": "俳",
+      "ja": "奮",
       "review": false
     },
     {
-      "ja": "班",
+      "ja": "並",
       "review": false
     },
     {
-      "ja": "晩",
+      "ja": "陛",
       "review": false
     },
     {
-      "ja": "否",
+      "ja": "閉",
       "review": false
     },
     {
-      "ja": "宗",
+      "ja": "憲",
       "review": true
     },
     {
-      "ja": "域",
+      "ja": "株",
       "review": true
     },
     {
-      "ja": "蒸",
+      "ja": "我",
       "review": true
     },
     {
-      "ja": "券",
+      "ja": "皇",
       "review": true
     }
   ]

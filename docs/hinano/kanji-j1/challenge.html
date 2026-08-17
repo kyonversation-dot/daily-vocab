@@ -136,45 +136,66 @@
 <script>
 const words = [
   {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
-    "review": false
+    "ja": "杉板",
+    "reading": "すぎいた",
+    "meaning": "<ruby>杉板<rt>すぎいた</rt></ruby> ／ すぎの木の板。「杉板を削って小さな小さな棺を」",
+    "example": "農家のおじいさんが、＿＿＿を削って小さな小さな棺を作ってくださいました。",
+    "review": true
   },
   {
-    "ja": "背ける",
-    "reading": "そむける",
-    "meaning": "<ruby>背ける<rt>そむける</rt></ruby> ／ そむける。顔や目をよそへ向ける",
-    "example": "夏実は私からすっと顔を＿＿＿た。",
-    "review": false
+    "ja": "遅くなる",
+    "reading": "おそくなる",
+    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
+    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
+    "review": true
   },
   {
-    "ja": "蛇口",
-    "reading": "じゃぐち",
-    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口",
-    "example": "立ち上がって水道の＿＿＿をひねった。",
-    "review": false
+    "ja": "缶",
+    "reading": "カン",
+    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
+    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "review": true
   },
   {
-    "ja": "常緑樹",
-    "reading": "じょうりょくじゅ",
-    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
-    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
-    "review": false
+    "ja": "桃源郷",
+    "reading": "とうげんきょう",
+    "meaning": "<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ この世のものとは思えない、美しい別世界",
+    "example": "生まれて初めて見る、それは＿＿＿でした。",
+    "review": true
   },
   {
-    "ja": "幹",
-    "reading": "みき",
-    "meaning": "<ruby>幹<rt>みき</rt></ruby> ／ みき。木の、太い中心の部分",
-    "example": "夏実は＿＿＿に体を寄せ、二人で木に閉じ込められた、と笑った。",
-    "review": false
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
+    "review": true
   },
   {
-    "ja": "隣",
-    "reading": "リン／となり",
-    "meaning": "<ruby>隣<rt>となり</rt></ruby>・<ruby>隣人<rt>りんじん</rt></ruby> ／ すぐそば・となり",
-    "example": "＿村にやぎを飼っている農家があると聞いては、母が出かけました。",
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "review": true
+  },
+  {
+    "ja": "弾",
+    "reading": "ダン／たま・はず(む)",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
+    "example": "これからの生活に胸を＿ませました。",
+    "review": true
+  },
+  {
+    "ja": "三里",
+    "reading": "さんり",
+    "meaning": "<ruby>三里<rt>さんり</rt></ruby> ／ むかしの長さ。一里＝約3.9km。三里＝約12km",
+    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
+    "review": true
+  },
+  {
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
+    "example": "毎晩、＿＿＿という地下室の中でねました。",
     "review": true
   },
   {
@@ -185,17 +206,17 @@ const words = [
     "review": true
   },
   {
-    "ja": "疎",
-    "reading": "ソ／うと(い)",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
-    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
-    "review": true
-  },
-  {
     "ja": "杉",
     "reading": "すぎ",
     "meaning": "<ruby>杉<rt>すぎ</rt></ruby>・<ruby>杉並木<rt>すぎなみき</rt></ruby> ／ まっすぐ高くのびる木",
     "example": "農家のおじいさんが、＿板を削って小さな小さな棺を作ってくださいました。",
+    "review": true
+  },
+  {
+    "ja": "澄",
+    "reading": "チョウ／す(む)",
+    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
+    "example": "空は高く高く青く＿んでいました。",
     "review": true
   }
 ];

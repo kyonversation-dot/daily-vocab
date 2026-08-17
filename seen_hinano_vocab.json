@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-16",
+  "date": "2026-08-17",
   "seen": [
     "描写",
     "心情",
@@ -120,55 +120,63 @@
     "通路",
     "日差し",
     "情景描写",
-    "解釈"
+    "解釈",
+    "冒頭",
+    "結末",
+    "比喩",
+    "構成",
+    "けんか",
+    "送り",
+    "光景",
+    "眺め"
   ],
   "today": [
     {
-      "ja": "なだめる",
+      "ja": "冒頭",
       "review": false
     },
     {
-      "ja": "緊張",
+      "ja": "結末",
+      "review": false
+    },
+    {
+      "ja": "比喩",
+      "review": false
+    },
+    {
+      "ja": "構成",
+      "review": false
+    },
+    {
+      "ja": "けんか",
+      "review": false
+    },
+    {
+      "ja": "送り",
+      "review": false
+    },
+    {
+      "ja": "光景",
+      "review": false
+    },
+    {
+      "ja": "眺め",
       "review": false
     },
     {
       "ja": "まばたく",
-      "review": false
-    },
-    {
-      "ja": "縮む",
-      "review": false
-    },
-    {
-      "ja": "通路",
-      "review": false
-    },
-    {
-      "ja": "日差し",
-      "review": false
-    },
-    {
-      "ja": "情景描写",
-      "review": false
-    },
-    {
-      "ja": "解釈",
-      "review": false
-    },
-    {
-      "ja": "空襲",
       "review": true
     },
     {
-      "ja": "息をひきとる",
+      "ja": "防空壕",
       "review": true
     },
     {
-      "ja": "自習",
+      "ja": "疎開者",
       "review": true
     },
     {
-      "ja": "表記",
+      "ja": "桃源郷",
       "review": true
     }
   ]
