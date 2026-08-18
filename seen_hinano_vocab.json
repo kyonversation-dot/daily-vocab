@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "seen": [
     "描写",
     "心情",
@@ -132,39 +132,19 @@
   ],
   "today": [
     {
-      "ja": "冒頭",
-      "review": false
+      "ja": "伝え合う",
+      "review": true
     },
     {
-      "ja": "結末",
-      "review": false
+      "ja": "銀木犀",
+      "review": true
     },
     {
-      "ja": "比喩",
-      "review": false
+      "ja": "挑戦",
+      "review": true
     },
     {
-      "ja": "構成",
-      "review": false
-    },
-    {
-      "ja": "けんか",
-      "review": false
-    },
-    {
-      "ja": "送り",
-      "review": false
-    },
-    {
-      "ja": "光景",
-      "review": false
-    },
-    {
-      "ja": "眺め",
-      "review": false
-    },
-    {
-      "ja": "まばたく",
+      "ja": "緊張",
       "review": true
     },
     {
@@ -172,11 +152,31 @@
       "review": true
     },
     {
-      "ja": "疎開者",
+      "ja": "作者",
       "review": true
     },
     {
-      "ja": "桃源郷",
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "結末",
+      "review": true
+    },
+    {
+      "ja": "題名",
+      "review": true
+    },
+    {
+      "ja": "視点",
+      "review": true
+    },
+    {
+      "ja": "空襲",
+      "review": true
+    },
+    {
+      "ja": "対岸",
       "review": true
     }
   ]

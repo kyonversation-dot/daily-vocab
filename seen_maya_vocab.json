@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "seen": [
     "司会",
     "質疑応答",
@@ -115,55 +115,63 @@
     "全国紙",
     "地方紙",
     "発行",
-    "分野"
+    "分野",
+    "興味",
+    "示す",
+    "記事",
+    "朝刊",
+    "社説",
+    "目次",
+    "図表",
+    "面"
   ],
   "today": [
     {
-      "ja": "情景",
+      "ja": "興味",
       "review": false
     },
     {
-      "ja": "展開",
+      "ja": "示す",
       "review": false
     },
     {
-      "ja": "兵庫県",
+      "ja": "記事",
       "review": false
     },
     {
-      "ja": "神戸",
+      "ja": "朝刊",
       "review": false
     },
     {
-      "ja": "全国紙",
+      "ja": "社説",
       "review": false
     },
     {
-      "ja": "地方紙",
+      "ja": "目次",
       "review": false
     },
     {
-      "ja": "発行",
+      "ja": "図表",
       "review": false
+    },
+    {
+      "ja": "面",
+      "review": false
+    },
+    {
+      "ja": "コラム",
+      "review": true
     },
     {
       "ja": "分野",
-      "review": false
-    },
-    {
-      "ja": "所在地",
       "review": true
     },
     {
-      "ja": "寄せる",
+      "ja": "予想",
       "review": true
     },
     {
-      "ja": "理由",
-      "review": true
-    },
-    {
-      "ja": "陳列",
+      "ja": "説得",
       "review": true
     }
   ]

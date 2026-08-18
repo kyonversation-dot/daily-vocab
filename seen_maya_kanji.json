@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "seen": [
     "圧",
     "移",
@@ -133,55 +133,63 @@
     "額",
     "句",
     "測",
-    "序"
+    "序",
+    "像",
+    "飼",
+    "舎",
+    "墓",
+    "燃",
+    "修",
+    "精",
+    "味"
   ],
   "today": [
     {
-      "ja": "枝",
+      "ja": "像",
       "review": false
     },
     {
-      "ja": "張",
+      "ja": "飼",
       "review": false
     },
     {
-      "ja": "常",
+      "ja": "舎",
       "review": false
     },
     {
-      "ja": "絶",
+      "ja": "墓",
       "review": false
     },
     {
-      "ja": "額",
+      "ja": "燃",
       "review": false
     },
     {
-      "ja": "句",
+      "ja": "修",
       "review": false
     },
     {
-      "ja": "測",
+      "ja": "精",
       "review": false
     },
     {
-      "ja": "序",
+      "ja": "味",
       "review": false
     },
     {
-      "ja": "暴",
+      "ja": "価",
       "review": true
     },
     {
-      "ja": "職",
+      "ja": "寄",
       "review": true
     },
     {
-      "ja": "敵",
+      "ja": "液",
       "review": true
     },
     {
-      "ja": "慣",
+      "ja": "個",
       "review": true
     }
   ]
