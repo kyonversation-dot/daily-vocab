@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-08-16",
+  "date": "2026-08-19",
   "seen": [
     "撃",
     "爆",
@@ -100,39 +100,51 @@
   ],
   "today": [
     {
-      "ja": "抱える",
-      "review": false
+      "ja": "欲",
+      "review": true
     },
     {
-      "ja": "背ける",
-      "review": false
+      "ja": "着物",
+      "review": true
     },
     {
-      "ja": "蛇口",
-      "review": false
+      "ja": "黙る",
+      "review": true
     },
     {
-      "ja": "常緑樹",
-      "review": false
+      "ja": "刈る",
+      "review": true
+    },
+    {
+      "ja": "大丈夫",
+      "review": true
     },
     {
       "ja": "幹",
-      "review": false
-    },
-    {
-      "ja": "隣",
       "review": true
     },
     {
-      "ja": "荷物",
+      "ja": "一部屋",
       "review": true
     },
     {
-      "ja": "疎",
+      "ja": "乾",
       "review": true
     },
     {
-      "ja": "杉",
+      "ja": "蛇口",
+      "review": true
+    },
+    {
+      "ja": "拭く",
+      "review": true
+    },
+    {
+      "ja": "抱える",
+      "review": true
+    },
+    {
+      "ja": "帽子",
       "review": true
     }
   ]
