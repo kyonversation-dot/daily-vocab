@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-18",
+  "date": "2026-08-19",
   "seen": [
     "圧",
     "移",
@@ -141,55 +141,63 @@
     "燃",
     "修",
     "精",
-    "味"
+    "味",
+    "易",
+    "仏",
+    "団",
+    "復",
+    "績",
+    "独",
+    "歴",
+    "衛"
   ],
   "today": [
     {
-      "ja": "像",
+      "ja": "易",
       "review": false
     },
     {
-      "ja": "飼",
+      "ja": "仏",
       "review": false
     },
     {
-      "ja": "舎",
+      "ja": "団",
       "review": false
     },
     {
-      "ja": "墓",
+      "ja": "復",
       "review": false
     },
     {
-      "ja": "燃",
+      "ja": "績",
       "review": false
     },
     {
-      "ja": "修",
+      "ja": "独",
       "review": false
     },
     {
-      "ja": "精",
+      "ja": "歴",
       "review": false
     },
     {
-      "ja": "味",
+      "ja": "衛",
       "review": false
     },
     {
-      "ja": "価",
+      "ja": "士",
       "review": true
     },
     {
-      "ja": "寄",
+      "ja": "永",
       "review": true
     },
     {
-      "ja": "液",
+      "ja": "仮",
       "review": true
     },
     {
-      "ja": "個",
+      "ja": "逆",
       "review": true
     }
   ]
