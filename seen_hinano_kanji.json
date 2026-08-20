@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "seen": [
     "胃",
     "異",
@@ -185,55 +185,48 @@
     "模",
     "訳",
     "郵",
-    "優"
+    "優",
+    "臨",
+    "朗",
+    "論",
+    "敵",
+    "厳"
   ],
   "today": [
     {
-      "ja": "枚",
+      "ja": "臨",
       "review": false
     },
     {
-      "ja": "幕",
+      "ja": "朗",
       "review": false
     },
     {
-      "ja": "密",
+      "ja": "論",
       "review": false
     },
     {
-      "ja": "盟",
+      "ja": "敵",
       "review": false
     },
     {
-      "ja": "模",
+      "ja": "厳",
       "review": false
     },
     {
-      "ja": "訳",
-      "review": false
-    },
-    {
-      "ja": "郵",
-      "review": false
-    },
-    {
-      "ja": "優",
-      "review": false
-    },
-    {
-      "ja": "吸",
+      "ja": "冊",
       "review": true
     },
     {
-      "ja": "暖",
+      "ja": "難",
       "review": true
     },
     {
-      "ja": "賃",
+      "ja": "縮",
       "review": true
     },
     {
-      "ja": "恩",
+      "ja": "蚕",
       "review": true
     }
   ]

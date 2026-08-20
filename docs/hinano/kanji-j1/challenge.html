@@ -136,31 +136,73 @@
 <script>
 const words = [
   {
-    "ja": "欲",
-    "reading": "ヨク／ほ(しい)",
-    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
-    "example": "僕は弟が＿しかったので、よくかわいがりました。",
+    "ja": "繊細",
+    "reading": "せんさい",
+    "meaning": "<ruby>繊細<rt>せんさい</rt></ruby> ／ センサイ。感じ方が細やかで、こまかい所に気がつくこと",
+    "example": "＿＿＿さのかけらもない戸部君だから、みんなの前で何を言いだすか知れたものじゃない。",
     "review": true
   },
   {
-    "ja": "着物",
-    "reading": "きもの",
-    "meaning": "<ruby>着物<rt>きもの</rt></ruby> ／ 日本のふく。母が米と交換したもの。「母の着物はなくなりました」",
-    "example": "母の＿＿＿はなくなりました。",
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
-    "ja": "黙る",
-    "reading": "だまる",
-    "meaning": "<ruby>黙る<rt>だまる</rt></ruby> ／ だまる。何も言わない",
-    "example": "何を言われるのか少しこわくて＿＿＿ていた。",
+    "ja": "留守番",
+    "reading": "るすばん",
+    "meaning": "<ruby>留守番<rt>るすばん</rt></ruby> ／ 人がいない家をまもること",
+    "example": "祖母と四歳の妹に＿＿＿をたのんで、田舎へ出かけました。",
     "review": true
   },
   {
-    "ja": "刈る",
-    "reading": "かる",
-    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
-    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "review": true
+  },
+  {
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "review": true
+  },
+  {
+    "ja": "入院",
+    "reading": "にゅういん",
+    "meaning": "<ruby>入院<rt>にゅういん</rt></ruby> ／ 病院に入って治りょうすること",
+    "example": "僕たちの村から三里くらい離れた町の病院に＿＿＿しました。",
+    "review": true
+  },
+  {
+    "ja": "渡",
+    "reading": "ト／わた(る)",
+    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
+    "example": "下流の橋を＿って学校に行きました。",
+    "review": true
+  },
+  {
+    "ja": "空襲",
+    "reading": "くうしゅう",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby> ／ 飛行機で上からおそうこと。「空襲がひどくなってきたので」",
+    "example": "あまり＿＿＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "機体",
+    "reading": "きたい",
+    "meaning": "<ruby>機体<rt>きたい</rt></ruby> ／ 飛行機の体。「青空にきらっきらっと機体が美しく輝いて」",
+    "example": "青空にきらっきらっと＿＿＿が美しく輝いています。",
+    "review": true
+  },
+  {
+    "ja": "疎開",
+    "reading": "そかい",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby> ／ 戦争をさけて、都会から田舎へうつること",
+    "example": "あまり空襲がひどくなってきたので、母は＿＿＿しようと言いだしました。",
     "review": true
   },
   {
@@ -171,52 +213,10 @@ const words = [
     "review": true
   },
   {
-    "ja": "幹",
-    "reading": "みき",
-    "meaning": "<ruby>幹<rt>みき</rt></ruby> ／ みき。木の、太い中心の部分",
-    "example": "夏実は＿＿＿に体を寄せ、二人で木に閉じ込められた、と笑った。",
-    "review": true
-  },
-  {
-    "ja": "一部屋",
-    "reading": "ひとへや",
-    "meaning": "<ruby>一部屋<rt>ひとへや</rt></ruby> ／ 部屋ひとつ",
-    "example": "その農家の庭に面した六畳間の＿＿＿を借りました。",
-    "review": true
-  },
-  {
-    "ja": "乾",
-    "reading": "カン／かわ(く)",
-    "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水気（みずけ）がなくなる",
-    "example": "白い＿いた一本道を、三人で山の村に向かって歩き続けました。",
-    "review": true
-  },
-  {
-    "ja": "蛇口",
-    "reading": "じゃぐち",
-    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口",
-    "example": "立ち上がって水道の＿＿＿をひねった。",
-    "review": true
-  },
-  {
-    "ja": "拭く",
-    "reading": "ぬぐう",
-    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る",
-    "example": "顔を＿＿＿ながら振り返ると、戸部君が言った。",
-    "review": true
-  },
-  {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
-    "review": true
-  },
-  {
-    "ja": "帽子",
-    "reading": "ぼうし",
-    "meaning": "<ruby>帽子<rt>ぼうし</rt></ruby> ／ ボウシ。頭にかぶるもの",
-    "example": "＿＿＿の中の顔は暗くてよくわからなかったけれど、笑った歯だけは白く見えた。",
+    "ja": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
+    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
     "review": true
   }
 ];
