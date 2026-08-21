@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-20",
+  "date": "2026-08-21",
   "seen": [
     "圧",
     "移",
@@ -150,55 +150,63 @@
     "貸",
     "婦",
     "評",
-    "義"
+    "義",
+    "保",
+    "衛",
+    "防",
+    "報",
+    "判",
+    "易",
+    "招",
+    "復"
   ],
   "today": [
     {
-      "ja": "務",
+      "ja": "保",
       "review": false
     },
     {
-      "ja": "態",
+      "ja": "衛",
       "review": false
     },
     {
-      "ja": "素",
+      "ja": "防",
       "review": false
     },
     {
-      "ja": "武",
+      "ja": "報",
       "review": false
     },
     {
-      "ja": "貸",
+      "ja": "判",
       "review": false
     },
     {
-      "ja": "婦",
+      "ja": "易",
       "review": false
     },
     {
-      "ja": "評",
+      "ja": "招",
       "review": false
     },
     {
-      "ja": "義",
+      "ja": "復",
       "review": false
     },
     {
-      "ja": "鉱",
+      "ja": "酸",
       "review": true
     },
     {
-      "ja": "貿",
+      "ja": "境",
       "review": true
     },
     {
-      "ja": "情",
+      "ja": "解",
       "review": true
     },
     {
-      "ja": "史",
+      "ja": "耕",
       "review": true
     }
   ]

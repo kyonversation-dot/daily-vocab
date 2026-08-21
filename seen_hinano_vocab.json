@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-20",
+  "date": "2026-08-21",
   "seen": [
     "描写",
     "心情",
@@ -140,51 +140,51 @@
   ],
   "today": [
     {
-      "ja": "草むしり",
-      "review": false
-    },
-    {
-      "ja": "かたむく",
-      "review": false
-    },
-    {
-      "ja": "またたく",
-      "review": false
-    },
-    {
-      "ja": "あせる",
-      "review": false
-    },
-    {
-      "ja": "くぐる",
-      "review": false
-    },
-    {
-      "ja": "回り道",
-      "review": false
-    },
-    {
-      "ja": "立ち寄る",
-      "review": false
-    },
-    {
-      "ja": "抱える",
-      "review": false
-    },
-    {
-      "ja": "一里",
-      "review": true
-    },
-    {
-      "ja": "みとる",
-      "review": true
-    },
-    {
       "ja": "一文",
       "review": true
     },
     {
-      "ja": "朗読",
+      "ja": "伝え合う",
+      "review": true
+    },
+    {
+      "ja": "田植え",
+      "review": true
+    },
+    {
+      "ja": "飛び石",
+      "review": true
+    },
+    {
+      "ja": "澄む",
+      "review": true
+    },
+    {
+      "ja": "留守番",
+      "review": true
+    },
+    {
+      "ja": "桃源郷",
+      "review": true
+    },
+    {
+      "ja": "息をひきとる",
+      "review": true
+    },
+    {
+      "ja": "描写",
+      "review": true
+    },
+    {
+      "ja": "段落",
+      "review": true
+    },
+    {
+      "ja": "変化",
+      "review": true
+    },
+    {
+      "ja": "情景",
       "review": true
     }
   ]
