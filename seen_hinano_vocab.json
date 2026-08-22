@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-21",
+  "date": "2026-08-22",
   "seen": [
     "描写",
     "心情",
@@ -140,35 +140,19 @@
   ],
   "today": [
     {
-      "ja": "一文",
+      "ja": "遠慮",
       "review": true
     },
     {
-      "ja": "伝え合う",
+      "ja": "おちおち",
       "review": true
     },
     {
-      "ja": "田植え",
+      "ja": "栄養失調",
       "review": true
     },
     {
-      "ja": "飛び石",
-      "review": true
-    },
-    {
-      "ja": "澄む",
-      "review": true
-    },
-    {
-      "ja": "留守番",
-      "review": true
-    },
-    {
-      "ja": "桃源郷",
-      "review": true
-    },
-    {
-      "ja": "息をひきとる",
+      "ja": "三里",
       "review": true
     },
     {
@@ -176,15 +160,31 @@
       "review": true
     },
     {
-      "ja": "段落",
+      "ja": "澄む",
       "review": true
     },
     {
-      "ja": "変化",
+      "ja": "おもゆ",
       "review": true
     },
     {
-      "ja": "情景",
+      "ja": "覆いかぶさる",
+      "review": true
+    },
+    {
+      "ja": "真っ最中",
+      "review": true
+    },
+    {
+      "ja": "独特",
+      "review": true
+    },
+    {
+      "ja": "とうてい",
+      "review": true
+    },
+    {
+      "ja": "爆撃",
       "review": true
     }
   ]

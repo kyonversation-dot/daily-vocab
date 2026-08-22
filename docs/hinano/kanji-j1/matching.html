@@ -164,38 +164,59 @@
 <script>
 const allWords = [
   {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
     "review": true
   },
   {
-    "ja": "塾",
-    "reading": "じゅく",
-    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
-    "example": "なんで同じ＿＿＿に入っているのか。",
+    "ja": "渡",
+    "reading": "ト／わた(る)",
+    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
+    "example": "下流の橋を＿って学校に行きました。",
     "review": true
   },
   {
-    "ja": "農家",
-    "reading": "のうか",
-    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
-    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "<ruby>栄養失調<rt>えいようしっちょう</rt></ruby> ／ 食べ物が足りず、体に必要な栄養がとれない状態。弟の死んだ原因",
+    "example": "病名はありません。＿＿＿です……。",
     "review": true
   },
   {
-    "ja": "騒々しさ",
-    "reading": "そうぞうしさ",
-    "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること",
-    "example": "＿＿＿がやっと耳に戻ったとき、戸部君がこちらを見ていることに気づいた。",
+    "ja": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
+    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
     "review": true
   },
   {
-    "ja": "遅くなる",
-    "reading": "おそくなる",
-    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
-    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
+    "ja": "機体",
+    "reading": "きたい",
+    "meaning": "<ruby>機体<rt>きたい</rt></ruby> ／ 飛行機の体。「青空にきらっきらっと機体が美しく輝いて」",
+    "example": "青空にきらっきらっと＿＿＿が美しく輝いています。",
+    "review": true
+  },
+  {
+    "ja": "弾",
+    "reading": "ダン／たま・はず(む)",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
+    "example": "これからの生活に胸を＿ませました。",
+    "review": true
+  },
+  {
+    "ja": "田舎",
+    "reading": "いなか",
+    "meaning": "<ruby>田舎<rt>いなか</rt></ruby> ／ 都会からはなれた土地。「親戚のいる田舎へ出かけました」",
+    "example": "母が弟をおんぶして僕と三人で、親戚のいる＿＿＿へ出かけました。",
+    "review": true
+  },
+  {
+    "ja": "隣村",
+    "reading": "となりむら",
+    "meaning": "<ruby>隣村<rt>となりむら</rt></ruby> ／ となりの村。「隣村にやぎを飼っている農家がある」",
+    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が着物を包んで出かけました。",
     "review": true
   },
   {
@@ -206,45 +227,24 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "桃",
-    "reading": "トウ／もも",
-    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
-    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
+    "ja": "掲示",
+    "reading": "けいじ",
+    "meaning": "<ruby>掲示<rt>けいじ</rt></ruby> ／ ケイジ。みんなに見えるように、はり出すこと",
+    "example": "ポスターや＿＿＿を眺めるふりをしながら待った。",
     "review": true
   },
   {
-    "ja": "輪郭",
-    "reading": "りんかく",
-    "meaning": "<ruby>輪郭<rt>りんかく</rt></ruby> ／ リンカク。もののまわりの形・かたちどり",
-    "example": "やっと顔の＿＿＿が戻ってきたような気がした。",
+    "ja": "桃源郷",
+    "reading": "とうげんきょう",
+    "meaning": "<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ この世のものとは思えない、美しい別世界",
+    "example": "生まれて初めて見る、それは＿＿＿でした。",
     "review": true
   },
   {
-    "ja": "戻る",
-    "reading": "もどる",
-    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
-    "example": "騒々しさがやっと耳に＿＿＿たとき、",
-    "review": true
-  },
-  {
-    "ja": "貧血",
-    "reading": "ひんけつ",
-    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること",
-    "example": "＿＿＿を起こしたときに見える、白々とした光景によく似ている。",
-    "review": true
-  },
-  {
-    "ja": "刈る",
-    "reading": "かる",
-    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
-    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
-    "review": true
-  },
-  {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
+    "ja": "農家",
+    "reading": "のうか",
+    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
+    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
     "review": true
   }
 ];
