@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-22",
+  "date": "2026-08-23",
   "seen": [
     "圧",
     "移",
@@ -166,55 +166,63 @@
     "版",
     "政",
     "肥",
-    "編"
+    "編",
+    "総",
+    "犯",
+    "提",
+    "留",
+    "団",
+    "輸",
+    "準",
+    "接"
   ],
   "today": [
     {
-      "ja": "識",
+      "ja": "総",
       "review": false
     },
     {
-      "ja": "預",
+      "ja": "犯",
       "review": false
     },
     {
-      "ja": "験",
+      "ja": "提",
       "review": false
     },
     {
-      "ja": "謝",
+      "ja": "留",
       "review": false
     },
     {
-      "ja": "版",
+      "ja": "団",
       "review": false
     },
     {
-      "ja": "政",
+      "ja": "輸",
       "review": false
     },
     {
-      "ja": "肥",
+      "ja": "準",
       "review": false
     },
     {
-      "ja": "編",
+      "ja": "接",
       "review": false
     },
     {
-      "ja": "益",
+      "ja": "圧",
       "review": true
     },
     {
-      "ja": "永",
+      "ja": "絶",
       "review": true
     },
     {
-      "ja": "墓",
+      "ja": "常",
       "review": true
     },
     {
-      "ja": "罪",
+      "ja": "豊",
       "review": true
     }
   ]
