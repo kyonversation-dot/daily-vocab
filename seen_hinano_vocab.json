@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-23",
+  "date": "2026-08-24",
   "seen": [
     "描写",
     "心情",
@@ -140,51 +140,51 @@
   ],
   "today": [
     {
-      "ja": "けんか",
-      "review": true
-    },
-    {
-      "ja": "時代背景",
-      "review": true
-    },
-    {
-      "ja": "具体的",
-      "review": true
-    },
-    {
-      "ja": "伝え合う",
-      "review": true
-    },
-    {
       "ja": "隣村",
       "review": true
     },
     {
-      "ja": "朗読",
+      "ja": "国民学校",
       "review": true
     },
     {
-      "ja": "田植え",
+      "ja": "描写",
       "review": true
     },
     {
-      "ja": "対比",
+      "ja": "比喩",
       "review": true
     },
     {
-      "ja": "たくす",
+      "ja": "山あい",
       "review": true
     },
     {
-      "ja": "とうてい",
+      "ja": "構成",
       "review": true
     },
     {
-      "ja": "はるばる",
+      "ja": "栄養失調",
       "review": true
     },
     {
-      "ja": "覆いかぶさる",
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "終戦",
+      "review": true
+    },
+    {
+      "ja": "変化",
+      "review": true
+    },
+    {
+      "ja": "立ち寄る",
+      "review": true
+    },
+    {
+      "ja": "みとる",
       "review": true
     }
   ]
