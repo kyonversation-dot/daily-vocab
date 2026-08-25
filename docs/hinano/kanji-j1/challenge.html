@@ -136,10 +136,66 @@
 <script>
 const words = [
   {
-    "ja": "刈る",
-    "reading": "かる",
-    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
-    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
+    "ja": "六畳間",
+    "reading": "ろくじょうま",
+    "meaning": "<ruby>六畳間<rt>ろくじょうま</rt></ruby> ／ たたみ6まいの部屋。「庭に面した六畳間の一部屋」",
+    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
+    "review": true
+  },
+  {
+    "ja": "掘",
+    "reading": "クツ／ほ(る)",
+    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
+    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
+    "review": true
+  },
+  {
+    "ja": "缶",
+    "reading": "カン",
+    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
+    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "review": true
+  },
+  {
+    "ja": "病名",
+    "reading": "びょうめい",
+    "meaning": "<ruby>病名<rt>びょうめい</rt></ruby> ／ びょうきの名前。「病名はありません。栄養失調です」",
+    "example": "＿＿＿はありません。栄養失調です……。",
+    "review": true
+  },
+  {
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
+    "example": "毎晩、＿＿＿という地下室の中でねました。",
+    "review": true
+  },
+  {
+    "ja": "留守番",
+    "reading": "るすばん",
+    "meaning": "<ruby>留守番<rt>るすばん</rt></ruby> ／ 人がいない家をまもること",
+    "example": "祖母と四歳の妹に＿＿＿をたのんで、田舎へ出かけました。",
+    "review": true
+  },
+  {
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "田舎",
+    "reading": "いなか",
+    "meaning": "<ruby>田舎<rt>いなか</rt></ruby> ／ 都会からはなれた土地。「親戚のいる田舎へ出かけました」",
+    "example": "母が弟をおんぶして僕と三人で、親戚のいる＿＿＿へ出かけました。",
+    "review": true
+  },
+  {
+    "ja": "渓",
+    "reading": "ケイ",
+    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>",
+    "example": "きれいな＿流に沿って山路へかかりました。",
     "review": true
   },
   {
@@ -150,34 +206,6 @@ const words = [
     "review": true
   },
   {
-    "ja": "襲",
-    "reading": "シュウ／おそ(う)",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
-    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
-    "review": true
-  },
-  {
-    "ja": "機体",
-    "reading": "きたい",
-    "meaning": "<ruby>機体<rt>きたい</rt></ruby> ／ 飛行機の体。「青空にきらっきらっと機体が美しく輝いて」",
-    "example": "青空にきらっきらっと＿＿＿が美しく輝いています。",
-    "review": true
-  },
-  {
-    "ja": "杉",
-    "reading": "すぎ",
-    "meaning": "<ruby>杉<rt>すぎ</rt></ruby>・<ruby>杉並木<rt>すぎなみき</rt></ruby> ／ まっすぐ高くのびる木",
-    "example": "農家のおじいさんが、＿板を削って小さな小さな棺を作ってくださいました。",
-    "review": true
-  },
-  {
-    "ja": "菓",
-    "reading": "カ",
-    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
-    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
-    "review": true
-  },
-  {
     "ja": "桃源郷",
     "reading": "とうげんきょう",
     "meaning": "<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ この世のものとは思えない、美しい別世界",
@@ -185,38 +213,10 @@ const words = [
     "review": true
   },
   {
-    "ja": "戚",
-    "reading": "セキ",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
-    "example": "親＿の人は、うちに食べ物はないと言いました。",
-    "review": true
-  },
-  {
-    "ja": "爆弾",
-    "reading": "ばくだん",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby> ／ 落として爆発させる兵器。「日本に爆弾を落としに来ました」",
-    "example": "毎日のように日本に＿＿＿を落としに来ました。",
-    "review": true
-  },
-  {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
-    "review": true
-  },
-  {
-    "ja": "親戚",
-    "reading": "しんせき",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ 血のつながった家の人。おじ・おば・いとこなど",
-    "example": "＿＿＿の人は、うちに食べ物はないと言いました。",
-    "review": true
-  },
-  {
-    "ja": "駆け寄る",
-    "reading": "かけよる",
-    "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく",
-    "example": "窓に＿＿＿って下をのぞいた。",
+    "ja": "澄",
+    "reading": "チョウ／す(む)",
+    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
+    "example": "空は高く高く青く＿んでいました。",
     "review": true
   }
 ];

@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "seen": [
     "司会",
     "質疑応答",
@@ -166,55 +166,63 @@
     "耕す",
     "航海",
     "鉱物",
-    "講習"
+    "講習",
+    "報告",
+    "混ぜる",
+    "調査",
+    "再び",
+    "災害",
+    "妻",
+    "採る",
+    "国際"
   ],
   "today": [
     {
-      "ja": "期限",
+      "ja": "報告",
       "review": false
     },
     {
-      "ja": "限る",
+      "ja": "混ぜる",
       "review": false
     },
     {
-      "ja": "個人",
+      "ja": "調査",
       "review": false
     },
     {
-      "ja": "保護",
+      "ja": "再び",
       "review": false
     },
     {
-      "ja": "耕す",
+      "ja": "災害",
       "review": false
     },
     {
-      "ja": "航海",
+      "ja": "妻",
       "review": false
+    },
+    {
+      "ja": "採る",
+      "review": false
+    },
+    {
+      "ja": "国際",
+      "review": false
+    },
+    {
+      "ja": "興味",
+      "review": true
     },
     {
       "ja": "鉱物",
-      "review": false
-    },
-    {
-      "ja": "講習",
-      "review": false
-    },
-    {
-      "ja": "提供",
       "review": true
     },
     {
-      "ja": "往復",
+      "ja": "地元",
       "review": true
     },
     {
-      "ja": "応用",
-      "review": true
-    },
-    {
-      "ja": "図表",
+      "ja": "河口",
       "review": true
     }
   ]

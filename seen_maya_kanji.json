@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "seen": [
     "圧",
     "移",
@@ -182,55 +182,63 @@
     "統",
     "断",
     "略",
-    "性"
+    "性",
+    "績",
+    "授",
+    "適",
+    "銅",
+    "綿",
+    "停",
+    "独",
+    "容"
   ],
   "today": [
     {
-      "ja": "属",
+      "ja": "績",
       "review": false
     },
     {
-      "ja": "造",
+      "ja": "授",
       "review": false
     },
     {
-      "ja": "紀",
+      "ja": "適",
       "review": false
     },
     {
-      "ja": "複",
+      "ja": "銅",
       "review": false
     },
     {
-      "ja": "統",
+      "ja": "綿",
       "review": false
     },
     {
-      "ja": "断",
+      "ja": "停",
       "review": false
     },
     {
-      "ja": "略",
+      "ja": "独",
       "review": false
     },
     {
-      "ja": "性",
+      "ja": "容",
       "review": false
     },
     {
-      "ja": "程",
+      "ja": "情",
       "review": true
     },
     {
-      "ja": "格",
+      "ja": "師",
       "review": true
     },
     {
-      "ja": "財",
+      "ja": "像",
       "review": true
     },
     {
-      "ja": "味",
+      "ja": "群",
       "review": true
     }
   ]
