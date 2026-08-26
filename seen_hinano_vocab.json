@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "seen": [
     "描写",
     "心情",
@@ -144,39 +144,11 @@
       "review": true
     },
     {
-      "ja": "まばたく",
-      "review": true
-    },
-    {
-      "ja": "一文",
-      "review": true
-    },
-    {
-      "ja": "挑戦",
-      "review": true
-    },
-    {
       "ja": "眺める",
       "review": true
     },
     {
-      "ja": "対比",
-      "review": true
-    },
-    {
-      "ja": "視点",
-      "review": true
-    },
-    {
-      "ja": "題名",
-      "review": true
-    },
-    {
-      "ja": "たくす",
-      "review": true
-    },
-    {
-      "ja": "飛び石",
+      "ja": "爆撃",
       "review": true
     },
     {
@@ -184,7 +156,35 @@
       "review": true
     },
     {
-      "ja": "主人公",
+      "ja": "六畳間",
+      "review": true
+    },
+    {
+      "ja": "履きかえる",
+      "review": true
+    },
+    {
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "ほころびる",
+      "review": true
+    },
+    {
+      "ja": "春先",
+      "review": true
+    },
+    {
+      "ja": "真っ最中",
+      "review": true
+    },
+    {
+      "ja": "ひもじい",
+      "review": true
+    },
+    {
+      "ja": "おちおち",
       "review": true
     }
   ]

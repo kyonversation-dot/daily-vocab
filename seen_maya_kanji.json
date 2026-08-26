@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "seen": [
     "圧",
     "移",
@@ -190,55 +190,48 @@
     "綿",
     "停",
     "独",
-    "容"
+    "容",
+    "費",
+    "任",
+    "余",
+    "布",
+    "仏"
   ],
   "today": [
     {
-      "ja": "績",
+      "ja": "費",
       "review": false
     },
     {
-      "ja": "授",
+      "ja": "任",
       "review": false
     },
     {
-      "ja": "適",
+      "ja": "余",
       "review": false
     },
     {
-      "ja": "銅",
+      "ja": "布",
       "review": false
     },
     {
-      "ja": "綿",
+      "ja": "仏",
       "review": false
     },
     {
-      "ja": "停",
-      "review": false
-    },
-    {
-      "ja": "独",
-      "review": false
-    },
-    {
-      "ja": "容",
-      "review": false
-    },
-    {
-      "ja": "情",
+      "ja": "採",
       "review": true
     },
     {
-      "ja": "師",
+      "ja": "状",
       "review": true
     },
     {
-      "ja": "像",
+      "ja": "述",
       "review": true
     },
     {
-      "ja": "群",
+      "ja": "規",
       "review": true
     }
   ]
