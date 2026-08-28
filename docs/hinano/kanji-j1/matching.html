@@ -164,6 +164,27 @@
 <script>
 const allWords = [
   {
+    "ja": "祖母",
+    "reading": "そぼ",
+    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
+    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
+    "review": true
+  },
+  {
+    "ja": "幹",
+    "reading": "みき",
+    "meaning": "<ruby>幹<rt>みき</rt></ruby> ／ みき。木の、太い中心の部分",
+    "example": "夏実は＿＿＿に体を寄せ、二人で木に閉じ込められた、と笑った。",
+    "review": true
+  },
+  {
+    "ja": "掘",
+    "reading": "クツ／ほ(る)",
+    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
+    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
+    "review": true
+  },
+  {
     "ja": "防空壕",
     "reading": "ぼうくうごう",
     "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
@@ -171,52 +192,31 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "押す",
-    "reading": "おす",
-    "meaning": "<ruby>押す<rt>おす</rt></ruby> ／ おす／おさえる。力を加えて動かす",
-    "example": "私は戸部君を＿＿＿のけるようにして立ち上がると、廊下に向かった。",
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
     "review": true
   },
   {
-    "ja": "疎",
-    "reading": "ソ／うと(い)",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
-    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "ja": "病院",
+    "reading": "びょういん",
+    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
+    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
     "review": true
   },
   {
-    "ja": "弾",
-    "reading": "ダン／たま・はず(む)",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
-    "example": "これからの生活に胸を＿ませました。",
+    "ja": "襲",
+    "reading": "シュウ／おそ(う)",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
+    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
     "review": true
   },
   {
-    "ja": "欲",
-    "reading": "ヨク／ほ(しい)",
-    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
-    "example": "僕は弟が＿しかったので、よくかわいがりました。",
-    "review": true
-  },
-  {
-    "ja": "戚",
-    "reading": "セキ",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
-    "example": "親＿の人は、うちに食べ物はないと言いました。",
-    "review": true
-  },
-  {
-    "ja": "隣",
-    "reading": "リン／となり",
-    "meaning": "<ruby>隣<rt>となり</rt></ruby>・<ruby>隣人<rt>りんじん</rt></ruby> ／ すぐそば・となり",
-    "example": "＿村にやぎを飼っている農家があると聞いては、母が出かけました。",
-    "review": true
-  },
-  {
-    "ja": "栄養失調",
-    "reading": "えいようしっちょう",
-    "meaning": "<ruby>栄養失調<rt>えいようしっちょう</rt></ruby> ／ 食べ物が足りず、体に必要な栄養がとれない状態。弟の死んだ原因",
-    "example": "病名はありません。＿＿＿です……。",
+    "ja": "慮",
+    "reading": "リョ",
+    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby>・<ruby>配慮<rt>はいりょ</rt></ruby> ／ よく考える・気をつかう",
+    "example": "母は弟が死んでいるので、ほかの人に遠＿したのでしょう。",
     "review": true
   },
   {
@@ -227,24 +227,24 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "蛇口",
-    "reading": "じゃぐち",
-    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口",
-    "example": "立ち上がって水道の＿＿＿をひねった。",
+    "ja": "探る",
+    "reading": "さぐる",
+    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
+    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
     "review": true
   },
   {
-    "ja": "帽子",
-    "reading": "ぼうし",
-    "meaning": "<ruby>帽子<rt>ぼうし</rt></ruby> ／ ボウシ。頭にかぶるもの",
-    "example": "＿＿＿の中の顔は暗くてよくわからなかったけれど、笑った歯だけは白く見えた。",
+    "ja": "澄",
+    "reading": "チョウ／す(む)",
+    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
+    "example": "空は高く高く青く＿んでいました。",
     "review": true
   },
   {
-    "ja": "拭く",
-    "reading": "ぬぐう",
-    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る",
-    "example": "顔を＿＿＿ながら振り返ると、戸部君が言った。",
+    "ja": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby> ／ 相手を思って、ひかえめにすること。「ほかの人に遠慮したのでしょう」",
+    "example": "母は弟が死んでいるので、ほかの人に＿＿＿したのでしょう。",
     "review": true
   }
 ];
