@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-28",
+  "date": "2026-08-29",
   "seen": [
     "描写",
     "心情",
@@ -140,51 +140,51 @@
   ],
   "today": [
     {
+      "ja": "描写",
+      "review": true
+    },
+    {
+      "ja": "回り道",
+      "review": true
+    },
+    {
+      "ja": "おちおち",
+      "review": true
+    },
+    {
+      "ja": "感想",
+      "review": true
+    },
+    {
+      "ja": "看護婦",
+      "review": true
+    },
+    {
+      "ja": "栄養失調",
+      "review": true
+    },
+    {
       "ja": "みとる",
       "review": true
     },
     {
-      "ja": "銀木犀",
+      "ja": "国民学校",
       "review": true
     },
     {
-      "ja": "片仮名",
+      "ja": "留守番",
       "review": true
     },
     {
-      "ja": "防空壕",
+      "ja": "真っ最中",
       "review": true
     },
     {
-      "ja": "あたかも",
+      "ja": "交換",
       "review": true
     },
     {
-      "ja": "眺め",
-      "review": true
-    },
-    {
-      "ja": "春先",
-      "review": true
-    },
-    {
-      "ja": "おもゆ",
-      "review": true
-    },
-    {
-      "ja": "磨く",
-      "review": true
-    },
-    {
-      "ja": "高じる",
-      "review": true
-    },
-    {
-      "ja": "山あい",
-      "review": true
-    },
-    {
-      "ja": "手入れ",
+      "ja": "桃源郷",
       "review": true
     }
   ]
