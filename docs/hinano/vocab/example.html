@@ -162,43 +162,24 @@
 <script>
 const allWords = ([
   {
-    "ja": "香水",
-    "reading": "こうすい",
-    "meaning": "よい香りをつけるための液体",
+    "ja": "閉じ込める",
+    "reading": "とじこめる",
+    "meaning": "<ruby>閉じ込める<rt>とじこめる</rt></ruby> ／ 中に入れて、出られないようにする",
+    "example": "これじゃもう動けない、と二人で木に＿＿＿られた。",
     "review": true
   },
   {
-    "ja": "回り道",
-    "reading": "まわりみち",
-    "meaning": "<ruby>回<rt>まわ</rt></ruby>り<ruby>道<rt>みち</rt></ruby> ／ わざと遠い方の道を行くこと",
-    "example": "学校からの帰り、少し＿＿＿をして銀木犀のある公園に立ち寄った。",
+    "ja": "ひもじい",
+    "reading": "ひもじい",
+    "meaning": "おなかがすいて、つらい",
+    "example": "何日もろくに食べていなくて、＿＿＿。",
     "review": true
   },
   {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
-    "review": true
-  },
-  {
-    "ja": "親友",
-    "reading": "しんゆう",
-    "meaning": "とくに仲のよい、心を許せる友だち",
-    "review": true
-  },
-  {
-    "ja": "冒頭",
-    "reading": "ぼうとう",
-    "meaning": "<ruby>冒頭<rt>ぼうとう</rt></ruby> ／ 文章のいちばん初めの部分",
-    "example": "＿＿＿と結末に登場する物や場所に着目して、違いを考えるとよい。",
-    "review": true
-  },
-  {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
+    "ja": "抑揚",
+    "reading": "よくよう",
+    "meaning": "<ruby>声<rt>こえ</rt></ruby>の高さや強さの上げ下げ",
+    "example": "「母は初めて泣きました。」は、＿＿＿をつけずに静かに読むと重く響く。",
     "review": true
   },
   {
@@ -209,38 +190,59 @@ const allWords = ([
     "review": true
   },
   {
-    "ja": "結末",
-    "reading": "けつまつ",
-    "meaning": "<ruby>結末<rt>けつまつ</rt></ruby> ／ 話の終わりの部分",
-    "example": "冒頭と＿＿＿に登場する物や場所に着目して、違いを考えるとよい。",
+    "ja": "対岸",
+    "reading": "たいがん",
+    "meaning": "川や海の<ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>の<ruby>岸<rt>きし</rt></ruby>",
+    "example": "家の前の渓流には飛び石が＿＿＿に続き、大雨の日は渡れません。",
     "review": true
   },
   {
-    "ja": "高じる",
-    "reading": "こうじる",
-    "meaning": "<ruby>高じる<rt>こうじる</rt></ruby> ／ 程度がだんだんひどくなる",
-    "example": "小づき合いが＿＿＿てすぐに本気のけんかになる。",
+    "ja": "盗み飲み",
+    "reading": "ぬすみのみ",
+    "meaning": "かくれて<ruby>勝手<rt>かって</rt></ruby>に飲んでしまうこと",
+    "example": "僕は隠れて、ヒロユキの大切なミルクを＿＿＿してしまいました。",
     "review": true
   },
   {
-    "ja": "時代背景",
-    "reading": "じだいはいけい",
-    "meaning": "その<ruby>話<rt>はなし</rt></ruby>がおこった時代のようす・世の中のじょうたい",
-    "example": "戦争中というこの物語の＿＿＿を知ると、母の苦労がよく分かる。",
+    "ja": "間",
+    "reading": "ま",
+    "meaning": "<ruby>話<rt>はな</rt></ruby>したり読んだりするときに、あける<ruby>時間<rt>じかん</rt></ruby>。「間をあけて読む」",
+    "example": "大事な一文の前で少し＿＿＿をあけて読むと、聞く人に伝わる。",
     "review": true
   },
   {
-    "ja": "場面",
-    "reading": "ばめん",
-    "meaning": "<ruby>物語<rt>ものがたり</rt></ruby>の中の、一つ一つの<ruby>場所<rt>ばしょ</rt></ruby>や時",
-    "example": "心に残った＿＿＿を選んで、朗読しよう。",
+    "ja": "引用",
+    "reading": "いんよう",
+    "meaning": "人の言葉や文章を、そのまま<ruby>借<rt>か</rt></ruby>りてきて<ruby>示<rt>しめ</rt></ruby>すこと。「本文から引用して答える」",
+    "example": "「どこからそう思ったの？」と聞かれたら、本文から＿＿＿して答える。",
     "review": true
   },
   {
-    "ja": "飛び石",
-    "reading": "とびいし",
-    "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石",
-    "example": "家の前の渓流には＿＿＿が対岸に続き、大雨の日は渡れません。",
+    "ja": "澄む",
+    "reading": "すむ",
+    "meaning": "にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる。「空が青く澄む」",
+    "example": "川の水が＿＿＿と、底の石まで見える。",
+    "review": true
+  },
+  {
+    "ja": "山あい",
+    "reading": "やまあい",
+    "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ",
+    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "review": true
+  },
+  {
+    "ja": "隣村",
+    "reading": "となりむら",
+    "meaning": "となりの村。「隣村にやぎを<ruby>飼<rt>か</rt></ruby>っている農家があると聞いては」",
+    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が出かけました。",
+    "review": true
+  },
+  {
+    "ja": "疎開者",
+    "reading": "そかいしゃ",
+    "meaning": "空襲をさけて都会から引っこしてきた人。「僕たち疎開者には<ruby>配給<rt>はいきゅう</rt></ruby>もありませんので」",
+    "example": "僕たち＿＿＿には配給もありませんので、母は着物を米と交換してもらっていました。",
     "review": true
   }
 ]).filter(w => w.example);

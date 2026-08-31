@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-08-30",
+  "date": "2026-08-31",
   "seen": [
     "描写",
     "心情",
@@ -140,27 +140,15 @@
   ],
   "today": [
     {
-      "ja": "香水",
+      "ja": "閉じ込める",
       "review": true
     },
     {
-      "ja": "回り道",
+      "ja": "ひもじい",
       "review": true
     },
     {
-      "ja": "山あい",
-      "review": true
-    },
-    {
-      "ja": "親友",
-      "review": true
-    },
-    {
-      "ja": "冒頭",
-      "review": true
-    },
-    {
-      "ja": "六畳間",
+      "ja": "抑揚",
       "review": true
     },
     {
@@ -168,23 +156,35 @@
       "review": true
     },
     {
-      "ja": "結末",
+      "ja": "対岸",
       "review": true
     },
     {
-      "ja": "高じる",
+      "ja": "盗み飲み",
       "review": true
     },
     {
-      "ja": "時代背景",
+      "ja": "間",
       "review": true
     },
     {
-      "ja": "場面",
+      "ja": "引用",
       "review": true
     },
     {
-      "ja": "飛び石",
+      "ja": "澄む",
+      "review": true
+    },
+    {
+      "ja": "山あい",
+      "review": true
+    },
+    {
+      "ja": "隣村",
+      "review": true
+    },
+    {
+      "ja": "疎開者",
       "review": true
     }
   ]
