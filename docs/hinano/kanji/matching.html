@@ -164,21 +164,27 @@
 <script>
 const allWords = [
   {
-    "ja": "権",
-    "reading": "ケン",
-    "meaning": "<ruby>権利<rt>けんり</rt></ruby>・<ruby>権力<rt>けんりょく</rt></ruby> ／ 物事を<ruby>行<rt>おこな</rt></ruby>える力",
+    "ja": "専",
+    "reading": "セン／もっぱら",
+    "meaning": "<ruby>専門<rt>せんもん</rt></ruby>・<ruby>専用<rt>せんよう</rt></ruby> ／ そればかりする",
     "review": true
   },
   {
-    "ja": "捨",
-    "reading": "シャ／すてる",
-    "meaning": "<ruby>四捨五入<rt>ししゃごにゅう</rt></ruby>・<ruby>取捨<rt>しゅしゃ</rt></ruby> ／ すてる",
+    "ja": "鋼",
+    "reading": "コウ／はがね",
+    "meaning": "<ruby>鋼鉄<rt>こうてつ</rt></ruby>・<ruby>鉄鋼<rt>てっこう</rt></ruby> ／ とてもかたい<ruby>鉄<rt>てつ</rt></ruby>",
     "review": true
   },
   {
-    "ja": "尺",
-    "reading": "シャク",
-    "meaning": "<ruby>尺度<rt>しゃくど</rt></ruby>・<ruby>縮尺<rt>しゅくしゃく</rt></ruby> ／ むかしの長さの<ruby>単位<rt>たんい</rt></ruby>",
+    "ja": "詞",
+    "reading": "シ",
+    "meaning": "<ruby>歌詞<rt>かし</rt></ruby>・<ruby>名詞<rt>めいし</rt></ruby> ／ ことば",
+    "review": true
+  },
+  {
+    "ja": "済",
+    "reading": "サイ／すむ",
+    "meaning": "<ruby>返済<rt>へんさい</rt></ruby>・<ruby>経済<rt>けいざい</rt></ruby> ／ おわる・すませる",
     "review": true
   },
   {
@@ -188,51 +194,45 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "警",
-    "reading": "ケイ",
-    "meaning": "<ruby>警察<rt>けいさつ</rt></ruby>・<ruby>警告<rt>けいこく</rt></ruby> ／ 気をつけて<ruby>守<rt>まも</rt></ruby>ること",
+    "ja": "沿",
+    "reading": "エン／そう",
+    "meaning": "<ruby>沿岸<rt>えんがん</rt></ruby>・<ruby>川沿<rt>かわぞ</rt></ruby>い ／ そばに<ruby>沿<rt>そ</rt></ruby>って行く",
     "review": true
   },
   {
-    "ja": "針",
-    "reading": "シン／はり",
-    "meaning": "<ruby>方針<rt>ほうしん</rt></ruby>・<ruby>秒針<rt>びょうしん</rt></ruby> ／ 細くとがったもの",
+    "ja": "冊",
+    "reading": "サツ／サク",
+    "meaning": "<ruby>一冊<rt>いっさつ</rt></ruby>・<ruby>別冊<rt>べっさつ</rt></ruby> ／ 本を数えることば",
     "review": true
   },
   {
-    "ja": "域",
-    "reading": "イキ",
-    "meaning": "<ruby>地域<rt>ちいき</rt></ruby>・<ruby>区域<rt>くいき</rt></ruby> ／ くぎられた<ruby>場所<rt>ばしょ</rt></ruby>",
+    "ja": "垂",
+    "reading": "スイ／たれる",
+    "meaning": "<ruby>垂直<rt>すいちょく</rt></ruby>・<ruby>垂<rt>た</rt></ruby>れ<ruby>幕<rt>まく</rt></ruby> ／ 下にたれさがる",
     "review": true
   },
   {
-    "ja": "視",
-    "reading": "シ",
-    "meaning": "<ruby>視力<rt>しりょく</rt></ruby>・<ruby>無視<rt>むし</rt></ruby> ／ 見る",
+    "ja": "憲",
+    "reading": "ケン",
+    "meaning": "<ruby>憲法<rt>けんぽう</rt></ruby> ／ 国の一番大事な<ruby>決<rt>き</rt></ruby>まり",
     "review": true
   },
   {
-    "ja": "姿",
-    "reading": "シ／すがた",
-    "meaning": "<ruby>姿勢<rt>しせい</rt></ruby>・<ruby>後<rt>うし</rt></ruby>ろ<ruby>姿<rt>すがた</rt></ruby> ／ 見た目のかたち",
+    "ja": "磁",
+    "reading": "ジ",
+    "meaning": "<ruby>磁石<rt>じしゃく</rt></ruby>・<ruby>磁力<rt>じりょく</rt></ruby> ／ 鉄をひきつける力",
     "review": true
   },
   {
-    "ja": "胸",
-    "reading": "キョウ／むね",
-    "meaning": "<ruby>胸<rt>むね</rt></ruby>・<ruby>度胸<rt>どきょう</rt></ruby> ／ <ruby>体<rt>からだ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の、<ruby>心<rt>こころ</rt></ruby>のあるあたり",
+    "ja": "机",
+    "reading": "キ／つくえ",
+    "meaning": "<ruby>机<rt>つくえ</rt></ruby>・<ruby>学習机<rt>がくしゅうづくえ</rt></ruby> ／ べんきょうや<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>台<rt>だい</rt></ruby>",
     "review": true
   },
   {
-    "ja": "恩",
-    "reading": "オン",
-    "meaning": "<ruby>恩人<rt>おんじん</rt></ruby>・<ruby>恩返<rt>おんがえ</rt></ruby>し ／ 受けたありがたい<ruby>助<rt>たす</rt></ruby>け",
-    "review": true
-  },
-  {
-    "ja": "訪",
-    "reading": "ホウ／おとずれる・たずねる",
-    "meaning": "<ruby>訪問<rt>ほうもん</rt></ruby>・<ruby>訪<rt>おとず</rt></ruby>れる ／ たずねて行く",
+    "ja": "灰",
+    "reading": "カイ／はい",
+    "meaning": "<ruby>灰色<rt>はいいろ</rt></ruby>・<ruby>灰<rt>はい</rt></ruby> ／ 物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>",
     "review": true
   }
 ];
