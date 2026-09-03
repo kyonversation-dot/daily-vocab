@@ -165,52 +165,31 @@
 <script>
 const allWords = ([
   {
-    "ja": "歳",
-    "reading": "サイ／セイ",
-    "meaning": "<ruby>十歳<rt>じっさい</rt></ruby>・<ruby>歳月<rt>さいげつ</rt></ruby> ／ とし・年れい",
-    "example": "祖母と四＿の妹に留守番をたのんで、田舎へ出かけました。",
-    "review": true
-  },
-  {
-    "ja": "唇",
-    "reading": "くちびる",
-    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
-    "example": "＿＿＿がふるえているし、目のふちが熱い。",
-    "review": true
-  },
-  {
-    "ja": "農家",
-    "reading": "のうか",
-    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
-    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
-    "review": true
-  },
-  {
-    "ja": "弾",
-    "reading": "ダン／たま・はず(む)",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
-    "example": "これからの生活に胸を＿ませました。",
-    "review": true
-  },
-  {
-    "ja": "渓",
-    "reading": "ケイ",
-    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>",
-    "example": "きれいな＿流に沿って山路へかかりました。",
-    "review": true
-  },
-  {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
-    "review": true
-  },
-  {
     "ja": "桃",
     "reading": "トウ／もも",
     "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
     "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
+    "review": true
+  },
+  {
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "review": true
+  },
+  {
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "review": true
+  },
+  {
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
@@ -221,31 +200,52 @@ const allWords = ([
     "review": true
   },
   {
-    "ja": "俺",
-    "reading": "おれ",
-    "meaning": "<ruby>俺<rt>おれ</rt></ruby> ／ おれ。男の子が自分をさす、くだけた言い方",
-    "example": "＿＿＿がわざとぶつかったみたいだろ。",
+    "ja": "入院",
+    "reading": "にゅういん",
+    "meaning": "<ruby>入院<rt>にゅういん</rt></ruby> ／ 病院に入って治りょうすること",
+    "example": "僕たちの村から三里くらい離れた町の病院に＿＿＿しました。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "騒々しさ",
+    "reading": "そうぞうしさ",
+    "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること",
+    "example": "＿＿＿がやっと耳に戻ったとき、戸部君がこちらを見ていることに気づいた。",
     "review": true
   },
   {
-    "ja": "下流",
-    "reading": "かりゅう",
-    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
-    "example": "＿＿＿の橋を渡って学校に行きました。",
+    "ja": "爆撃",
+    "reading": "ばくげき",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby> ／ 飛行機から爆弾を落としてこうげきすること",
+    "example": "空襲の＿＿＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
-    "ja": "蛇口",
-    "reading": "じゃぐち",
-    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口",
-    "example": "立ち上がって水道の＿＿＿をひねった。",
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
+    "example": "毎晩、＿＿＿という地下室の中でねました。",
+    "review": true
+  },
+  {
+    "ja": "掃除",
+    "reading": "そうじ",
+    "meaning": "<ruby>掃除<rt>そうじ</rt></ruby> ／ ソウジ。ごみやよごれを取って、きれいにすること",
+    "example": "けど春先は、葉っぱが落ちて案外厄介なんだよ、＿＿＿がさ。",
+    "review": true
+  },
+  {
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "<ruby>栄養失調<rt>えいようしっちょう</rt></ruby> ／ 食べ物が足りず、体に必要な栄養がとれない状態。弟の死んだ原因",
+    "example": "病名はありません。＿＿＿です……。",
+    "review": true
+  },
+  {
+    "ja": "覆",
+    "reading": "フク／おお(う)",
+    "meaning": "<ruby>覆<rt>おお</rt></ruby>う・<ruby>覆面<rt>ふくめん</rt></ruby> ／ 上からかぶせる・おおいかぶさる",
+    "example": "すぐ裏の山が頭の上に＿いかぶさるような山すそにありました。",
     "review": true
   }
 ]).filter(w => w.example);
