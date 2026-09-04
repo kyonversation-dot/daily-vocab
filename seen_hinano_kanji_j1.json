@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "seen": [
     "撃",
     "爆",
@@ -100,43 +100,11 @@
   ],
   "today": [
     {
-      "ja": "桃",
+      "ja": "留守番",
       "review": true
     },
     {
-      "ja": "僕",
-      "review": true
-    },
-    {
-      "ja": "爆",
-      "review": true
-    },
-    {
-      "ja": "撃",
-      "review": true
-    },
-    {
-      "ja": "大丈夫",
-      "review": true
-    },
-    {
-      "ja": "入院",
-      "review": true
-    },
-    {
-      "ja": "騒々しさ",
-      "review": true
-    },
-    {
-      "ja": "爆撃",
-      "review": true
-    },
-    {
-      "ja": "防空壕",
-      "review": true
-    },
-    {
-      "ja": "掃除",
+      "ja": "空襲",
       "review": true
     },
     {
@@ -144,7 +112,39 @@
       "review": true
     },
     {
-      "ja": "覆",
+      "ja": "一部屋",
+      "review": true
+    },
+    {
+      "ja": "人影",
+      "review": true
+    },
+    {
+      "ja": "真っ最中",
+      "review": true
+    },
+    {
+      "ja": "戚",
+      "review": true
+    },
+    {
+      "ja": "交換",
+      "review": true
+    },
+    {
+      "ja": "隣村",
+      "review": true
+    },
+    {
+      "ja": "爆",
+      "review": true
+    },
+    {
+      "ja": "太平洋戦争",
+      "review": true
+    },
+    {
+      "ja": "缶",
       "review": true
     }
   ]
