@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "seen": [
     "描写",
     "心情",
@@ -140,11 +140,35 @@
   ],
   "today": [
     {
-      "ja": "対比",
+      "ja": "解釈",
       "review": true
     },
     {
-      "ja": "ポプリ",
+      "ja": "捉える",
+      "review": true
+    },
+    {
+      "ja": "熱心",
+      "review": true
+    },
+    {
+      "ja": "にじむ",
+      "review": true
+    },
+    {
+      "ja": "遠慮",
+      "review": true
+    },
+    {
+      "ja": "結末",
+      "review": true
+    },
+    {
+      "ja": "立ち寄る",
+      "review": true
+    },
+    {
+      "ja": "かたむく",
       "review": true
     },
     {
@@ -152,39 +176,15 @@
       "review": true
     },
     {
-      "ja": "盗み飲み",
+      "ja": "渓流",
       "review": true
     },
     {
-      "ja": "主人公",
+      "ja": "視点",
       "review": true
     },
     {
-      "ja": "とまどう",
-      "review": true
-    },
-    {
-      "ja": "刈り込む",
-      "review": true
-    },
-    {
-      "ja": "意外",
-      "review": true
-    },
-    {
-      "ja": "手入れ",
-      "review": true
-    },
-    {
-      "ja": "きまりが悪い",
-      "review": true
-    },
-    {
-      "ja": "眺める",
-      "review": true
-    },
-    {
-      "ja": "八つ当たり",
+      "ja": "配給",
       "review": true
     }
   ]
