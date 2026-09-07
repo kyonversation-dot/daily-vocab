@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-09-06",
+  "date": "2026-09-07",
   "seen": [
     "圧",
     "移",
@@ -199,43 +199,7 @@
   ],
   "today": [
     {
-      "ja": "則",
-      "review": true
-    },
-    {
-      "ja": "条",
-      "review": true
-    },
-    {
-      "ja": "武",
-      "review": true
-    },
-    {
-      "ja": "紀",
-      "review": true
-    },
-    {
-      "ja": "喜",
-      "review": true
-    },
-    {
-      "ja": "弁",
-      "review": true
-    },
-    {
-      "ja": "状",
-      "review": true
-    },
-    {
-      "ja": "旧",
-      "review": true
-    },
-    {
-      "ja": "素",
-      "review": true
-    },
-    {
-      "ja": "飼",
+      "ja": "仮",
       "review": true
     },
     {
@@ -243,7 +207,43 @@
       "review": true
     },
     {
-      "ja": "程",
+      "ja": "喜",
+      "review": true
+    },
+    {
+      "ja": "紀",
+      "review": true
+    },
+    {
+      "ja": "評",
+      "review": true
+    },
+    {
+      "ja": "犯",
+      "review": true
+    },
+    {
+      "ja": "味",
+      "review": true
+    },
+    {
+      "ja": "務",
+      "review": true
+    },
+    {
+      "ja": "適",
+      "review": true
+    },
+    {
+      "ja": "墓",
+      "review": true
+    },
+    {
+      "ja": "率",
+      "review": true
+    },
+    {
+      "ja": "貸",
       "review": true
     }
   ]

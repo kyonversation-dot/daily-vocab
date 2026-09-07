@@ -136,38 +136,10 @@
 <script>
 const words = [
   {
-    "ja": "戚",
-    "reading": "セキ",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
-    "example": "親＿の人は、うちに食べ物はないと言いました。",
-    "review": true
-  },
-  {
-    "ja": "荷物",
-    "reading": "にもつ",
-    "meaning": "<ruby>荷物<rt>にもつ</rt></ruby> ／ もち運ぶ物。「必要な荷物だけを持って」",
-    "example": "とりあえず必要な＿＿＿だけを持って、引っ越しすることになりました。",
-    "review": true
-  },
-  {
-    "ja": "空襲",
-    "reading": "くうしゅう",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby> ／ 飛行機で上からおそうこと。「空襲がひどくなってきたので」",
-    "example": "あまり＿＿＿がひどくなってきたので、母は疎開しようと言いだしました。",
-    "review": true
-  },
-  {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
-    "review": true
-  },
-  {
-    "ja": "涙",
-    "reading": "なみだ",
-    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水",
-    "example": "＿＿＿がにじんできたのは、あんまり笑いすぎたせいだ。",
+    "ja": "襲",
+    "reading": "シュウ／おそ(う)",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
+    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
     "review": true
   },
   {
@@ -178,38 +150,66 @@ const words = [
     "review": true
   },
   {
-    "ja": "飛行機",
-    "reading": "ひこうき",
-    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
-    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
+    "ja": "人影",
+    "reading": "ひとかげ",
+    "meaning": "<ruby>人影<rt>ひとかげ</rt></ruby> ／ 人のすがた。「道にも畑にも、人影はありませんでした」",
+    "example": "道にも畑にも、＿＿＿はありませんでした。歩いているのは三人だけです。",
     "review": true
   },
   {
-    "ja": "爆",
-    "reading": "バク",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
-    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "ja": "弾",
+    "reading": "ダン／たま・はず(む)",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
+    "example": "これからの生活に胸を＿ませました。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "配給",
+    "reading": "はいきゅう",
+    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
+    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
     "review": true
   },
   {
-    "ja": "暇",
-    "reading": "ひま",
-    "meaning": "<ruby>暇<rt>ひま</rt></ruby> ／ ひま。何かをするための時間・ゆとり",
-    "example": "戸部君に関わり合っている＿＿＿はない。",
+    "ja": "相談",
+    "reading": "そうだん",
+    "meaning": "<ruby>相談<rt>そうだん</rt></ruby> ／ 話し合ってきめること。「引っ越しの相談に行ったのに」",
+    "example": "僕たちは食べ物をもらいに行ったのではなかったのです。引っ越しの＿＿＿に行ったのに。",
     "review": true
   },
   {
-    "ja": "戻る",
-    "reading": "もどる",
-    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
-    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "ja": "隣",
+    "reading": "リン／となり",
+    "meaning": "<ruby>隣<rt>となり</rt></ruby>・<ruby>隣人<rt>りんじん</rt></ruby> ／ すぐそば・となり",
+    "example": "＿村にやぎを飼っている農家があると聞いては、母が出かけました。",
+    "review": true
+  },
+  {
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "祖母",
+    "reading": "そぼ",
+    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
+    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
+    "review": true
+  },
+  {
+    "ja": "含",
+    "reading": "ガン／ふく(む)",
+    "meaning": "<ruby>含<rt>ふく</rt></ruby>む・<ruby>含有<rt>がんゆう</rt></ruby> ／ 中に入っている",
+    "example": "小さな小さな口に、綿に＿ませた水を飲ませた夜を、僕は忘れられません。",
+    "review": true
+  },
+  {
+    "ja": "欲",
+    "reading": "ヨク／ほ(しい)",
+    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
+    "example": "僕は弟が＿しかったので、よくかわいがりました。",
     "review": true
   },
   {

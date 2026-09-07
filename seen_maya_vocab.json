@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-09-06",
+  "date": "2026-09-07",
   "seen": [
     "司会",
     "質疑応答",
@@ -270,55 +270,58 @@
     "山脈",
     "夢",
     "迷う",
-    "綿"
+    "綿",
+    "輸入",
+    "余る",
+    "預ける",
+    "内容",
+    "省略",
+    "留守",
+    "領土"
   ],
   "today": [
     {
-      "ja": "墓",
+      "ja": "輸入",
       "review": false
     },
     {
-      "ja": "豊か",
+      "ja": "余る",
       "review": false
     },
     {
-      "ja": "防ぐ",
+      "ja": "預ける",
       "review": false
     },
     {
-      "ja": "暴れる",
+      "ja": "内容",
       "review": false
     },
     {
-      "ja": "山脈",
+      "ja": "省略",
       "review": false
     },
     {
-      "ja": "夢",
+      "ja": "留守",
       "review": false
     },
     {
-      "ja": "迷う",
+      "ja": "領土",
       "review": false
     },
     {
-      "ja": "綿",
-      "review": false
-    },
-    {
-      "ja": "再び",
+      "ja": "問題点",
       "review": true
     },
     {
-      "ja": "習慣",
+      "ja": "個人",
       "review": true
     },
     {
-      "ja": "枝",
+      "ja": "製品",
       "review": true
     },
     {
-      "ja": "限る",
+      "ja": "志",
       "review": true
     }
   ]
