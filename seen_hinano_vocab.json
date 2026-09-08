@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "seen": [
     "描写",
     "心情",
@@ -140,31 +140,11 @@
   ],
   "today": [
     {
-      "ja": "山すそ",
+      "ja": "空襲",
       "review": true
     },
     {
-      "ja": "読み深める",
-      "review": true
-    },
-    {
-      "ja": "きまりが悪い",
-      "review": true
-    },
-    {
-      "ja": "眺める",
-      "review": true
-    },
-    {
-      "ja": "心情",
-      "review": true
-    },
-    {
-      "ja": "とうてい",
-      "review": true
-    },
-    {
-      "ja": "防空壕",
+      "ja": "とまどう",
       "review": true
     },
     {
@@ -172,19 +152,39 @@
       "review": true
     },
     {
-      "ja": "親友",
+      "ja": "山あい",
       "review": true
     },
     {
-      "ja": "捉える",
+      "ja": "はるばる",
       "review": true
     },
     {
-      "ja": "比喩",
+      "ja": "防空壕",
       "review": true
     },
     {
-      "ja": "秘密基地",
+      "ja": "みとる",
+      "review": true
+    },
+    {
+      "ja": "胸を弾ませる",
+      "review": true
+    },
+    {
+      "ja": "六畳間",
+      "review": true
+    },
+    {
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "独特",
+      "review": true
+    },
+    {
+      "ja": "段落",
       "review": true
     }
   ]
