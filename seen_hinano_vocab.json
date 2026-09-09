@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "seen": [
     "描写",
     "心情",
@@ -140,19 +140,35 @@
   ],
   "today": [
     {
-      "ja": "空襲",
+      "ja": "あたかも",
       "review": true
     },
     {
-      "ja": "とまどう",
+      "ja": "飛び石",
       "review": true
     },
     {
-      "ja": "栄養失調",
+      "ja": "作者",
       "review": true
     },
     {
-      "ja": "山あい",
+      "ja": "時代背景",
+      "review": true
+    },
+    {
+      "ja": "隣村",
+      "review": true
+    },
+    {
+      "ja": "たくす",
+      "review": true
+    },
+    {
+      "ja": "想像",
+      "review": true
+    },
+    {
+      "ja": "展開",
       "review": true
     },
     {
@@ -160,31 +176,15 @@
       "review": true
     },
     {
-      "ja": "防空壕",
+      "ja": "渓流",
       "review": true
     },
     {
-      "ja": "みとる",
+      "ja": "余韻",
       "review": true
     },
     {
-      "ja": "胸を弾ませる",
-      "review": true
-    },
-    {
-      "ja": "六畳間",
-      "review": true
-    },
-    {
-      "ja": "心情",
-      "review": true
-    },
-    {
-      "ja": "独特",
-      "review": true
-    },
-    {
-      "ja": "段落",
+      "ja": "栄養失調",
       "review": true
     }
   ]

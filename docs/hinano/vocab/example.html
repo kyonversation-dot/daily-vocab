@@ -162,31 +162,59 @@
 <script>
 const allWords = ([
   {
-    "ja": "空襲",
-    "reading": "くうしゅう",
-    "meaning": "飛行機が空から<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること",
-    "example": "あまり＿＿＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "ja": "あたかも",
+    "reading": "あたかも",
+    "meaning": "<ruby>あたかも<rt>あたかも</rt></ruby> ／ まるで〜のように。ちょうど〜のように",
+    "example": "「＿＿＿」という言葉を使って文章を作りなさいだって。",
     "review": true
   },
   {
-    "ja": "とまどう",
-    "reading": "とまどう",
-    "meaning": "<ruby>とまどう<rt>とまどう</rt></ruby> ／ どうしていいか分からなくなる",
-    "example": "夏実は一瞬＿＿＿たような顔でこちらを見た。",
+    "ja": "飛び石",
+    "reading": "とびいし",
+    "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石",
+    "example": "家の前の渓流には＿＿＿が対岸に続き、大雨の日は渡れません。",
     "review": true
   },
   {
-    "ja": "栄養失調",
-    "reading": "えいようしっちょう",
-    "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>",
-    "example": "病名はありません。＿＿＿です……。",
+    "ja": "作者",
+    "reading": "さくしゃ",
+    "meaning": "その<ruby>作品<rt>さくひん</rt></ruby>を書いた人",
+    "example": "「大人になれなかった弟たちに……」の＿＿＿は、米倉斉加年である。",
     "review": true
   },
   {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "山と山の<ruby>間<rt>あいだ</rt></ruby>のところ",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "ja": "時代背景",
+    "reading": "じだいはいけい",
+    "meaning": "その<ruby>話<rt>はなし</rt></ruby>がおこった時代のようす・世の中のじょうたい",
+    "example": "戦争中というこの物語の＿＿＿を知ると、母の苦労がよく分かる。",
+    "review": true
+  },
+  {
+    "ja": "隣村",
+    "reading": "となりむら",
+    "meaning": "となりの村。「隣村にやぎを<ruby>飼<rt>か</rt></ruby>っている農家があると聞いては」",
+    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が出かけました。",
+    "review": true
+  },
+  {
+    "ja": "たくす",
+    "reading": "たくす",
+    "meaning": "<ruby>直接<rt>ちょくせつ</rt></ruby>言わずに、べつのものに気持ちをこめる。「<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>描写<rt>びょうしゃ</rt></ruby>にたくす」",
+    "example": "作者は母の気持ちを、行動の描写に＿＿＿。",
+    "review": true
+  },
+  {
+    "ja": "想像",
+    "reading": "そうぞう",
+    "meaning": "<ruby>実際<rt>じっさい</rt></ruby>に見ていないことを、<ruby>頭<rt>あたま</rt></ruby>の中に思いうかべること",
+    "example": "読み手が＿＿＿できるように描いたものを、描写という。",
+    "review": true
+  },
+  {
+    "ja": "展開",
+    "reading": "てんかい",
+    "meaning": "<ruby>話<rt>はなし</rt></ruby>が先へ進んで、場面が<ruby>変<rt>か</rt></ruby>わっていくこと",
+    "example": "弟の入院から死へと、物語が＿＿＿していく。",
     "review": true
   },
   {
@@ -197,52 +225,24 @@ const allWords = ([
     "review": true
   },
   {
-    "ja": "防空壕",
-    "reading": "ぼうくうごう",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>から身を守るために<ruby>掘<rt>ほ</rt></ruby>った<ruby>穴<rt>あな</rt></ruby>・地下室",
-    "example": "毎晩、＿＿＿という地下室の中でねました。",
+    "ja": "渓流",
+    "reading": "けいりゅう",
+    "meaning": "山の中を流れる、きれいな川",
+    "example": "きれいな＿＿＿に沿って山路へかかりました。",
     "review": true
   },
   {
-    "ja": "みとる",
-    "reading": "みとる",
-    "meaning": "死にゆく人のそばにいて、<ruby>最期<rt>さいご</rt></ruby>まで<ruby>世話<rt>せわ</rt></ruby>をする",
-    "example": "母と兄とお医者さん、看護婦さんが、弟を最期まで＿＿＿。",
+    "ja": "余韻",
+    "reading": "よいん",
+    "meaning": "<ruby>読<rt>よ</rt></ruby>み終わったあとに、心に<ruby>残<rt>のこ</rt></ruby>るひびき・感じ",
+    "example": "「……」で終わる題名は、読んだあとに＿＿＿が残る。",
     "review": true
   },
   {
-    "ja": "胸を弾ませる",
-    "reading": "むねをはずませる",
-    "meaning": "うれしくて、わくわくする",
-    "example": "これから始まる新しい生活に＿＿＿。",
-    "review": true
-  },
-  {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
-    "review": true
-  },
-  {
-    "ja": "心情",
-    "reading": "しんじょう",
-    "meaning": "心の中の<ruby>気持<rt>きも</rt></ruby>ち・<ruby>思<rt>おも</rt></ruby>い",
-    "example": "描写に着目すると、書かれていない＿＿＿が読み取れる。",
-    "review": true
-  },
-  {
-    "ja": "独特",
-    "reading": "どくとく",
-    "meaning": "そのものだけがもっている、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>感<rt>かん</rt></ruby>じ",
-    "example": "ブウーンブウーンというB29の＿＿＿のエンジンの音がして、",
-    "review": true
-  },
-  {
-    "ja": "段落",
-    "reading": "だんらく",
-    "meaning": "文章のまとまり。<ruby>一字下<rt>いちじさ</rt></ruby>げて<ruby>始<rt>はじ</rt></ruby>まる",
-    "example": "「母の着物はなくなりました。」は、一文だけで一つの＿＿＿になっている。",
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "食べ物が足りず、体に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>栄養<rt>えいよう</rt></ruby>がとれていない<ruby>状態<rt>じょうたい</rt></ruby>",
+    "example": "病名はありません。＿＿＿です……。",
     "review": true
   }
 ]).filter(w => w.example);

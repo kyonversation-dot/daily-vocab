@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,7 +281,7 @@
   ],
   "today": [
     {
-      "ja": "地元",
+      "ja": "支える",
       "review": true
     },
     {
@@ -289,43 +289,43 @@
       "review": true
     },
     {
+      "ja": "性質",
+      "review": true
+    },
+    {
+      "ja": "社説",
+      "review": true
+    },
+    {
+      "ja": "効果",
+      "review": true
+    },
+    {
+      "ja": "事故",
+      "review": true
+    },
+    {
+      "ja": "寸前",
+      "review": true
+    },
+    {
       "ja": "具体的",
       "review": true
     },
     {
-      "ja": "コラム",
+      "ja": "塾",
       "review": true
     },
     {
-      "ja": "経験",
+      "ja": "事件",
       "review": true
     },
     {
-      "ja": "事実",
+      "ja": "供養",
       "review": true
     },
     {
-      "ja": "共通",
-      "review": true
-    },
-    {
-      "ja": "説得力",
-      "review": true
-    },
-    {
-      "ja": "登下校",
-      "review": true
-    },
-    {
-      "ja": "逆",
-      "review": true
-    },
-    {
-      "ja": "質疑応答",
-      "review": true
-    },
-    {
-      "ja": "発表",
+      "ja": "構内",
       "review": true
     }
   ]
