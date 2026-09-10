@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "seen": [
     "描写",
     "心情",
@@ -140,39 +140,19 @@
   ],
   "today": [
     {
-      "ja": "あたかも",
-      "review": true
-    },
-    {
-      "ja": "飛び石",
-      "review": true
-    },
-    {
-      "ja": "作者",
-      "review": true
-    },
-    {
-      "ja": "時代背景",
-      "review": true
-    },
-    {
-      "ja": "隣村",
-      "review": true
-    },
-    {
-      "ja": "たくす",
-      "review": true
-    },
-    {
-      "ja": "想像",
-      "review": true
-    },
-    {
-      "ja": "展開",
-      "review": true
-    },
-    {
       "ja": "はるばる",
+      "review": true
+    },
+    {
+      "ja": "回り道",
+      "review": true
+    },
+    {
+      "ja": "心情",
+      "review": true
+    },
+    {
+      "ja": "着目",
       "review": true
     },
     {
@@ -180,11 +160,31 @@
       "review": true
     },
     {
+      "ja": "真っ最中",
+      "review": true
+    },
+    {
+      "ja": "山すそ",
+      "review": true
+    },
+    {
+      "ja": "効果",
+      "review": true
+    },
+    {
       "ja": "余韻",
       "review": true
     },
     {
-      "ja": "栄養失調",
+      "ja": "桃源郷",
+      "review": true
+    },
+    {
+      "ja": "根拠",
+      "review": true
+    },
+    {
+      "ja": "澄む",
       "review": true
     }
   ]
