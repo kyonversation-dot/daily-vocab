@@ -161,45 +161,71 @@
 <script>
 const allWords = [
   {
-    "ja": "はるばる",
-    "reading": "はるばる",
-    "meaning": "遠くから、長い道のりを来る様子",
-    "example": "親戚の人は、＿＿＿出かけてきた母と弟と僕を見るなり、食べ物はないと言いました。",
+    "ja": "挑戦",
+    "reading": "ちょうせん",
+    "meaning": "むずかしいことに、思いきって立ち向かうこと",
     "review": true
   },
   {
-    "ja": "回り道",
-    "reading": "まわりみち",
-    "meaning": "<ruby>回<rt>まわ</rt></ruby>り<ruby>道<rt>みち</rt></ruby> ／ わざと遠い方の道を行くこと",
-    "example": "学校からの帰り、少し＿＿＿をして銀木犀のある公園に立ち寄った。",
+    "ja": "なだめる",
+    "reading": "なだめる",
+    "meaning": "高ぶった気持ちを、静かに落ち着かせること",
     "review": true
   },
   {
-    "ja": "心情",
-    "reading": "しんじょう",
-    "meaning": "心の中の<ruby>気持<rt>きも</rt></ruby>ち・<ruby>思<rt>おも</rt></ruby>い",
-    "example": "描写に着目すると、書かれていない＿＿＿が読み取れる。",
+    "ja": "変化",
+    "reading": "へんか",
+    "meaning": "前とちがうようすに<ruby>変<rt>か</rt></ruby>わること。「<ruby>心情<rt>しんじょう</rt></ruby>の変化」",
+    "example": "物語を読むときは、登場人物の心の＿＿＿を追いかける。",
     "review": true
   },
   {
-    "ja": "着目",
-    "reading": "ちゃくもく",
-    "meaning": "そこに<ruby>目<rt>め</rt></ruby>をつけて、よく<ruby>見<rt>み</rt></ruby>ること。「<ruby>描写<rt>びょうしゃ</rt></ruby>に着目する」",
-    "example": "描写に＿＿＿して読み深め、登場人物の思いが伝わるように朗読しよう。",
+    "ja": "表現",
+    "reading": "ひょうげん",
+    "meaning": "気持ちや考えを、言葉や形にして<ruby>表<rt>あらわ</rt></ruby>すこと",
+    "example": "心情を直接書かずに描写で書く——これも一つの＿＿＿のしかたである。",
     "review": true
   },
   {
-    "ja": "渓流",
-    "reading": "けいりゅう",
-    "meaning": "山の中を流れる、きれいな川",
-    "example": "きれいな＿＿＿に沿って山路へかかりました。",
+    "ja": "とうてい",
+    "reading": "とうてい",
+    "meaning": "どうやっても（〜ない）。とても（〜できない）",
+    "example": "みんなには＿＿＿わからないでしょうが、そのころ、甘いものはぜんぜんなかったのです。",
     "review": true
   },
   {
-    "ja": "真っ最中",
-    "reading": "まっさいちゅう",
-    "meaning": "ちょうど今、その<ruby>途中<rt>とちゅう</rt></ruby>であること",
-    "example": "太平洋戦争の＿＿＿です。",
+    "ja": "爆撃",
+    "reading": "ばくげき",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること",
+    "example": "＿＿＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
+    "review": true
+  },
+  {
+    "ja": "覆いかぶさる",
+    "reading": "おおいかぶさる",
+    "meaning": "上からかぶさるように<ruby>迫<rt>せま</rt></ruby>ってくる",
+    "example": "すぐ裏の山が頭の上に＿＿＿ような山すそにありました。",
+    "review": true
+  },
+  {
+    "ja": "澄む",
+    "reading": "すむ",
+    "meaning": "にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる。「空が青く澄む」",
+    "example": "川の水が＿＿＿と、底の石まで見える。",
+    "review": true
+  },
+  {
+    "ja": "盗み飲み",
+    "reading": "ぬすみのみ",
+    "meaning": "かくれて<ruby>勝手<rt>かって</rt></ruby>に飲んでしまうこと",
+    "example": "僕は隠れて、ヒロユキの大切なミルクを＿＿＿してしまいました。",
+    "review": true
+  },
+  {
+    "ja": "一文",
+    "reading": "いちぶん",
+    "meaning": "「。」で終わる、ひとつの文。「この一文だけで<ruby>段落<rt>だんらく</rt></ruby>になっている」",
+    "example": "「母の着物はなくなりました。」——この＿＿＿だけで、一つの段落になっている。",
     "review": true
   },
   {
@@ -210,38 +236,10 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "効果",
-    "reading": "こうか",
-    "meaning": "そう書いたことで生まれる、読む人への<ruby>働<rt>はたら</rt></ruby>き",
-    "example": "短く言い切ると、どんな＿＿＿があるだろう。",
-    "review": true
-  },
-  {
-    "ja": "余韻",
-    "reading": "よいん",
-    "meaning": "<ruby>読<rt>よ</rt></ruby>み終わったあとに、心に<ruby>残<rt>のこ</rt></ruby>るひびき・感じ",
-    "example": "「……」で終わる題名は、読んだあとに＿＿＿が残る。",
-    "review": true
-  },
-  {
-    "ja": "桃源郷",
-    "reading": "とうげんきょう",
-    "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園",
-    "example": "生まれて初めて見る、それは＿＿＿でした。",
-    "review": true
-  },
-  {
-    "ja": "根拠",
-    "reading": "こんきょ",
-    "meaning": "そう考えたもとになる<ruby>事実<rt>じじつ</rt></ruby>。「本文のどこが根拠ですか」",
-    "example": "自分の考えを言うときは、本文のどこが＿＿＿かも一緒に言う。",
-    "review": true
-  },
-  {
-    "ja": "澄む",
-    "reading": "すむ",
-    "meaning": "にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる。「空が青く澄む」",
-    "example": "川の水が＿＿＿と、底の石まで見える。",
+    "ja": "独特",
+    "reading": "どくとく",
+    "meaning": "そのものだけがもっている、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>感<rt>かん</rt></ruby>じ",
+    "example": "ブウーンブウーンというB29の＿＿＿のエンジンの音がして、",
     "review": true
   }
 ];
