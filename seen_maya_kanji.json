@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-09-13",
+  "date": "2026-09-14",
   "seen": [
     "圧",
     "移",
@@ -199,7 +199,15 @@
   ],
   "today": [
     {
-      "ja": "義",
+      "ja": "永",
+      "review": true
+    },
+    {
+      "ja": "寄",
+      "review": true
+    },
+    {
+      "ja": "厚",
       "review": true
     },
     {
@@ -207,43 +215,35 @@
       "review": true
     },
     {
-      "ja": "増",
+      "ja": "版",
       "review": true
     },
     {
-      "ja": "貸",
+      "ja": "術",
       "review": true
     },
     {
-      "ja": "務",
+      "ja": "過",
       "review": true
     },
     {
-      "ja": "貿",
+      "ja": "損",
       "review": true
     },
     {
-      "ja": "弁",
+      "ja": "移",
       "review": true
     },
     {
-      "ja": "絶",
+      "ja": "査",
       "review": true
     },
     {
-      "ja": "賞",
+      "ja": "仮",
       "review": true
     },
     {
-      "ja": "再",
-      "review": true
-    },
-    {
-      "ja": "貧",
-      "review": true
-    },
-    {
-      "ja": "旧",
+      "ja": "制",
       "review": true
     }
   ]
