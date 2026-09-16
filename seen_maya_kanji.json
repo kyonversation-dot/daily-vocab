@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字",
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "seen": [
     "圧",
     "移",
@@ -199,39 +199,11 @@
   ],
   "today": [
     {
-      "ja": "往",
+      "ja": "弁",
       "review": true
     },
     {
-      "ja": "許",
-      "review": true
-    },
-    {
-      "ja": "告",
-      "review": true
-    },
-    {
-      "ja": "織",
-      "review": true
-    },
-    {
-      "ja": "質",
-      "review": true
-    },
-    {
-      "ja": "紀",
-      "review": true
-    },
-    {
-      "ja": "接",
-      "review": true
-    },
-    {
-      "ja": "喜",
-      "review": true
-    },
-    {
-      "ja": "鉱",
+      "ja": "検",
       "review": true
     },
     {
@@ -239,11 +211,39 @@
       "review": true
     },
     {
-      "ja": "減",
+      "ja": "紀",
       "review": true
     },
     {
-      "ja": "版",
+      "ja": "衛",
+      "review": true
+    },
+    {
+      "ja": "謝",
+      "review": true
+    },
+    {
+      "ja": "造",
+      "review": true
+    },
+    {
+      "ja": "潔",
+      "review": true
+    },
+    {
+      "ja": "価",
+      "review": true
+    },
+    {
+      "ja": "確",
+      "review": true
+    },
+    {
+      "ja": "査",
+      "review": true
+    },
+    {
+      "ja": "増",
       "review": true
     }
   ]
