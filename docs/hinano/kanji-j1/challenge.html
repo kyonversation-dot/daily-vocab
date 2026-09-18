@@ -136,24 +136,10 @@
 <script>
 const words = [
   {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
-    "review": true
-  },
-  {
-    "ja": "澄",
-    "reading": "チョウ／す(む)",
-    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
-    "example": "空は高く高く青く＿んでいました。",
-    "review": true
-  },
-  {
-    "ja": "留守番",
-    "reading": "るすばん",
-    "meaning": "<ruby>留守番<rt>るすばん</rt></ruby> ／ 人がいない家をまもること",
-    "example": "祖母と四歳の妹に＿＿＿をたのんで、田舎へ出かけました。",
+    "ja": "貧血",
+    "reading": "ひんけつ",
+    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること",
+    "example": "＿＿＿を起こしたときに見える、白々とした光景によく似ている。",
     "review": true
   },
   {
@@ -164,6 +150,13 @@ const words = [
     "review": true
   },
   {
+    "ja": "原子爆弾",
+    "reading": "げんしばくだん",
+    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
+    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "review": true
+  },
+  {
     "ja": "交換",
     "reading": "こうかん",
     "meaning": "<ruby>交換<rt>こうかん</rt></ruby> ／ とりかえること。「着物を米と交換してもらっていました」",
@@ -171,52 +164,59 @@ const words = [
     "review": true
   },
   {
-    "ja": "爆",
-    "reading": "バク",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
-    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "ja": "日陰",
+    "reading": "ひかげ",
+    "meaning": "<ruby>日陰<rt>ひかげ</rt></ruby> ／ かげ。日が当たらないところ",
+    "example": "＿＿＿もない校庭の隅っこで背中を丸めていた。",
     "review": true
   },
   {
-    "ja": "菓",
-    "reading": "カ",
-    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
-    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
+    "ja": "探る",
+    "reading": "さぐる",
+    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
+    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
     "review": true
   },
   {
-    "ja": "渓流",
-    "reading": "けいりゅう",
-    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby> ／ 谷を流れる川。「きれいな渓流に沿って」",
-    "example": "きれいな＿＿＿に沿って山路へかかりました。",
+    "ja": "駆け寄る",
+    "reading": "かけよる",
+    "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく",
+    "example": "窓に＿＿＿って下をのぞいた。",
     "review": true
   },
   {
-    "ja": "配給",
-    "reading": "はいきゅう",
-    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
-    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
+    "ja": "抱える",
+    "reading": "かかえる",
+    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
+    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
     "review": true
   },
   {
-    "ja": "杉",
-    "reading": "すぎ",
-    "meaning": "<ruby>杉<rt>すぎ</rt></ruby>・<ruby>杉並木<rt>すぎなみき</rt></ruby> ／ まっすぐ高くのびる木",
-    "example": "農家のおじいさんが、＿板を削って小さな小さな棺を作ってくださいました。",
+    "ja": "常緑樹",
+    "reading": "じょうりょくじゅ",
+    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
+    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
     "review": true
   },
   {
-    "ja": "魂",
-    "reading": "たましい",
-    "meaning": "<ruby>魂<rt>たましい</rt></ruby> ／ たましい。体の中にある、その人の心そのもの",
-    "example": "＿＿＿がぬるぬるとけ出してしまいそうに暑かった。",
+    "ja": "涙",
+    "reading": "なみだ",
+    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水",
+    "example": "＿＿＿がにじんできたのは、あんまり笑いすぎたせいだ。",
     "review": true
   },
   {
-    "ja": "慮",
-    "reading": "リョ",
-    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby>・<ruby>配慮<rt>はいりょ</rt></ruby> ／ よく考える・気をつかう",
-    "example": "母は弟が死んでいるので、ほかの人に遠＿したのでしょう。",
+    "ja": "唇",
+    "reading": "くちびる",
+    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
+    "example": "＿＿＿がふるえているし、目のふちが熱い。",
+    "review": true
+  },
+  {
+    "ja": "塾",
+    "reading": "じゅく",
+    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
+    "example": "なんで同じ＿＿＿に入っているのか。",
     "review": true
   }
 ];

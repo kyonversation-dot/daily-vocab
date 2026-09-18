@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "seen": [
     "描写",
     "心情",
@@ -140,31 +140,39 @@
   ],
   "today": [
     {
-      "ja": "一里",
+      "ja": "防空壕",
       "review": true
     },
     {
-      "ja": "原子爆弾",
+      "ja": "表記",
       "review": true
     },
     {
-      "ja": "眺める",
+      "ja": "けんか",
       "review": true
     },
     {
-      "ja": "首をかしげる",
+      "ja": "自習",
       "review": true
     },
     {
-      "ja": "六畳間",
+      "ja": "眺め",
       "review": true
     },
     {
-      "ja": "磨く",
+      "ja": "春先",
       "review": true
     },
     {
-      "ja": "対岸",
+      "ja": "一文",
+      "review": true
+    },
+    {
+      "ja": "とうてい",
+      "review": true
+    },
+    {
+      "ja": "八つ当たり",
       "review": true
     },
     {
@@ -172,19 +180,11 @@
       "review": true
     },
     {
-      "ja": "銀木犀",
+      "ja": "結末",
       "review": true
     },
     {
-      "ja": "サバンナ",
-      "review": true
-    },
-    {
-      "ja": "棺",
-      "review": true
-    },
-    {
-      "ja": "語り手",
+      "ja": "想像",
       "review": true
     }
   ]
