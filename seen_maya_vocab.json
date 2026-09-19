@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,19 +281,15 @@
   ],
   "today": [
     {
-      "ja": "供養塔",
+      "ja": "体験",
       "review": true
     },
     {
-      "ja": "賛成",
+      "ja": "寄せる",
       "review": true
     },
     {
-      "ja": "陳列",
-      "review": true
-    },
-    {
-      "ja": "構成",
+      "ja": "意見",
       "review": true
     },
     {
@@ -301,31 +297,35 @@
       "review": true
     },
     {
-      "ja": "調査",
+      "ja": "立場",
       "review": true
     },
     {
-      "ja": "過去",
+      "ja": "証明",
       "review": true
     },
     {
-      "ja": "経験",
+      "ja": "発表",
       "review": true
     },
     {
-      "ja": "平和学習",
+      "ja": "事実",
       "review": true
     },
     {
-      "ja": "志",
+      "ja": "明確",
       "review": true
     },
     {
-      "ja": "感触",
+      "ja": "判定",
       "review": true
     },
     {
-      "ja": "追悼",
+      "ja": "比べる",
+      "review": true
+    },
+    {
+      "ja": "損",
       "review": true
     }
   ]

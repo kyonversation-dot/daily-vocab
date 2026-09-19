@@ -165,24 +165,80 @@
 <script>
 const allWords = ([
   {
-    "ja": "貧血",
-    "reading": "ひんけつ",
-    "meaning": "<ruby>貧血<rt>ひんけつ</rt></ruby> ／ ヒンケツ。血が足りなくて、めまいがしたり目の前が白くなったりすること",
-    "example": "＿＿＿を起こしたときに見える、白々とした光景によく似ている。",
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
-    "ja": "隣村",
-    "reading": "となりむら",
-    "meaning": "<ruby>隣村<rt>となりむら</rt></ruby> ／ となりの村。「隣村にやぎを飼っている農家がある」",
-    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が着物を包んで出かけました。",
+    "ja": "配給",
+    "reading": "はいきゅう",
+    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
+    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "山あい",
+    "reading": "やまあい",
+    "meaning": "<ruby>山あい<rt>やまあい</rt></ruby> ／ 山と山のあいだ。「石釜という山あいの村」",
+    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "review": true
+  },
+  {
+    "ja": "背ける",
+    "reading": "そむける",
+    "meaning": "<ruby>背ける<rt>そむける</rt></ruby> ／ そむける。顔や目をよそへ向ける",
+    "example": "夏実は私からすっと顔を＿＿＿た。",
+    "review": true
+  },
+  {
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "review": true
+  },
+  {
+    "ja": "栄養失調",
+    "reading": "えいようしっちょう",
+    "meaning": "<ruby>栄養失調<rt>えいようしっちょう</rt></ruby> ／ 食べ物が足りず、体に必要な栄養がとれない状態。弟の死んだ原因",
+    "example": "病名はありません。＿＿＿です……。",
+    "review": true
+  },
+  {
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "歳",
+    "reading": "サイ／セイ",
+    "meaning": "<ruby>十歳<rt>じっさい</rt></ruby>・<ruby>歳月<rt>さいげつ</rt></ruby> ／ とし・年れい",
+    "example": "祖母と四＿の妹に留守番をたのんで、田舎へ出かけました。",
+    "review": true
+  },
+  {
+    "ja": "祖母",
+    "reading": "そぼ",
+    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
+    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
+    "review": true
+  },
+  {
+    "ja": "太平洋戦争",
+    "reading": "たいへいようせんそう",
+    "meaning": "<ruby>太平洋戦争<rt>たいへいようせんそう</rt></ruby> ／ 1941〜1945年の戦争。この物語の時代",
+    "example": "＿＿＿の真っ最中です。",
+    "review": true
+  },
+  {
+    "ja": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
+    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
     "review": true
   },
   {
@@ -190,62 +246,6 @@ const allWords = ([
     "reading": "こうかん",
     "meaning": "<ruby>交換<rt>こうかん</rt></ruby> ／ とりかえること。「着物を米と交換してもらっていました」",
     "example": "近所の農家の人たちにお願いして、米と＿＿＿してもらっていました。",
-    "review": true
-  },
-  {
-    "ja": "日陰",
-    "reading": "ひかげ",
-    "meaning": "<ruby>日陰<rt>ひかげ</rt></ruby> ／ かげ。日が当たらないところ",
-    "example": "＿＿＿もない校庭の隅っこで背中を丸めていた。",
-    "review": true
-  },
-  {
-    "ja": "探る",
-    "reading": "さぐる",
-    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
-    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
-    "review": true
-  },
-  {
-    "ja": "駆け寄る",
-    "reading": "かけよる",
-    "meaning": "<ruby>駆け寄る<rt>かけよる</rt></ruby> ／ かける。走って近づく",
-    "example": "窓に＿＿＿って下をのぞいた。",
-    "review": true
-  },
-  {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
-    "review": true
-  },
-  {
-    "ja": "常緑樹",
-    "reading": "じょうりょくじゅ",
-    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
-    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
-    "review": true
-  },
-  {
-    "ja": "涙",
-    "reading": "なみだ",
-    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水",
-    "example": "＿＿＿がにじんできたのは、あんまり笑いすぎたせいだ。",
-    "review": true
-  },
-  {
-    "ja": "唇",
-    "reading": "くちびる",
-    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
-    "example": "＿＿＿がふるえているし、目のふちが熱い。",
-    "review": true
-  },
-  {
-    "ja": "塾",
-    "reading": "じゅく",
-    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
-    "example": "なんで同じ＿＿＿に入っているのか。",
     "review": true
   }
 ]).filter(w => w.example);
