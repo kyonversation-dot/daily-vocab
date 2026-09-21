@@ -1,6 +1,6 @@
 {
   "unit": "小学6年生の漢字",
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "seen": [
     "胃",
     "異",
@@ -194,51 +194,51 @@
   ],
   "today": [
     {
+      "ja": "宗",
+      "review": true
+    },
+    {
+      "ja": "敬",
+      "review": true
+    },
+    {
+      "ja": "至",
+      "review": true
+    },
+    {
+      "ja": "胸",
+      "review": true
+    },
+    {
       "ja": "宇",
       "review": true
     },
     {
-      "ja": "将",
+      "ja": "磁",
       "review": true
     },
     {
-      "ja": "灰",
+      "ja": "針",
       "review": true
     },
     {
-      "ja": "誠",
-      "review": true
-    },
-    {
-      "ja": "疑",
-      "review": true
-    },
-    {
-      "ja": "潮",
-      "review": true
-    },
-    {
-      "ja": "脳",
-      "review": true
-    },
-    {
-      "ja": "筋",
-      "review": true
-    },
-    {
-      "ja": "衆",
-      "review": true
-    },
-    {
-      "ja": "窓",
-      "review": true
-    },
-    {
-      "ja": "庁",
+      "ja": "敵",
       "review": true
     },
     {
       "ja": "装",
+      "review": true
+    },
+    {
+      "ja": "我",
+      "review": true
+    },
+    {
+      "ja": "処",
+      "review": true
+    },
+    {
+      "ja": "疑",
       "review": true
     }
   ]

@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "seen": [
     "描写",
     "心情",
@@ -140,7 +140,11 @@
   ],
   "today": [
     {
-      "ja": "時代背景",
+      "ja": "遠慮",
+      "review": true
+    },
+    {
+      "ja": "片仮名",
       "review": true
     },
     {
@@ -148,27 +152,27 @@
       "review": true
     },
     {
-      "ja": "展開",
+      "ja": "段落",
       "review": true
     },
     {
-      "ja": "息をひきとる",
+      "ja": "象徴",
       "review": true
     },
     {
-      "ja": "直接",
+      "ja": "朗読",
       "review": true
     },
     {
-      "ja": "六畳間",
+      "ja": "引用",
       "review": true
     },
     {
-      "ja": "一里",
+      "ja": "抱える",
       "review": true
     },
     {
-      "ja": "〜なり",
+      "ja": "香水",
       "review": true
     },
     {
@@ -176,15 +180,11 @@
       "review": true
     },
     {
-      "ja": "題名",
+      "ja": "比喩",
       "review": true
     },
     {
-      "ja": "桃源郷",
-      "review": true
-    },
-    {
-      "ja": "留守番",
+      "ja": "展開",
       "review": true
     }
   ]

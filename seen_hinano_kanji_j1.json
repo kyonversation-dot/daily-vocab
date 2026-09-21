@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "seen": [
     "撃",
     "爆",
@@ -100,19 +100,31 @@
   ],
   "today": [
     {
-      "ja": "渓",
+      "ja": "輪郭",
       "review": true
     },
     {
-      "ja": "涙",
+      "ja": "田舎",
       "review": true
     },
     {
-      "ja": "棺",
+      "ja": "桃源郷",
       "review": true
     },
     {
-      "ja": "襲",
+      "ja": "相談",
+      "review": true
+    },
+    {
+      "ja": "爆撃",
+      "review": true
+    },
+    {
+      "ja": "祖母",
+      "review": true
+    },
+    {
+      "ja": "歳",
       "review": true
     },
     {
@@ -120,31 +132,19 @@
       "review": true
     },
     {
-      "ja": "親戚",
+      "ja": "襲",
       "review": true
     },
     {
-      "ja": "慮",
+      "ja": "山あい",
       "review": true
     },
     {
-      "ja": "着物",
+      "ja": "機体",
       "review": true
     },
     {
-      "ja": "掘",
-      "review": true
-    },
-    {
-      "ja": "荷物",
-      "review": true
-    },
-    {
-      "ja": "田植え",
-      "review": true
-    },
-    {
-      "ja": "菓",
+      "ja": "真っ最中",
       "review": true
     }
   ]
