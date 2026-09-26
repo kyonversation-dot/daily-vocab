@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "seen": [
     "描写",
     "心情",
@@ -140,35 +140,31 @@
   ],
   "today": [
     {
-      "ja": "サバンナ",
+      "ja": "渓流",
       "review": true
     },
     {
-      "ja": "日差し",
+      "ja": "冒頭",
       "review": true
     },
     {
-      "ja": "閉じ込める",
+      "ja": "きまりが悪い",
       "review": true
     },
     {
-      "ja": "にじむ",
+      "ja": "飛び石",
       "review": true
     },
     {
-      "ja": "八つ当たり",
+      "ja": "桃源郷",
       "review": true
     },
     {
-      "ja": "擦れ違い",
+      "ja": "配給",
       "review": true
     },
     {
-      "ja": "春先",
-      "review": true
-    },
-    {
-      "ja": "誘う",
+      "ja": "おもゆ",
       "review": true
     },
     {
@@ -176,15 +172,19 @@
       "review": true
     },
     {
-      "ja": "通路",
+      "ja": "黙々と",
       "review": true
     },
     {
-      "ja": "ポプリ",
+      "ja": "視点",
       "review": true
     },
     {
-      "ja": "香水",
+      "ja": "にじむ",
+      "review": true
+    },
+    {
+      "ja": "捉える",
       "review": true
     }
   ]

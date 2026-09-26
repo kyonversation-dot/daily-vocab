@@ -136,31 +136,24 @@
 <script>
 const words = [
   {
-    "ja": "農家",
-    "reading": "のうか",
-    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
-    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
+    "ja": "着物",
+    "reading": "きもの",
+    "meaning": "<ruby>着物<rt>きもの</rt></ruby> ／ 日本のふく。母が米と交換したもの。「母の着物はなくなりました」",
+    "example": "母の＿＿＿はなくなりました。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "欲",
+    "reading": "ヨク／ほ(しい)",
+    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
+    "example": "僕は弟が＿しかったので、よくかわいがりました。",
     "review": true
   },
   {
-    "ja": "隣村",
-    "reading": "となりむら",
-    "meaning": "<ruby>隣村<rt>となりむら</rt></ruby> ／ となりの村。「隣村にやぎを飼っている農家がある」",
-    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が着物を包んで出かけました。",
-    "review": true
-  },
-  {
-    "ja": "探る",
-    "reading": "さぐる",
-    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
-    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
+    "ja": "爆撃",
+    "reading": "ばくげき",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby> ／ 飛行機から爆弾を落としてこうげきすること",
+    "example": "空襲の＿＿＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
@@ -171,52 +164,59 @@ const words = [
     "review": true
   },
   {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "<ruby>山あい<rt>やまあい</rt></ruby> ／ 山と山のあいだ。「石釜という山あいの村」",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "ja": "祖母",
+    "reading": "そぼ",
+    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
+    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
     "review": true
   },
   {
-    "ja": "太平洋戦争",
-    "reading": "たいへいようせんそう",
-    "meaning": "<ruby>太平洋戦争<rt>たいへいようせんそう</rt></ruby> ／ 1941〜1945年の戦争。この物語の時代",
-    "example": "＿＿＿の真っ最中です。",
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
     "review": true
   },
   {
-    "ja": "弾",
-    "reading": "ダン／たま・はず(む)",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
-    "example": "これからの生活に胸を＿ませました。",
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
     "review": true
   },
   {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
+    "ja": "農家",
+    "reading": "のうか",
+    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
+    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
     "review": true
   },
   {
-    "ja": "缶",
-    "reading": "カン",
-    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
-    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "ja": "塾",
+    "reading": "じゅく",
+    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
+    "example": "なんで同じ＿＿＿に入っているのか。",
     "review": true
   },
   {
-    "ja": "戻る",
-    "reading": "もどる",
-    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
-    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
     "review": true
   },
   {
-    "ja": "四歳",
-    "reading": "よんさい",
-    "meaning": "<ruby>四歳<rt>よんさい</rt></ruby> ／ 4さい。「四歳の妹に留守番をたのんで」",
-    "example": "祖母と＿＿＿の妹に留守番をたのんで、田舎へ出かけました。",
+    "ja": "看護婦",
+    "reading": "かんごふ",
+    "meaning": "<ruby>看護婦<rt>かんごふ</rt></ruby> ／ 今でいう看護師。「お医者さん、看護婦さんにみとられて」",
+    "example": "母と兄とお医者さん、＿＿＿さんにみとられて死んだのだから。",
+    "review": true
+  },
+  {
+    "ja": "原子爆弾",
+    "reading": "げんしばくだん",
+    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
+    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
     "review": true
   }
 ];
