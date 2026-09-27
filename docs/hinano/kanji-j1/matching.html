@@ -164,52 +164,10 @@
 <script>
 const allWords = [
   {
-    "ja": "着物",
-    "reading": "きもの",
-    "meaning": "<ruby>着物<rt>きもの</rt></ruby> ／ 日本のふく。母が米と交換したもの。「母の着物はなくなりました」",
-    "example": "母の＿＿＿はなくなりました。",
-    "review": true
-  },
-  {
-    "ja": "欲",
-    "reading": "ヨク／ほ(しい)",
-    "meaning": "<ruby>欲<rt>ほ</rt></ruby>しい・<ruby>食欲<rt>しょくよく</rt></ruby> ／ 手に入れたいと思う気持ち",
-    "example": "僕は弟が＿しかったので、よくかわいがりました。",
-    "review": true
-  },
-  {
-    "ja": "爆撃",
-    "reading": "ばくげき",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby> ／ 飛行機から爆弾を落としてこうげきすること",
-    "example": "空襲の＿＿＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
-    "review": true
-  },
-  {
-    "ja": "渡",
-    "reading": "ト／わた(る)",
-    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
-    "example": "下流の橋を＿って学校に行きました。",
-    "review": true
-  },
-  {
-    "ja": "祖母",
-    "reading": "そぼ",
-    "meaning": "<ruby>祖母<rt>そぼ</rt></ruby> ／ おばあさん。「家族は、僕と母と祖母と妹と弟の五人」",
-    "example": "家族は、僕と母と＿＿＿と妹と弟の五人です。",
-    "review": true
-  },
-  {
-    "ja": "僕",
-    "reading": "ボク",
-    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
-    "example": "＿の弟の名前は、ヒロユキといいます。",
-    "review": true
-  },
-  {
-    "ja": "疎",
-    "reading": "ソ／うと(い)",
-    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
-    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
@@ -220,31 +178,73 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "塾",
-    "reading": "じゅく",
-    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
-    "example": "なんで同じ＿＿＿に入っているのか。",
+    "ja": "桃",
+    "reading": "トウ／もも",
+    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
+    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
     "review": true
   },
   {
-    "ja": "菓",
-    "reading": "カ",
-    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
-    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
+    "ja": "病院",
+    "reading": "びょういん",
+    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
+    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
     "review": true
   },
   {
-    "ja": "看護婦",
-    "reading": "かんごふ",
-    "meaning": "<ruby>看護婦<rt>かんごふ</rt></ruby> ／ 今でいう看護師。「お医者さん、看護婦さんにみとられて」",
-    "example": "母と兄とお医者さん、＿＿＿さんにみとられて死んだのだから。",
+    "ja": "弾",
+    "reading": "ダン／たま・はず(む)",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
+    "example": "これからの生活に胸を＿ませました。",
     "review": true
   },
   {
-    "ja": "原子爆弾",
-    "reading": "げんしばくだん",
-    "meaning": "<ruby>原子爆弾<rt>げんしばくだん</rt></ruby> ／ 1945年8月6日にヒロシマ、9日にナガサキに落とされた",
-    "example": "弟が死んで九日後の八月六日に、ヒロシマに＿＿＿が落とされました。",
+    "ja": "拭く",
+    "reading": "ぬぐう",
+    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る",
+    "example": "顔を＿＿＿ながら振り返ると、戸部君が言った。",
+    "review": true
+  },
+  {
+    "ja": "騒々しさ",
+    "reading": "そうぞうしさ",
+    "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること",
+    "example": "＿＿＿がやっと耳に戻ったとき、戸部君がこちらを見ていることに気づいた。",
+    "review": true
+  },
+  {
+    "ja": "押す",
+    "reading": "おす",
+    "meaning": "<ruby>押す<rt>おす</rt></ruby> ／ おす／おさえる。力を加えて動かす",
+    "example": "私は戸部君を＿＿＿のけるようにして立ち上がると、廊下に向かった。",
+    "review": true
+  },
+  {
+    "ja": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
+    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
+    "review": true
+  },
+  {
+    "ja": "抱える",
+    "reading": "かかえる",
+    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
+    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
+    "review": true
+  },
+  {
+    "ja": "下流",
+    "reading": "かりゅう",
+    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
+    "example": "＿＿＿の橋を渡って学校に行きました。",
+    "review": true
+  },
+  {
+    "ja": "太平洋戦争",
+    "reading": "たいへいようせんそう",
+    "meaning": "<ruby>太平洋戦争<rt>たいへいようせんそう</rt></ruby> ／ 1941〜1945年の戦争。この物語の時代",
+    "example": "＿＿＿の真っ最中です。",
     "review": true
   }
 ];
