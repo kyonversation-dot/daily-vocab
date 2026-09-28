@@ -164,10 +164,52 @@
 <script>
 const allWords = [
   {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
+    "ja": "含",
+    "reading": "ガン／ふく(む)",
+    "meaning": "<ruby>含<rt>ふく</rt></ruby>む・<ruby>含有<rt>がんゆう</rt></ruby> ／ 中に入っている",
+    "example": "小さな小さな口に、綿に＿ませた水を飲ませた夜を、僕は忘れられません。",
+    "review": true
+  },
+  {
+    "ja": "疎",
+    "reading": "ソ／うと(い)",
+    "meaning": "<ruby>疎開<rt>そかい</rt></ruby>・<ruby>疎<rt>うと</rt></ruby>い ／ 遠ざける・親しくない",
+    "example": "あまり空襲がひどくなってきたので、母は＿開しようと言いだしました。",
+    "review": true
+  },
+  {
+    "ja": "一部屋",
+    "reading": "ひとへや",
+    "meaning": "<ruby>一部屋<rt>ひとへや</rt></ruby> ／ 部屋ひとつ",
+    "example": "その農家の庭に面した六畳間の＿＿＿を借りました。",
+    "review": true
+  },
+  {
+    "ja": "乾",
+    "reading": "カン／かわ(く)",
+    "meaning": "<ruby>乾<rt>かわ</rt></ruby>く・<ruby>乾燥<rt>かんそう</rt></ruby> ／ 水気（みずけ）がなくなる",
+    "example": "白い＿いた一本道を、三人で山の村に向かって歩き続けました。",
+    "review": true
+  },
+  {
+    "ja": "僕",
+    "reading": "ボク",
+    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
+    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "review": true
+  },
+  {
+    "ja": "戻る",
+    "reading": "もどる",
+    "meaning": "<ruby>戻る<rt>もどる</rt></ruby> ／ もどる／もどす。もとのところへ帰る",
+    "example": "騒々しさがやっと耳に＿＿＿たとき、",
+    "review": true
+  },
+  {
+    "ja": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "<ruby>遠慮<rt>えんりょ</rt></ruby> ／ 相手を思って、ひかえめにすること。「ほかの人に遠慮したのでしょう」",
+    "example": "母は弟が死んでいるので、ほかの人に＿＿＿したのでしょう。",
     "review": true
   },
   {
@@ -178,73 +220,31 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "桃",
-    "reading": "トウ／もも",
-    "meaning": "<ruby>桃<rt>もも</rt></ruby>・<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ ももの木・その<ruby>実<rt>み</rt></ruby>",
-    "example": "美しい青空、＿の花が咲く山村、橋の上からはあゆの泳ぐのが見られます。",
+    "ja": "常緑樹",
+    "reading": "じょうりょくじゅ",
+    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
+    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
     "review": true
   },
   {
-    "ja": "病院",
-    "reading": "びょういん",
-    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
-    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
+    "ja": "覆",
+    "reading": "フク／おお(う)",
+    "meaning": "<ruby>覆<rt>おお</rt></ruby>う・<ruby>覆面<rt>ふくめん</rt></ruby> ／ 上からかぶせる・おおいかぶさる",
+    "example": "すぐ裏の山が頭の上に＿いかぶさるような山すそにありました。",
     "review": true
   },
   {
-    "ja": "弾",
-    "reading": "ダン／たま・はず(む)",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>弾<rt>はず</rt></ruby>む ／ たま・はねかえる。「<ruby>胸<rt>むね</rt></ruby>を弾ませる」",
-    "example": "これからの生活に胸を＿ませました。",
+    "ja": "空襲",
+    "reading": "くうしゅう",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby> ／ 飛行機で上からおそうこと。「空襲がひどくなってきたので」",
+    "example": "あまり＿＿＿がひどくなってきたので、母は疎開しようと言いだしました。",
     "review": true
   },
   {
-    "ja": "拭く",
-    "reading": "ぬぐう",
-    "meaning": "<ruby>拭く<rt>ぬぐう</rt></ruby> ／ ぬぐう／ふく。こすって水やよごれを取る",
-    "example": "顔を＿＿＿ながら振り返ると、戸部君が言った。",
-    "review": true
-  },
-  {
-    "ja": "騒々しさ",
-    "reading": "そうぞうしさ",
-    "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること",
-    "example": "＿＿＿がやっと耳に戻ったとき、戸部君がこちらを見ていることに気づいた。",
-    "review": true
-  },
-  {
-    "ja": "押す",
-    "reading": "おす",
-    "meaning": "<ruby>押す<rt>おす</rt></ruby> ／ おす／おさえる。力を加えて動かす",
-    "example": "私は戸部君を＿＿＿のけるようにして立ち上がると、廊下に向かった。",
-    "review": true
-  },
-  {
-    "ja": "飛行機",
-    "reading": "ひこうき",
-    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
-    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
-    "review": true
-  },
-  {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
-    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
-    "review": true
-  },
-  {
-    "ja": "下流",
-    "reading": "かりゅう",
-    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
-    "example": "＿＿＿の橋を渡って学校に行きました。",
-    "review": true
-  },
-  {
-    "ja": "太平洋戦争",
-    "reading": "たいへいようせんそう",
-    "meaning": "<ruby>太平洋戦争<rt>たいへいようせんそう</rt></ruby> ／ 1941〜1945年の戦争。この物語の時代",
-    "example": "＿＿＿の真っ最中です。",
+    "ja": "戚",
+    "reading": "セキ",
+    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
+    "example": "親＿の人は、うちに食べ物はないと言いました。",
     "review": true
   }
 ];

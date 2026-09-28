@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,31 +281,11 @@
   ],
   "today": [
     {
-      "ja": "厚い",
+      "ja": "適当",
       "review": true
     },
     {
-      "ja": "確実",
-      "review": true
-    },
-    {
-      "ja": "説明",
-      "review": true
-    },
-    {
-      "ja": "慣れる",
-      "review": true
-    },
-    {
-      "ja": "個人情報",
-      "review": true
-    },
-    {
-      "ja": "逆",
-      "review": true
-    },
-    {
-      "ja": "便利",
+      "ja": "川土手",
       "review": true
     },
     {
@@ -313,19 +293,39 @@
       "review": true
     },
     {
-      "ja": "居間",
+      "ja": "リード文",
       "review": true
     },
     {
-      "ja": "効果",
+      "ja": "寄せる",
       "review": true
     },
     {
-      "ja": "報道",
+      "ja": "解説",
       "review": true
     },
     {
-      "ja": "険しい",
+      "ja": "基本",
+      "review": true
+    },
+    {
+      "ja": "登下校",
+      "review": true
+    },
+    {
+      "ja": "得意",
+      "review": true
+    },
+    {
+      "ja": "本文",
+      "review": true
+    },
+    {
+      "ja": "説得",
+      "review": true
+    },
+    {
+      "ja": "立場",
       "review": true
     }
   ]

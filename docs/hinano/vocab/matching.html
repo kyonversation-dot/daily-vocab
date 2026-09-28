@@ -161,10 +161,17 @@
 <script>
 const allWords = [
   {
-    "ja": "親戚",
-    "reading": "しんせき",
-    "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち",
-    "example": "＿＿＿の人は、うちに食べ物はないと言いました。",
+    "ja": "情景",
+    "reading": "じょうけい",
+    "meaning": "<ruby>目<rt>め</rt></ruby>にうかんでくる<ruby>場面<rt>ばめん</rt></ruby>のようす",
+    "example": "「白い乾いた一本道」は、その場の＿＿＿が目に浮かぶ言葉だ。",
+    "review": true
+  },
+  {
+    "ja": "比喩",
+    "reading": "ひゆ",
+    "meaning": "<ruby>比喩<rt>ひゆ</rt></ruby> ／ 「〜のように」などを使って、別のものにたとえる言い方",
+    "example": "「雪が降るように」のような＿＿＿表現をさがそう。",
     "review": true
   },
   {
@@ -175,24 +182,17 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "山すそ",
-    "reading": "やますそ",
-    "meaning": "山の下のほう・ふもと",
-    "example": "僕たちがお世話になる農家は、山が頭の上に覆いかぶさるような＿＿＿にありました。",
+    "ja": "三里",
+    "reading": "さんり",
+    "meaning": "一里の3ばい。<ruby>約<rt>やく</rt></ruby>12キロメートル（歩くと3時間くらい）",
+    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
     "review": true
   },
   {
-    "ja": "冒頭",
-    "reading": "ぼうとう",
-    "meaning": "<ruby>冒頭<rt>ぼうとう</rt></ruby> ／ 文章のいちばん初めの部分",
-    "example": "＿＿＿と結末に登場する物や場所に着目して、違いを考えるとよい。",
-    "review": true
-  },
-  {
-    "ja": "段落",
-    "reading": "だんらく",
-    "meaning": "文章のまとまり。<ruby>一字下<rt>いちじさ</rt></ruby>げて<ruby>始<rt>はじ</rt></ruby>まる",
-    "example": "「母の着物はなくなりました。」は、一文だけで一つの＿＿＿になっている。",
+    "ja": "対比",
+    "reading": "たいひ",
+    "meaning": "二つをならべて、ちがいをきわだたせること",
+    "example": "「一本道」と「白い乾いた一本道」を＿＿＿すると、受ける印象がちがう。",
     "review": true
   },
   {
@@ -203,45 +203,45 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "抱える",
-    "reading": "かかえる",
-    "meaning": "<ruby>抱<rt>かか</rt></ruby>える ／ 両手でかかえ持つ",
-    "example": "おばさんは、よいしょと言って掃除道具を＿＿＿ると公園の反対側に歩いていった。",
+    "ja": "抑揚",
+    "reading": "よくよう",
+    "meaning": "<ruby>声<rt>こえ</rt></ruby>の高さや強さの上げ下げ",
+    "example": "「母は初めて泣きました。」は、＿＿＿をつけずに静かに読むと重く響く。",
     "review": true
   },
   {
-    "ja": "おちおち",
-    "reading": "おちおち",
-    "meaning": "<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて。「おちおちねていられない」＝安心してねられない",
-    "example": "夜も＿＿＿ねていられません。",
+    "ja": "六畳間",
+    "reading": "ろくじょうま",
+    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>",
+    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
     "review": true
   },
   {
-    "ja": "対岸",
-    "reading": "たいがん",
-    "meaning": "川や海の<ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>の<ruby>岸<rt>きし</rt></ruby>",
-    "example": "家の前の渓流には飛び石が＿＿＿に続き、大雨の日は渡れません。",
+    "ja": "交換",
+    "reading": "こうかん",
+    "meaning": "とりかえること。「<ruby>着物<rt>きもの</rt></ruby>を米と交換する」",
+    "example": "近所の農家の人たちにお願いして、米と＿＿＿してもらっていました。",
     "review": true
   },
   {
-    "ja": "あせる",
-    "reading": "あせる",
-    "meaning": "あせる ／ 色がうすくなる。さめる（＊「急ぐ」のあせるとは別）",
-    "example": "花びらは小さく縮んで、もう色がすっかり＿＿＿ている。",
+    "ja": "根拠",
+    "reading": "こんきょ",
+    "meaning": "そう考えたもとになる<ruby>事実<rt>じじつ</rt></ruby>。「本文のどこが根拠ですか」",
+    "example": "自分の考えを言うときは、本文のどこが＿＿＿かも一緒に言う。",
     "review": true
   },
   {
-    "ja": "展開",
-    "reading": "てんかい",
-    "meaning": "<ruby>話<rt>はなし</rt></ruby>が先へ進んで、場面が<ruby>変<rt>か</rt></ruby>わっていくこと",
-    "example": "弟の入院から死へと、物語が＿＿＿していく。",
+    "ja": "ひもじい",
+    "reading": "ひもじい",
+    "meaning": "おなかがすいて、つらい",
+    "example": "何日もろくに食べていなくて、＿＿＿。",
     "review": true
   },
   {
-    "ja": "桃源郷",
-    "reading": "とうげんきょう",
-    "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園",
-    "example": "生まれて初めて見る、それは＿＿＿でした。",
+    "ja": "親戚",
+    "reading": "しんせき",
+    "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち",
+    "example": "＿＿＿の人は、うちに食べ物はないと言いました。",
     "review": true
   }
 ];
