@@ -136,33 +136,9 @@
 <script>
 const words = [
   {
-    "ja": "裁",
-    "reading": "サイ／たつ・さばく",
-    "meaning": "<ruby>裁判<rt>さいばん</rt></ruby>・<ruby>洋裁<rt>ようさい</rt></ruby> ／ 布をたつ・よい悪いをさばく",
-    "review": true
-  },
-  {
-    "ja": "劇",
-    "reading": "ゲキ",
-    "meaning": "<ruby>演劇<rt>えんげき</rt></ruby>・<ruby>劇場<rt>げきじょう</rt></ruby> ／ 人が<ruby>演<rt>えん</rt></ruby>じるお<ruby>芝居<rt>しばい</rt></ruby>",
-    "review": true
-  },
-  {
-    "ja": "棒",
-    "reading": "ボウ",
-    "meaning": "<ruby>鉄棒<rt>てつぼう</rt></ruby>・<ruby>相棒<rt>あいぼう</rt></ruby> ／ ぼう",
-    "review": true
-  },
-  {
-    "ja": "映",
-    "reading": "エイ／うつ(る)",
-    "meaning": "<ruby>映画<rt>えいが</rt></ruby>・<ruby>鏡<rt>かがみ</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る ／ 光や<ruby>姿<rt>すがた</rt></ruby>がうつること",
-    "review": true
-  },
-  {
-    "ja": "俵",
-    "reading": "ヒョウ／たわら",
-    "meaning": "<ruby>土俵<rt>どひょう</rt></ruby>・<ruby>米俵<rt>こめだわら</rt></ruby> ／ 米などを入れるふくろ",
+    "ja": "探",
+    "reading": "タン／さがす",
+    "meaning": "<ruby>探検<rt>たんけん</rt></ruby>・<ruby>探<rt>さが</rt></ruby>す ／ さがす",
     "review": true
   },
   {
@@ -172,39 +148,63 @@ const words = [
     "review": true
   },
   {
-    "ja": "奮",
-    "reading": "フン／ふるう",
-    "meaning": "<ruby>興奮<rt>こうふん</rt></ruby>・<ruby>奮起<rt>ふんき</rt></ruby> ／ 気持ちがもり上がる",
+    "ja": "憲",
+    "reading": "ケン",
+    "meaning": "<ruby>憲法<rt>けんぽう</rt></ruby> ／ 国の一番大事な<ruby>決<rt>き</rt></ruby>まり",
     "review": true
   },
   {
-    "ja": "閣",
-    "reading": "カク",
-    "meaning": "<ruby>内閣<rt>ないかく</rt></ruby>・<ruby>金閣寺<rt>きんかくじ</rt></ruby> ／ りっぱな<ruby>建物<rt>たてもの</rt></ruby>・国の中心",
+    "ja": "策",
+    "reading": "サク",
+    "meaning": "<ruby>対策<rt>たいさく</rt></ruby>・<ruby>政策<rt>せいさく</rt></ruby> ／ うまくやるための考え・やり方",
     "review": true
   },
   {
-    "ja": "認",
-    "reading": "ニン／みとめる",
-    "meaning": "<ruby>確認<rt>かくにん</rt></ruby>・<ruby>認<rt>みと</rt></ruby>める ／ そうだとみとめる",
+    "ja": "至",
+    "reading": "シ／いたる",
+    "meaning": "<ruby>至急<rt>しきゅう</rt></ruby>・<ruby>夏至<rt>げし</rt></ruby> ／ 行きつく・とても",
     "review": true
   },
   {
-    "ja": "密",
-    "reading": "ミツ",
-    "meaning": "<ruby>密集<rt>みっしゅう</rt></ruby>・<ruby>秘密<rt>ひみつ</rt></ruby> ／ すきまがない・ひみつ",
+    "ja": "宇",
+    "reading": "ウ",
+    "meaning": "<ruby>宇宙<rt>うちゅう</rt></ruby> ／ とても大きな空間",
     "review": true
   },
   {
-    "ja": "朗",
-    "reading": "ロウ／ほがらか",
-    "meaning": "<ruby>朗読<rt>ろうどく</rt></ruby>・<ruby>明朗<rt>めいろう</rt></ruby> ／ 明るくはっきり",
+    "ja": "勤",
+    "reading": "キン／つと(める)",
+    "meaning": "<ruby>勤務<rt>きんむ</rt></ruby>・<ruby>勤<rt>つと</rt></ruby>める ／ 仕事にはげむこと",
     "review": true
   },
   {
-    "ja": "宗",
-    "reading": "シュウ／ソウ",
-    "meaning": "<ruby>宗教<rt>しゅうきょう</rt></ruby>・<ruby>宗派<rt>しゅうは</rt></ruby> ／ おおもと・しんこう",
+    "ja": "系",
+    "reading": "ケイ",
+    "meaning": "<ruby>家系<rt>かけい</rt></ruby>・<ruby>太陽系<rt>たいようけい</rt></ruby> ／ つながり・グループ",
+    "review": true
+  },
+  {
+    "ja": "異",
+    "reading": "イ／こと(なる)",
+    "meaning": "<ruby>異国<rt>いこく</rt></ruby>・<ruby>異<rt>こと</rt></ruby>なる ／ ほかと<ruby>違<rt>ちが</rt></ruby>っていること",
+    "review": true
+  },
+  {
+    "ja": "郷",
+    "reading": "キョウ・ゴウ",
+    "meaning": "<ruby>郷土<rt>きょうど</rt></ruby>・<ruby>故郷<rt>こきょう</rt></ruby> ／ <ruby>生<rt>う</rt></ruby>まれた土地・ふるさと",
+    "review": true
+  },
+  {
+    "ja": "机",
+    "reading": "キ／つくえ",
+    "meaning": "<ruby>机<rt>つくえ</rt></ruby>・<ruby>学習机<rt>がくしゅうづくえ</rt></ruby> ／ べんきょうや<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>台<rt>だい</rt></ruby>",
+    "review": true
+  },
+  {
+    "ja": "冊",
+    "reading": "サツ／サク",
+    "meaning": "<ruby>一冊<rt>いっさつ</rt></ruby>・<ruby>別冊<rt>べっさつ</rt></ruby> ／ 本を数えることば",
     "review": true
   }
 ];
