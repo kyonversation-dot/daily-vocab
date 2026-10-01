@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "seen": [
     "描写",
     "心情",
@@ -140,7 +140,19 @@
   ],
   "today": [
     {
-      "ja": "棺",
+      "ja": "秘密基地",
+      "review": true
+    },
+    {
+      "ja": "防空壕",
+      "review": true
+    },
+    {
+      "ja": "象徴",
+      "review": true
+    },
+    {
+      "ja": "語り手",
       "review": true
     },
     {
@@ -148,31 +160,7 @@
       "review": true
     },
     {
-      "ja": "仲直り",
-      "review": true
-    },
-    {
-      "ja": "真夏日",
-      "review": true
-    },
-    {
-      "ja": "サバンナ",
-      "review": true
-    },
-    {
-      "ja": "秘密基地",
-      "review": true
-    },
-    {
-      "ja": "刈り込む",
-      "review": true
-    },
-    {
-      "ja": "自習",
-      "review": true
-    },
-    {
-      "ja": "熱心",
+      "ja": "八つ当たり",
       "review": true
     },
     {
@@ -180,11 +168,23 @@
       "review": true
     },
     {
-      "ja": "捉える",
+      "ja": "一里",
       "review": true
     },
     {
-      "ja": "留守番",
+      "ja": "仲直り",
+      "review": true
+    },
+    {
+      "ja": "看護婦",
+      "review": true
+    },
+    {
+      "ja": "刈り込む",
+      "review": true
+    },
+    {
+      "ja": "意外",
       "review": true
     }
   ]

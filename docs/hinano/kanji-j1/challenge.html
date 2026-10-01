@@ -136,38 +136,45 @@
 <script>
 const words = [
   {
-    "ja": "飛行機",
-    "reading": "ひこうき",
-    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
-    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
+    "ja": "対岸",
+    "reading": "たいがん",
+    "meaning": "<ruby>対岸<rt>たいがん</rt></ruby> ／ 川のむこう側の岸。「飛び石が対岸に続き」",
+    "example": "家の前の渓流には飛び石が＿＿＿に続き、大雨の日は渡れません。",
     "review": true
   },
   {
-    "ja": "塾",
-    "reading": "じゅく",
-    "meaning": "<ruby>塾<rt>じゅく</rt></ruby> ／ ジュク。学校のほかに勉強しに行くところ",
-    "example": "なんで同じ＿＿＿に入っているのか。",
+    "ja": "掃除",
+    "reading": "そうじ",
+    "meaning": "<ruby>掃除<rt>そうじ</rt></ruby> ／ ソウジ。ごみやよごれを取って、きれいにすること",
+    "example": "けど春先は、葉っぱが落ちて案外厄介なんだよ、＿＿＿がさ。",
     "review": true
   },
   {
-    "ja": "下流",
-    "reading": "かりゅう",
-    "meaning": "<ruby>下流<rt>かりゅう</rt></ruby> ／ 川の、流れていく先のほう。「下流の橋を渡って学校に」",
-    "example": "＿＿＿の橋を渡って学校に行きました。",
+    "ja": "一部屋",
+    "reading": "ひとへや",
+    "meaning": "<ruby>一部屋<rt>ひとへや</rt></ruby> ／ 部屋ひとつ",
+    "example": "その農家の庭に面した六畳間の＿＿＿を借りました。",
     "review": true
   },
   {
-    "ja": "戚",
-    "reading": "セキ",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ <ruby>血<rt>ち</rt></ruby>のつながった<ruby>身内<rt>みうち</rt></ruby>",
-    "example": "親＿の人は、うちに食べ物はないと言いました。",
+    "ja": "蛇口",
+    "reading": "じゃぐち",
+    "meaning": "<ruby>蛇口<rt>じゃぐち</rt></ruby> ／ ジャぐち。水道の、水を出す口",
+    "example": "立ち上がって水道の＿＿＿をひねった。",
     "review": true
   },
   {
-    "ja": "常緑樹",
-    "reading": "じょうりょくじゅ",
-    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
-    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
+    "ja": "厄介",
+    "reading": "やっかい",
+    "meaning": "<ruby>厄介<rt>やっかい</rt></ruby> ／ ヤッカイ。手間がかかって、めんどうなこと",
+    "example": "葉っぱが落ちて案外＿＿＿なんだよ。",
+    "review": true
+  },
+  {
+    "ja": "隣村",
+    "reading": "となりむら",
+    "meaning": "<ruby>隣村<rt>となりむら</rt></ruby> ／ となりの村。「隣村にやぎを飼っている農家がある」",
+    "example": "＿＿＿にやぎを飼っている農家があると聞いては、母が着物を包んで出かけました。",
     "review": true
   },
   {
@@ -178,24 +185,31 @@ const words = [
     "review": true
   },
   {
-    "ja": "対岸",
-    "reading": "たいがん",
-    "meaning": "<ruby>対岸<rt>たいがん</rt></ruby> ／ 川のむこう側の岸。「飛び石が対岸に続き」",
-    "example": "家の前の渓流には飛び石が＿＿＿に続き、大雨の日は渡れません。",
+    "ja": "刈る",
+    "reading": "かる",
+    "meaning": "<ruby>刈る<rt>かる</rt></ruby> ／ かる。草や枝を切りとる",
+    "example": "それをきれいに丸く＿＿＿込むので、木の下は丸屋根の部屋のようだ。",
     "review": true
   },
   {
-    "ja": "入院",
-    "reading": "にゅういん",
-    "meaning": "<ruby>入院<rt>にゅういん</rt></ruby> ／ 病院に入って治りょうすること",
-    "example": "僕たちの村から三里くらい離れた町の病院に＿＿＿しました。",
+    "ja": "襲",
+    "reading": "シュウ／おそ(う)",
+    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
+    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
     "review": true
   },
   {
-    "ja": "騒々しさ",
-    "reading": "そうぞうしさ",
-    "meaning": "<ruby>騒々しさ<rt>そうぞうしさ</rt></ruby> ／ ソウ／さわぐ。うるさく、がやがやしていること",
-    "example": "＿＿＿がやっと耳に戻ったとき、戸部君がこちらを見ていることに気づいた。",
+    "ja": "国民学校",
+    "reading": "こくみんがっこう",
+    "meaning": "<ruby>国民学校<rt>こくみんがっこう</rt></ruby> ／ 戦争中の小学校の呼び名。「小学校といわずに、国民学校といっていました」",
+    "example": "そのころは小学校といわずに、＿＿＿といっていました。",
+    "review": true
+  },
+  {
+    "ja": "先輩",
+    "reading": "せんぱい",
+    "meaning": "<ruby>先輩<rt>せんぱい</rt></ruby> ／ センパイ。自分より先にその学校や部にいる人",
+    "example": "なんでサッカー部なのに＿＿＿のように格好よくないのか。",
     "review": true
   },
   {
@@ -203,20 +217,6 @@ const words = [
     "reading": "たうえ",
     "meaning": "<ruby>田植え<rt>たうえ</rt></ruby> ／ 田んぼに稲のなえを植える仕事。「母は生まれて初めて田植えを手伝い」",
     "example": "母は生まれて初めて＿＿＿を手伝い、昼のご飯を僕たちに残して持って帰ってきました。",
-    "review": true
-  },
-  {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
-    "review": true
-  },
-  {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   }
 ];
