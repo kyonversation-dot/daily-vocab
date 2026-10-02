@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,51 +281,51 @@
   ],
   "today": [
     {
-      "ja": "順序",
+      "ja": "質問",
       "review": true
     },
     {
-      "ja": "再び",
+      "ja": "立場",
       "review": true
     },
     {
-      "ja": "解決",
+      "ja": "破る",
       "review": true
     },
     {
-      "ja": "現在",
+      "ja": "明確",
       "review": true
     },
     {
-      "ja": "応用",
+      "ja": "判断",
       "review": true
     },
     {
-      "ja": "講習",
+      "ja": "事実",
       "review": true
     },
     {
-      "ja": "演技",
+      "ja": "結論",
       "review": true
     },
     {
-      "ja": "翌日",
+      "ja": "判定",
       "review": true
     },
     {
-      "ja": "価格",
+      "ja": "短所",
       "review": true
     },
     {
-      "ja": "反対",
+      "ja": "提案",
       "review": true
     },
     {
-      "ja": "習慣",
+      "ja": "政治",
       "review": true
     },
     {
-      "ja": "炭化",
+      "ja": "説得",
       "review": true
     }
   ]
