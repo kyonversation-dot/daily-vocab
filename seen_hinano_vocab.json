@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "seen": [
     "描写",
     "心情",
@@ -140,39 +140,11 @@
   ],
   "today": [
     {
-      "ja": "草むしり",
+      "ja": "とまどう",
       "review": true
     },
     {
-      "ja": "履きかえる",
-      "review": true
-    },
-    {
-      "ja": "きまりが悪い",
-      "review": true
-    },
-    {
-      "ja": "磨く",
-      "review": true
-    },
-    {
-      "ja": "棺",
-      "review": true
-    },
-    {
-      "ja": "読み深める",
-      "review": true
-    },
-    {
-      "ja": "配給",
-      "review": true
-    },
-    {
-      "ja": "あたかも",
-      "review": true
-    },
-    {
-      "ja": "作者",
+      "ja": "空襲",
       "review": true
     },
     {
@@ -180,11 +152,39 @@
       "review": true
     },
     {
-      "ja": "ほころびる",
+      "ja": "対岸",
       "review": true
     },
     {
-      "ja": "真夏日",
+      "ja": "通路",
+      "review": true
+    },
+    {
+      "ja": "読み深める",
+      "review": true
+    },
+    {
+      "ja": "情景",
+      "review": true
+    },
+    {
+      "ja": "爆撃",
+      "review": true
+    },
+    {
+      "ja": "おちおち",
+      "review": true
+    },
+    {
+      "ja": "はるばる",
+      "review": true
+    },
+    {
+      "ja": "疎開者",
+      "review": true
+    },
+    {
+      "ja": "高じる",
       "review": true
     }
   ]

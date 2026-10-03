@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,15 +281,7 @@
   ],
   "today": [
     {
-      "ja": "質問",
-      "review": true
-    },
-    {
-      "ja": "立場",
-      "review": true
-    },
-    {
-      "ja": "破る",
+      "ja": "意見文",
       "review": true
     },
     {
@@ -297,35 +289,43 @@
       "review": true
     },
     {
-      "ja": "判断",
+      "ja": "司会",
       "review": true
     },
     {
-      "ja": "事実",
+      "ja": "豊か",
       "review": true
     },
     {
-      "ja": "結論",
+      "ja": "複雑",
       "review": true
     },
     {
-      "ja": "判定",
+      "ja": "可能",
       "review": true
     },
     {
-      "ja": "短所",
+      "ja": "妻",
       "review": true
     },
     {
-      "ja": "提案",
+      "ja": "仮定",
       "review": true
     },
     {
-      "ja": "政治",
+      "ja": "正義",
       "review": true
     },
     {
-      "ja": "説得",
+      "ja": "酸素",
+      "review": true
+    },
+    {
+      "ja": "習慣",
+      "review": true
+    },
+    {
+      "ja": "川土手",
       "review": true
     }
   ]

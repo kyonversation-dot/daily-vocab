@@ -164,9 +164,39 @@
 <script>
 const allWords = [
   {
-    "ja": "巻",
-    "reading": "カン／ま(く)",
-    "meaning": "<ruby>第一巻<rt>だいいっかん</rt></ruby>・<ruby>巻<rt>ま</rt></ruby>く ／ くるくると<ruby>丸<rt>まる</rt></ruby>めること",
+    "ja": "翌",
+    "reading": "ヨク",
+    "meaning": "<ruby>翌日<rt>よくじつ</rt></ruby>・<ruby>翌朝<rt>よくあさ</rt></ruby> ／ 次の",
+    "review": true
+  },
+  {
+    "ja": "至",
+    "reading": "シ／いたる",
+    "meaning": "<ruby>至急<rt>しきゅう</rt></ruby>・<ruby>夏至<rt>げし</rt></ruby> ／ 行きつく・とても",
+    "review": true
+  },
+  {
+    "ja": "胸",
+    "reading": "キョウ／むね",
+    "meaning": "<ruby>胸<rt>むね</rt></ruby>・<ruby>度胸<rt>どきょう</rt></ruby> ／ <ruby>体<rt>からだ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の、<ruby>心<rt>こころ</rt></ruby>のあるあたり",
+    "review": true
+  },
+  {
+    "ja": "灰",
+    "reading": "カイ／はい",
+    "meaning": "<ruby>灰色<rt>はいいろ</rt></ruby>・<ruby>灰<rt>はい</rt></ruby> ／ 物が<ruby>燃<rt>も</rt></ruby>えた後に<ruby>残<rt>のこ</rt></ruby>る<ruby>粉<rt>こな</rt></ruby>",
+    "review": true
+  },
+  {
+    "ja": "貴",
+    "reading": "キ／たっと(い)",
+    "meaning": "<ruby>貴重<rt>きちょう</rt></ruby>・<ruby>貴族<rt>きぞく</rt></ruby> ／ とても大切で<ruby>値打<rt>ねう</rt></ruby>ちがある",
+    "review": true
+  },
+  {
+    "ja": "鋼",
+    "reading": "コウ／はがね",
+    "meaning": "<ruby>鋼鉄<rt>こうてつ</rt></ruby>・<ruby>鉄鋼<rt>てっこう</rt></ruby> ／ とてもかたい<ruby>鉄<rt>てつ</rt></ruby>",
     "review": true
   },
   {
@@ -176,63 +206,33 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "胃",
-    "reading": "イ",
-    "meaning": "胃ぶくろ ／ 食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>",
+    "ja": "異",
+    "reading": "イ／こと(なる)",
+    "meaning": "<ruby>異国<rt>いこく</rt></ruby>・<ruby>異<rt>こと</rt></ruby>なる ／ ほかと<ruby>違<rt>ちが</rt></ruby>っていること",
     "review": true
   },
   {
-    "ja": "后",
-    "reading": "コウ",
-    "meaning": "<ruby>皇后<rt>こうごう</rt></ruby> ／ 王や天皇の<ruby>妻<rt>つま</rt></ruby>・きさき",
+    "ja": "皇",
+    "reading": "コウ・オウ",
+    "meaning": "<ruby>皇室<rt>こうしつ</rt></ruby>・<ruby>天皇<rt>てんのう</rt></ruby> ／ <ruby>天皇<rt>てんのう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>すること",
     "review": true
   },
   {
-    "ja": "幼",
-    "reading": "ヨウ／おさない",
-    "meaning": "<ruby>幼<rt>おさな</rt></ruby>い・<ruby>幼児<rt>ようじ</rt></ruby> ／ おさない",
+    "ja": "敬",
+    "reading": "ケイ／うやま(う)",
+    "meaning": "<ruby>尊敬<rt>そんけい</rt></ruby>・<ruby>敬語<rt>けいご</rt></ruby> ／ 相手を大切に思ってうやまうこと",
     "review": true
   },
   {
-    "ja": "我",
-    "reading": "ガ／われ",
-    "meaning": "<ruby>自我<rt>じが</rt></ruby>・<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby> ／ 自分・わたし",
+    "ja": "困",
+    "reading": "コン／こま(る)",
+    "meaning": "<ruby>困難<rt>こんなん</rt></ruby>・<ruby>困<rt>こま</rt></ruby>る ／ どうしたらいいか分からずこまること",
     "review": true
   },
   {
-    "ja": "存",
-    "reading": "ソン／ゾン",
-    "meaning": "<ruby>存在<rt>そんざい</rt></ruby>・<ruby>保存<rt>ほぞん</rt></ruby> ／ ある・知っている",
-    "review": true
-  },
-  {
-    "ja": "閣",
-    "reading": "カク",
-    "meaning": "<ruby>内閣<rt>ないかく</rt></ruby>・<ruby>金閣寺<rt>きんかくじ</rt></ruby> ／ りっぱな<ruby>建物<rt>たてもの</rt></ruby>・国の中心",
-    "review": true
-  },
-  {
-    "ja": "卵",
-    "reading": "ラン／たまご",
-    "meaning": "<ruby>卵<rt>たまご</rt></ruby>・<ruby>産卵<rt>さんらん</rt></ruby> ／ たまご",
-    "review": true
-  },
-  {
-    "ja": "諸",
-    "reading": "ショ",
-    "meaning": "<ruby>諸国<rt>しょこく</rt></ruby>・<ruby>諸君<rt>しょくん</rt></ruby> ／ いろいろな・多くの",
-    "review": true
-  },
-  {
-    "ja": "障",
-    "reading": "ショウ／さわる",
-    "meaning": "<ruby>故障<rt>こしょう</rt></ruby>・<ruby>障子<rt>しょうじ</rt></ruby> ／ じゃまになる",
-    "review": true
-  },
-  {
-    "ja": "沿",
-    "reading": "エン／そう",
-    "meaning": "<ruby>沿岸<rt>えんがん</rt></ruby>・<ruby>川沿<rt>かわぞ</rt></ruby>い ／ そばに<ruby>沿<rt>そ</rt></ruby>って行く",
+    "ja": "警",
+    "reading": "ケイ",
+    "meaning": "<ruby>警察<rt>けいさつ</rt></ruby>・<ruby>警告<rt>けいこく</rt></ruby> ／ 気をつけて<ruby>守<rt>まも</rt></ruby>ること",
     "review": true
   }
 ];
