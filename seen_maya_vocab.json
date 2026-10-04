@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,11 +281,39 @@
   ],
   "today": [
     {
-      "ja": "意見文",
+      "ja": "おもかげ",
       "review": true
     },
     {
-      "ja": "明確",
+      "ja": "素直",
+      "review": true
+    },
+    {
+      "ja": "慰霊碑",
+      "review": true
+    },
+    {
+      "ja": "事故",
+      "review": true
+    },
+    {
+      "ja": "原子爆弾",
+      "review": true
+    },
+    {
+      "ja": "減る",
+      "review": true
+    },
+    {
+      "ja": "検索",
+      "review": true
+    },
+    {
+      "ja": "炭化",
+      "review": true
+    },
+    {
+      "ja": "心当たり",
       "review": true
     },
     {
@@ -293,39 +321,11 @@
       "review": true
     },
     {
-      "ja": "豊か",
+      "ja": "事件",
       "review": true
     },
     {
-      "ja": "複雑",
-      "review": true
-    },
-    {
-      "ja": "可能",
-      "review": true
-    },
-    {
-      "ja": "妻",
-      "review": true
-    },
-    {
-      "ja": "仮定",
-      "review": true
-    },
-    {
-      "ja": "正義",
-      "review": true
-    },
-    {
-      "ja": "酸素",
-      "review": true
-    },
-    {
-      "ja": "習慣",
-      "review": true
-    },
-    {
-      "ja": "川土手",
+      "ja": "展示",
       "review": true
     }
   ]

@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "seen": [
     "撃",
     "爆",
@@ -100,39 +100,11 @@
   ],
   "today": [
     {
-      "ja": "歳",
+      "ja": "渓",
       "review": true
     },
     {
-      "ja": "農家",
-      "review": true
-    },
-    {
-      "ja": "真っ最中",
-      "review": true
-    },
-    {
-      "ja": "慮",
-      "review": true
-    },
-    {
-      "ja": "下流",
-      "review": true
-    },
-    {
-      "ja": "魂",
-      "review": true
-    },
-    {
-      "ja": "撃",
-      "review": true
-    },
-    {
-      "ja": "隣村",
-      "review": true
-    },
-    {
-      "ja": "国民学校",
+      "ja": "欲",
       "review": true
     },
     {
@@ -140,11 +112,39 @@
       "review": true
     },
     {
-      "ja": "含",
+      "ja": "戻る",
       "review": true
     },
     {
-      "ja": "俺",
+      "ja": "遠慮",
+      "review": true
+    },
+    {
+      "ja": "拭く",
+      "review": true
+    },
+    {
+      "ja": "押す",
+      "review": true
+    },
+    {
+      "ja": "幹",
+      "review": true
+    },
+    {
+      "ja": "病名",
+      "review": true
+    },
+    {
+      "ja": "涙",
+      "review": true
+    },
+    {
+      "ja": "遅くなる",
+      "review": true
+    },
+    {
+      "ja": "戚",
       "review": true
     }
   ]

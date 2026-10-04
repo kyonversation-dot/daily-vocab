@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "seen": [
     "描写",
     "心情",
@@ -140,51 +140,51 @@
   ],
   "today": [
     {
-      "ja": "とまどう",
+      "ja": "まばたく",
       "review": true
     },
     {
-      "ja": "空襲",
+      "ja": "片仮名",
       "review": true
     },
     {
-      "ja": "田植え",
+      "ja": "描写",
       "review": true
     },
     {
-      "ja": "対岸",
+      "ja": "防空壕",
       "review": true
     },
     {
-      "ja": "通路",
+      "ja": "変化",
       "review": true
     },
     {
-      "ja": "読み深める",
+      "ja": "終戦",
       "review": true
     },
     {
-      "ja": "情景",
+      "ja": "ひもじい",
       "review": true
     },
     {
-      "ja": "爆撃",
+      "ja": "隣村",
       "review": true
     },
     {
-      "ja": "おちおち",
+      "ja": "引用",
       "review": true
     },
     {
-      "ja": "はるばる",
+      "ja": "桃源郷",
       "review": true
     },
     {
-      "ja": "疎開者",
+      "ja": "心情",
       "review": true
     },
     {
-      "ja": "高じる",
+      "ja": "覆いかぶさる",
       "review": true
     }
   ]
