@@ -136,24 +136,31 @@
 <script>
 const words = [
   {
-    "ja": "遅くなる",
-    "reading": "おそくなる",
-    "meaning": "<ruby>遅くなる<rt>おそくなる</rt></ruby> ／ おそい。予定より時間がかかる",
-    "example": "帰りは図書委員の集まりがあったせいで＿＿＿た。",
+    "ja": "先輩",
+    "reading": "せんぱい",
+    "meaning": "<ruby>先輩<rt>せんぱい</rt></ruby> ／ センパイ。自分より先にその学校や部にいる人",
+    "example": "なんでサッカー部なのに＿＿＿のように格好よくないのか。",
     "review": true
   },
   {
-    "ja": "撃",
-    "reading": "ゲキ／う(つ)",
-    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
-    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
+    "ja": "俺",
+    "reading": "おれ",
+    "meaning": "<ruby>俺<rt>おれ</rt></ruby> ／ おれ。男の子が自分をさす、くだけた言い方",
+    "example": "＿＿＿がわざとぶつかったみたいだろ。",
     "review": true
   },
   {
-    "ja": "僕",
-    "reading": "ボク",
-    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
-    "example": "＿の弟の名前は、ヒロユキといいます。",
+    "ja": "唇",
+    "reading": "くちびる",
+    "meaning": "<ruby>唇<rt>くちびる</rt></ruby> ／ くちびる。口のふち",
+    "example": "＿＿＿がふるえているし、目のふちが熱い。",
+    "review": true
+  },
+  {
+    "ja": "掘",
+    "reading": "クツ／ほ(る)",
+    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
+    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
     "review": true
   },
   {
@@ -164,59 +171,52 @@ const words = [
     "review": true
   },
   {
-    "ja": "親戚",
-    "reading": "しんせき",
-    "meaning": "<ruby>親戚<rt>しんせき</rt></ruby> ／ 血のつながった家の人。おじ・おば・いとこなど",
-    "example": "＿＿＿の人は、うちに食べ物はないと言いました。",
+    "ja": "交換",
+    "reading": "こうかん",
+    "meaning": "<ruby>交換<rt>こうかん</rt></ruby> ／ とりかえること。「着物を米と交換してもらっていました」",
+    "example": "近所の農家の人たちにお願いして、米と＿＿＿してもらっていました。",
     "review": true
   },
   {
-    "ja": "防空壕",
-    "reading": "ぼうくうごう",
-    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
-    "example": "毎晩、＿＿＿という地下室の中でねました。",
+    "ja": "常緑樹",
+    "reading": "じょうりょくじゅ",
+    "meaning": "<ruby>常緑樹<rt>じょうりょくじゅ</rt></ruby> ／ ジョウリョクジュ。一年中、緑の葉をつけている木",
+    "example": "銀木犀は＿＿＿だから、一年中葉っぱがしげっている。",
     "review": true
   },
   {
-    "ja": "荷物",
-    "reading": "にもつ",
-    "meaning": "<ruby>荷物<rt>にもつ</rt></ruby> ／ もち運ぶ物。「必要な荷物だけを持って」",
-    "example": "とりあえず必要な＿＿＿だけを持って、引っ越しすることになりました。",
+    "ja": "背ける",
+    "reading": "そむける",
+    "meaning": "<ruby>背ける<rt>そむける</rt></ruby> ／ そむける。顔や目をよそへ向ける",
+    "example": "夏実は私からすっと顔を＿＿＿た。",
     "review": true
   },
   {
-    "ja": "真っ最中",
-    "reading": "まっさいちゅう",
-    "meaning": "<ruby>真っ最中<rt>まっさいちゅう</rt></ruby> ／ いちばんさかんなとき。「太平洋戦争の真っ最中です」",
-    "example": "太平洋戦争の＿＿＿です。",
+    "ja": "渓",
+    "reading": "ケイ",
+    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby>・<ruby>渓谷<rt>けいこく</rt></ruby> ／ 山あいを流れる<ruby>谷川<rt>たにがわ</rt></ruby>",
+    "example": "きれいな＿流に沿って山路へかかりました。",
     "review": true
   },
   {
-    "ja": "爆",
-    "reading": "バク",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
-    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
+    "ja": "探る",
+    "reading": "さぐる",
+    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
+    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
     "review": true
   },
   {
-    "ja": "一部屋",
-    "reading": "ひとへや",
-    "meaning": "<ruby>一部屋<rt>ひとへや</rt></ruby> ／ 部屋ひとつ",
-    "example": "その農家の庭に面した六畳間の＿＿＿を借りました。",
+    "ja": "農家",
+    "reading": "のうか",
+    "meaning": "<ruby>農家<rt>のうか</rt></ruby> ／ 田や畑をつくる家。「お世話になる農家は」",
+    "example": "僕たちがお世話になる＿＿＿は、山すそにありました。",
     "review": true
   },
   {
-    "ja": "桃源郷",
-    "reading": "とうげんきょう",
-    "meaning": "<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ この世のものとは思えない、美しい別世界",
-    "example": "生まれて初めて見る、それは＿＿＿でした。",
-    "review": true
-  },
-  {
-    "ja": "山あい",
-    "reading": "やまあい",
-    "meaning": "<ruby>山あい<rt>やまあい</rt></ruby> ／ 山と山のあいだ。「石釜という山あいの村」",
-    "example": "福岡から南へ二十キロくらい行った、石釜という＿＿＿の村です。",
+    "ja": "病院",
+    "reading": "びょういん",
+    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
+    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
     "review": true
   }
 ];
