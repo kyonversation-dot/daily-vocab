@@ -136,45 +136,63 @@
 <script>
 const words = [
   {
-    "ja": "値",
-    "reading": "チ／ね・あたい",
-    "meaning": "<ruby>価値<rt>かち</rt></ruby>・<ruby>値段<rt>ねだん</rt></ruby> ／ ねだん・数",
+    "ja": "磁",
+    "reading": "ジ",
+    "meaning": "<ruby>磁石<rt>じしゃく</rt></ruby>・<ruby>磁力<rt>じりょく</rt></ruby> ／ 鉄をひきつける力",
     "review": true
   },
   {
-    "ja": "熟",
-    "reading": "ジュク／うれる",
-    "meaning": "<ruby>熟語<rt>じゅくご</rt></ruby>・<ruby>成熟<rt>せいじゅく</rt></ruby> ／ じゅうぶんに<ruby>実<rt>みの</rt></ruby>る・なれる",
+    "ja": "乱",
+    "reading": "ラン／みだれる",
+    "meaning": "<ruby>混乱<rt>こんらん</rt></ruby>・<ruby>乱暴<rt>らんぼう</rt></ruby> ／ ばらばらになる",
     "review": true
   },
   {
-    "ja": "我",
-    "reading": "ガ／われ",
-    "meaning": "<ruby>自我<rt>じが</rt></ruby>・<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby> ／ 自分・わたし",
+    "ja": "臓",
+    "reading": "ゾウ",
+    "meaning": "<ruby>心臓<rt>しんぞう</rt></ruby>・<ruby>内臓<rt>ないぞう</rt></ruby> ／ からだの中の<ruby>器官<rt>きかん</rt></ruby>",
     "review": true
   },
   {
-    "ja": "沿",
-    "reading": "エン／そう",
-    "meaning": "<ruby>沿岸<rt>えんがん</rt></ruby>・<ruby>川沿<rt>かわぞ</rt></ruby>い ／ そばに<ruby>沿<rt>そ</rt></ruby>って行く",
+    "ja": "存",
+    "reading": "ソン／ゾン",
+    "meaning": "<ruby>存在<rt>そんざい</rt></ruby>・<ruby>保存<rt>ほぞん</rt></ruby> ／ ある・知っている",
     "review": true
   },
   {
-    "ja": "券",
-    "reading": "ケン",
-    "meaning": "<ruby>入場券<rt>にゅうじょうけん</rt></ruby>・<ruby>食券<rt>しょっけん</rt></ruby> ／ きっぷ・ふだ",
+    "ja": "泉",
+    "reading": "セン／いずみ",
+    "meaning": "<ruby>温泉<rt>おんせん</rt></ruby>・<ruby>泉<rt>いずみ</rt></ruby> ／ 水がわき出るところ",
     "review": true
   },
   {
-    "ja": "姿",
-    "reading": "シ／すがた",
-    "meaning": "<ruby>姿勢<rt>しせい</rt></ruby>・<ruby>後<rt>うし</rt></ruby>ろ<ruby>姿<rt>すがた</rt></ruby> ／ 見た目のかたち",
+    "ja": "律",
+    "reading": "リツ／リチ",
+    "meaning": "<ruby>法律<rt>ほうりつ</rt></ruby>・<ruby>規律<rt>きりつ</rt></ruby> ／ きまり",
     "review": true
   },
   {
-    "ja": "垂",
-    "reading": "スイ／たれる",
-    "meaning": "<ruby>垂直<rt>すいちょく</rt></ruby>・<ruby>垂<rt>た</rt></ruby>れ<ruby>幕<rt>まく</rt></ruby> ／ 下にたれさがる",
+    "ja": "宣",
+    "reading": "セン",
+    "meaning": "<ruby>宣言<rt>せんげん</rt></ruby>・<ruby>宣伝<rt>せんでん</rt></ruby> ／ 広く言い<ruby>知<rt>し</rt></ruby>らせる",
+    "review": true
+  },
+  {
+    "ja": "潮",
+    "reading": "チョウ／しお",
+    "meaning": "<ruby>潮風<rt>しおかぜ</rt></ruby>・<ruby>満潮<rt>まんちょう</rt></ruby> ／ 海の水のみちひき",
+    "review": true
+  },
+  {
+    "ja": "著",
+    "reading": "チョ／あらわす・いちじるしい",
+    "meaning": "<ruby>著者<rt>ちょしゃ</rt></ruby>・<ruby>著<rt>いちじる</rt></ruby>しい ／ 本を書く・目立つ",
+    "review": true
+  },
+  {
+    "ja": "誕",
+    "reading": "タン",
+    "meaning": "<ruby>誕生日<rt>たんじょうび</rt></ruby> ／ 生まれる",
     "review": true
   },
   {
@@ -184,27 +202,9 @@ const words = [
     "review": true
   },
   {
-    "ja": "冊",
-    "reading": "サツ／サク",
-    "meaning": "<ruby>一冊<rt>いっさつ</rt></ruby>・<ruby>別冊<rt>べっさつ</rt></ruby> ／ 本を数えることば",
-    "review": true
-  },
-  {
-    "ja": "刻",
-    "reading": "コク／きざむ",
-    "meaning": "<ruby>時刻<rt>じこく</rt></ruby>・<ruby>深刻<rt>しんこく</rt></ruby> ／ きざむ・時",
-    "review": true
-  },
-  {
-    "ja": "諸",
-    "reading": "ショ",
-    "meaning": "<ruby>諸国<rt>しょこく</rt></ruby>・<ruby>諸君<rt>しょくん</rt></ruby> ／ いろいろな・多くの",
-    "review": true
-  },
-  {
-    "ja": "骨",
-    "reading": "コツ／ほね",
-    "meaning": "<ruby>骨折<rt>こっせつ</rt></ruby>・<ruby>骨<rt>ほね</rt></ruby> ／ 体をささえるほね",
+    "ja": "忠",
+    "reading": "チュウ",
+    "meaning": "<ruby>忠実<rt>ちゅうじつ</rt></ruby>・<ruby>忠告<rt>ちゅうこく</rt></ruby> ／ まごころをつくす",
     "review": true
   }
 ];
