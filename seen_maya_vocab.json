@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,35 +281,19 @@
   ],
   "today": [
     {
-      "ja": "適当",
+      "ja": "職業",
       "review": true
     },
     {
-      "ja": "増える",
+      "ja": "過去",
       "review": true
     },
     {
-      "ja": "直接",
+      "ja": "期限",
       "review": true
     },
     {
-      "ja": "性格",
-      "review": true
-    },
-    {
-      "ja": "責任",
-      "review": true
-    },
-    {
-      "ja": "設計",
-      "review": true
-    },
-    {
-      "ja": "測る",
-      "review": true
-    },
-    {
-      "ja": "応用",
+      "ja": "貿易",
       "review": true
     },
     {
@@ -317,15 +301,31 @@
       "review": true
     },
     {
-      "ja": "武士",
+      "ja": "破る",
       "review": true
     },
     {
-      "ja": "成績",
+      "ja": "経営",
       "review": true
     },
     {
-      "ja": "教師",
+      "ja": "枝",
+      "review": true
+    },
+    {
+      "ja": "確実",
+      "review": true
+    },
+    {
+      "ja": "校舎",
+      "review": true
+    },
+    {
+      "ja": "混ぜる",
+      "review": true
+    },
+    {
+      "ja": "習慣",
       "review": true
     }
   ]

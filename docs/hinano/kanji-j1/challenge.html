@@ -136,24 +136,10 @@
 <script>
 const words = [
   {
-    "ja": "探る",
-    "reading": "さぐる",
-    "meaning": "<ruby>探る<rt>さぐる</rt></ruby> ／ さぐる。さがす。ようすをうかがう",
-    "example": "どこまでわかっているのか＿＿＿ておきたかった。",
-    "review": true
-  },
-  {
-    "ja": "留守番",
-    "reading": "るすばん",
-    "meaning": "<ruby>留守番<rt>るすばん</rt></ruby> ／ 人がいない家をまもること",
-    "example": "祖母と四歳の妹に＿＿＿をたのんで、田舎へ出かけました。",
-    "review": true
-  },
-  {
-    "ja": "真っ最中",
-    "reading": "まっさいちゅう",
-    "meaning": "<ruby>真っ最中<rt>まっさいちゅう</rt></ruby> ／ いちばんさかんなとき。「太平洋戦争の真っ最中です」",
-    "example": "太平洋戦争の＿＿＿です。",
+    "ja": "防空壕",
+    "reading": "ぼうくうごう",
+    "meaning": "<ruby>防空壕<rt>ぼうくうごう</rt></ruby> ／ 空襲からにげこむために掘った穴",
+    "example": "毎晩、＿＿＿という地下室の中でねました。",
     "review": true
   },
   {
@@ -164,59 +150,73 @@ const words = [
     "review": true
   },
   {
-    "ja": "桃源郷",
-    "reading": "とうげんきょう",
-    "meaning": "<ruby>桃源郷<rt>とうげんきょう</rt></ruby> ／ この世のものとは思えない、美しい別世界",
-    "example": "生まれて初めて見る、それは＿＿＿でした。",
+    "ja": "真っ最中",
+    "reading": "まっさいちゅう",
+    "meaning": "<ruby>真っ最中<rt>まっさいちゅう</rt></ruby> ／ いちばんさかんなとき。「太平洋戦争の真っ最中です」",
+    "example": "太平洋戦争の＿＿＿です。",
     "review": true
   },
   {
-    "ja": "杉板",
-    "reading": "すぎいた",
-    "meaning": "<ruby>杉板<rt>すぎいた</rt></ruby> ／ すぎの木の板。「杉板を削って小さな小さな棺を」",
-    "example": "農家のおじいさんが、＿＿＿を削って小さな小さな棺を作ってくださいました。",
+    "ja": "俺",
+    "reading": "おれ",
+    "meaning": "<ruby>俺<rt>おれ</rt></ruby> ／ おれ。男の子が自分をさす、くだけた言い方",
+    "example": "＿＿＿がわざとぶつかったみたいだろ。",
     "review": true
   },
   {
-    "ja": "四歳",
-    "reading": "よんさい",
-    "meaning": "<ruby>四歳<rt>よんさい</rt></ruby> ／ 4さい。「四歳の妹に留守番をたのんで」",
-    "example": "祖母と＿＿＿の妹に留守番をたのんで、田舎へ出かけました。",
+    "ja": "看護婦",
+    "reading": "かんごふ",
+    "meaning": "<ruby>看護婦<rt>かんごふ</rt></ruby> ／ 今でいう看護師。「お医者さん、看護婦さんにみとられて」",
+    "example": "母と兄とお医者さん、＿＿＿さんにみとられて死んだのだから。",
     "review": true
   },
   {
-    "ja": "配給",
-    "reading": "はいきゅう",
-    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
-    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
-    "ja": "襲",
-    "reading": "シュウ／おそ(う)",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
-    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "ja": "爆",
+    "reading": "バク",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>・<ruby>爆発<rt>ばくはつ</rt></ruby> ／ はげしく<ruby>破裂<rt>はれつ</rt></ruby>する",
+    "example": "アメリカのB29という飛行機が、日本に＿弾を落としに来ました。",
     "review": true
   },
   {
-    "ja": "太平洋戦争",
-    "reading": "たいへいようせんそう",
-    "meaning": "<ruby>太平洋戦争<rt>たいへいようせんそう</rt></ruby> ／ 1941〜1945年の戦争。この物語の時代",
-    "example": "＿＿＿の真っ最中です。",
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
     "review": true
   },
   {
-    "ja": "渡",
-    "reading": "ト／わた(る)",
-    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
-    "example": "下流の橋を＿って学校に行きました。",
+    "ja": "病名",
+    "reading": "びょうめい",
+    "meaning": "<ruby>病名<rt>びょうめい</rt></ruby> ／ びょうきの名前。「病名はありません。栄養失調です」",
+    "example": "＿＿＿はありません。栄養失調です……。",
     "review": true
   },
   {
-    "ja": "缶",
-    "reading": "カン",
-    "meaning": "<ruby>缶詰<rt>かんづめ</rt></ruby>・空き<ruby>缶<rt>かん</rt></ruby> ／ <ruby>金属<rt>きんぞく</rt></ruby>の入れもの",
-    "example": "ミルクが一＿、それがヒロユキの大切な大切な食べ物でした。",
+    "ja": "歳",
+    "reading": "サイ／セイ",
+    "meaning": "<ruby>十歳<rt>じっさい</rt></ruby>・<ruby>歳月<rt>さいげつ</rt></ruby> ／ とし・年れい",
+    "example": "祖母と四＿の妹に留守番をたのんで、田舎へ出かけました。",
+    "review": true
+  },
+  {
+    "ja": "地下室",
+    "reading": "ちかしつ",
+    "meaning": "<ruby>地下室<rt>ちかしつ</rt></ruby> ／ 地面の下の部屋。「防空壕という地下室」",
+    "example": "＿＿＿といっても、自分たちが掘った穴ですから、小さな小さな部屋です。",
+    "review": true
+  },
+  {
+    "ja": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "<ruby>飛行機<rt>ひこうき</rt></ruby> ／ そらをとぶ乗り物。「B29という飛行機」",
+    "example": "アメリカのB29という＿＿＿が、毎日のように爆弾を落としに来ました。",
     "review": true
   }
 ];
