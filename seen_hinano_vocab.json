@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "seen": [
     "描写",
     "心情",
@@ -140,31 +140,7 @@
   ],
   "today": [
     {
-      "ja": "磨く",
-      "review": true
-    },
-    {
-      "ja": "心情",
-      "review": true
-    },
-    {
-      "ja": "作者",
-      "review": true
-    },
-    {
-      "ja": "一文",
-      "review": true
-    },
-    {
-      "ja": "ひもじい",
-      "review": true
-    },
-    {
-      "ja": "対岸",
-      "review": true
-    },
-    {
-      "ja": "想像",
+      "ja": "銀木犀",
       "review": true
     },
     {
@@ -172,19 +148,43 @@
       "review": true
     },
     {
-      "ja": "具体的",
+      "ja": "印象",
       "review": true
     },
     {
-      "ja": "飛び石",
+      "ja": "変化",
       "review": true
     },
     {
-      "ja": "朗読",
+      "ja": "独特",
       "review": true
     },
     {
-      "ja": "引用",
+      "ja": "はるばる",
+      "review": true
+    },
+    {
+      "ja": "隣村",
+      "review": true
+    },
+    {
+      "ja": "着目",
+      "review": true
+    },
+    {
+      "ja": "澄む",
+      "review": true
+    },
+    {
+      "ja": "作者",
+      "review": true
+    },
+    {
+      "ja": "山あい",
+      "review": true
+    },
+    {
+      "ja": "黙々と",
       "review": true
     }
   ]
