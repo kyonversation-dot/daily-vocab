@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "seen": [
     "描写",
     "心情",
@@ -140,31 +140,11 @@
   ],
   "today": [
     {
-      "ja": "銀木犀",
+      "ja": "きまりが悪い",
       "review": true
     },
     {
-      "ja": "親戚",
-      "review": true
-    },
-    {
-      "ja": "印象",
-      "review": true
-    },
-    {
-      "ja": "変化",
-      "review": true
-    },
-    {
-      "ja": "独特",
-      "review": true
-    },
-    {
-      "ja": "はるばる",
-      "review": true
-    },
-    {
-      "ja": "隣村",
+      "ja": "息をひきとる",
       "review": true
     },
     {
@@ -172,19 +152,39 @@
       "review": true
     },
     {
-      "ja": "澄む",
+      "ja": "あたかも",
       "review": true
     },
     {
-      "ja": "作者",
+      "ja": "表記",
       "review": true
     },
     {
-      "ja": "山あい",
+      "ja": "主人公",
       "review": true
     },
     {
-      "ja": "黙々と",
+      "ja": "題名",
+      "review": true
+    },
+    {
+      "ja": "あせる",
+      "review": true
+    },
+    {
+      "ja": "みとる",
+      "review": true
+    },
+    {
+      "ja": "情景描写",
+      "review": true
+    },
+    {
+      "ja": "読み深める",
+      "review": true
+    },
+    {
+      "ja": "サバンナ",
       "review": true
     }
   ]
