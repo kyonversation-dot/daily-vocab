@@ -136,24 +136,52 @@
 <script>
 const words = [
   {
-    "ja": "棺",
-    "reading": "カン／ひつぎ",
-    "meaning": "<ruby>棺<rt>ひつぎ</rt></ruby>・<ruby>石棺<rt>せっかん</rt></ruby> ／ なくなった人を<ruby>納<rt>おさ</rt></ruby>める<ruby>箱<rt>はこ</rt></ruby>",
-    "example": "弟はその小さな小さな＿に、母と僕の手でねかされました。",
+    "ja": "澄",
+    "reading": "チョウ／す(む)",
+    "meaning": "<ruby>澄<rt>す</rt></ruby>む・<ruby>澄<rt>す</rt></ruby>みきる ／ にごりがなく、きれいに<ruby>透<rt>す</rt></ruby>きとおる",
+    "example": "空は高く高く青く＿んでいました。",
     "review": true
   },
   {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "<ruby>六畳間<rt>ろくじょうま</rt></ruby> ／ たたみ6まいの部屋。「庭に面した六畳間の一部屋」",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
+    "ja": "抱える",
+    "reading": "かかえる",
+    "meaning": "<ruby>抱える<rt>かかえる</rt></ruby> ／ かかえる。両手でだきかかえるように持つ",
+    "example": "おばさんは掃除道具を＿＿＿と、公園の反対側に歩いていった。",
     "review": true
   },
   {
-    "ja": "人影",
-    "reading": "ひとかげ",
-    "meaning": "<ruby>人影<rt>ひとかげ</rt></ruby> ／ 人のすがた。「道にも畑にも、人影はありませんでした」",
-    "example": "道にも畑にも、＿＿＿はありませんでした。歩いているのは三人だけです。",
+    "ja": "真っ最中",
+    "reading": "まっさいちゅう",
+    "meaning": "<ruby>真っ最中<rt>まっさいちゅう</rt></ruby> ／ いちばんさかんなとき。「太平洋戦争の真っ最中です」",
+    "example": "太平洋戦争の＿＿＿です。",
+    "review": true
+  },
+  {
+    "ja": "厄介",
+    "reading": "やっかい",
+    "meaning": "<ruby>厄介<rt>やっかい</rt></ruby> ／ ヤッカイ。手間がかかって、めんどうなこと",
+    "example": "葉っぱが落ちて案外＿＿＿なんだよ。",
+    "review": true
+  },
+  {
+    "ja": "先輩",
+    "reading": "せんぱい",
+    "meaning": "<ruby>先輩<rt>せんぱい</rt></ruby> ／ センパイ。自分より先にその学校や部にいる人",
+    "example": "なんでサッカー部なのに＿＿＿のように格好よくないのか。",
+    "review": true
+  },
+  {
+    "ja": "看護婦",
+    "reading": "かんごふ",
+    "meaning": "<ruby>看護婦<rt>かんごふ</rt></ruby> ／ 今でいう看護師。「お医者さん、看護婦さんにみとられて」",
+    "example": "母と兄とお医者さん、＿＿＿さんにみとられて死んだのだから。",
+    "review": true
+  },
+  {
+    "ja": "撃",
+    "reading": "ゲキ／う(つ)",
+    "meaning": "<ruby>爆撃<rt>ばくげき</rt></ruby>・<ruby>撃<rt>う</rt></ruby>つ ／ 相手をうつ・こうげきする",
+    "example": "空襲の爆＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
     "review": true
   },
   {
@@ -164,59 +192,31 @@ const words = [
     "review": true
   },
   {
-    "ja": "襲",
-    "reading": "シュウ／おそ(う)",
-    "meaning": "<ruby>空襲<rt>くうしゅう</rt></ruby>・<ruby>襲<rt>おそ</rt></ruby>う ／ 急に<ruby>攻<rt>せ</rt></ruby>めかかる",
-    "example": "あまり空＿がひどくなってきたので、母は疎開しようと言いだしました。",
+    "ja": "配給",
+    "reading": "はいきゅう",
+    "meaning": "<ruby>配給<rt>はいきゅう</rt></ruby> ／ 足りない物を、国が決めた分だけ配ること",
+    "example": "でも、ときどき＿＿＿がありました。ミルクが一缶……。",
     "review": true
   },
   {
-    "ja": "掘",
-    "reading": "クツ／ほ(る)",
-    "meaning": "<ruby>掘<rt>ほ</rt></ruby>る・<ruby>発掘<rt>はっくつ</rt></ruby> ／ 土をほる。「<ruby>防空壕<rt>ぼうくうごう</rt></ruby>を掘る」",
-    "example": "たたみを上げて、ゆかの下に穴を＿りました。",
+    "ja": "菓",
+    "reading": "カ",
+    "meaning": "お<ruby>菓子<rt>かし</rt></ruby>・<ruby>製菓<rt>せいか</rt></ruby> ／ あまい食べ物",
+    "example": "あめもチョコレートもアイスクリームも、お＿子はなんにもないころなのです。",
     "review": true
   },
   {
-    "ja": "渡",
-    "reading": "ト／わた(る)",
-    "meaning": "<ruby>渡<rt>わた</rt></ruby>る・<ruby>渡航<rt>とこう</rt></ruby> ／ <ruby>向<rt>む</rt></ruby>こう<ruby>側<rt>がわ</rt></ruby>へ行く",
-    "example": "下流の橋を＿って学校に行きました。",
+    "ja": "入院",
+    "reading": "にゅういん",
+    "meaning": "<ruby>入院<rt>にゅういん</rt></ruby> ／ 病院に入って治りょうすること",
+    "example": "僕たちの村から三里くらい離れた町の病院に＿＿＿しました。",
     "review": true
   },
   {
-    "ja": "俺",
-    "reading": "おれ",
-    "meaning": "<ruby>俺<rt>おれ</rt></ruby> ／ おれ。男の子が自分をさす、くだけた言い方",
-    "example": "＿＿＿がわざとぶつかったみたいだろ。",
-    "review": true
-  },
-  {
-    "ja": "涙",
-    "reading": "なみだ",
-    "meaning": "<ruby>涙<rt>なみだ</rt></ruby> ／ なみだ。泣くときに目から出る水",
-    "example": "＿＿＿がにじんできたのは、あんまり笑いすぎたせいだ。",
-    "review": true
-  },
-  {
-    "ja": "僕",
-    "reading": "ボク",
-    "meaning": "<ruby>僕<rt>ぼく</rt></ruby>・<ruby>僕<rt>ぼく</rt></ruby>たち ／ 男の人が自分を<ruby>指<rt>さ</rt></ruby>す言い方",
-    "example": "＿の弟の名前は、ヒロユキといいます。",
-    "review": true
-  },
-  {
-    "ja": "渓流",
-    "reading": "けいりゅう",
-    "meaning": "<ruby>渓流<rt>けいりゅう</rt></ruby> ／ 谷を流れる川。「きれいな渓流に沿って」",
-    "example": "きれいな＿＿＿に沿って山路へかかりました。",
-    "review": true
-  },
-  {
-    "ja": "病院",
-    "reading": "びょういん",
-    "meaning": "<ruby>病院<rt>びょういん</rt></ruby> ／ びょうきをなおす所。「町の病院に入院しました」",
-    "example": "僕たちの村から三里くらい離れた町の＿＿＿に入院しました。",
+    "ja": "爆弾",
+    "reading": "ばくだん",
+    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby> ／ 落として爆発させる兵器。「日本に爆弾を落としに来ました」",
+    "example": "毎日のように日本に＿＿＿を落としに来ました。",
     "review": true
   }
 ];

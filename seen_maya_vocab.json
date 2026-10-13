@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,35 +281,43 @@
   ],
   "today": [
     {
-      "ja": "見出し",
+      "ja": "報告",
       "review": true
     },
     {
-      "ja": "状態",
+      "ja": "順序",
       "review": true
     },
     {
-      "ja": "祖父",
+      "ja": "枝",
       "review": true
     },
     {
-      "ja": "暴れる",
+      "ja": "金属",
       "review": true
     },
     {
-      "ja": "責任者",
+      "ja": "志",
       "review": true
     },
     {
-      "ja": "酸素",
+      "ja": "混ぜる",
       "review": true
     },
     {
-      "ja": "複雑",
+      "ja": "武士",
       "review": true
     },
     {
-      "ja": "内容",
+      "ja": "原因",
+      "review": true
+    },
+    {
+      "ja": "可能",
+      "review": true
+    },
+    {
+      "ja": "金額",
       "review": true
     },
     {
@@ -317,15 +325,7 @@
       "review": true
     },
     {
-      "ja": "絶対",
-      "review": true
-    },
-    {
-      "ja": "燃える",
-      "review": true
-    },
-    {
-      "ja": "確実",
+      "ja": "招く",
       "review": true
     }
   ]
