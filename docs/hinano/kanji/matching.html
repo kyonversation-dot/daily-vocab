@@ -164,33 +164,45 @@
 <script>
 const allWords = [
   {
-    "ja": "映",
-    "reading": "エイ／うつ(る)",
-    "meaning": "<ruby>映画<rt>えいが</rt></ruby>・<ruby>鏡<rt>かがみ</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る ／ 光や<ruby>姿<rt>すがた</rt></ruby>がうつること",
+    "ja": "並",
+    "reading": "ヘイ／ならぶ",
+    "meaning": "<ruby>並<rt>なら</rt></ruby>ぶ・<ruby>並行<rt>へいこう</rt></ruby> ／ ならぶ・ふつう",
     "review": true
   },
   {
-    "ja": "皇",
-    "reading": "コウ・オウ",
-    "meaning": "<ruby>皇室<rt>こうしつ</rt></ruby>・<ruby>天皇<rt>てんのう</rt></ruby> ／ <ruby>天皇<rt>てんのう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>すること",
+    "ja": "穴",
+    "reading": "ケツ／あな",
+    "meaning": "<ruby>穴<rt>あな</rt></ruby>・<ruby>穴場<rt>あなば</rt></ruby> ／ くぼんだ<ruby>所<rt>ところ</rt></ruby>・あな",
     "review": true
   },
   {
-    "ja": "派",
-    "reading": "ハ",
-    "meaning": "<ruby>派手<rt>はで</rt></ruby>・<ruby>流派<rt>りゅうは</rt></ruby> ／ わかれ・つかわす",
+    "ja": "敬",
+    "reading": "ケイ／うやま(う)",
+    "meaning": "<ruby>尊敬<rt>そんけい</rt></ruby>・<ruby>敬語<rt>けいご</rt></ruby> ／ 相手を大切に思ってうやまうこと",
     "review": true
   },
   {
-    "ja": "届",
-    "reading": "とどく・とどける",
-    "meaning": "<ruby>届<rt>とど</rt></ruby>ける・<ruby>欠席届<rt>けっせきとどけ</rt></ruby> ／ とどく・とどける",
+    "ja": "鋼",
+    "reading": "コウ／はがね",
+    "meaning": "<ruby>鋼鉄<rt>こうてつ</rt></ruby>・<ruby>鉄鋼<rt>てっこう</rt></ruby> ／ とてもかたい<ruby>鉄<rt>てつ</rt></ruby>",
     "review": true
   },
   {
-    "ja": "俵",
-    "reading": "ヒョウ／たわら",
-    "meaning": "<ruby>土俵<rt>どひょう</rt></ruby>・<ruby>米俵<rt>こめだわら</rt></ruby> ／ 米などを入れるふくろ",
+    "ja": "刻",
+    "reading": "コク／きざむ",
+    "meaning": "<ruby>時刻<rt>じこく</rt></ruby>・<ruby>深刻<rt>しんこく</rt></ruby> ／ きざむ・時",
+    "review": true
+  },
+  {
+    "ja": "紅",
+    "reading": "コウ／べに",
+    "meaning": "<ruby>紅茶<rt>こうちゃ</rt></ruby>・<ruby>紅葉<rt>こうよう</rt></ruby> ／ あざやかな<ruby>赤色<rt>あかいろ</rt></ruby>",
+    "review": true
+  },
+  {
+    "ja": "郷",
+    "reading": "キョウ・ゴウ",
+    "meaning": "<ruby>郷土<rt>きょうど</rt></ruby>・<ruby>故郷<rt>こきょう</rt></ruby> ／ <ruby>生<rt>う</rt></ruby>まれた土地・ふるさと",
     "review": true
   },
   {
@@ -200,39 +212,27 @@ const allWords = [
     "review": true
   },
   {
-    "ja": "盟",
-    "reading": "メイ",
-    "meaning": "<ruby>同盟<rt>どうめい</rt></ruby>・<ruby>加盟<rt>かめい</rt></ruby> ／ かたいやくそくを<ruby>結<rt>むす</rt></ruby>ぶ",
+    "ja": "誤",
+    "reading": "ゴ／あやま(る)",
+    "meaning": "<ruby>誤解<rt>ごかい</rt></ruby>・<ruby>誤<rt>あやま</rt></ruby>り ／ まちがえること",
     "review": true
   },
   {
-    "ja": "補",
-    "reading": "ホ／おぎなう",
-    "meaning": "<ruby>補<rt>おぎな</rt></ruby>う・<ruby>候補<rt>こうほ</rt></ruby> ／ 足りないところをうめる",
+    "ja": "俵",
+    "reading": "ヒョウ／たわら",
+    "meaning": "<ruby>土俵<rt>どひょう</rt></ruby>・<ruby>米俵<rt>こめだわら</rt></ruby> ／ 米などを入れるふくろ",
     "review": true
   },
   {
-    "ja": "拝",
-    "reading": "ハイ／おがむ",
-    "meaning": "<ruby>拝見<rt>はいけん</rt></ruby>・<ruby>参拝<rt>さんぱい</rt></ruby> ／ おがむ",
+    "ja": "担",
+    "reading": "タン／かつぐ・になう",
+    "meaning": "<ruby>担任<rt>たんにん</rt></ruby>・<ruby>負担<rt>ふたん</rt></ruby> ／ せおう・引きうける",
     "review": true
   },
   {
-    "ja": "宝",
-    "reading": "ホウ／たから",
-    "meaning": "<ruby>宝物<rt>たからもの</rt></ruby>・<ruby>国宝<rt>こくほう</rt></ruby> ／ たからもの",
-    "review": true
-  },
-  {
-    "ja": "糖",
-    "reading": "トウ",
-    "meaning": "<ruby>砂糖<rt>さとう</rt></ruby>・<ruby>糖分<rt>とうぶん</rt></ruby> ／ さとう",
-    "review": true
-  },
-  {
-    "ja": "朗",
-    "reading": "ロウ／ほがらか",
-    "meaning": "<ruby>朗読<rt>ろうどく</rt></ruby>・<ruby>明朗<rt>めいろう</rt></ruby> ／ 明るくはっきり",
+    "ja": "胃",
+    "reading": "イ",
+    "meaning": "胃ぶくろ ／ 食べ物をこなす体の<ruby>臓器<rt>ぞうき</rt></ruby>",
     "review": true
   }
 ];
