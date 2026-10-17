@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "seen": [
     "撃",
     "爆",
@@ -100,19 +100,11 @@
   ],
   "today": [
     {
-      "ja": "地下室",
+      "ja": "爆",
       "review": true
     },
     {
-      "ja": "太平洋戦争",
-      "review": true
-    },
-    {
-      "ja": "三里",
-      "review": true
-    },
-    {
-      "ja": "爆撃",
+      "ja": "渓",
       "review": true
     },
     {
@@ -120,23 +112,19 @@
       "review": true
     },
     {
-      "ja": "弾",
+      "ja": "欲",
       "review": true
     },
     {
-      "ja": "田植え",
+      "ja": "渓流",
       "review": true
     },
     {
-      "ja": "輪郭",
+      "ja": "疎",
       "review": true
     },
     {
-      "ja": "戻る",
-      "review": true
-    },
-    {
-      "ja": "菓",
+      "ja": "馬車",
       "review": true
     },
     {
@@ -144,7 +132,19 @@
       "review": true
     },
     {
-      "ja": "繊細",
+      "ja": "遅くなる",
+      "review": true
+    },
+    {
+      "ja": "刈る",
+      "review": true
+    },
+    {
+      "ja": "蛇口",
+      "review": true
+    },
+    {
+      "ja": "抱える",
       "review": true
     }
   ]
