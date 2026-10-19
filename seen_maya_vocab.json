@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,39 +281,35 @@
   ],
   "today": [
     {
-      "ja": "責任者",
+      "ja": "河口",
       "review": true
     },
     {
-      "ja": "長崎",
+      "ja": "余り",
       "review": true
     },
     {
-      "ja": "反対",
+      "ja": "原爆供養塔納骨名簿",
       "review": true
     },
     {
-      "ja": "全国紙",
+      "ja": "規則",
       "review": true
     },
     {
-      "ja": "図表",
+      "ja": "位置",
       "review": true
     },
     {
-      "ja": "司会",
+      "ja": "納得",
       "review": true
     },
     {
-      "ja": "判断",
+      "ja": "説得力",
       "review": true
     },
     {
-      "ja": "主張",
-      "review": true
-    },
-    {
-      "ja": "現れる",
+      "ja": "報道",
       "review": true
     },
     {
@@ -321,11 +317,15 @@
       "review": true
     },
     {
-      "ja": "情景",
+      "ja": "説明",
       "review": true
     },
     {
-      "ja": "予想",
+      "ja": "心当たり",
+      "review": true
+    },
+    {
+      "ja": "翌日",
       "review": true
     }
   ]
