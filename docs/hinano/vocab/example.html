@@ -162,10 +162,45 @@
 <script>
 const allWords = ([
   {
-    "ja": "縮む",
-    "reading": "ちぢむ",
-    "meaning": "<ruby>縮む<rt>ちぢむ</rt></ruby> ／ 小さくなる。ちいさくかたまる",
-    "example": "花びらは小さく＿＿＿で、もう色がすっかりあせている。",
+    "ja": "余韻",
+    "reading": "よいん",
+    "meaning": "<ruby>読<rt>よ</rt></ruby>み終わったあとに、心に<ruby>残<rt>のこ</rt></ruby>るひびき・感じ",
+    "example": "「……」で終わる題名は、読んだあとに＿＿＿が残る。",
+    "review": true
+  },
+  {
+    "ja": "首をかしげる",
+    "reading": "くびをかしげる",
+    "meaning": "<ruby>首をかしげる<rt>くびをかしげる</rt></ruby> ／ <ruby>不思議<rt>ふしぎ</rt></ruby>に思って、首をかたむける",
+    "example": "私は＿＿＿た。常緑樹は一年中葉っぱがしげっているはずなのに。",
+    "review": true
+  },
+  {
+    "ja": "たくす",
+    "reading": "たくす",
+    "meaning": "<ruby>直接<rt>ちょくせつ</rt></ruby>言わずに、べつのものに気持ちをこめる。「<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>描写<rt>びょうしゃ</rt></ruby>にたくす」",
+    "example": "作者は母の気持ちを、行動の描写に＿＿＿。",
+    "review": true
+  },
+  {
+    "ja": "飛び石",
+    "reading": "とびいし",
+    "meaning": "川などにならべた、とびながら<ruby>渡<rt>わた</rt></ruby>る石",
+    "example": "家の前の渓流には＿＿＿が対岸に続き、大雨の日は渡れません。",
+    "review": true
+  },
+  {
+    "ja": "題名",
+    "reading": "だいめい",
+    "meaning": "<ruby>作品<rt>さくひん</rt></ruby>につけられた名前",
+    "example": "「大人になれなかった弟たちに……」という＿＿＿の意味を話し合おう。",
+    "review": true
+  },
+  {
+    "ja": "一文",
+    "reading": "いちぶん",
+    "meaning": "「。」で終わる、ひとつの文。「この一文だけで<ruby>段落<rt>だんらく</rt></ruby>になっている」",
+    "example": "「母の着物はなくなりました。」——この＿＿＿だけで、一つの段落になっている。",
     "review": true
   },
   {
@@ -176,73 +211,37 @@ const allWords = ([
     "review": true
   },
   {
-    "ja": "情景",
-    "reading": "じょうけい",
-    "meaning": "<ruby>目<rt>め</rt></ruby>にうかんでくる<ruby>場面<rt>ばめん</rt></ruby>のようす",
-    "example": "「白い乾いた一本道」は、その場の＿＿＿が目に浮かぶ言葉だ。",
+    "ja": "象徴",
+    "reading": "しょうちょう",
+    "meaning": "あるものが、目に見えない考えや気持ちを<ruby>表<rt>あらわ</rt></ruby>すこと",
+    "example": "「白い乾いた一本道」は、この場面の悲しさを＿＿＿している。",
     "review": true
   },
   {
-    "ja": "桃源郷",
-    "reading": "とうげんきょう",
-    "meaning": "<ruby>俗世間<rt>ぞくせけん</rt></ruby>をはなれた、すばらしい<ruby>別世界<rt>べっせかい</rt></ruby>。地上の楽園",
-    "example": "生まれて初めて見る、それは＿＿＿でした。",
+    "ja": "かたむく",
+    "reading": "かたむく",
+    "meaning": "かたむく ／ まっすぐでなく、ななめになる",
+    "example": "＿＿＿いた陽が葉っぱの間からちらちらと差していた。",
     "review": true
   },
   {
-    "ja": "親戚",
-    "reading": "しんせき",
-    "meaning": "<ruby>血<rt>ち</rt></ruby>のつながりや<ruby>結婚<rt>けっこん</rt></ruby>でつながっている人たち",
-    "example": "＿＿＿の人は、うちに食べ物はないと言いました。",
+    "ja": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "<ruby>相手<rt>あいて</rt></ruby>のことを考えて、ひかえめにすること",
+    "example": "母は弟が死んでいるので、ほかの人に＿＿＿したのでしょう。",
     "review": true
   },
   {
-    "ja": "真っ最中",
-    "reading": "まっさいちゅう",
-    "meaning": "ちょうど今、その<ruby>途中<rt>とちゅう</rt></ruby>であること",
-    "example": "太平洋戦争の＿＿＿です。",
+    "ja": "誘う",
+    "reading": "さそう",
+    "meaning": "「いっしょに〜しようよ」と声をかけること",
     "review": true
   },
   {
-    "ja": "六畳間",
-    "reading": "ろくじょうま",
-    "meaning": "たたみ6<ruby>枚<rt>まい</rt></ruby>ぶんの<ruby>部屋<rt>へや</rt></ruby>",
-    "example": "その農家の庭に面した＿＿＿の一部屋を借りました。",
-    "review": true
-  },
-  {
-    "ja": "三里",
-    "reading": "さんり",
-    "meaning": "一里の3ばい。<ruby>約<rt>やく</rt></ruby>12キロメートル（歩くと3時間くらい）",
-    "example": "僕たちの村から＿＿＿くらい離れた町の病院に入院しました。",
-    "review": true
-  },
-  {
-    "ja": "爆撃",
-    "reading": "ばくげき",
-    "meaning": "<ruby>爆弾<rt>ばくだん</rt></ruby>を落として<ruby>攻撃<rt>こうげき</rt></ruby>すること",
-    "example": "＿＿＿で死ねば、みんなばらばらで死ぬから、もっとかわいそうだった。",
-    "review": true
-  },
-  {
-    "ja": "一里",
-    "reading": "いちり",
-    "meaning": "<ruby>昔<rt>むかし</rt></ruby>のきょりの<ruby>単位<rt>たんい</rt></ruby>。<ruby>約<rt>やく</rt></ruby>3.9キロメートル",
-    "example": "＿＿＿は、約三・九キロメートル。",
-    "review": true
-  },
-  {
-    "ja": "おもゆ",
-    "reading": "おもゆ",
-    "meaning": "おかゆのもっとうすいもの。<ruby>赤<rt>あか</rt></ruby>ちゃんや<ruby>病人<rt>びょうにん</rt></ruby>が食べる",
-    "example": "おかゆのもっと薄い＿＿＿を食べさせたり、やぎのミルクを飲ませたりしました。",
-    "review": true
-  },
-  {
-    "ja": "とうてい",
-    "reading": "とうてい",
-    "meaning": "どうやっても（〜ない）。とても（〜できない）",
-    "example": "みんなには＿＿＿わからないでしょうが、そのころ、甘いものはぜんぜんなかったのです。",
+    "ja": "渓流",
+    "reading": "けいりゅう",
+    "meaning": "山の中を流れる、きれいな川",
+    "example": "きれいな＿＿＿に沿って山路へかかりました。",
     "review": true
   }
 ]).filter(w => w.example);

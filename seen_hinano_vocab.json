@@ -1,6 +1,6 @@
 {
   "unit": "星の花が降るころに",
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "seen": [
     "描写",
     "心情",
@@ -140,7 +140,27 @@
   ],
   "today": [
     {
-      "ja": "縮む",
+      "ja": "余韻",
+      "review": true
+    },
+    {
+      "ja": "首をかしげる",
+      "review": true
+    },
+    {
+      "ja": "たくす",
+      "review": true
+    },
+    {
+      "ja": "飛び石",
+      "review": true
+    },
+    {
+      "ja": "題名",
+      "review": true
+    },
+    {
+      "ja": "一文",
       "review": true
     },
     {
@@ -148,43 +168,23 @@
       "review": true
     },
     {
-      "ja": "情景",
+      "ja": "象徴",
       "review": true
     },
     {
-      "ja": "桃源郷",
+      "ja": "かたむく",
       "review": true
     },
     {
-      "ja": "親戚",
+      "ja": "遠慮",
       "review": true
     },
     {
-      "ja": "真っ最中",
+      "ja": "誘う",
       "review": true
     },
     {
-      "ja": "六畳間",
-      "review": true
-    },
-    {
-      "ja": "三里",
-      "review": true
-    },
-    {
-      "ja": "爆撃",
-      "review": true
-    },
-    {
-      "ja": "一里",
-      "review": true
-    },
-    {
-      "ja": "おもゆ",
-      "review": true
-    },
-    {
-      "ja": "とうてい",
+      "ja": "渓流",
       "review": true
     }
   ]

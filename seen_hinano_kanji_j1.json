@@ -1,6 +1,6 @@
 {
   "unit": "中1漢字（星の花が降るころに）",
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "seen": [
     "撃",
     "爆",
@@ -100,11 +100,19 @@
   ],
   "today": [
     {
-      "ja": "相談",
+      "ja": "菓",
       "review": true
     },
     {
-      "ja": "先輩",
+      "ja": "農家",
+      "review": true
+    },
+    {
+      "ja": "棺",
+      "review": true
+    },
+    {
+      "ja": "帽子",
       "review": true
     },
     {
@@ -112,19 +120,19 @@
       "review": true
     },
     {
-      "ja": "掲示",
+      "ja": "人影",
       "review": true
     },
     {
-      "ja": "真っ最中",
+      "ja": "留守番",
       "review": true
     },
     {
-      "ja": "桃源郷",
+      "ja": "蛇口",
       "review": true
     },
     {
-      "ja": "原子爆弾",
+      "ja": "大丈夫",
       "review": true
     },
     {
@@ -132,19 +140,11 @@
       "review": true
     },
     {
-      "ja": "繊細",
+      "ja": "栄養失調",
       "review": true
     },
     {
-      "ja": "太平洋戦争",
-      "review": true
-    },
-    {
-      "ja": "厄介",
-      "review": true
-    },
-    {
-      "ja": "暇",
+      "ja": "襲",
       "review": true
     }
   ]
