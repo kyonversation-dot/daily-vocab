@@ -1,6 +1,6 @@
 {
   "unit": "5年生の漢字でできた言葉",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "seen": [
     "司会",
     "質疑応答",
@@ -281,15 +281,27 @@
   ],
   "today": [
     {
-      "ja": "語句",
+      "ja": "暴れる",
       "review": true
     },
     {
-      "ja": "平和学習",
+      "ja": "授業",
       "review": true
     },
     {
-      "ja": "慣れる",
+      "ja": "解決",
+      "review": true
+    },
+    {
+      "ja": "枝",
+      "review": true
+    },
+    {
+      "ja": "喜ぶ",
+      "review": true
+    },
+    {
+      "ja": "過去",
       "review": true
     },
     {
@@ -297,35 +309,23 @@
       "review": true
     },
     {
-      "ja": "効果",
+      "ja": "事故",
       "review": true
     },
     {
-      "ja": "状態",
+      "ja": "調査",
       "review": true
     },
     {
-      "ja": "短所",
+      "ja": "位置",
       "review": true
     },
     {
-      "ja": "似る",
+      "ja": "減る",
       "review": true
     },
     {
-      "ja": "反論",
-      "review": true
-    },
-    {
-      "ja": "判定",
-      "review": true
-    },
-    {
-      "ja": "賛成",
-      "review": true
-    },
-    {
-      "ja": "見出し",
+      "ja": "招く",
       "review": true
     }
   ]
